@@ -1,0 +1,45 @@
+SELECT
+rankasc(Program_User_ID_Str) AS Program_User_ID
+, ProgramUsers.[Program ID]
+, ProgramUsers.[User ID]
+, [Status]
+, [Time assigned]
+, -- If the program is unassigned and has no completion date then use the assigned date as the completion date. Otherwise the completion date is used.
+    CASE WHEN ISNULL(CurrentlyAssigned.[Program ID]) THEN
+    CASE WHEN ISNULL([Time completed]) THEN [Time assigned] ELSE [Time completed] END
+    ELSE [Time completed] END AS [Time completed]
+, [Time started]
+, CASE WHEN ISNULL(CurrentlyAssigned.[Program ID]) THEN 'Unassigned' ELSE 'Assigned' END AS AssignmentStatus
+FROM
+(SELECT
+CONCAT(CONCAT(CAST(p.[User ID] AS VARCHAR),'_'),CAST(p.[Program ID] AS VARCHAR)) AS Program_User_ID_Str
+, p.[Program ID]
+, p.[User ID]
+, p.[Status]
+, p.[Time assigned]
+, p.[Time completed]
+, p.[Time started]
+FROM [analytics_prog_completions.csv] p
+) ProgramUsers
+-- Flag Historical Completions that are not currently assigned
+LEFT JOIN
+    (
+        SELECT apo.[Program ID], apo.[User ID]
+        FROM [analytics_prog_overview.csv] apo
+        GROUP BY [Program ID], [User ID]
+    ) CurrentlyAssigned
+    ON ProgramUsers.[Program ID] = CurrentlyAssigned.[Program ID] AND ProgramUsers.[User ID] = CurrentlyAssigned.[User ID]
+    
+    
+    
+UNION
+
+SELECT
+-1 AS Program_User_ID
+, -1 AS [Program ID]
+, -1 AS [User ID]
+, 'N/A' AS [Status]
+, createdate(1900,1,1) AS [Time assigned]
+, createdate(1900,1,1) AS [Time completed]
+, createdate(1900,1,1) AS [Time started]
+, 'N/A' AS AssignmentStatus

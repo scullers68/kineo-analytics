@@ -1,0 +1,71 @@
+"User ID","Course ID","Seminar Name","Event ID","Session ID","Session attendance","Session Start Date/Time","Session Finish Date/Time","Session Duration"
+1017,66,Workshop,47,90,"Not set","14/05/2021, 05:00:00","14/05/2021, 06:00:00",60
+2,62,"Workshop - Leaders Event",48,91,"Not set","01/12/2021, 20:00:00","01/12/2021, 23:00:00",180
+2,66,Workshop,51,94,"Not set","02/07/2021, 15:00:00","03/07/2021, 17:00:00",1560
+1018,66,Workshop,54,97,"Not set","05/08/2021, 09:00:00","05/08/2021, 18:00:00",540
+1025,66,Workshop,54,97,"Not set","05/08/2021, 09:00:00","05/08/2021, 18:00:00",540
+1270,62,"PS - Zoom Training Event",53,96,"Not set","16/07/2021, 11:00:00","16/07/2021, 12:00:00",60
+2358,62,"PS - Zoom Training Event",53,96,"Not set","16/07/2021, 11:00:00","16/07/2021, 12:00:00",60
+1877,62,"PS - Zoom Training Event",53,96,"Not set","16/07/2021, 11:00:00","16/07/2021, 12:00:00",60
+2960,62,"PS - Zoom Training Event",53,96,"Not set","16/07/2021, 11:00:00","16/07/2021, 12:00:00",60
+2055,60,"BLS meeting on Zoom",57,100,"Not set","28/04/2023, 09:00:00","28/04/2023, 10:00:00",60
+4067,62,"Workshop - Leaders Event",58,101,"Not set","22/09/2023, 09:00:00","22/09/2023, 10:00:00",60
+1017,96,test,60,103,"Not set","24/05/2023, 11:30:00","24/05/2023, 12:30:00",60
+1022,96,test,61,104,"Not set","24/05/2023, 12:00:00","24/05/2023, 18:00:00",360
+4067,66,"Teams meeting",62,106,"Not set","25/05/2023, 09:00:00","25/05/2023, 10:00:00",60
+4075,96,test,63,107,"Not set","25/05/2023, 05:10:00","25/05/2023, 06:10:00",60
+2,48,Seminar,68,112,"Not set","21/11/2023, 09:00:00","21/11/2023, 10:00:00",60
+2461,62,"Workshop - Leaders Event",71,116,"Fully attended","10/06/2024, 09:00:00","10/06/2024, 10:00:00",60
+2461,62,"Workshop - Leaders Event",71,115,"Fully attended","09/06/2024, 09:00:00","09/06/2024, 10:00:00",60
+2461,62,"Workshop - Leaders Event",71,116,"Fully attended","10/06/2024, 09:00:00","10/06/2024, 10:00:00",60
+2461,62,"Workshop - Leaders Event",71,117,"Fully attended","11/06/2024, 09:00:00","11/06/2024, 10:00:00",60
+2461,62,"Workshop - Leaders Event",71,115,"Fully attended","09/06/2024, 09:00:00","09/06/2024, 10:00:00",60
+2461,62,"Workshop - Leaders Event",71,116,"Fully attended","10/06/2024, 09:00:00","10/06/2024, 10:00:00",60
+2461,62,"Workshop - Leaders Event",71,117,"Fully attended","11/06/2024, 09:00:00","11/06/2024, 10:00:00",60
+2461,62,"Workshop - Leaders Event",71,115,"Fully attended","09/06/2024, 09:00:00","09/06/2024, 10:00:00",60
+2461,62,"Workshop - Leaders Event",71,117,"Fully attended","11/06/2024, 09:00:00","11/06/2024, 10:00:00",60
+3662,62,"Workshop - Leaders Event",71,116,"Fully attended","10/06/2024, 09:00:00","10/06/2024, 10:00:00",60
+3662,62,"Workshop - Leaders Event",71,115,"Fully attended","09/06/2024, 09:00:00","09/06/2024, 10:00:00",60
+3662,62,"Workshop - Leaders Event",71,116,"Fully attended","10/06/2024, 09:00:00","10/06/2024, 10:00:00",60
+3662,62,"Workshop - Leaders Event",71,117,"Fully attended","11/06/2024, 09:00:00","11/06/2024, 10:00:00",60
+3662,62,"Workshop - Leaders Event",71,115,"Fully attended","09/06/2024, 09:00:00","09/06/2024, 10:00:00",60
+3662,62,"Workshop - Leaders Event",71,116,"Fully attended","10/06/2024, 09:00:00","10/06/2024, 10:00:00",60
+3662,62,"Workshop - Leaders Event",71,117,"Fully attended","11/06/2024, 09:00:00","11/06/2024, 10:00:00",60
+3662,62,"Workshop - Leaders Event",71,115,"Fully attended","09/06/2024, 09:00:00","09/06/2024, 10:00:00",60
+3662,62,"Workshop - Leaders Event",71,117,"Fully attended","11/06/2024, 09:00:00","11/06/2024, 10:00:00",60
+2092,62,"Workshop - Leaders Event",71,117,"Fully attended","11/06/2024, 09:00:00","11/06/2024, 10:00:00",60
+2092,62,"Workshop - Leaders Event",71,115,"Fully attended","09/06/2024, 09:00:00","09/06/2024, 10:00:00",60
+2092,62,"Workshop - Leaders Event",71,116,"Fully attended","10/06/2024, 09:00:00","10/06/2024, 10:00:00",60
+2092,62,"Workshop - Leaders Event",71,117,"Fully attended","11/06/2024, 09:00:00","11/06/2024, 10:00:00",60
+2092,62,"Workshop - Leaders Event",71,115,"Fully attended","09/06/2024, 09:00:00","09/06/2024, 10:00:00",60
+2092,62,"Workshop - Leaders Event",71,116,"Fully attended","10/06/2024, 09:00:00","10/06/2024, 10:00:00",60
+2092,62,"Workshop - Leaders Event",71,117,"Fully attended","11/06/2024, 09:00:00","11/06/2024, 10:00:00",60
+2092,62,"Workshop - Leaders Event",71,115,"Fully attended","09/06/2024, 09:00:00","09/06/2024, 10:00:00",60
+2092,62,"Workshop - Leaders Event",71,116,"Fully attended","10/06/2024, 09:00:00","10/06/2024, 10:00:00",60
+3037,62,"Workshop - Leaders Event",71,117,"Unable to attend","11/06/2024, 09:00:00","11/06/2024, 10:00:00",60
+3037,62,"Workshop - Leaders Event",71,115,"Fully attended","09/06/2024, 09:00:00","09/06/2024, 10:00:00",60
+3037,62,"Workshop - Leaders Event",71,116,"Fully attended","10/06/2024, 09:00:00","10/06/2024, 10:00:00",60
+3037,62,"Workshop - Leaders Event",71,117,"Fully attended","11/06/2024, 09:00:00","11/06/2024, 10:00:00",60
+3037,62,"Workshop - Leaders Event",71,115,"Partially attended","09/06/2024, 09:00:00","09/06/2024, 10:00:00",60
+3037,62,"Workshop - Leaders Event",71,116,"Partially attended","10/06/2024, 09:00:00","10/06/2024, 10:00:00",60
+3037,62,"Workshop - Leaders Event",71,117,"Partially attended","11/06/2024, 09:00:00","11/06/2024, 10:00:00",60
+3037,62,"Workshop - Leaders Event",71,115,"Unable to attend","09/06/2024, 09:00:00","09/06/2024, 10:00:00",60
+3037,62,"Workshop - Leaders Event",71,116,"Unable to attend","10/06/2024, 09:00:00","10/06/2024, 10:00:00",60
+3886,62,"Workshop - Leaders Event",71,116,"No show","10/06/2024, 09:00:00","10/06/2024, 10:00:00",60
+3886,62,"Workshop - Leaders Event",71,115,"Fully attended","09/06/2024, 09:00:00","09/06/2024, 10:00:00",60
+3886,62,"Workshop - Leaders Event",71,116,"Fully attended","10/06/2024, 09:00:00","10/06/2024, 10:00:00",60
+3886,62,"Workshop - Leaders Event",71,117,"Fully attended","11/06/2024, 09:00:00","11/06/2024, 10:00:00",60
+3886,62,"Workshop - Leaders Event",71,115,"Fully attended","09/06/2024, 09:00:00","09/06/2024, 10:00:00",60
+3886,62,"Workshop - Leaders Event",71,116,"Fully attended","10/06/2024, 09:00:00","10/06/2024, 10:00:00",60
+3886,62,"Workshop - Leaders Event",71,117,"Fully attended","11/06/2024, 09:00:00","11/06/2024, 10:00:00",60
+3886,62,"Workshop - Leaders Event",71,115,"No show","09/06/2024, 09:00:00","09/06/2024, 10:00:00",60
+3886,62,"Workshop - Leaders Event",71,117,"No show","11/06/2024, 09:00:00","11/06/2024, 10:00:00",60
+3993,62,"Workshop - Leaders Event",71,117,"No show","11/06/2024, 09:00:00","11/06/2024, 10:00:00",60
+3993,62,"Workshop - Leaders Event",71,115,"No show","09/06/2024, 09:00:00","09/06/2024, 10:00:00",60
+3993,62,"Workshop - Leaders Event",71,117,"No show","11/06/2024, 09:00:00","11/06/2024, 10:00:00",60
+3993,62,"Workshop - Leaders Event",71,116,"No show","10/06/2024, 09:00:00","10/06/2024, 10:00:00",60
+3993,62,"Workshop - Leaders Event",71,115,"No show","09/06/2024, 09:00:00","09/06/2024, 10:00:00",60
+3993,62,"Workshop - Leaders Event",71,117,"Fully attended","11/06/2024, 09:00:00","11/06/2024, 10:00:00",60
+3993,62,"Workshop - Leaders Event",71,116,"Fully attended","10/06/2024, 09:00:00","10/06/2024, 10:00:00",60
+3993,62,"Workshop - Leaders Event",71,115,"Fully attended","09/06/2024, 09:00:00","09/06/2024, 10:00:00",60
+3993,62,"Workshop - Leaders Event",71,116,"No show","10/06/2024, 09:00:00","10/06/2024, 10:00:00",60

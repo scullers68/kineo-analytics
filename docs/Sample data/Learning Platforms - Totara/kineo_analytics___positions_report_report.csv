@@ -1,0 +1,890 @@
+"Position ID","Position Name","Position Parent ID","Framework Name","Position Path","Position Depth Level"
+330,"Managing Director",0,"Corporate Positions",330,1
+332,"Senior Executive People & Culture",3382,"Corporate Positions",330|3382|332,3
+340,"Head of People & Culture",332,"Corporate Positions",330|3382|332|340,4
+341,"P&C Advisor",340,"Corporate Positions",330|3382|332|340|341,5
+342,"P&C Business Partner",340,"Corporate Positions",330|3382|332|340|342,5
+348,"Senior Executive Talent Capability",3382,"Corporate Positions",330|3382|348,3
+349,"Head of Employee Development",348,"Corporate Positions",330|3382|348|349,4
+350,"Design Manager",349,"Corporate Positions",330|3382|348|349|350,5
+351,"L&D Senior Designer",350,"Corporate Positions",330|3382|348|349|350|351,6
+352,"LMS Specialist",350,"Corporate Positions",330|3382|348|349|350|352,6
+353,"eLearning Developer",350,"Corporate Positions",330|3382|348|349|350|353,6
+354,"L&D Senior Designer",350,"Corporate Positions",330|3382|348|349|350|354,6
+355,"Learning Design Consultant",350,"Corporate Positions",330|3382|348|349|350|355,6
+357,"L&D Designer",350,"Corporate Positions",330|3382|348|349|350|357,6
+359,"Multimedia Designer",350,"Corporate Positions",330|3382|348|349|350|359,6
+360,"Learning Designer",350,"Corporate Positions",330|3382|348|349|350|360,6
+361,"Program Lead",350,"Corporate Positions",330|3382|348|349|350|361,6
+362,"Facilitation Manager",349,"Corporate Positions",330|3382|348|349|362,5
+363,"L&D Facilitator",362,"Corporate Positions",330|3382|348|349|362|363,6
+365,"Sales & Service Facilitator",362,"Corporate Positions",330|3382|348|349|362|365,6
+366,"Facilitator Prof. Development",362,"Corporate Positions",330|3382|348|349|362|366,6
+369,"L&D Coordinator",362,"Corporate Positions",330|3382|348|349|362|369,6
+370,"Learning Tech Consultant",349,"Corporate Positions",330|3382|348|349|370,5
+371,"Head of Culture & Inclusion",348,"Corporate Positions",330|3382|348|371,4
+372,"Head of Organisational Capability",348,"Corporate Positions",330|3382|348|372,4
+373,"Talent and Capability Lead",372,"Corporate Positions",330|3382|348|372|373,5
+374,"Leadership Development Consultant",372,"Corporate Positions",330|3382|348|372|374,5
+375,"OD Program Coordinator",372,"Corporate Positions",330|3382|348|372|375,5
+376,"Culture & Inclusion Advisor",372,"Corporate Positions",330|3382|348|372|376,5
+382,"Personal Assistant",348,"Corporate Positions",330|3382|348|382,4
+389,"Senior Executive Wellbeing & Community",3382,"Corporate Positions",330|3382|389,3
+390,"Head of Sustainable Development & Wellbeing",389,"Corporate Positions",330|3382|389|390,4
+391,"CSR Admin Support",390,"Corporate Positions",330|3382|389|390|391,5
+392,"Student Intern",390,"Corporate Positions",330|3382|389|390|392,5
+394,"Employee Wellbeing Lead",390,"Corporate Positions",330|3382|389|390|394,5
+396,"Sustainable Development & Wellbeing Lead",390,"Corporate Positions",330|3382|389|390|396,5
+398,"Head of Corp Social Respons",389,"Corporate Positions",330|3382|389|398,4
+399,"PA to GM Wellbeing&Community",389,"Corporate Positions",330|3382|389|399,4
+400,"Head of HSW",389,"Corporate Positions",330|3382|389|400,4
+401,"Health Safety & Wellbeing Business Partner",400,"Corporate Positions",330|3382|389|400|401,5
+406,"Health Safety & Wellbeing Systems and Compliance Lead",400,"Corporate Positions",330|3382|389|400|406,5
+407,"Health Safety & Wellbeing Coordinator",400,"Corporate Positions",330|3382|389|400|407,5
+408,"Head of Workplace Relations",389,"Corporate Positions",330|3382|389|408,4
+409,"Workplace Relations Advisor",408,"Corporate Positions",330|3382|389|408|409,5
+416,"Senior Executive Talent Acquisition",3382,"Corporate Positions",330|3382|416,3
+419,"Head of TA Strategy",416,"Corporate Positions",330|3382|416|419,4
+420,"Physio - HealthStrong",419,"Corporate Positions",330|3382|416|419|420,5
+421,"Talent Programs Specialist",419,"Corporate Positions",330|3382|416|419|421,5
+422,"Head of Talent Acquisition",416,"Corporate Positions",330|3382|416|422,4
+423,"Talent Acquisition Partner",422,"Corporate Positions",330|3382|416|422|423,5
+425,"Talent Acquisition Lead",422,"Corporate Positions",330|3382|416|422|425,5
+432,"Head of Executive Talent Acquisition",416,"Corporate Positions",330|3382|416|432,4
+435,"Diversity & Inclusion Talent Acquisition Lead",416,"Corporate Positions",330|3382|416|435,4
+477,"Chief Customer Officer",330,"Corporate Positions",330|477,2
+478,"Senior Executive Customer Channels",477,"Corporate Positions",330|477|478,3
+479,"Head of Retention Crew",478,"Corporate Positions",330|477|478|479,4
+480,"Customer Service Manager",479,"Corporate Positions",330|477|478|479|480,5
+483,"OSHC Manager",479,"Corporate Positions",330|477|478|479|483,5
+484,"Customer Retention Campaign Performance Manager",479,"Corporate Positions",330|477|478|479|484,5
+486,"Retention Continuous Improvement Manager",479,"Corporate Positions",330|477|478|479|486,5
+487,"Head of Channel Transformation",478,"Corporate Positions",330|477|478|487,4
+488,"Channel Initiatives Lead",487,"Corporate Positions",330|477|478|487|488,5
+490,"Continuous Improvement Lead",487,"Corporate Positions",330|477|478|487|490,5
+491,"Channel Delivery & Reporting Insights Manager",487,"Corporate Positions",330|477|478|487|491,5
+492,"Senior Reporting Analyst",491,"Corporate Positions",330|477|478|487|491|492,6
+493,"Snr Business and Test Analyst",491,"Corporate Positions",330|477|478|487|491|493,6
+496,"Reporting Analyst",491,"Corporate Positions",330|477|478|487|491|496,6
+498,"Customer Improvement Manager",487,"Corporate Positions",330|477|478|487|498,5
+499,Graduate,498,"Corporate Positions",330|477|478|487|498|499,6
+500,"Customer Process Improvement Manager",487,"Corporate Positions",330|477|478|487|500,5
+501,"Transformation Enablement Manager",487,"Corporate Positions",330|477|478|487|501,5
+502,"Delivery Lead",487,"Corporate Positions",330|477|478|487|502,5
+503,"Executive Assistant",478,"Corporate Positions",330|477|478|503,4
+507,"Head of Digital Customer Engagement’",478,"Corporate Positions",330|477|478|507,4
+508,"UX & Product Design Leader",507,"Corporate Positions",330|477|478|507|508,5
+509,"Lead UX Designer",508,"Corporate Positions",330|477|478|507|508|509,6
+510,"Senior UX Designer",509,"Corporate Positions",330|477|478|507|508|509|510,7
+511,"Snr Prdt Dsgnr-Medibk Digital",508,"Corporate Positions",330|477|478|507|508|511,6
+512,"Senior Product Designer",508,"Corporate Positions",330|477|478|507|508|512,6
+517,"Digital Program Delivery Leader",507,"Corporate Positions",330|477|478|507|517,5
+529,"Digital Product Manager",507,"Corporate Positions",330|477|478|507|529,5
+530,"Digital Product Owner",529,"Corporate Positions",330|477|478|507|529|530,6
+532,"Digital Producer and BAU Manager",529,"Corporate Positions",330|477|478|507|529|532,6
+536,"Head of Channel Operations",478,"Corporate Positions",330|477|478|536,4
+537,"Quality Assurance & Incident Manager",536,"Corporate Positions",330|477|478|536|537,5
+538,"Team Leader - Quality Assurance",537,"Corporate Positions",330|477|478|536|537|538,6
+539,"Quality Assurance Analyst",538,"Corporate Positions",330|477|478|536|537|538|539,7
+547,"Incident Analyst",537,"Corporate Positions",330|477|478|536|537|547,6
+549,"Sales Excellence Leader",536,"Corporate Positions",330|477|478|536|549,5
+550,"Senior Performance Coach",549,"Corporate Positions",330|477|478|536|549|550,6
+554,"Team Leader - Knowledge Enablement",549,"Corporate Positions",330|477|478|536|549|554,6
+555,"Performance Coach - Customer Channels",549,"Corporate Positions",330|477|478|536|549|555,6
+557,"Skilling Coordinator",549,"Corporate Positions",330|477|478|536|549|557,6
+562,"Business Performance Mgr",536,"Corporate Positions",330|477|478|536|562,5
+563,"Workforce Planner",562,"Corporate Positions",330|477|478|536|562|563,6
+564,"Retail Workforce Planning Manager",562,"Corporate Positions",330|477|478|536|562|564,6
+565,"Dialler Lead",562,"Corporate Positions",330|477|478|536|562|565,6
+566,"Dialler Analyst",565,"Corporate Positions",330|477|478|536|562|565|566,7
+567,"Senior Commercial Manager",536,"Corporate Positions",330|477|478|536|567,5
+568,"Commercial Planning and Delivery Manager",567,"Corporate Positions",330|477|478|536|567|568,6
+569,"Channel Performance Manager",536,"Corporate Positions",330|477|478|536|569,5
+570,"Manager - Work Force Optimisation",536,"Corporate Positions",330|477|478|536|570,5
+571,"Head of Customer Connect",478,"Corporate Positions",330|477|478|571,4
+572,"Platinum Team Leader",571,"Corporate Positions",330|477|478|571|572,5
+573,"Platinum Consultant",572,"Corporate Positions",330|477|478|571|572|573,6
+574,"Customer Service Consultant",572,"Corporate Positions",330|477|478|571|572|574,6
+575,"Customer Service & OSHC Manager",571,"Corporate Positions",330|477|478|571|575,5
+576,"Customer Service Team Leader",575,"Corporate Positions",330|477|478|571|575|576,6
+611,"Head of Phone Sales, Live Chat & Retention",571,"Corporate Positions",330|477|478|571|611,5
+612,"Phone Channel Sales Team Leader",611,"Corporate Positions",330|477|478|571|611|612,6
+613,"Phone Channel Sales Consultant",612,"Corporate Positions",330|477|478|571|611|612|613,7
+620,"Customer Retention Manager",611,"Corporate Positions",330|477|478|571|611|620,6
+621,"Cust. Retention Team Leader",620,"Corporate Positions",330|477|478|571|611|620|621,7
+622,"Cover Review Consultant",621,"Corporate Positions",330|477|478|571|611|620|621|622,8
+624,"Customer Retention Consultant",621,"Corporate Positions",330|477|478|571|611|620|621|624,8
+638,"Customer Retention Team Leader",620,"Corporate Positions",330|477|478|571|611|620|638,7
+641,"Head of Customer Support",571,"Corporate Positions",330|477|478|571|641,5
+642,"Customer Planning Manager",641,"Corporate Positions",330|477|478|571|641|642,6
+643,"Workforce Management Analyst",642,"Corporate Positions",330|477|478|571|641|642|643,7
+644,"Marketing Operations Specialist",642,"Corporate Positions",330|477|478|571|641|642|644,7
+645,"Customer Care Admin Support",642,"Corporate Positions",330|477|478|571|641|642|645,7
+646,"Customer Support Manager",641,"Corporate Positions",330|477|478|571|641|646,6
+647,"Escalations Team Leader",646,"Corporate Positions",330|477|478|571|641|646|647,7
+650,"Digi. Customer Service Consult",647,"Corporate Positions",330|477|478|571|641|646|647|650,8
+655,"Customer Support Team Leader",646,"Corporate Positions",330|477|478|571|641|646|655,7
+656,"Case Specialist",655,"Corporate Positions",330|477|478|571|641|646|655|656,8
+659,"Customer Support Secondment",655,"Corporate Positions",330|477|478|571|641|646|655|659,8
+665,"Triage & Fix Team Leader",646,"Corporate Positions",330|477|478|571|641|646|665,7
+667,"Messaging Channel Manager",571,"Corporate Positions",330|477|478|571|667,5
+668,"Live Chat Sales TL",667,"Corporate Positions",330|477|478|571|667|668,6
+671,"Head of Retention Squad",478,"Corporate Positions",330|477|478|671,4
+672,"Head of Retail and Business Development",478,"Corporate Positions",330|477|478|672,4
+693,"State Manager Retail Sales and Service",672,"Corporate Positions",330|477|478|672|693,5
+694,"Area Leader",693,"Corporate Positions",330|477|478|672|693|694,6
+709,"Regional Manager WA",672,"Corporate Positions",330|477|478|672|709,5
+764,"Regional Manager VIC/TAS",672,"Corporate Positions",330|477|478|672|764,5
+871,"Regional Manager QLD",672,"Corporate Positions",330|477|478|672|871,5
+953,"Store Team Leader",871,"Corporate Positions",330|477|478|672|871|953,6
+954,"Regional Manager NSW",672,"Corporate Positions",330|477|478|672|954,5
+1032,"Chief Operations Officer - Healthcare",330,"Corporate Positions",330|1032,2
+1033,"Senior Executive Care",1032,"Corporate Positions",330|1032|1033,3
+1035,"Service Delivery Manager",2037,"Corporate Positions",330|1032|1033|2037|1035,5
+1036,"Clinical Lead",1035,"Corporate Positions",330|1032|1033|2037|1035|1036,6
+1037,Osteopath,1036,"Corporate Positions",330|1032|1033|2037|1035|1036|1037,7
+1055,"Senior Executive Customer Proposition",477,"Corporate Positions",330|477|1055,3
+1056,"Senior Executive Corporate Portfolio",1055,"Corporate Positions",330|477|1055|1056,4
+1057,"Commercial Lead",1056,"Corporate Positions",330|477|1055|1056|1057,5
+1058,"Corporate Sales Ops",1057,"Corporate Positions",330|477|1055|1056|1057|1058,6
+1059,"Head of C&P Business Delivery",1055,"Corporate Positions",330|477|1055|1059,4
+1140,"Head of Marketing",478,"Corporate Positions",330|477|478|1140,4
+1141,"Automation & Retention Lead",1140,"Corporate Positions",330|477|478|1140|1141,5
+1142,"Marketing Campaign and Automation Specialist",1141,"Corporate Positions",330|477|478|1140|1141|1142,6
+1145,"Automation Specialist",1141,"Corporate Positions",330|477|478|1140|1141|1145,6
+1146,"Customer Comms Manager",1140,"Corporate Positions",330|477|478|1140|1146,5
+1147,"Campaign Manager",1146,"Corporate Positions",330|477|478|1140|1146|1147,6
+1148,Copywriter,1147,"Corporate Positions",330|477|478|1140|1146|1147|1148,7
+1149,"Communications Campaign Specialist",1146,"Corporate Positions",330|477|478|1140|1146|1149,6
+1150,"Campaign Specialist",1146,"Corporate Positions",330|477|478|1140|1146|1150,6
+1153,"Performance Marketing and automation Lead",1140,"Corporate Positions",330|477|478|1140|1153,5
+1154,"Acquisition Product Manager",1153,"Corporate Positions",330|477|478|1140|1153|1154,6
+1155,"Marketing Automation Specialist",1154,"Corporate Positions",330|477|478|1140|1153|1154|1155,7
+1156,"Digital Insights Analyst",1153,"Corporate Positions",330|477|478|1140|1153|1156,6
+1157,"Senior Marketing Manager",1153,"Corporate Positions",330|477|478|1140|1153|1157,6
+1158,"Marketing Coordinator",1157,"Corporate Positions",330|477|478|1140|1153|1157|1158,7
+1159,"Marketing Specialist",1157,"Corporate Positions",330|477|478|1140|1153|1157|1159,7
+1160,"Senior Brand Lead",1140,"Corporate Positions",330|477|478|1140|1160,5
+1163,"Brand and Content Manager",1160,"Corporate Positions",330|477|478|1140|1160|1163,6
+1164,"Content Specialist",1163,"Corporate Positions",330|477|478|1140|1160|1163|1164,7
+1257,"Senior Executive Marketing",477,"Corporate Positions",330|477|1257,3
+1258,"Head of Health & Digital Marketing",1257,"Corporate Positions",330|477|1257|1258,4
+1259,"Performance Marketing Lead",1258,"Corporate Positions",330|477|1257|1258|1259,5
+1260,"Digital Marketing Specialist",1259,"Corporate Positions",330|477|1257|1258|1259|1260,6
+1261,"Campaign Marketing Specialist (Lead generation)",1259,"Corporate Positions",330|477|1257|1258|1259|1261,6
+1262,"Social Media Marketing Manager",1259,"Corporate Positions",330|477|1257|1258|1259|1262,6
+1263,"Social Media Specialist",1262,"Corporate Positions",330|477|1257|1258|1259|1262|1263,7
+1264,"Social Media Community Coordinator",1263,"Corporate Positions",330|477|1257|1258|1259|1262|1263|1264,8
+1265,"Social Media Manager",1259,"Corporate Positions",330|477|1257|1258|1259|1265,6
+1267,"Diversified Digital Marketing Specialist",1259,"Corporate Positions",330|477|1257|1258|1259|1267,6
+1268,"Lifecycle Marketing Lead",1258,"Corporate Positions",330|477|1257|1258|1268,5
+1273,"Lead Personalisation and Content",1258,"Corporate Positions",330|477|1257|1258|1273,5
+1274,"Content Marketing Manager",1273,"Corporate Positions",330|477|1257|1258|1273|1274,6
+1276,"Digital Optimisation Manager",1273,"Corporate Positions",330|477|1257|1258|1273|1276,6
+1277,"Digital Marketing Manager",1273,"Corporate Positions",330|477|1257|1258|1273|1277,6
+1278,"SEO Specialist",1277,"Corporate Positions",330|477|1257|1258|1273|1277|1278,7
+1279,"Content Producer/Specialist",1277,"Corporate Positions",330|477|1257|1258|1273|1277|1279,7
+1282,"Senior Digital Insights Manager",1258,"Corporate Positions",330|477|1257|1258|1282,5
+1283,"Senior Digital Analyst",1282,"Corporate Positions",330|477|1257|1258|1282|1283,6
+1284,"Senior Data & Digital Analyst",1282,"Corporate Positions",330|477|1257|1258|1282|1284,6
+1292,"GTM Lead",1258,"Corporate Positions",330|477|1257|1258|1292,5
+1293,"GTM Manager",1292,"Corporate Positions",330|477|1257|1258|1292|1293,6
+1294,"Marketing Campaign Manager",1292,"Corporate Positions",330|477|1257|1258|1292|1294,6
+1299,"Head of Content and Social",1257,"Corporate Positions",330|477|1257|1299,4
+1300,"Search Marketing Specialist",1299,"Corporate Positions",330|477|1257|1299|1300,5
+1301,"Health Content Producer",1299,"Corporate Positions",330|477|1257|1299|1301,5
+1363,"Head of Brand",1257,"Corporate Positions",330|477|1257|1363,4
+1364,"Brand Strategy Lead",1363,"Corporate Positions",330|477|1257|1363|1364,5
+1365,"Brand Manager",1364,"Corporate Positions",330|477|1257|1363|1364|1365,6
+1366,"Brand Specialist",1364,"Corporate Positions",330|477|1257|1363|1364|1366,6
+1368,"Customer Insights Lead",1363,"Corporate Positions",330|477|1257|1363|1368,5
+1369,"Consumer Research Spec.",1368,"Corporate Positions",330|477|1257|1363|1368|1369,6
+1370,"Customer Insight Manager",1363,"Corporate Positions",330|477|1257|1363|1370,5
+1373,"Sponsorship Manager",1384,"Corporate Positions",330|477|1257|1384|1373,5
+1374,"Sponsorship Lead",1384,"Corporate Positions",330|477|1257|1384|1374,5
+1384,"Head of Sponsorship",1257,"Corporate Positions",330|477|1257|1384,4
+1402,"Creative Content Studio Lead",1257,"Corporate Positions",330|477|1257|1402,4
+1403,"Digital Copywriter",1402,"Corporate Positions",330|477|1257|1402|1403,5
+1404,"Senior Copywriter",1402,"Corporate Positions",330|477|1257|1402|1404,5
+1405,"Graphic Designer",1402,"Corporate Positions",330|477|1257|1402|1405,5
+1407,Designer,1402,"Corporate Positions",330|477|1257|1402|1407,5
+1411,"Digital Designer and Producer",1402,"Corporate Positions",330|477|1257|1402|1411,5
+1412,"Content and Publications Editor",1402,"Corporate Positions",330|477|1257|1402|1412,5
+1413,"Health Communications Specialist",1402,"Corporate Positions",330|477|1257|1402|1413,5
+1414,"Video Producer",1402,"Corporate Positions",330|477|1257|1402|1414,5
+1415,"Video Content Producer",1402,"Corporate Positions",330|477|1257|1402|1415,5
+1418,"Head of Retention Marketing & Marketing Automation",1257,"Corporate Positions",330|477|1257|1418,4
+1460,"Senior Executive Customer Strategy & Growth",477,"Corporate Positions",330|477|1460,3
+1461,"Senior Executive Customer & Commercial Excellence",1460,"Corporate Positions",330|477|1460|1461,4
+1470,"Head of Customer Data Science",1460,"Corporate Positions",330|477|1460|1470,4
+1471,"Data Science Lead",1470,"Corporate Positions",330|477|1460|1470|1471,5
+1474,"Senior Data Science Analyst",1470,"Corporate Positions",330|477|1460|1470|1474,5
+1476,"Snr Data Science Developer",1470,"Corporate Positions",330|477|1460|1470|1476,5
+1478,"Data Science Analyst",1470,"Corporate Positions",330|477|1460|1470|1478,5
+1480,"Head of Strategy",1460,"Corporate Positions",330|477|1460|1480,4
+1485,"Proposition Strategy Lead",1480,"Corporate Positions",330|477|1460|1480|1485,5
+1486,"Head of Planning and Performance",1460,"Corporate Positions",330|477|1460|1486,4
+1487,"Head of Customer Exp. Design",1460,"Corporate Positions",330|477|1460|1487,4
+1488,"CX Project Coordinator",1487,"Corporate Positions",330|477|1460|1487|1488,5
+1490,"CX Design Lead",1487,"Corporate Positions",330|477|1460|1487|1490,5
+1491,"CX Designer",1490,"Corporate Positions",330|477|1460|1487|1490|1491,6
+1493,"Brand Experience Lead",1487,"Corporate Positions",330|477|1460|1487|1493,5
+1494,"CX Project Lead",1487,"Corporate Positions",330|477|1460|1487|1494,5
+1499,"Service NPS and Voice of Customer Team Manager",1487,"Corporate Positions",330|477|1460|1487|1499,5
+1500,"Voice of Cust.andService NPS Mgr",1499,"Corporate Positions",330|477|1460|1487|1499|1500,6
+1501,"Service NPS and VOC Lead",1500,"Corporate Positions",330|477|1460|1487|1499|1500|1501,7
+1502,"Snr Analyst Cust Exp Advocacy",1499,"Corporate Positions",330|477|1460|1487|1499|1502,6
+1503,"Advocacy Insights Lead",1499,"Corporate Positions",330|477|1460|1487|1499|1503,6
+1505,"Voice of Customer Platform Lea",1499,"Corporate Positions",330|477|1460|1487|1499|1505,6
+1506,"Voice of Customer Channels Lead",1499,"Corporate Positions",330|477|1460|1487|1499|1506,6
+1507,"VoC Program Design Lead",1499,"Corporate Positions",330|477|1460|1487|1499|1507,6
+1508,"VoC Engagement and Insights Lead",1499,"Corporate Positions",330|477|1460|1487|1499|1508,6
+1509,"VoC Junior Analyst",1508,"Corporate Positions",330|477|1460|1487|1499|1508|1509,7
+1510,"VOC & CX Strategy Lead",1487,"Corporate Positions",330|477|1460|1487|1510,5
+1511,"Strategic Analytics Principal",1460,"Corporate Positions",330|477|1460|1511,4
+1512,"Head of Commercial Excellence",1460,"Corporate Positions",330|477|1460|1512,4
+1513,"Strategy Analytics Lead",1512,"Corporate Positions",330|477|1460|1512|1513,5
+1514,"Strategy Analytics Specialist",1513,"Corporate Positions",330|477|1460|1512|1513|1514,6
+1515,"Advanced Analytics Analyst",1513,"Corporate Positions",330|477|1460|1512|1513|1515,6
+1521,"Commercial Strategy Manager",1512,"Corporate Positions",330|477|1460|1512|1521,5
+1522,"Analytics Analyst",1512,"Corporate Positions",330|477|1460|1512|1522,5
+1523,"Engagement and Industrialisation Lead",1512,"Corporate Positions",330|477|1460|1512|1523,5
+1524,"Senior Strategy Analytics Specialist",1512,"Corporate Positions",330|477|1460|1512|1524,5
+1526,"Strategy Analytics Manager",1512,"Corporate Positions",330|477|1460|1512|1526,5
+1529,"Head of Customer Process Improvement",1460,"Corporate Positions",330|477|1460|1529,4
+1530,"Bus. Improvement Process Mgr",1529,"Corporate Positions",330|477|1460|1529|1530,5
+1531,"Cust. Process Improvement Mgr",1529,"Corporate Positions",330|477|1460|1529|1531,5
+1532,"Customer Continuous Improvement Manager",1529,"Corporate Positions",330|477|1460|1529|1532,5
+1534,"Data Analyst",1529,"Corporate Positions",330|477|1460|1529|1534,5
+1624,"Head of Proposition Delivery",1460,"Corporate Positions",330|477|1460|1624,4
+1625,"Strategic Proposition Manager",1624,"Corporate Positions",330|477|1460|1624|1625,5
+1626,"Tactical Delivery Manager",1624,"Corporate Positions",330|477|1460|1624|1626,5
+1628,"Senior Executive FP Compliance & Complaints",1460,"Corporate Positions",330|477|1460|1628,4
+1629,"Compliance & Resolutions Manager",1628,"Corporate Positions",330|477|1460|1628|1629,5
+1630,"Senior Policy Adviser",1629,"Corporate Positions",330|477|1460|1628|1629|1630,6
+1632,"Fund Policy Business Partner",1628,"Corporate Positions",330|477|1460|1628|1632,5
+1633,"Fund Policy Manager",1628,"Corporate Positions",330|477|1460|1628|1633,5
+1634,"Policy Adviser",1633,"Corporate Positions",330|477|1460|1628|1633|1634,6
+1635,"Resolutions Manager",1628,"Corporate Positions",330|477|1460|1628|1635,5
+1636,"Senior Resolutions Officer",1635,"Corporate Positions",330|477|1460|1628|1635|1636,6
+1637,"Resolutions Officer",1635,"Corporate Positions",330|477|1460|1628|1635|1637,6
+1643,"Customer Complaints and Resolutions Administrator",1628,"Corporate Positions",330|477|1460|1628|1643,5
+1715,"Senior Executive - Chief Medical Officer",1032,"Corporate Positions",330|1032|1715,3
+1716,"Senior Executive - Medical Director - Safety, Quality and Medical Research",1715,"Corporate Positions",330|1032|1715|1716,4
+1717,"Medical Advisor",1716,"Corporate Positions",330|1032|1715|1716|1717,5
+1718,"Clinical Research Advisor",1717,"Corporate Positions",330|1032|1715|1716|1717|1718,6
+1721,"Pharmacy Advisor",1716,"Corporate Positions",330|1032|1715|1716|1721,5
+1728,"Senior Executive - Medical Director - Clincial Governance & Risk",1715,"Corporate Positions",330|1032|1715|1728,4
+1730,"Medical Administration Registrar",1728,"Corporate Positions",330|1032|1715|1728|1730,5
+1731,"Senior Executive - Medical Director - Clincial Engagement",1715,"Corporate Positions",330|1032|1715|1731,4
+1732,"Head of Health Network Relationships",1731,"Corporate Positions",330|1032|1715|1731|1732,5
+1733,"Health Network Relationship Manager",1732,"Corporate Positions",330|1032|1715|1731|1732|1733,6
+1734,"Head of Clinical Engagement",1731,"Corporate Positions",330|1032|1715|1731|1734,5
+1735,"Executive and Member Services Co-ordinator",1734,"Corporate Positions",330|1032|1715|1731|1734|1735,6
+1737,"Clinical Operations Manager",1715,"Corporate Positions",330|1032|1715|1737,4
+1740,"Head of Risk - Healthcare & Strategy",1737,"Corporate Positions",330|1032|1715|1737|1740,5
+1751,"National MD Telehealth",1715,"Corporate Positions",330|1032|1715|1751,4
+1752,"Senior Medical Advisor",1751,"Corporate Positions",330|1032|1715|1751|1752,5
+1753,"Clinical Governance Manager",1751,"Corporate Positions",330|1032|1715|1751|1753,5
+1754,"Senior Executive - Medical Director - Health Services & Health Informatics",1715,"Corporate Positions",330|1032|1715|1754,4
+1759,"Clinical Governance Business Partner",1754,"Corporate Positions",330|1032|1715|1754|1759,5
+1760,"Head of Clinical Quality & Innovation (Mental Health)",1754,"Corporate Positions",330|1032|1715|1754|1760,5
+1763,"Clinical Supervisor",1760,"Corporate Positions",330|1032|1715|1754|1760|1763,6
+1766,"Senior Medical Advisor - Health Services",1754,"Corporate Positions",330|1032|1715|1754|1766,5
+1785,"Medical Director",1715,"Corporate Positions",330|1032|1715|1785,4
+1786,"Senior Clinical Advisor",1785,"Corporate Positions",330|1032|1715|1785|1786,5
+1787,"Head of Risk & Management Assurance",1715,"Corporate Positions",330|1032|1715|1787,4
+1789,"Head of Safety and Quality",1715,"Corporate Positions",330|1032|1715|1789,4
+1791,"Health Office - Frontline Support",1789,"Corporate Positions",330|1032|1715|1789|1791,5
+1792,"Senior Executive - Chief Strategy Officer",1032,"Corporate Positions",330|1032|1792,3
+1794,"Head of Corporate Development",1792,"Corporate Positions",330|1032|1792|1794,4
+1795,"Market Insights Manager",1792,"Corporate Positions",330|1032|1792|1795,4
+1796,"Senior Executive Medibank Health Strategy",1792,"Corporate Positions",330|1032|1792|1796,4
+1797,"Head of Strategy",1792,"Corporate Positions",330|1032|1792|1797,4
+1799,"Senior Executive Group Operations",1033,"Corporate Positions",330|1032|1033|1799,4
+1800,"Head of Care Delivery",1799,"Corporate Positions",330|1032|1033|1799|1800,5
+1801,"Service Delivery Lead - Non Clinical",1810,"Corporate Positions",330|1032|1033|1799|1800|1810|1801,7
+1802,"Customer Care Consultant",1801,"Corporate Positions",330|1032|1033|1799|1800|1810|1801|1802,8
+1804,"Senior Customer Care Consultant",1801,"Corporate Positions",330|1032|1033|1799|1800|1810|1801|1804,8
+1808,"Care Enroller",1801,"Corporate Positions",330|1032|1033|1799|1800|1810|1801|1808,8
+1810,"Customer Care Team Leader",1800,"Corporate Positions",330|1032|1033|1799|1800|1810,6
+1811,"Service Delivery Lead",1800,"Corporate Positions",330|1032|1033|1799|1800|1811,6
+1812,"Care Coordinator",1811,"Corporate Positions",330|1032|1033|1799|1800|1811|1812,7
+1814,"Care Transition Coach",1811,"Corporate Positions",330|1032|1033|1799|1800|1811|1814,7
+1815,"Senior Care Coordinator",1811,"Corporate Positions",330|1032|1033|1799|1800|1811|1815,7
+1817,"Program Physiotherapist",1811,"Corporate Positions",330|1032|1033|1799|1800|1811|1817,7
+1841,"Program Specialist",1800,"Corporate Positions",330|1032|1033|1799|1800|1841,6
+1842,"Service Delivery Lead - Clinical",1800,"Corporate Positions",330|1032|1033|1799|1800|1842,6
+1861,"Head of Healthcare Customer Engagement",1033,"Corporate Positions",330|1032|1033|1861,4
+1862,"Senior Relationship Manager",1861,"Corporate Positions",330|1032|1033|1861|1862,5
+1863,"Relationship Manager",1862,"Corporate Positions",330|1032|1033|1861|1862|1863,6
+1864,"Account Manager",1862,"Corporate Positions",330|1032|1033|1861|1862|1864,6
+1869,"Manager, Contracts, Providers and Projects",1861,"Corporate Positions",330|1032|1033|1861|1869,5
+1870,"Customer Engagement Manager",1861,"Corporate Positions",330|1032|1033|1861|1870,5
+1871,"Registered Nurse",1035,"Corporate Positions",330|1032|1033|2037|1035|1871,6
+1931,"Occupational Therapist",1036,"Corporate Positions",330|1032|1033|2037|1035|1036|1931,7
+1932,Physiotherapist,1036,"Corporate Positions",330|1032|1033|2037|1035|1036|1932,7
+1933,"Senior Occupational Therapist",1036,"Corporate Positions",330|1032|1033|2037|1035|1036|1933,7
+1934,"Senior Physiotherapist",1036,"Corporate Positions",330|1032|1033|2037|1035|1036|1934,7
+1935,"Occupational Therapist - Graduate",1036,"Corporate Positions",330|1032|1033|2037|1035|1036|1935,7
+1936,"Physiotherapist - Graduate",1036,"Corporate Positions",330|1032|1033|2037|1035|1036|1936,7
+1955,"Service Delivery Coordinator",1035,"Corporate Positions",330|1032|1033|2037|1035|1955,6
+1965,"Area Manager",1035,"Corporate Positions",330|1032|1033|2037|1035|1965,6
+1966,"Business Support Officer",1035,"Corporate Positions",330|1032|1033|2037|1035|1966,6
+1967,"Independent Assessor",1035,"Corporate Positions",330|1032|1033|2037|1035|1967,6
+2037,"Head of Allied Health Services",1033,"Corporate Positions",330|1032|1033|2037,4
+2050,"Head of Health Services Communications",1033,"Corporate Positions",330|1032|1033|2050,4
+2051,"Communications Adviser",2050,"Corporate Positions",330|1032|1033|2050|2051,5
+2053,"Stakeholder Engagement Strategy Manager",2050,"Corporate Positions",330|1032|1033|2050|2053,5
+2082,"Senior Executive Provider Commercials & Operations",1032,"Corporate Positions",330|1032|2082,3
+2083,"Senior Executive Payment Integrity",2082,"Corporate Positions",330|1032|2082|2083,4
+2084,"Head of Analytics",2083,"Corporate Positions",330|1032|2082|2083|2084,5
+2085,"Head of Payment Integrity Operations and Analytics",2084,"Corporate Positions",330|1032|2082|2083|2084|2085,6
+2087,"Payment Integrity Operations Senior Manager",2083,"Corporate Positions",330|1032|2082|2083|2087,5
+2088,"Payment Integrity Operations Manager",2087,"Corporate Positions",330|1032|2082|2083|2087|2088,6
+2089,"Payment Integrity Operations Lead",2088,"Corporate Positions",330|1032|2082|2083|2087|2088|2089,7
+2091,"Process and data analyst",2087,"Corporate Positions",330|1032|2082|2083|2087|2091,6
+2092,"Head of Health Audit and Prevention",2083,"Corporate Positions",330|1032|2082|2083|2092,5
+2093,"Head of Health Audit",2092,"Corporate Positions",330|1032|2082|2083|2092|2093,6
+2094,"Health Audit and Informatics Manager",2093,"Corporate Positions",330|1032|2082|2083|2092|2093|2094,7
+2095,"Hospital Claims Auditor",2094,"Corporate Positions",330|1032|2082|2083|2092|2093|2094|2095,8
+2096,"Medical Claims Auditor",2094,"Corporate Positions",330|1032|2082|2083|2092|2093|2094|2096,8
+2097,"Health Information Manager",2094,"Corporate Positions",330|1032|2082|2083|2092|2093|2094|2097,8
+2098,"Clinical Coder",2094,"Corporate Positions",330|1032|2082|2083|2092|2093|2094|2098,8
+2101,"Health Audit Manager",2092,"Corporate Positions",330|1032|2082|2083|2092|2101,6
+2104,"Benefit Reassessment Manager",2092,"Corporate Positions",330|1032|2082|2083|2092|2104,6
+2105,"Clinical Compliance Audit Manager",2092,"Corporate Positions",330|1032|2082|2083|2092|2105,6
+2106,"Medical Claims Auditor",2092,"Corporate Positions",330|1032|2082|2083|2092|2106,6
+2107,"Health Audit Innovation Support Manager",2092,"Corporate Positions",330|1032|2082|2083|2092|2107,6
+2108,"Medical Auditor",2107,"Corporate Positions",330|1032|2082|2083|2092|2107|2108,7
+2109,"Benefit Reassessment Officer",2107,"Corporate Positions",330|1032|2082|2083|2092|2107|2109,7
+2110,"Benefit Recoveries Officer",2107,"Corporate Positions",330|1032|2082|2083|2092|2107|2110,7
+2111,"Payment Integrity Officer",2107,"Corporate Positions",330|1032|2082|2083|2092|2107|2111,7
+2113,"Health Audit Quality Assurance Manager",2092,"Corporate Positions",330|1032|2082|2083|2092|2113,6
+2114,"Senior Manager - Health Audit",2092,"Corporate Positions",330|1032|2082|2083|2092|2114,6
+2115,"Lead Health Information Manager",2114,"Corporate Positions",330|1032|2082|2083|2092|2114|2115,7
+2116,"Senior Health Information Mana",2115,"Corporate Positions",330|1032|2082|2083|2092|2114|2115|2116,8
+2119,"Senior Clinical Compliance Auditor",2114,"Corporate Positions",330|1032|2082|2083|2092|2114|2119,7
+2122,"Senior PI Audit Manager",2083,"Corporate Positions",330|1032|2082|2083|2122,5
+2123,"Payment Integrity Investigator",2122,"Corporate Positions",330|1032|2082|2083|2122|2123,6
+2124,"Senior Administrator",2122,"Corporate Positions",330|1032|2082|2083|2122|2124,6
+2127,"Dental Advisor",2122,"Corporate Positions",330|1032|2082|2083|2122|2127,6
+2128,"Investigations Officer",2122,"Corporate Positions",330|1032|2082|2083|2122|2128,6
+2130,"Ancillary Claims Auditor",2122,"Corporate Positions",330|1032|2082|2083|2122|2130,6
+2131,"Verification Analyst",2122,"Corporate Positions",330|1032|2082|2083|2122|2131,6
+2132,"Senior Ancillary Claims Auditor",2122,"Corporate Positions",330|1032|2082|2083|2122|2132,6
+2133,"Ancillary and Fraud Investigator",2122,"Corporate Positions",330|1032|2082|2083|2122|2133,6
+2135,"Compensation Claims Manager",2083,"Corporate Positions",330|1032|2082|2083|2135,5
+2136,"Compensation Case Manager",2135,"Corporate Positions",330|1032|2082|2083|2135|2136,6
+2137,"Administration Assistant",2135,"Corporate Positions",330|1032|2082|2083|2135|2137,6
+2139,"Head of Payment Integrity Operations",2083,"Corporate Positions",330|1032|2082|2083|2139,5
+2140,"Payment Integrity Triple R Manager",2139,"Corporate Positions",330|1032|2082|2083|2139|2140,6
+2148,"Provider Master Data Mgr",2139,"Corporate Positions",330|1032|2082|2083|2139|2148,6
+2149,"Provider Reference Data Analys",2148,"Corporate Positions",330|1032|2082|2083|2139|2148|2149,7
+2155,"Senior Compensation Lead",2083,"Corporate Positions",330|1032|2082|2083|2155,5
+2156,"Compensation Lead",2155,"Corporate Positions",330|1032|2082|2083|2155|2156,6
+2157,"Compensation Consultant",2155,"Corporate Positions",330|1032|2082|2083|2155|2157,6
+2161,"National Mgr Ancillary",2082,"Corporate Positions",330|1032|2082|2161,4
+2162,"Network Mgr Ancillary",2161,"Corporate Positions",330|1032|2082|2161|2162,5
+2163,"Network Mgr Ancillary",2161,"Corporate Positions",330|1032|2082|2161|2163,5
+2164,"State Ancillary Network Manage",2161,"Corporate Positions",330|1032|2082|2161|2164,5
+2165,"State Ancillary Network Mgr",2161,"Corporate Positions",330|1032|2082|2161|2165,5
+2166,"Ancillary Network Manager",2161,"Corporate Positions",330|1032|2082|2161|2166,5
+2167,"Network Coord Ancillary",2161,"Corporate Positions",330|1032|2082|2161|2167,5
+2170,"Senior Executive Strategy and Analytics",2082,"Corporate Positions",330|1032|2082|2170,4
+2171,"Head of Strategy",2170,"Corporate Positions",330|1032|2082|2170|2171,5
+2172,"Head of Healthcare Funding",2170,"Corporate Positions",330|1032|2082|2170|2172,5
+2175,"Manager - Provider and Commercial Analytics",2170,"Corporate Positions",330|1032|2082|2170|2175,5
+2176,"Benefits Intelligence Analyst",2175,"Corporate Positions",330|1032|2082|2170|2175|2176,6
+2177,"Sen Analyst Adv Analytic",2175,"Corporate Positions",330|1032|2082|2170|2175|2177,6
+2178,"Sen Analyst Contract Sup",2175,"Corporate Positions",330|1032|2082|2170|2175|2178,6
+2179,Analyst,2175,"Corporate Positions",330|1032|2082|2170|2175|2179,6
+2180,"Team Leader - Payment Integrity Analytics",2175,"Corporate Positions",330|1032|2082|2170|2175|2180,6
+2181,"Investigations Analyst",2180,"Corporate Positions",330|1032|2082|2170|2175|2180|2181,7
+2183,"Team Leader - Hospital Performance Analytics",2175,"Corporate Positions",330|1032|2082|2170|2175|2183,6
+2185,"Senior Analyst Hospital Performance",2183,"Corporate Positions",330|1032|2082|2170|2175|2183|2185,7
+2187,"Mgr - Strategy & Member Health Analytics",2170,"Corporate Positions",330|1032|2082|2170|2187,5
+2188,"Health & Strategy Analyst",2187,"Corporate Positions",330|1032|2082|2170|2187|2188,6
+2192,"Team Lead - Member Health Analytics",2187,"Corporate Positions",330|1032|2082|2170|2187|2192,6
+2195,"Senior Health & Strategy Analyst",2187,"Corporate Positions",330|1032|2082|2170|2187|2195,6
+2197,"Senior Health Innovation Strategist",2170,"Corporate Positions",330|1032|2082|2170|2197,5
+2199,"Strategic Program Manager",2170,"Corporate Positions",330|1032|2082|2170|2199,5
+2200,"Manager - Data Quality and Innovation",2170,"Corporate Positions",330|1032|2082|2170|2200,5
+2201,"Data Governance Lead",2200,"Corporate Positions",330|1032|2082|2170|2200|2201,6
+2204,Developer,2200,"Corporate Positions",330|1032|2082|2170|2200|2204,6
+2205,"Reference Data Analyst",2200,"Corporate Positions",330|1032|2082|2170|2200|2205,6
+2206,"Senior Platform Administrator",2200,"Corporate Positions",330|1032|2082|2170|2200|2206,6
+2207,"Senior Salesforce Administrator",2200,"Corporate Positions",330|1032|2082|2170|2200|2207,6
+2208,"Salesforce Administrator",2207,"Corporate Positions",330|1032|2082|2170|2200|2207|2208,7
+2209,"Operations Analyst",2200,"Corporate Positions",330|1032|2082|2170|2200|2209,6
+2210,"Process Governance Manager",2200,"Corporate Positions",330|1032|2082|2170|2200|2210,6
+2211,"Senior Executive Hospital, Medical and Overseas Benefits",2082,"Corporate Positions",330|1032|2082|2211,4
+2212,"Independent Hospital Net. Mgr.",2211,"Corporate Positions",330|1032|2082|2211|2212,5
+2214,"Hospital Contract & Relationsh",2212,"Corporate Positions",330|1032|2082|2211|2212|2214,6
+2215,"Contract Mgr - Independent",2212,"Corporate Positions",330|1032|2082|2211|2212|2215,6
+2216,"Contract Administrator",2212,"Corporate Positions",330|1032|2082|2211|2212|2216,6
+2220,"Head of Hosp & Med Contracting",2211,"Corporate Positions",330|1032|2082|2211|2220,5
+2221,"Head of Service Providers",2220,"Corporate Positions",330|1032|2082|2211|2220|2221,6
+2222,"Head of Commercial & Provider Networks",2220,"Corporate Positions",330|1032|2082|2211|2220|2222,6
+2223,"Commercial Contracting Mgr",2222,"Corporate Positions",330|1032|2082|2211|2220|2222|2223,7
+2225,"HMO Programme Analyst",2222,"Corporate Positions",330|1032|2082|2211|2220|2222|2225,7
+2226,"Process and Performance Manger",2222,"Corporate Positions",330|1032|2082|2211|2220|2222|2226,7
+2227,"Provider Network Coordinator",2222,"Corporate Positions",330|1032|2082|2211|2220|2222|2227,7
+2231,"Medical Specialist Commercial and Relationship Manager",2211,"Corporate Positions",330|1032|2082|2211|2231,5
+2232,"Head of Group Hospitals",2211,"Corporate Positions",330|1032|2082|2211|2232,5
+2235,"Grp Mgr - Hospital Contracting",2232,"Corporate Positions",330|1032|2082|2211|2232|2235,6
+2236,"Senior Hospital Contract & Relationship  Manager",2235,"Corporate Positions",330|1032|2082|2211|2232|2235|2236,7
+2238,"Head of Provider Operations",2082,"Corporate Positions",330|1032|2082|2238,4
+2240,"Healthcare Strategy and Innovation Manager",2082,"Corporate Positions",330|1032|2082|2240,4
+2241,"Provider Operations Manager",2240,"Corporate Positions",330|1032|2082|2240|2241,5
+2242,"Head of Delivery and Performance",2082,"Corporate Positions",330|1032|2082|2242,4
+2243,"Senior Executive Health Services",1032,"Corporate Positions",330|1032|2243,3
+2244,"Head of Triage Services",2243,"Corporate Positions",330|1032|2243|2244,4
+2246,"Clinical Content Manager",2244,"Corporate Positions",330|1032|2243|2244|2246,5
+2247,"Clinical Manager",2244,"Corporate Positions",330|1032|2243|2244|2247,5
+2254,"Project Lead",2244,"Corporate Positions",330|1032|2243|2244|2254,5
+2255,"Digital and Project Manager",2254,"Corporate Positions",330|1032|2243|2244|2254|2255,6
+2256,"Snr Document Control Specialst",2255,"Corporate Positions",330|1032|2243|2244|2254|2255|2256,7
+2257,"Process Specialist",2255,"Corporate Positions",330|1032|2243|2244|2254|2255|2257,7
+2259,"Senior Delivery Manager - Triage Services",2244,"Corporate Positions",330|1032|2243|2244|2259,5
+2339,"Business Support Coordinator",2259,"Corporate Positions",330|1032|2243|2244|2259|2339,6
+2341,"Work at Home Coordinator",2339,"Corporate Positions",330|1032|2243|2244|2259|2339|2341,7
+2391,"Senior Workforce Planning Manager",2244,"Corporate Positions",330|1032|2243|2244|2391,5
+2393,"Workforce Planning Manager",2391,"Corporate Positions",330|1032|2243|2244|2391|2393,6
+2398,"Service Level Planning Manager",2391,"Corporate Positions",330|1032|2243|2244|2391|2398,6
+2399,"Service Level Planner",2398,"Corporate Positions",330|1032|2243|2244|2391|2398|2399,7
+2403,"Senior Planning and Optimisation Manager",2244,"Corporate Positions",330|1032|2243|2244|2403,5
+2404,"Head of Health Concierge",2243,"Corporate Positions",330|1032|2243|2404,4
+2405,"Health Concierge Lead",2404,"Corporate Positions",330|1032|2243|2404|2405,5
+2407,"Health Concierge Officer",2405,"Corporate Positions",330|1032|2243|2404|2405|2407,6
+2408,"Health Concierge Clinician",2405,"Corporate Positions",330|1032|2243|2404|2405|2408,6
+2409,"Team Leader",2404,"Corporate Positions",330|1032|2243|2404|2409,5
+2410,"Health Support Officer",2409,"Corporate Positions",330|1032|2243|2404|2409|2410,6
+2422,"Team Leader",2404,"Corporate Positions",330|1032|2243|2404|2422,5
+2438,"Head of Mental Health",2243,"Corporate Positions",330|1032|2243|2438,4
+2481,"Acting Clinical Manager",2438,"Corporate Positions",330|1032|2243|2438|2481,5
+2482,"Operations Support Manager",2438,"Corporate Positions",330|1032|2243|2438|2482,5
+2546,"Head of Health Services Operational Excellence",2243,"Corporate Positions",330|1032|2243|2546,4
+2547,"Manager, Health Analytics & Reporting",2546,"Corporate Positions",330|1032|2243|2546|2547,5
+2551,"Senior Analyst, Transformation",2547,"Corporate Positions",330|1032|2243|2546|2547|2551,6
+2553,"Business Intelligence Mgr",2546,"Corporate Positions",330|1032|2243|2546|2553,5
+2556,"Senior Executive Health Services Business Development & Ops Excellence",1032,"Corporate Positions",330|1032|2556,3
+2557,"Program Manager - Commercial",2556,"Corporate Positions",330|1032|2556|2557,4
+2558,"Senior Project Manager",2557,"Corporate Positions",330|1032|2556|2557|2558,5
+2559,"Head of Payer Services",2556,"Corporate Positions",330|1032|2556|2559,4
+2570,"Operations Manager",2559,"Corporate Positions",330|1032|2556|2559|2570,5
+2571,"Senior Data Analyst",2570,"Corporate Positions",330|1032|2556|2559|2570|2571,6
+2572,"Senior Executive Commercial Tenders",1032,"Corporate Positions",330|1032|2572,3
+2575,"Reporting & Data Analyst",2572,"Corporate Positions",330|1032|2572|2575,4
+2576,"Senior Executive - Ambulatory Care Centres",1032,"Corporate Positions",330|1032|2576,3
+2577,"Head of Ambulatory Care Centres",2576,"Corporate Positions",330|1032|2576|2577,4
+2578,"Senior Executive, Health Services Business Development",1032,"Corporate Positions",330|1032|2578,3
+2579,"Market Development Mgr -Policy",2578,"Corporate Positions",330|1032|2578|2579,4
+2580,"Proposals Consultant/ Bid Coor",2578,"Corporate Positions",330|1032|2578|2580,4
+2581,"Customer Proposals Manager",2578,"Corporate Positions",330|1032|2578|2581,4
+2582,"Business Development Lead",2581,"Corporate Positions",330|1032|2578|2581|2582,5
+2584,"Chief Legal and Regulatory Officer",330,"Corporate Positions",330|2584,2
+2585,"Senior Executive Compliance & Regulatory Affairs",2584,"Corporate Positions",330|2584|2585,3
+2586,"Compliance Administrator",2585,"Corporate Positions",330|2584|2585|2586,4
+2587,"Snr Risk & Compliance Adviser",2585,"Corporate Positions",330|2584|2585|2587,4
+2588,"Compliance Officer",2585,"Corporate Positions",330|2584|2585|2588,4
+2589,"Regulatory Compliance Manager",2585,"Corporate Positions",330|2584|2585|2589,4
+2590,"PHI Compliance Officer",2589,"Corporate Positions",330|2584|2585|2589|2590,5
+2591,"Compliance and Regulatory Affairs Analyst",2589,"Corporate Positions",330|2584|2585|2589|2591,5
+2594,"Compliance Adviser",2585,"Corporate Positions",330|2584|2585|2594,4
+2595,"Reg Affairs & Governance Mgr",2585,"Corporate Positions",330|2584|2585|2595,4
+2598,"Snr Compliance Adviser",2585,"Corporate Positions",330|2584|2585|2598,4
+2599,"Compliance Reporting and Insights Specialist",2585,"Corporate Positions",330|2584|2585|2599,4
+2601,"Group Compliance Business Parter",2585,"Corporate Positions",330|2584|2585|2601,4
+2602,"Head of Governance Company Sec",2584,"Corporate Positions",330|2584|2602,3
+2603,"Senior Executive Legal",2584,"Corporate Positions",330|2584|2603,3
+2605,"Senior Legal Counsel",2603,"Corporate Positions",330|2584|2603|2605,4
+2606,Paralegal,2605,"Corporate Positions",330|2584|2603|2605|2606,5
+2608,"Legal Admin Assistant",2603,"Corporate Positions",330|2584|2603|2608,4
+2615,"Graduate Legal Counsel",2603,"Corporate Positions",330|2584|2603|2615,4
+2616,"Head of Legal, Provider Operations",2603,"Corporate Positions",330|2584|2603|2616,4
+2617,"Legal Counsel",2616,"Corporate Positions",330|2584|2603|2616|2617,5
+2620,"Graduate Lawyer",2616,"Corporate Positions",330|2584|2603|2616|2620,5
+2622,"Senior Executive Legal",2584,"Corporate Positions",330|2584|2622,3
+2626,"Legal Admin Coordinator",2622,"Corporate Positions",330|2584|2622|2626,4
+2637,"Head of Privacy & Data Protection",2622,"Corporate Positions",330|2584|2622|2637,4
+2638,"Senior Legal Counsel Privacy",2637,"Corporate Positions",330|2584|2622|2637|2638,5
+2639,"Privacy Adviser",2637,"Corporate Positions",330|2584|2622|2637|2639,5
+2642,"Head of Legal, PHI Customer & Portfolio",2622,"Corporate Positions",330|2584|2622|2642,4
+2643,"Senior Executive Legal - Regulatory",2584,"Corporate Positions",330|2584|2643,3
+2647,"Senior Regulatory Adviser",2643,"Corporate Positions",330|2584|2643|2647,4
+2648,"Special Counsel Governance",2584,"Corporate Positions",330|2584|2648,3
+2649,"Organisational Governance Program Mgr",2584,"Corporate Positions",330|2584|2649,3
+2650,"Project Coordinator",2649,"Corporate Positions",330|2584|2649|2650,4
+2651,"Deputy Company Secretary",2584,"Corporate Positions",330|2584|2651,3
+2653,"Senior Executive Legal, Enabling Functions & Governance",2584,"Corporate Positions",330|2584|2653,3
+2655,"Board Support Officer",2653,"Corporate Positions",330|2584|2653|2655,4
+2656,"Secretariat Advisor",2653,"Corporate Positions",330|2584|2653|2656,4
+2657,"Head of Legal, Technology & Operations",2653,"Corporate Positions",330|2584|2653|2657,4
+2662,"Head of Compliance and Regulatory Affairs",2653,"Corporate Positions",330|2584|2653|2662,4
+2666,"Compliance Systems and Reporting Analyst",2653,"Corporate Positions",330|2584|2653|2666,4
+2667,"Head of Compliance",2653,"Corporate Positions",330|2584|2653|2667,4
+2671,"Senior Legal Counsel, Strategy",2653,"Corporate Positions",330|2584|2653|2671,4
+2672,"Senior Executive - Governance & Company Secretariat",2584,"Corporate Positions",330|2584|2672,3
+2673,"Chief Technology Officer",330,"Corporate Positions",330|2673,2
+2674,"Senior Executive P&P and Ops",2673,"Corporate Positions",330|2673|2674,3
+2675,"Head of T&O Risk and Compliance",2674,"Corporate Positions",330|2673|2674|2675,4
+2676,"Technology and Operational Risk Manager",2675,"Corporate Positions",330|2673|2674|2675|2676,5
+2677,"Document Control Manager",2675,"Corporate Positions",330|2673|2674|2675|2677,5
+2678,"Vendor Manager",2674,"Corporate Positions",330|2673|2674|2678,4
+2679,"Vendor & Business Continuity  Support Specialist",2678,"Corporate Positions",330|2673|2674|2678|2679,5
+2681,"Head of Health Operations",2674,"Corporate Positions",330|2673|2674|2681,4
+2682,"Operational TL - Claims",2681,"Corporate Positions",330|2673|2674|2681|2682,5
+2683,"Ops Consultant - Claims",2682,"Corporate Positions",330|2673|2674|2681|2682|2683,6
+2690,"Hosp & Provider Adv Team Lead",2681,"Corporate Positions",330|2673|2674|2681|2690,5
+2691,"Hosp & Provider Adv Consultant",2690,"Corporate Positions",330|2673|2674|2681|2690|2691,6
+2693,"Snr Hosp & Prov Adv Consultant",2690,"Corporate Positions",330|2673|2674|2681|2690|2693,6
+2698,"Delivery Manager",2674,"Corporate Positions",330|2673|2674|2698,4
+2700,"Senior Reporting Specialist",2698,"Corporate Positions",330|2673|2674|2698|2700,5
+2714,"Ops Comms Manager",2674,"Corporate Positions",330|2673|2674|2714,4
+2715,"Print & Fulfilment Coordinator",2714,"Corporate Positions",330|2673|2674|2714|2715,5
+2716,"Senior Communications Delivery Manager",2714,"Corporate Positions",330|2673|2674|2714|2716,5
+2717,"Communications Delivery Manager",2714,"Corporate Positions",330|2673|2674|2714|2717,5
+2721,"Senior Communications Manager",2714,"Corporate Positions",330|2673|2674|2714|2721,5
+2722,"Operational Communications Co-ordinator",2714,"Corporate Positions",330|2673|2674|2714|2722,5
+2723,"Head of Property",2674,"Corporate Positions",330|2673|2674|2723,4
+2724,"Group Property Opertions Manager",2723,"Corporate Positions",330|2673|2674|2723|2724,5
+2725,"Property Operations Secondment",2724,"Corporate Positions",330|2673|2674|2723|2724|2725,6
+2726,"National Design & Construction Manager",2723,"Corporate Positions",330|2673|2674|2723|2726,5
+2727,"Project Co-ordinator",2726,"Corporate Positions",330|2673|2674|2723|2726|2727,6
+2728,"Workplace Accommodation & Analytics Manager",2723,"Corporate Positions",330|2673|2674|2723|2728,5
+2729,"Property Data Analyst",2728,"Corporate Positions",330|2673|2674|2723|2728|2729,6
+2730,"National Planning & Leasing Manager",2723,"Corporate Positions",330|2673|2674|2723|2730,5
+2731,"Leasing Asset Lead",2730,"Corporate Positions",330|2673|2674|2723|2730|2731,6
+2732,"Head of Procurement Operations",2674,"Corporate Positions",330|2673|2674|2732,4
+2733,"P2P Manager",2732,"Corporate Positions",330|2673|2674|2732|2733,5
+2734,"Procurement Governance and Sustainability Manager",2732,"Corporate Positions",330|2673|2674|2732|2734,5
+2735,"Procurement System and Process Manager",2732,"Corporate Positions",330|2673|2674|2732|2735,5
+2736,"Procurement Analyst",2735,"Corporate Positions",330|2673|2674|2732|2735|2736,6
+2737,"Procurement Systems Specialist",2735,"Corporate Positions",330|2673|2674|2732|2735|2737,6
+2738,"P2P Lead",2732,"Corporate Positions",330|2673|2674|2732|2738,5
+2739,"P2P Payables Officer",2738,"Corporate Positions",330|2673|2674|2732|2738|2739,6
+2740,"P2P Specialist",2738,"Corporate Positions",330|2673|2674|2732|2738|2740,6
+2741,"P2P Specialist",2738,"Corporate Positions",330|2673|2674|2732|2738|2741,6
+2742,"P2P Specialist",2738,"Corporate Positions",330|2673|2674|2732|2738|2742,6
+2743,"S2P Specialist",2738,"Corporate Positions",330|2673|2674|2732|2738|2743,6
+2744,"Head of Commercial Category Management",2674,"Corporate Positions",330|2673|2674|2744,4
+2745,"Category Manager",2744,"Corporate Positions",330|2673|2674|2744|2745,5
+2752,"Senior Executive Property & Procurement",2673,"Corporate Positions",330|2673|2752,3
+2753,"Senior Executive - Chief Information Security Officer",2673,"Corporate Positions",330|2673|2753,3
+2754,"Head of  Security Consulting",2753,"Corporate Positions",330|2673|2753|2754,4
+2755,"Security Consultant",2754,"Corporate Positions",330|2673|2753|2754|2755,5
+2756,"Security Advisor",2754,"Corporate Positions",330|2673|2753|2754|2756,5
+2759,"Junior Security Analyst",2754,"Corporate Positions",330|2673|2753|2754|2759,5
+2760,"Security GRC Consultant",2754,"Corporate Positions",330|2673|2753|2754|2760,5
+2761,"IT Security Designer",2754,"Corporate Positions",330|2673|2753|2754|2761,5
+2762,"Head of Security Operations",2753,"Corporate Positions",330|2673|2753|2762,4
+2763,"Senior Security Analyst",2762,"Corporate Positions",330|2673|2753|2762|2763,5
+2765,"Security Operations Engineer",2762,"Corporate Positions",330|2673|2753|2762|2765,5
+2766,"Information Technology Graduate",2762,"Corporate Positions",330|2673|2753|2762|2766,5
+2768,"Threat Hunter",2762,"Corporate Positions",330|2673|2753|2762|2768,5
+2770,"Senior - Security Operations Engineer",2762,"Corporate Positions",330|2673|2753|2762|2770,5
+2771,"Head of Security Engineering",2753,"Corporate Positions",330|2673|2753|2771,4
+2772,PA,2753,"Corporate Positions",330|2673|2753|2772,4
+2773,"Head of IT Security Delivery",2753,"Corporate Positions",330|2673|2753|2773,4
+2774,"Senior Executive Enterprise Delivery and Support Services",2673,"Corporate Positions",330|2673|2774,3
+2776,"Head of Project Practice",2774,"Corporate Positions",330|2673|2774|2776,4
+2777,"Program Manager",2776,"Corporate Positions",330|2673|2774|2776|2777,5
+2779,"Change Manager Capability & Reporting",2776,"Corporate Positions",330|2673|2774|2776|2779,5
+2780,"Environment Manager",2776,"Corporate Positions",330|2673|2774|2776|2780,5
+2781,"Head of Priority Proj. Office",2774,"Corporate Positions",330|2673|2774|2781,4
+2782,"PPO Portfolio Analyst",2781,"Corporate Positions",330|2673|2774|2781|2782,5
+2783,"Enterprise Change Manager",2781,"Corporate Positions",330|2673|2774|2781|2783,5
+2784,"Head of Service Delivery",2774,"Corporate Positions",330|2673|2774|2784,4
+2785,"Vendor Mgr-IT Service Delivery",2784,"Corporate Positions",330|2673|2774|2784|2785,5
+2786,"Head of Infrastructure Serv.",2774,"Corporate Positions",330|2673|2774|2786,4
+2787,"Service Continuity Lead",2786,"Corporate Positions",330|2673|2774|2786|2787,5
+2788,"Head of Enterprise Delivery",2774,"Corporate Positions",330|2673|2774|2788,4
+2789,"Enterprise Test Manager",2788,"Corporate Positions",330|2673|2774|2788|2789,5
+2790,"Test Analyst",2789,"Corporate Positions",330|2673|2774|2788|2789|2790,6
+2791,"Test Lead",2789,"Corporate Positions",330|2673|2774|2788|2789|2791,6
+2792,"Senior Test Analyst",2791,"Corporate Positions",330|2673|2774|2788|2789|2791|2792,7
+2798,"Performance Test Specialist",2789,"Corporate Positions",330|2673|2774|2788|2789|2798,6
+2799,"Automation Capability Analyst",2789,"Corporate Positions",330|2673|2774|2788|2789|2799,6
+2817,"Program Delivery Manager",2788,"Corporate Positions",330|2673|2774|2788|2817,5
+2822,"Change Manager",2817,"Corporate Positions",330|2673|2774|2788|2817|2822,6
+2831,"Program Change Manager",2788,"Corporate Positions",330|2673|2774|2788|2831,5
+2832,"Release & Environment Manager",2788,"Corporate Positions",330|2673|2774|2788|2832,5
+2834,"Head of Portfolio and Priority Project Office (PPO)",2774,"Corporate Positions",330|2673|2774|2834,4
+2835,"Technology Business Partner - Healthcare & Strategy",2774,"Corporate Positions",330|2673|2774|2835,4
+2836,"T&O Strategy Lead",2774,"Corporate Positions",330|2673|2774|2836,4
+2837,"Head of IT Operations",2774,"Corporate Positions",330|2673|2774|2837,4
+2838,"Disaster Recovery Consultant",2837,"Corporate Positions",330|2673|2774|2837|2838,5
+2839,"IT Service Delivery Technology Lead",2837,"Corporate Positions",330|2673|2774|2837|2839,5
+2840,"IT Service Delivery Lead",2837,"Corporate Positions",330|2673|2774|2837|2840,5
+2841,"Vendor Mgr - Database Services",2837,"Corporate Positions",330|2673|2774|2837|2841,5
+2843,"Core Technology Support Manager",2837,"Corporate Positions",330|2673|2774|2837|2843,5
+2844,"Service Desk Customer Service Lead",2843,"Corporate Positions",330|2673|2774|2837|2843|2844,6
+2845,"Service Desk Analyst",2844,"Corporate Positions",330|2673|2774|2837|2843|2844|2845,7
+2846,"IT Cust Serv Technician",2844,"Corporate Positions",330|2673|2774|2837|2843|2844|2846,7
+2847,"Senior IT Technician",2844,"Corporate Positions",330|2673|2774|2837|2843|2844|2847,7
+2853,"Tech Bar Audio Visual Support Agent",2844,"Corporate Positions",330|2673|2774|2837|2843|2844|2853,7
+2854,"System Administrator",2844,"Corporate Positions",330|2673|2774|2837|2843|2844|2854,7
+2855,"IT Service Mgmt Specialist",2843,"Corporate Positions",330|2673|2774|2837|2843|2855,6
+2857,"Service Management Specialist-",2843,"Corporate Positions",330|2673|2774|2837|2843|2857,6
+2858,"Infrastructure Solution Delivery Lead",2837,"Corporate Positions",330|2673|2774|2837|2858,5
+2859,"IT Service Management Lead",2837,"Corporate Positions",330|2673|2774|2837|2859,5
+2860,"Head of Network Engineering",2774,"Corporate Positions",330|2673|2774|2860,4
+2861,"Network Engineer",2860,"Corporate Positions",330|2673|2774|2860|2861,5
+2862,"Senior Executive Information Management",2673,"Corporate Positions",330|2673|2862,3
+2865,"Head of IM Delivery",2862,"Corporate Positions",330|2673|2862|2865,4
+2866,"Head of Information Management Support",2862,"Corporate Positions",330|2673|2862|2866,4
+2872,"Head of Information Management",2862,"Corporate Positions",330|2673|2862|2872,4
+2880,"Data Services Manager",2872,"Corporate Positions",330|2673|2862|2872|2880,5
+2881,"Data Innovation Lead",2872,"Corporate Positions",330|2673|2862|2872|2881,5
+2882,"Release and Data Assurance Manager",2872,"Corporate Positions",330|2673|2862|2872|2882,5
+2884,"Senior Manager Delivery - Information Management",2872,"Corporate Positions",330|2673|2862|2872|2884,5
+2886,"Information Management Consultant Lead",2884,"Corporate Positions",330|2673|2862|2872|2884|2886,6
+2887,"Junior Analyst - Information Management",2886,"Corporate Positions",330|2673|2862|2872|2884|2886|2887,7
+2894,"Data Solutions Lead",2872,"Corporate Positions",330|2673|2862|2872|2894,5
+2896,"Senior Data Engineer",2894,"Corporate Positions",330|2673|2862|2872|2894|2896,6
+2902,"Development Lead - Information Management",2872,"Corporate Positions",330|2673|2862|2872|2902,5
+2905,"Data&Report Analyst&Developer",2902,"Corporate Positions",330|2673|2862|2872|2902|2905,6
+2906,"Senior Data& Reporting Analyst/Developer",2902,"Corporate Positions",330|2673|2862|2872|2902|2906,6
+2909,"Senior SQL Developer",2902,"Corporate Positions",330|2673|2862|2872|2902|2909,6
+2913,"Data Support Engineer",2902,"Corporate Positions",330|2673|2862|2872|2902|2913,6
+2914,"DataOps Manager",2872,"Corporate Positions",330|2673|2862|2872|2914,5
+2915,"PA to GM IT & Applications",2862,"Corporate Positions",330|2673|2862|2915,4
+2916,"Head of Data Serv. Mgt",2862,"Corporate Positions",330|2673|2862|2916,4
+2917,"SAS Developer",2916,"Corporate Positions",330|2673|2862|2916|2917,5
+2918,"Information Architect",2862,"Corporate Positions",330|2673|2862|2918,4
+2920,"Senior Executive Architecture & Health Technology",2673,"Corporate Positions",330|2673|2920,3
+2921,"Head of Architecture Operations and Delivery",2920,"Corporate Positions",330|2673|2920|2921,4
+2922,"Senior Solution Architect",2921,"Corporate Positions",330|2673|2920|2921|2922,5
+2923,"Platform Architect",2921,"Corporate Positions",330|2673|2920|2921|2923,5
+2926,"Lead Enterprise Architect - Insurance",2920,"Corporate Positions",330|2673|2920|2926,4
+2927,"Enterprise Architect - Insurance",2926,"Corporate Positions",330|2673|2920|2926|2927,5
+2928,"Lead Enterprise Architect - Health Services",2920,"Corporate Positions",330|2673|2920|2928,4
+2929,"Solutions Architect",2928,"Corporate Positions",330|2673|2920|2928|2929,5
+2930,"Enterprise Architect - Health Services",2928,"Corporate Positions",330|2673|2920|2928|2930,5
+2931,"Senior Executive Digital Solutions & Services",2673,"Corporate Positions",330|2673|2931,3
+2932,"Head of Digital Prgm Mgmt",2931,"Corporate Positions",330|2673|2931|2932,4
+2933,"Iteration Manager",2932,"Corporate Positions",330|2673|2931|2932|2933,5
+2935,"Snr Scrum Master- Dev/Ops",2932,"Corporate Positions",330|2673|2931|2932|2935,5
+2936,"Snr Scrum Master - Digital",2932,"Corporate Positions",330|2673|2931|2932|2936,5
+2937,"Technical Solution Lead",2931,"Corporate Positions",330|2673|2931|2937,4
+2938,"Online Producer",2937,"Corporate Positions",330|2673|2931|2937|2938,5
+2940,"Cloud Services Team Lead",2937,"Corporate Positions",330|2673|2931|2937|2940,5
+2942,"DevOps Engineer - Cloud Serv",2940,"Corporate Positions",330|2673|2931|2937|2940|2942,6
+2943,"Iteration Mgr/Technical Lead",2937,"Corporate Positions",330|2673|2931|2937|2943,5
+2944,"Senior AEM Java Developer.",2937,"Corporate Positions",330|2673|2931|2937|2944,5
+2945,"Senior Java Developer",2937,"Corporate Positions",330|2673|2931|2937|2945,5
+2946,"Front End Developer",2937,"Corporate Positions",330|2673|2931|2937|2946,5
+2948,"Security Operations Analyst",2937,"Corporate Positions",330|2673|2931|2937|2948,5
+2949,"Senior Digital Product Manager",2931,"Corporate Positions",330|2673|2931|2949,4
+2950,"Head of Application Development",2931,"Corporate Positions",330|2673|2931|2950,4
+2951,"Head of Dig Tech",2931,"Corporate Positions",330|2673|2931|2951,4
+2955,"Digital Solutions Leader",2951,"Corporate Positions",330|2673|2931|2951|2955,5
+2956,"Digital Tech Lead",2955,"Corporate Positions",330|2673|2931|2951|2955|2956,6
+2965,"Solution Designer",2955,"Corporate Positions",330|2673|2931|2951|2955|2965,6
+2966,"IT Graduate",2951,"Corporate Positions",330|2673|2931|2951|2966,5
+2967,"Digital Operations & Service Assurance Leader",2951,"Corporate Positions",330|2673|2931|2951|2967,5
+2969,"Dev Ops",2967,"Corporate Positions",330|2673|2931|2951|2967|2969,6
+2971,"Digital Development Leader",2951,"Corporate Positions",330|2673|2931|2951|2971,5
+2973,"Senior Android Developer",2971,"Corporate Positions",330|2673|2931|2951|2971|2973,6
+2974,"Lead Solution Designer -ESB",2971,"Corporate Positions",330|2673|2931|2951|2971|2974,6
+2975,"Integration Lead",2974,"Corporate Positions",330|2673|2931|2951|2971|2974|2975,7
+2977,"Integration Support & Dev.",2974,"Corporate Positions",330|2673|2931|2951|2971|2974|2977,7
+2978,"Integration Specialist",2974,"Corporate Positions",330|2673|2931|2951|2971|2974|2978,7
+2979,"API Developer",2974,"Corporate Positions",330|2673|2931|2951|2971|2974|2979,7
+2981,"Mobile Platform Lead",2971,"Corporate Positions",330|2673|2931|2951|2971|2981,6
+2982,"iOS Developer",2971,"Corporate Positions",330|2673|2931|2951|2971|2982,6
+2983,"Web Platform Lead",2971,"Corporate Positions",330|2673|2931|2951|2971|2983,6
+2985,"Senior UI Developer",2971,"Corporate Positions",330|2673|2931|2951|2971|2985,6
+2986,"Senior iOS Developer",2971,"Corporate Positions",330|2673|2931|2951|2971|2986,6
+2987,"Android Developer",2971,"Corporate Positions",330|2673|2931|2951|2971|2987,6
+2988,"Enterprise Automation Lead",2951,"Corporate Positions",330|2673|2931|2951|2988,5
+2989,"Digital Quality Assurance Lead",2951,"Corporate Positions",330|2673|2931|2951|2989,5
+2990,"Digital Test Delivery Leader",2951,"Corporate Positions",330|2673|2931|2951|2990,5
+2991,"Quality Assurance Mgr",2990,"Corporate Positions",330|2673|2931|2951|2990|2991,6
+2992,"Lead Performance Engineer",2991,"Corporate Positions",330|2673|2931|2951|2990|2991|2992,7
+2993,"Senior Automation Analyst",2991,"Corporate Positions",330|2673|2931|2951|2990|2991|2993,7
+2994,"Quality Assurance",2991,"Corporate Positions",330|2673|2931|2951|2990|2991|2994,7
+2995,"Member Services QA Leader",2991,"Corporate Positions",330|2673|2931|2951|2990|2991|2995,7
+2997,"Acquisition QA Leader",2995,"Corporate Positions",330|2673|2931|2951|2990|2991|2995|2997,8
+3001,"Digital Senior Automation Engineer",2990,"Corporate Positions",330|2673|2931|2951|2990|3001,6
+3002,"Digital QA Lead",2990,"Corporate Positions",330|2673|2931|2951|2990|3002,6
+3003,"API Platform Lead",2951,"Corporate Positions",330|2673|2931|2951|3003,5
+3004,"Head of IT Applications",2931,"Corporate Positions",330|2673|2931|3004,4
+3005,"IT Application Manager",3004,"Corporate Positions",330|2673|2931|3004|3005,5
+3007,"Snr Business Systems Analyst",3005,"Corporate Positions",330|2673|2931|3004|3005|3007,6
+3008,"Application Team Lead",3005,"Corporate Positions",330|2673|2931|3004|3005|3008,6
+3009,"Support Analyst",3008,"Corporate Positions",330|2673|2931|3004|3005|3008|3009,7
+3010,"Applications Operations Lead",3005,"Corporate Positions",330|2673|2931|3004|3005|3010,6
+3014,"Senior Support Analyst",3010,"Corporate Positions",330|2673|2931|3004|3005|3010|3014,7
+3015,"Applications Solutions Lead",3005,"Corporate Positions",330|2673|2931|3004|3005|3015,6
+3016,"Business Systems Analyst",3015,"Corporate Positions",330|2673|2931|3004|3005|3015|3016,7
+3055,"Head of Cloud Engineering",2931,"Corporate Positions",330|2673|2931|3055,4
+3056,"Cloud Solutions Manager",3055,"Corporate Positions",330|2673|2931|3055|3056,5
+3057,"DevOps Engineer",3056,"Corporate Positions",330|2673|2931|3055|3056|3057,6
+3058,"DevOps Analyst",3056,"Corporate Positions",330|2673|2931|3055|3056|3058,6
+3060,"Junior Cloud Engineer",3056,"Corporate Positions",330|2673|2931|3055|3056|3060,6
+3062,"Cloud Services Manager",3055,"Corporate Positions",330|2673|2931|3055|3062,5
+3063,"Head of Business Agility & Enablement",2931,"Corporate Positions",330|2673|2931|3063,4
+3064,"Business Delivery Manager",3063,"Corporate Positions",330|2673|2931|3063|3064,5
+3065,"Process Improvement Lead",3063,"Corporate Positions",330|2673|2931|3063|3065,5
+3066,"Process Improvement Manager",3063,"Corporate Positions",330|2673|2931|3063|3066,5
+3067,"Head of Process Management and Insight",2931,"Corporate Positions",330|2673|2931|3067,4
+3068,"Senior Manager - Process and Insight",3067,"Corporate Positions",330|2673|2931|3067|3068,5
+3069,"Process Insight Analyst",3067,"Corporate Positions",330|2673|2931|3067|3069,5
+3070,"Manager Process and Insights",3067,"Corporate Positions",330|2673|2931|3067|3070,5
+3071,"Head of Process Optimisation",2931,"Corporate Positions",330|2673|2931|3071,4
+3072,"Continuous Improvement Lead",3071,"Corporate Positions",330|2673|2931|3071|3072,5
+3075,"Tech & Operations Graduate",3071,"Corporate Positions",330|2673|2931|3071|3075,5
+3076,"Senior Process Improvement Manager",3071,"Corporate Positions",330|2673|2931|3071|3076,5
+3079,"Process Improvement Analyst",3071,"Corporate Positions",330|2673|2931|3071|3079,5
+3083,"Head of Delivery Portfolio & Operations",2931,"Corporate Positions",330|2673|2931|3083,4
+3090,"PPO Reporting Lead",3083,"Corporate Positions",330|2673|2931|3083|3090,5
+3092,"Portfolio Lead",3083,"Corporate Positions",330|2673|2931|3083|3092,5
+3094,"Portfolio Performance Lead",3083,"Corporate Positions",330|2673|2931|3083|3094,5
+3096,"Senior PPO Lead",3083,"Corporate Positions",330|2673|2931|3083|3096,5
+3098,"Portfolio Operations Manager",3083,"Corporate Positions",330|2673|2931|3083|3098,5
+3099,"Portfolio Operations Lead",3098,"Corporate Positions",330|2673|2931|3083|3098|3099,6
+3101,"Temp Portfolio Operations Lead",3098,"Corporate Positions",330|2673|2931|3083|3098|3101,6
+3102,"ResourceSupply&Demand Analyst",3098,"Corporate Positions",330|2673|2931|3083|3098|3102,6
+3103,"Business Agility, Change & Enablement Lead",3083,"Corporate Positions",330|2673|2931|3083|3103,5
+3104,"Business Agility & Enablement Lead",3083,"Corporate Positions",330|2673|2931|3083|3104,5
+3106,"Senior Executive, Core Medibank Customer Systems",2673,"Corporate Positions",330|2673|3106,3
+3107,"Head of Voice Technology Services",3106,"Corporate Positions",330|2673|3106|3107,4
+3108,"Voice Services Engineer",3107,"Corporate Positions",330|2673|3106|3107|3108,5
+3111,"Voice Technology Specialist",3107,"Corporate Positions",330|2673|3106|3107|3111,5
+3112,"Head of SAP Practice",3106,"Corporate Positions",330|2673|3106|3112,4
+3113,"SAP Solution Design Lead",3112,"Corporate Positions",330|2673|3106|3112|3113,5
+3114,"SAP Senior Functional Consultant",3113,"Corporate Positions",330|2673|3106|3112|3113|3114,6
+3116,"SAP Delivery Lead",3113,"Corporate Positions",330|2673|3106|3112|3113|3116,6
+3117,"SAP Delivery and Transition Manager",3112,"Corporate Positions",330|2673|3106|3112|3117,5
+3118,"Technical Consultant",3117,"Corporate Positions",330|2673|3106|3112|3117|3118,6
+3120,"SAP PI/ABAP Analyst",3117,"Corporate Positions",330|2673|3106|3112|3117|3120,6
+3121,"Voice Support Analyst",3117,"Corporate Positions",330|2673|3106|3112|3117|3121,6
+3122,"Lead Solution Designer - SAP",3112,"Corporate Positions",330|2673|3106|3112|3122,5
+3123,"Basis Consultant",3122,"Corporate Positions",330|2673|3106|3112|3122|3123,6
+3124,"Technical Analyst - SAP",3122,"Corporate Positions",330|2673|3106|3112|3122|3124,6
+3125,"SAP Senior Technical Consultant",3122,"Corporate Positions",330|2673|3106|3112|3122|3125,6
+3127,"SAP BW Consultant",3122,"Corporate Positions",330|2673|3106|3112|3122|3127,6
+3128,"SAP Business Partner - Grp Rpt",3122,"Corporate Positions",330|2673|3106|3112|3122|3128,6
+3129,"SAP Production Support Manager",3112,"Corporate Positions",330|2673|3106|3112|3129,5
+3130,"Vendor Manager - SAP",3112,"Corporate Positions",330|2673|3106|3112|3130,5
+3131,"SAP Support Specialist",3112,"Corporate Positions",330|2673|3106|3112|3131,5
+3132,"SAP Security Specialist",3112,"Corporate Positions",330|2673|3106|3112|3132,5
+3133,"SAP Process Integrat Special.",3112,"Corporate Positions",330|2673|3106|3112|3133,5
+3134,"SAP Integration Lead",3112,"Corporate Positions",330|2673|3106|3112|3134,5
+3135,"SAP Integration Specialist",3112,"Corporate Positions",330|2673|3106|3112|3135,5
+3141,"SAP Support Lead",3112,"Corporate Positions",330|2673|3106|3112|3141,5
+3142,"SAP Support Analyst",3141,"Corporate Positions",330|2673|3106|3112|3141|3142,6
+3146,"Contact Centre Platform Architect",3106,"Corporate Positions",330|2673|3106|3146,4
+3147,"Health Applications Lead",3106,"Corporate Positions",330|2673|3106|3147,4
+3153,"Head of Design",3106,"Corporate Positions",330|2673|3106|3153,4
+3154,"Contact Centre Engineering Lead",3153,"Corporate Positions",330|2673|3106|3153|3154,5
+3158,"Functional Consultant",3153,"Corporate Positions",330|2673|3106|3153|3158,5
+3160,"SAP Senior Functional Consultant - SuccessFactors",3153,"Corporate Positions",330|2673|3106|3153|3160,5
+3162,"SAP Functional Lead",3153,"Corporate Positions",330|2673|3106|3153|3162,5
+3163,"SAP Business Partner - Finance",3162,"Corporate Positions",330|2673|3106|3153|3162|3163,6
+3165,"SAP Functional Consultant",3162,"Corporate Positions",330|2673|3106|3153|3162|3165,6
+3166,"Chief Financial Officer",330,"Corporate Positions",330|3166,2
+3167,"Senior Executive - Group Financial Controller",3166,"Corporate Positions",330|3166|3167,3
+3168,"Head of Finance Systems & Master Data",3167,"Corporate Positions",330|3166|3167|3168,4
+3170,"Finance Master Data Manager",3168,"Corporate Positions",330|3166|3167|3168|3170,5
+3171,"Systems Accountant",3168,"Corporate Positions",330|3166|3167|3168|3171,5
+3177,"Sr. Finance Officer HSS",3168,"Corporate Positions",330|3166|3167|3168|3177,5
+3178,"Accountant HSD",3168,"Corporate Positions",330|3166|3167|3168|3178,5
+3187,"Head of Tax",3167,"Corporate Positions",330|3166|3167|3187,4
+3188,"Tax Reporting Manager",3187,"Corporate Positions",330|3166|3167|3187|3188,5
+3189,"Tax Reporting Specialist",3188,"Corporate Positions",330|3166|3167|3187|3188|3189,6
+3190,"Tax Advisory Manager",3187,"Corporate Positions",330|3166|3167|3187|3190,5
+3191,"Head of Finance Operations",3167,"Corporate Positions",330|3166|3167|3191,4
+3192,"Senior PHI Payments Officer",3191,"Corporate Positions",330|3166|3167|3191|3192,5
+3193,"PHI Payments Officer",3191,"Corporate Positions",330|3166|3167|3191|3193,5
+3196,"Team Lead - MHS Billing",3191,"Corporate Positions",330|3166|3167|3191|3196,5
+3197,"Billing Analyst",3196,"Corporate Positions",330|3166|3167|3191|3196|3197,6
+3201,"Finance Operations Systems Analyst",3191,"Corporate Positions",330|3166|3167|3191|3201,5
+3204,"Head of Financial Accounting",3167,"Corporate Positions",330|3166|3167|3204,4
+3205,"Accounting Manager",3204,"Corporate Positions",330|3166|3167|3204|3205,5
+3206,"Senior Financial Accountant",3205,"Corporate Positions",330|3166|3167|3204|3205|3206,6
+3208,Accountant,3205,"Corporate Positions",330|3166|3167|3204|3205|3208,6
+3210,"Financial Accounting Systems Lead",3205,"Corporate Positions",330|3166|3167|3204|3205|3210,6
+3211,"Snr Corporate Accountant",3204,"Corporate Positions",330|3166|3167|3204|3211,5
+3213,"Head of Treasury",3167,"Corporate Positions",330|3166|3167|3213,4
+3216,"Senior Executive Corporate Finance",3166,"Corporate Positions",330|3166|3216,3
+3217,"Senior Executive Commercial Finance",3166,"Corporate Positions",330|3166|3217,3
+3218,"Head of Group Reporting",3217,"Corporate Positions",330|3166|3217|3218,4
+3219,"Group Reporting Manager",3218,"Corporate Positions",330|3166|3217|3218|3219,5
+3220,"Mgr Planning & Forecasting",3218,"Corporate Positions",330|3166|3217|3218|3220,5
+3221,"Senior Planning Analyst",3220,"Corporate Positions",330|3166|3217|3218|3220|3221,6
+3222,"Head of Finance - H&S",3217,"Corporate Positions",330|3166|3217|3222,4
+3223,"Manager Finance Partner, Health Care",3222,"Corporate Positions",330|3166|3217|3222|3223,5
+3224,"Financal Mngt and Reporting",3223,"Corporate Positions",330|3166|3217|3222|3223|3224,6
+3225,"Finance Analyst",3223,"Corporate Positions",330|3166|3217|3222|3223|3225,6
+3227,"Finance Business Partner",3222,"Corporate Positions",330|3166|3217|3222|3227,5
+3228,"Manager Finance Partner - H&S",3222,"Corporate Positions",330|3166|3217|3222|3228,5
+3233,"Enterprise Services Graduate",3228,"Corporate Positions",330|3166|3217|3222|3228|3233,6
+3234,"Senior Finance Analyst - H&S",3228,"Corporate Positions",330|3166|3217|3222|3228|3234,6
+3239,"Finance Manager - HSS",3222,"Corporate Positions",330|3166|3217|3222|3239,5
+3240,"Head of Finance Tech. CSS&Proj",3217,"Corporate Positions",330|3166|3217|3240,4
+3249,"Head of Finance - CS&P",3217,"Corporate Positions",330|3166|3217|3249,4
+3253,"Manager Finance Partner",3249,"Corporate Positions",330|3166|3217|3249|3253,5
+3267,"Head of Planning and Performance",3217,"Corporate Positions",330|3166|3217|3267,4
+3268,"Senior Planning and Performance Analyst",3267,"Corporate Positions",330|3166|3217|3267|3268,5
+3269,"Project Finance Manager",3267,"Corporate Positions",330|3166|3217|3267|3269,5
+3270,"Senior Project Analyst",3269,"Corporate Positions",330|3166|3217|3267|3269|3270,6
+3271,"Project Analyst",3269,"Corporate Positions",330|3166|3217|3267|3269|3271,6
+3272,"Planning & Performance Manager",3267,"Corporate Positions",330|3166|3217|3267|3272,5
+3273,"Planning & Performance Analyst",3272,"Corporate Positions",330|3166|3217|3267|3272|3273,6
+3274,"Head of Reporting",3217,"Corporate Positions",330|3166|3217|3274,4
+3276,"Commercial Finance Reporting and Analytics Manager",3274,"Corporate Positions",330|3166|3217|3274|3276,5
+3277,"Senior Data Analytics & Reporting Analyst",3276,"Corporate Positions",330|3166|3217|3274|3276|3277,6
+3279,"Senior Analytics & Reporting Analyst",3276,"Corporate Positions",330|3166|3217|3274|3276|3279,6
+3284,"Reporting and Insights Manager",3274,"Corporate Positions",330|3166|3217|3274|3284,5
+3291,"Senior Executive - Chief Actuary",3166,"Corporate Positions",330|3166|3291,3
+3293,"Head of Forecasting",3291,"Corporate Positions",330|3166|3291|3293,4
+3294,"Forecasting Analyst",3293,"Corporate Positions",330|3166|3291|3293|3294,5
+3296,"Senior Forecasting Analyst",3293,"Corporate Positions",330|3166|3291|3293|3296,5
+3297,"Snr Modelling Anlyst-Forecast",3293,"Corporate Positions",330|3166|3291|3293|3297,5
+3300,"Actuarial Analyst",3293,"Corporate Positions",330|3166|3291|3293|3300,5
+3301,"Lead Claims Forecasting and Analytics",3293,"Corporate Positions",330|3166|3291|3293|3301,5
+3302,"Senior Executive - Deputy Chief Actuary",3291,"Corporate Positions",330|3166|3291|3302,4
+3303,"Actuary Lead - Corporate",3302,"Corporate Positions",330|3166|3291|3302|3303,5
+3304,"Corporate Actuary",3291,"Corporate Positions",330|3166|3291|3304,4
+3307,"Forecasting Actuary",3304,"Corporate Positions",330|3166|3291|3304|3307,5
+3310,"Head of Pricing",3291,"Corporate Positions",330|3166|3291|3310,4
+3311,"Actuary Lead - Consumer",3310,"Corporate Positions",330|3166|3291|3310|3311,5
+3321,"Senior Executive Internal Audit",3166,"Corporate Positions",330|3166|3321,3
+3322,"Int Audit Mgr - Technology",3321,"Corporate Positions",330|3166|3321|3322,4
+3323,"Head of, Internal Audit",3321,"Corporate Positions",330|3166|3321|3323,4
+3324,"Head of, Internal Audit",3321,"Corporate Positions",330|3166|3321|3324,4
+3325,"Internal Audit Manager",3324,"Corporate Positions",330|3166|3321|3324|3325,5
+3326,"Senior Internal Auditor",3325,"Corporate Positions",330|3166|3321|3324|3325|3326,6
+3331,"Executive Manager Financial Services",3166,"Corporate Positions",330|3166|3331,3
+3332,"Senior Executive Investor Relations",3166,"Corporate Positions",330|3166|3332,3
+3333,"Investor Relations - Senior Analyst",3332,"Corporate Positions",330|3166|3332|3333,4
+3335,"Investor Relations Manager",3332,"Corporate Positions",330|3166|3332|3335,4
+3336,"Chief Risk Officer",330,"Corporate Positions",330|3336,2
+3337,"Head of Risk",3336,"Corporate Positions",330|3336|3337,3
+3339,"Senior Adviser",3337,"Corporate Positions",330|3336|3337|3339,4
+3340,"Risk Adviser",3337,"Corporate Positions",330|3336|3337|3340,4
+3342,"Senior Risk Adviser",3337,"Corporate Positions",330|3336|3337|3342,4
+3343,"Head of Risk",3336,"Corporate Positions",330|3336|3343,3
+3344,"Senior Risk&Assurance Analyst",3343,"Corporate Positions",330|3336|3343|3344,4
+3346,"Senior Risk & Insurance Advisor",3343,"Corporate Positions",330|3336|3343|3346,4
+3347,"Risk Manager",3336,"Corporate Positions",330|3336|3347,3
+3349,"Risk Analyst",3347,"Corporate Positions",330|3336|3347|3349,4
+3353,"Senior Executive Office of the CEO",330,"Corporate Positions",330|3353,2
+3354,"Media & Communication Adviser",3353,"Corporate Positions",330|3353|3354,3
+3355,"Head of Media",3353,"Corporate Positions",330|3353|3355,3
+3356,"External Affairs Manager",3353,"Corporate Positions",330|3353|3356,3
+3357,"Head of Government Affairs",3353,"Corporate Positions",330|3353|3357,3
+3359,"Senior Executive External Affairs",3353,"Corporate Positions",330|3353|3359,3
+3363,"External Affairs Advisor",3359,"Corporate Positions",330|3353|3359|3363,4
+3364,"Corporate Communications Mgr",3359,"Corporate Positions",330|3353|3359|3364,4
+3366,"Junior Fullstack Developer",2902,"Corporate Positions",330|2673|2862|2872|2902|3366,6
+3367,"Overseas Customer Team Leader",575,"Corporate Positions",330|477|478|571|575|3367,6
+3368,"O/S Customer Ops Consult.",3367,"Corporate Positions",330|477|478|571|575|3367|3368,7
+3369,"O/S Customer Service Consult.",3367,"Corporate Positions",330|477|478|571|575|3367|3369,7
+3370,"O/S Customer Service Consultant",3367,"Corporate Positions",330|477|478|571|575|3367|3370,7
+3371,"OSHC Retention Consultant",3367,"Corporate Positions",330|477|478|571|575|3367|3371,7
+3372,"Snr Fullstack Developer",2902,"Corporate Positions",330|2673|2862|2872|2902|3372,6
+3382,"Chief People Officer",330,"Corporate Positions",330|3382,2

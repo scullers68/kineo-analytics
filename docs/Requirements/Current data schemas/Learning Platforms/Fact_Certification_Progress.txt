@@ -1,0 +1,56 @@
+SELECT Facts.*
+, dfyb.FY_Began
+, dfyc.FY_Completed
+
+FROM
+(
+    SELECT
+    c.[User ID] AS User_ID,
+    -1 AS [Program_ID],
+    dc.[Certification_User_ID],
+    -1 AS [Course_ID],
+    CAST(-1 AS bigint) AS SCORM_ID,
+    c.[Certification ID] AS Cert_ID,
+    CAST(-1 AS bigint) AS [Program_User_ID],
+    CAST(-1 AS bigint) AS [Course_User_ID],
+     -1 AS [Event_ID] ,
+     -1 AS [Session_ID] ,
+    c.[Time Expires],
+    CASE
+        WHEN ISNULL(dc.[Time assigned]) THEN 
+            CASE WHEN ISNULL(dc.[Time completed]) THEN CreateDate(1900, 1, 1) ELSE CreateDate(GetYear(dc.[Time completed]), GetMonth(dc.[Time completed]), GetDay(dc.[Time completed])) END
+        ELSE CreateDate(GetYear(dc.[Time assigned]), GetMonth(dc.[Time assigned]), GetDay(dc.[Time assigned]))
+    END AS Date_Began,
+    
+    CASE
+        WHEN ISNULL(dc.[Time completed]) THEN CreateDate(1900, 1, 1)
+        ELSE CreateDate(GetYear(dc.[Time completed]), GetMonth(dc.[Time completed]), GetDay(dc.[Time completed]))
+    END AS Date_Completed,
+
+        c.[Status],
+    1 AS Limit_to_certification_progress,
+    
+-- Day difference created to remove incomplete and unassigned data based upon days to completion indicators in certification dashboard. 
+CASE WHEN ISNULL(dc.[Time completed]) OR ISNULL(dc.[Time assigned]) THEN NULL ELSE
+DayDiff( 
+            CASE
+                WHEN ISNULL(dc.[Time completed]) THEN CreateDate(1900, 1, 1)
+                ELSE CreateDate(GetYear(dc.[Time completed]), GetMonth(dc.[Time completed]), GetDay(dc.[Time completed]))
+            END,
+            CASE
+                WHEN ISNULL(dc.[Time assigned]) THEN 
+                    CASE WHEN ISNULL(dc.[Time completed]) THEN CreateDate(1900, 1, 1) ELSE CreateDate(GetYear(dc.[Time completed]), GetMonth(dc.[Time completed]), GetDay(dc.[Time completed])) END
+            ELSE CreateDate(GetYear(dc.[Time assigned]), GetMonth(dc.[Time assigned]), GetDay(dc.[Time assigned]))
+            END
+    ) 
+    END AS Days_Difference
+    
+FROM
+    [Analytics_cert_completions.Csv] c
+
+LEFT JOIN
+    [Dim_Certification_Progress] dc
+    ON dc.[Certification ID] = c.[Certification ID] AND dc.[User ID] = c.[User ID]
+) Facts
+LEFT JOIN Dim_FY_Completed dfyc ON Facts.Date_Completed>=dfyc.[FYStartDate] AND Facts.Date_Completed<=dfyc.[FYEndDate]
+LEFT JOIN Dim_FY_Began dfyb ON Facts.Date_Began>=dfyb.[FYStartDate] AND Facts.Date_Began<=dfyb.[FYEndDate]

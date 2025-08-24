@@ -1,0 +1,11 @@
+SELECT
+RANKASC([SCORM Title]) AS SCORM_ID
+, [SCORM Title]
+FROM [analytics_scorm.csv] sco
+GROUP BY [SCORM Title]
+
+UNION
+
+SELECT
+-1 AS SCORM_ID
+, 'N/A' AS [SCORM Title]

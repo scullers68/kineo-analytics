@@ -1,0 +1,61 @@
+_component,_id,_index,_isPartlyCorrect,_parentId,_score,_shouldBeSelected,scope,text
+mcq,6311e958d77eec3905ae76d1,0,FALSE,6311e946d77eec3905ae76ce,0,TRUE,sj_family_products_dangerous_goods,Hazardous
+mcq,6311e958d77eec3905ae76d1,1,FALSE,6311e946d77eec3905ae76ce,0,FALSE,sj_family_products_dangerous_goods,Non-hazardous
+mcq,6311eac7d77eec3905ae76d9,0,FALSE,6311eac7d77eec3905ae76d5,0,TRUE,sj_family_products_dangerous_goods,Hazardous
+mcq,6311eac7d77eec3905ae76d9,1,FALSE,6311eac7d77eec3905ae76d5,0,FALSE,sj_family_products_dangerous_goods,Non-hazardous
+mcq,6311eb2dd77eec3905ae76df,0,FALSE,6311eb2dd77eec3905ae76db,0,FALSE,sj_family_products_dangerous_goods,Hazardous
+mcq,6311eb2dd77eec3905ae76df,1,FALSE,6311eb2dd77eec3905ae76db,0,TRUE,sj_family_products_dangerous_goods,Non-hazardous
+mcq,6311eb68d77eec3905ae76e5,0,FALSE,6311eb68d77eec3905ae76e1,0,TRUE,sj_family_products_dangerous_goods,Hazardous
+mcq,6311eb68d77eec3905ae76e5,1,FALSE,6311eb68d77eec3905ae76e1,0,FALSE,sj_family_products_dangerous_goods,Non-hazardous
+mcq,6311ebb6d77eec3905ae76eb,0,FALSE,6311ebb6d77eec3905ae76e7,0,TRUE,sj_family_products_dangerous_goods,Hazardous
+mcq,6311ebb6d77eec3905ae76eb,1,FALSE,6311ebb6d77eec3905ae76e7,0,FALSE,sj_family_products_dangerous_goods,Non-hazardous
+mcq,631713ead77eec3905ae77b8,0,FALSE,631713ead77eec3905ae77ac,0,TRUE,sj_family_products_dangerous_goods,Hazardous
+mcq,631713ead77eec3905ae77b8,1,FALSE,631713ead77eec3905ae77ac,0,FALSE,sj_family_products_dangerous_goods,Non-hazardous
+mcq,631713ead77eec3905ae77bc,0,FALSE,631713ead77eec3905ae77ad,0,FALSE,sj_family_products_dangerous_goods,Hazardous
+mcq,631713ead77eec3905ae77bc,1,FALSE,631713ead77eec3905ae77ad,0,TRUE,sj_family_products_dangerous_goods,Non-hazardous
+mcq,631713ead77eec3905ae77c0,0,FALSE,631713ead77eec3905ae77ae,0,TRUE,sj_family_products_dangerous_goods,Hazardous
+mcq,631713ead77eec3905ae77c0,1,FALSE,631713ead77eec3905ae77ae,0,FALSE,sj_family_products_dangerous_goods,Non-hazardous
+mcq,631713ebd77eec3905ae77c4,0,FALSE,631713ead77eec3905ae77af,0,TRUE,sj_family_products_dangerous_goods,Hazardous
+mcq,631713ebd77eec3905ae77c4,1,FALSE,631713ead77eec3905ae77af,0,FALSE,sj_family_products_dangerous_goods,Non-hazardous
+mcq,631713ebd77eec3905ae77c8,0,FALSE,631713ead77eec3905ae77b0,0,FALSE,sj_family_products_dangerous_goods,Hazardous
+mcq,631713ebd77eec3905ae77c8,1,FALSE,631713ead77eec3905ae77b0,0,TRUE,sj_family_products_dangerous_goods,Non-hazardous
+mcq,63171bdcd77eec3905ae7818,0,FALSE,63171bdcd77eec3905ae7806,0,FALSE,sj_family_products_dangerous_goods,"Class 2 Gases, so it must go through the HMSC"
+mcq,63171bdcd77eec3905ae7818,1,FALSE,63171bdcd77eec3905ae7806,0,FALSE,sj_family_products_dangerous_goods,"Class 8 Corrosive, so it must go through the HMSC"
+mcq,63171bdcd77eec3905ae7818,2,FALSE,63171bdcd77eec3905ae7806,0,TRUE,sj_family_products_dangerous_goods,"Class 9 Miscellaneous Hazard, so it must go through the HMSC"
+mcq,63171bdcd77eec3905ae781c,0,FALSE,63171bdcd77eec3905ae7807,0,FALSE,sj_family_products_dangerous_goods,"Class 2 Gases, so it must go through the HMSC"
+mcq,63171bdcd77eec3905ae781c,1,FALSE,63171bdcd77eec3905ae7807,0,FALSE,sj_family_products_dangerous_goods,"Class 8 Corrosive, so it must go through the HMSC"
+mcq,63171bdcd77eec3905ae781c,2,FALSE,63171bdcd77eec3905ae7807,0,TRUE,sj_family_products_dangerous_goods,"Non-hazardous, so it does not need to go through the HMSC"
+mcq,63171bdcd77eec3905ae7820,0,FALSE,63171bdcd77eec3905ae7808,0,FALSE,sj_family_products_dangerous_goods,"Class 2 Gases, so it must go through the HMSC"
+mcq,63171bdcd77eec3905ae7820,1,FALSE,63171bdcd77eec3905ae7808,0,FALSE,sj_family_products_dangerous_goods,"Class 3 Flammable, so it must go through the HMSC"
+mcq,63171bdcd77eec3905ae7820,2,FALSE,63171bdcd77eec3905ae7808,0,FALSE,sj_family_products_dangerous_goods,"Non-hazardous, so it does not need to go through the HMSC"
+mcq,63171bdcd77eec3905ae7824,0,FALSE,63171bdcd77eec3905ae7809,0,TRUE,sj_family_products_dangerous_goods,"Class 2 Gases, so it must go through the HMSC"
+mcq,63171bdcd77eec3905ae7824,1,FALSE,63171bdcd77eec3905ae7809,0,FALSE,sj_family_products_dangerous_goods,"Class 3 Flammable, so it must go through the HMSC"
+mcq,63171bdcd77eec3905ae7824,2,FALSE,63171bdcd77eec3905ae7809,0,FALSE,sj_family_products_dangerous_goods,"Class 8 Corrosive, so it must go through the HMSC"
+mcq,63171bdcd77eec3905ae7828,0,FALSE,63171bdcd77eec3905ae780a,0,FALSE,sj_family_products_dangerous_goods,"Class 2 Gases, so it must go through the HMSC"
+mcq,63171bdcd77eec3905ae7828,1,FALSE,63171bdcd77eec3905ae780a,0,TRUE,sj_family_products_dangerous_goods,"Class 8 Corrosive, so it must go through the HMSC"
+mcq,63171bdcd77eec3905ae7828,2,FALSE,63171bdcd77eec3905ae780a,0,FALSE,sj_family_products_dangerous_goods,"Class 9 Miscellaneous Hazard, so it must go through the HMSC"
+confidenceSlider,confidence1,1,FALSE,6311ef38d77eec3905ae76fe,,TRUE,sj_family_products_dangerous_goods,1
+confidenceSlider,confidence1,2,FALSE,6311ef38d77eec3905ae76fe,,TRUE,sj_family_products_dangerous_goods,2
+confidenceSlider,confidence1,3,FALSE,6311ef38d77eec3905ae76fe,,TRUE,sj_family_products_dangerous_goods,3
+confidenceSlider,confidence1,4,FALSE,6311ef38d77eec3905ae76fe,,TRUE,sj_family_products_dangerous_goods,4
+confidenceSlider,confidence1,5,FALSE,6311ef38d77eec3905ae76fe,,TRUE,sj_family_products_dangerous_goods,5
+confidenceSlider,confidence2,1,FALSE,63171bdcd77eec3905ae7810,,TRUE,sj_family_products_dangerous_goods,1
+confidenceSlider,confidence2,2,FALSE,63171bdcd77eec3905ae7810,,TRUE,sj_family_products_dangerous_goods,2
+confidenceSlider,confidence2,3,FALSE,63171bdcd77eec3905ae7810,,TRUE,sj_family_products_dangerous_goods,3
+confidenceSlider,confidence2,4,FALSE,63171bdcd77eec3905ae7810,,TRUE,sj_family_products_dangerous_goods,4
+confidenceSlider,confidence2,5,FALSE,63171bdcd77eec3905ae7810,,TRUE,sj_family_products_dangerous_goods,5
+confidenceSlider,63172428d77eec3905ae7857,1,FALSE,63172428d77eec3905ae7856,,TRUE,sj_family_products_dangerous_goods,1
+confidenceSlider,63172428d77eec3905ae7857,2,FALSE,63172428d77eec3905ae7856,,TRUE,sj_family_products_dangerous_goods,2
+confidenceSlider,63172428d77eec3905ae7857,3,FALSE,63172428d77eec3905ae7856,,TRUE,sj_family_products_dangerous_goods,3
+confidenceSlider,63172428d77eec3905ae7857,4,FALSE,63172428d77eec3905ae7856,,TRUE,sj_family_products_dangerous_goods,4
+confidenceSlider,63172428d77eec3905ae7857,5,FALSE,63172428d77eec3905ae7856,,TRUE,sj_family_products_dangerous_goods,5
+confidenceSlider,63172576d77eec3905ae785c,1,FALSE,63172431d77eec3905ae7859,,TRUE,sj_family_products_dangerous_goods,1
+confidenceSlider,63172576d77eec3905ae785c,2,FALSE,63172431d77eec3905ae7859,,TRUE,sj_family_products_dangerous_goods,2
+confidenceSlider,63172576d77eec3905ae785c,3,FALSE,63172431d77eec3905ae7859,,TRUE,sj_family_products_dangerous_goods,3
+confidenceSlider,63172576d77eec3905ae785c,4,FALSE,63172431d77eec3905ae7859,,TRUE,sj_family_products_dangerous_goods,4
+confidenceSlider,63172576d77eec3905ae785c,5,FALSE,63172431d77eec3905ae7859,,TRUE,sj_family_products_dangerous_goods,5
+confidenceSlider,63172600d77eec3905ae785f,1,FALSE,63172600d77eec3905ae785e,,TRUE,sj_family_products_dangerous_goods,1
+confidenceSlider,63172600d77eec3905ae785f,2,FALSE,63172600d77eec3905ae785e,,TRUE,sj_family_products_dangerous_goods,2
+confidenceSlider,63172600d77eec3905ae785f,3,FALSE,63172600d77eec3905ae785e,,TRUE,sj_family_products_dangerous_goods,3
+confidenceSlider,63172600d77eec3905ae785f,4,FALSE,63172600d77eec3905ae785e,,TRUE,sj_family_products_dangerous_goods,4
+confidenceSlider,63172600d77eec3905ae785f,5,FALSE,63172600d77eec3905ae785e,,TRUE,sj_family_products_dangerous_goods,5

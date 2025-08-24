@@ -1,0 +1,69 @@
+-- Builds the Course dimension from combining in person and elearning courses. Where a course exists in both we use the record from in person learning because it includes more information such as course category and include in dashboard flag.
+
+SELECT
+CourseBestPriority.[Course_ID]
+, [Course_Name]
+, [Course_Category]
+, [Include in Dashboard]
+
+FROM
+-- Get both the in person and elearning courses and where a record exists for both use the in person record as it has more information
+(
+-- Get in person learning course details
+SELECT
+1 AS Priority,
+ acc.[Course ID] AS [Course_ID]
+  , MAX(acc.[Course Name]) AS [Course_Name]
+  , MAX(acc.[Course Category]) AS [Course_Category]
+  , MAX([Include in Dashboard]) AS [Include in Dashboard]
+FROM [analytics_course_completions.csv] AS acc
+GROUP BY  acc.[Course ID]
+
+UNION ALL
+
+-- Get eLearning course details
+-- There are no values for Category and Include in Dashboard. As such we are adding a sorting value so if we have this course info from the in person learning we can have that record take precedence.
+SELECT
+2 AS Priority,
+ ascorm.[Course ID] AS [Course_ID]
+  , MAX(ascorm.[Course Name]) AS [Course_Name]
+  , 'N/A' AS [Course_Category]
+  , 1 AS [Include in Dashboard]
+FROM [analytics_scorm.csv] AS ascorm
+GROUP BY  ascorm.[Course ID]
+) AllCourses
+
+
+INNER JOIN
+
+(
+SELECT [Course_ID], MIN([Priority]) AS BestPriority
+FROM
+    (
+    -- Get in person learning course details
+    SELECT
+    1 AS Priority,
+     acc.[Course ID] AS [Course_ID]
+    FROM [analytics_course_completions.csv] AS acc
+    GROUP BY  acc.[Course ID]
+    
+    UNION ALL
+    
+    -- Get eLearning course details
+    SELECT
+    2 AS Priority,
+     ascorm.[Course ID] AS [Course_ID]
+    FROM [analytics_scorm.csv] AS ascorm
+    GROUP BY  ascorm.[Course ID]
+    ) CourseRecordPriorities
+GROUP BY [Course_ID]
+) CourseBestPriority ON AllCourses.[Course_ID] = CourseBestPriority.[Course_ID] AND AllCourses.[Priority]=CourseBestPriority.BestPriority
+
+
+UNION
+
+SELECT
+  -1 AS [Course_ID]
+  , 'N/A'  AS [Course_Name]
+  , 'N/A' AS [Course_Category]
+  , -1 AS [Include in Dashboard]

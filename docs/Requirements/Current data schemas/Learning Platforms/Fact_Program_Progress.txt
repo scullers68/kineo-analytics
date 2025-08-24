@@ -1,0 +1,57 @@
+SELECT *
+, dfyb.FY_Began
+, dfyc.FY_Completed
+
+FROM
+(
+    SELECT
+    p.[User ID] AS User_ID,
+    p.[Program ID] AS [Program_ID],
+    -1 AS [Course_ID],
+    CAST(-1 AS bigint) AS SCORM_ID,
+    -1 AS Cert_ID,
+    dpp.[Program_User_ID],
+    CAST(-1 AS bigint) AS [Course_User_ID],
+    TOBIGINT(-1) AS [Certification_User_ID],
+     -1 AS [Event_ID] ,
+ -1 AS [Session_ID] ,
+    CASE
+        WHEN ISNULL(dpp.[Time assigned]) THEN CreateDate(1900, 1, 1)
+        ELSE CreateDate(GetYear(dpp.[Time assigned]), GetMonth(dpp.[Time assigned]), GetDay(dpp.[Time assigned]))
+    END AS Date_Began,
+    CASE
+        WHEN ISNULL(po.[Due Date]) THEN CreateDate(1900, 1, 1)
+        ELSE CreateDate(GetYear(po.[Due Date]), GetMonth(po.[Due Date]), GetDay(po.[Due Date]))
+    END AS [Due Date],
+    CASE
+        WHEN ISNULL(dpp.[Time completed]) THEN CreateDate(1900, 1, 1)
+        ELSE CreateDate(GetYear(dpp.[Time completed]), GetMonth(dpp.[Time completed]), GetDay(dpp.[Time completed]))
+    END AS Date_Completed,
+    CASE
+        WHEN ISNULL(po.[Due Date]) THEN 0
+        WHEN ISNULL(dpp.[Time completed]) AND (CreateDate(GetYear(po.[Due Date]), GetMonth(po.[Due Date]), GetDay(po.[Due Date])) < CurrentDate()) THEN 1
+        ELSE 0
+    END AS IsOverdue,
+    
+    1 AS Limit_to_program_progress,
+    CASE WHEN ISNULL(dpp.[Time completed]) OR ISNULL(dpp.[Time assigned]) THEN NULL ELSE
+    DayDiff( 
+            CASE
+                WHEN ISNULL(dpp.[Time completed]) THEN CreateDate(1900, 1, 1)
+                ELSE CreateDate(GetYear(dpp.[Time completed]), GetMonth(dpp.[Time completed]), GetDay(dpp.[Time completed]))
+            END,
+            CASE
+                WHEN ISNULL(dpp.[Time assigned]) THEN CreateDate(1900, 1, 1)
+                ELSE CreateDate(GetYear(dpp.[Time assigned]), GetMonth(dpp.[Time assigned]), GetDay(dpp.[Time assigned]))
+            END
+    ) END AS Days_Difference
+    
+FROM
+    [analytics_prog_completions.csv] p
+LEFT JOIN
+    [Dim_Program_Progress] dpp
+    ON p.[Program ID] = dpp.[Program ID] AND p.[User ID] = dpp.[User ID]
+LEFT JOIN (SELECT [User ID], [Program_User_Key], MAX([Due Date]) AS [Due Date] FROM [Analytics_prog_overview.csv] GROUP BY [User ID], [Program_User_Key]) po ON po.[User ID] = p.[User ID] AND p.[Program_User_Key] = po.[Program_User_Key]
+) Facts
+LEFT JOIN Dim_FY_Completed dfyc ON Facts.Date_Completed>=dfyc.[FYStartDate] AND Facts.Date_Completed<=dfyc.[FYEndDate]
+LEFT JOIN Dim_FY_Began dfyb ON Facts.Date_Began>=dfyb.[FYStartDate] AND Facts.Date_Began<=dfyb.[FYEndDate]

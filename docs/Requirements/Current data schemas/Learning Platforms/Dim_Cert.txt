@@ -1,0 +1,17 @@
+SELECT 
+[Certification ID] AS Cert_ID
+, MAX([Certification Name]) AS [Certification Name]
+, MAX([Course Category]) AS [Certification Category]
+, MAX([Include in Dashboard]) AS [Include in Dashboard]
+FROM 
+[analytics_cert_completions.csv] as acc
+GROUP BY [Certification ID]
+
+
+UNION 
+
+SELECT 
+-1 AS Cert_ID
+, 'N/A' AS [Certification Name] 
+, 'N/A' AS [Course Category]
+, -1 AS [Include in Dashboard]

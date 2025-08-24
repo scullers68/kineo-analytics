@@ -1,0 +1,43 @@
+/*
+        This table provides a record for each FY for each program that was in progress at the time, with a completion status for that FY
+        For example, a course started in FY19 and completed in FY21, there would be 3 records, with only the FY21 having ProgramCompletionStatusForFY='Completed' and the other two years as 'In Progress'
+*/
+
+-- All the MAX stuff and related grouping here is to get a single record for ewach course_user/year. The reason it is needed is because each course can apply to multiple programs.
+
+SELECT *, RANK() AS UniqueCourseHistoryRecord, RANKASC([Course_User_ID],FY_Completed) AS HistoryRecordNo FROM
+(
+
+SELECT 
+MAX(c.[Cert_ID]) AS [Cert_ID]
+,MAX(c.[Course_ID]) AS [Course_ID]
+,MAX(c.[Course_User_ID]) AS [Course_User_ID]
+,MAX(c.[Date_Began]) AS [Date_Began]
+,MAX(c.[Date_Completed]) AS [Date_Completed]
+,MAX(c.[Program_ID]) AS [Program_ID]
+,MAX(c.[Program_User_ID]) AS [Program_User_ID]
+, TOBIGINT(-1) AS [Certification_User_ID]
+,MAX(c.[User_ID]) AS [User_ID]
+,MAX(c.[SCORM_ID]) AS [SCORM_ID]
+, -1 AS [Event_ID]
+, -1 AS [Session_ID]
+,d.FY_Completed
+,CAST(d.FY_Completed AS INT) AS FY_Status
+,MAX(b.FY_Began) AS [FY_Began]
+,MAX(dc.[Time started]) AS [Time started]
+, CASE WHEN MAX(dc.[Completion Status])='Not yet started' THEN 'Not yet started' 
+    WHEN d.[FY_Completed] = MAX(c.[FY_Completed]) THEN 'Complete'
+    WHEN CreateDate(GetYear(MAX(dc.[Time started])),GetMonth(MAX(dc.[Time started])),GetDay(MAX(dc.[Time started])))>d.[FYEndDate] THEN 'Not yet started' 
+    WHEN MAX(dc.[Completion Status])='In progress' THEN 'In progress' 
+    WHEN MAX(c.[Date_Completed])=CreateDate(1900,1,1) THEN 'Not yet started'
+    WHEN MAX(c.[Date_Completed])<=d.[FYEndDate] THEN 'Complete' 
+    ELSE 'In progress' END AS CourseCompletionStatusForFY
+, 1 AS LimitToFactCourseToCertHistory
+FROM
+[Fact_Course_to_Cert_Progress] c
+INNER JOIN Dim_FY_Completed d ON c.[Date_Began]<=d.[FYEndDate] AND (c.[Date_Completed]=CreateDate(1900,1,1) OR c.[Date_Completed]>=d.[FYStartDate]) AND NOT d.[FYStartDate]>=now()  AND NOT d.[FYStartDate]=CreateDate(1900,1,1)
+INNER JOIN Dim_FY_Began b ON c.[Date_Began]<=b.[FYEndDate] AND c.[Date_Began]>=b.[FYStartDate]
+LEFT JOIN [Dim_Course_Progress] dc ON c.[Course_User_ID]=dc.[Course_User_ID]
+GROUP BY c.[Course_User_ID], d.[FY_Completed], d.[FYEndDate]
+) CourseHistoryRecords
+

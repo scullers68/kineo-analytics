@@ -1,0 +1,6 @@
+select * from (
+select dd.[Date], dd.[DateNum]
+from [DimDates] dd
+where getyear(dd.[Date]) >= 2011
+) tbl
+where tbl.date <= now()

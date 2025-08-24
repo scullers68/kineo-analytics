@@ -1,0 +1,37 @@
+/*
+        This table provides a record for each FY for each Certification that was in progress at the time, with a completion status for that FY
+        For example, a Certification started in FY19 and completed in FY21, there would be 3 records, with only the FY21 having CertificationCompletionStatusForFY='Certified' and the other two years as 'Not certified'
+*/
+
+SELECT 
+MAX(p.[Cert_ID]) AS [Cert_ID]
+,MAX(p.[Course_ID]) AS [Course_ID]
+,MAX(p.[Course_User_ID]) AS [Course_User_ID]
+,MAX(p.[Date_Began]) AS [Date_Began]
+,MAX(p.[Date_Completed]) AS [Date_Completed]
+,MAX(p.[Program_ID]) AS [Program_ID]
+,MAX(p.[Program_User_ID]) AS [Program_User_ID]
+,MAX(p.[Certification_User_ID]) AS [Certification_User_ID]
+,MAX(p.[User_ID]) AS [User_ID]
+,CAST(-1 AS BIGINT) AS SCORM_ID
+, -1 AS [Event_ID]
+, -1 AS [Session_ID]
+, TOBIGINT(-1) AS [Certification_User_ID]
+,d.FY_Completed
+,CAST(d.FY_Completed AS INT) AS FY_Status
+,MAX(b.FY_Began) AS [FY_Began]
+, CASE 
+    WHEN dpp.Status='Expired' THEN 'Expired'
+    WHEN p.[Date_Completed]=nulldate THEN 'In progress' 
+    WHEN p.[Date_Completed]<=d.[FYEndDate] THEN dpp.Status 
+    ELSE 'In progress' END AS CertificationCompletionStatusForFY
+, 1 AS LimitToFactCertificationHistory
+FROM
+[Fact_Certification_Progress] p
+LEFT JOIN (SELECT CreateDate(1900,1,1) AS nulldate) nulldatetable on 1
+INNER JOIN Dim_FY_Completed d ON p.[Date_Began]<=d.[FYEndDate] AND (p.[Date_Completed]=nulldate OR p.[Date_Completed]>=d.[FYStartDate]) AND NOT d.[FYStartDate]>=now() AND NOT d.[FYStartDate]=nulldate
+INNER JOIN Dim_FY_Began b ON p.[Date_Began]<=b.[FYEndDate] AND p.[Date_Began]>=b.[FYStartDate]
+INNER JOIN Dim_Certification_Progress dpp ON p.[Certification_User_ID]=dpp.[Certification_User_ID]
+
+GROUP BY p.[Certification_User_ID], p.[Date_Completed], d.[FY_Completed], d.[FYEndDate], nulldate, dpp.Status
+

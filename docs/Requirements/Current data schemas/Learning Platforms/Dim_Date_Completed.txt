@@ -1,0 +1,12 @@
+select [Completed Date], [Clean Completed Date] from (
+select dd.[Date] AS [Completed Date], dd.[Date] AS [Clean Completed Date]
+from [DimDates] dd
+where getyear(dd.[Date]) >= 2011
+) tbl
+where tbl.[Completed Date] <= now()
+UNION 
+SELECT thenulljoindate.[date] AS [Completed Date], nulldate.date AS [Clean Completed Date] FROM
+(
+select
+createdate(1900,1,1) AS [date]
+) thenulljoindate LEFT JOIN [nulldate.csv] nulldate  ON Seq=2

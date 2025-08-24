@@ -1,0 +1,6 @@
+SELECT
+    CAST(uh.[manager_id] AS integer) AS Manager_ID,
+    CAST(uh.[employee_id] AS integer) AS Employee_ID,
+    uh.[relationship_type] AS Relationship_Type
+FROM
+    [UserHeirarchy] uh

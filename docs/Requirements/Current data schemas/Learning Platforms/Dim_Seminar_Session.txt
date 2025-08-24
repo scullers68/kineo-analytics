@@ -1,0 +1,19 @@
+SELECT
+s.[Session ID] as [Session ID]
+, MAX(s.[Event ID]) AS [Event ID]
+--, MAX(CreateDate(GetYear(s.[Session Start Date/Time]),GetMonth(s.[Session Start Date/Time]), GetDay(s.[Session Start Date/Time]))) AS [Session Start Date/Time]
+, MAX(s.[Session Start Date/Time]) AS [Session Start Date/Time]
+--, MAX(CreateDate(GetYear(s.[Session Finish Date/Time]),GetMonth(s.[Session Finish Date/Time]), GetDay(s.[Session Finish Date/Time]))) AS [Session Finish Date/Time]
+, MAX(s.[Session Finish Date/Time]) AS [Session Finish Date/Time]
+, MAX(s.[Session Duration]) AS [Total Duration]
+FROM [analytics_seminar_attendance.csv] s
+GROUP BY s.[Session ID]
+
+UNION
+
+SELECT
+-1 AS [Session ID]
+, -1 AS [Event ID]
+, CreateDate(1900,1,1) AS [Session Start Date/Time]
+, CreateDate(1900,1,1) AS [Session Finish Date/Time]
+, -1 AS [Total Duration]

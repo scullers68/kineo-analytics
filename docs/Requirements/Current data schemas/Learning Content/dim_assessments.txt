@@ -1,0 +1,5 @@
+Select Distinct 
+    d.[assessmentId]
+From 
+    [social_assessment-input] d
+    

@@ -1,0 +1,54 @@
+SELECT
+CONCAT(CONCAT(CAST(s.[User ID] AS VARCHAR),'_'),CAST(s.[Session ID] AS VARCHAR)) AS [User_Session_ID]
+, CASE WHEN ISNULL(s.[Event ID]) THEN -1 ELSE s.[Event ID] END AS [Event ID]
+, CASE WHEN ISNULL(s.[User ID]) THEN -1 ELSE s.[User ID] END AS [User ID]
+, CASE WHEN ISNULL(s.[Session Finish Date/Time]) THEN CreateDate(1900,1,1) ELSE CreateDate(GetYear(s.[Session Finish Date/Time]),GetMonth(s.[Session Finish Date/Time]), GetDay(s.[Session Finish Date/Time])) END AS [Completed Date]
+, CASE WHEN ISNULL(s.[Session Start Date/Time]) THEN CreateDate(1900,1,1) ELSE CreateDate(GetYear(s.[Session Start Date/Time]),GetMonth(s.[Session Start Date/Time]), GetDay(s.[Session Start Date/Time])) END AS [Date Began]
+, s.[Course ID]
+, TOBIGINT(CONCAT(CONCAT(CAST(s.[Course ID] AS VARCHAR), '_'), CAST(s.[User ID] AS VARCHAR))) AS Course_User_ID
+, TOBIGINT(-1) AS Program_User_ID
+, 'N/A' AS Mandatory
+, TOBIGINT(-1) AS [Certification_User_ID]
+, -1 AS [Cert_ID]
+, -1 AS Program_ID
+, TOBIGINT(-1) AS SCORM_ID
+, s.[Session ID] AS [Session ID]
+, dfyc.[FY_Completed]
+, dfyb.[FY_Began]
+, CASE WHEN s.[Session attendance]='Not set' THEN s.[Signup status] ELSE s.[Session attendance] END AS [Attendance_Status]
+, s.[Session Duration] AS [Duration]
+, TOINT(s.[Session Finish Date/Time]-s.[Session Start Date/Time]) AS [Time Spent]
+, 1 AS limit_to_fact_seminar_signup
+
+FROM
+[analytics_seminar_attendance.csv] s
+
+LEFT JOIN Dim_FY_Completed dfyc ON CreateDate(GetYear(s.[Session Finish Date/Time]), GetMonth(s.[Session Finish Date/Time]), GetDay(s.[Session Finish Date/Time]))>=dfyc.[FYStartDate] AND CreateDate(GetYear(s.[Session Finish Date/Time]), GetMonth(s.[Session Finish Date/Time]), GetDay(s.[Session Finish Date/Time]))<=dfyc.[FYEndDate]
+LEFT JOIN Dim_FY_Began dfyb ON CreateDate(GetYear([Session Start Date/Time]), GetMonth([Session Start Date/Time]), GetDay([Session Start Date/Time]))>=dfyb.[FYStartDate] AND CreateDate(GetYear([Session Start Date/Time]), GetMonth([Session Start Date/Time]), GetDay([Session Start Date/Time]))<=dfyb.[FYEndDate]
+--LEFT JOIN [analytics_prog_overview.csv] apo ON s.[Course ID]=apo.[Course ID] AND s.[User ID] = apo.[User ID]
+
+/*
+UNION 
+
+SELECT 
+'N/A' AS User_Session_ID
+, -1 AS [Event ID]
+, -1 AS User_ID
+, Createdate(1900,1,1) AS [Completed Date]
+, Createdate(1900,1,1) AS [Date Began]
+, -1 AS [Course ID]
+, -1 AS Course_User_ID
+, -1 AS Program_User_ID
+, 'N/A' AS Mandatory
+, -1 AS [Certification_User_ID]
+, -1 AS Cert_ID
+, -1 AS Program_ID
+, -1 AS SCORM_ID
+, -1 AS [Session ID]
+, 'N/A' AS [FY_Completed]
+, 'N/A' AS [FY_Began]
+, 'N/A' AS Attendance_Status
+, -1 AS [Duration]
+, -1  AS [Time Spent]
+, 1 AS limit_to_fact_seminar_signup
+*/

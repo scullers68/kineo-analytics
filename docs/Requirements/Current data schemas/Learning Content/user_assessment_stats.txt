@@ -1,0 +1,4 @@
+SELECT d.[userId], d.[assessmentId], COUNT(d.assessmentId) as AssessmentAttempts
+From [social_assessment-input] as d
+where d.[status] = 'completed'
+group by d.userId, d.[assessmentId]

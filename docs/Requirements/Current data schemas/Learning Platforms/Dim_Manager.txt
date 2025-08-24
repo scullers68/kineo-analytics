@@ -1,0 +1,3 @@
+SELECT DISTINCT uh.[managerName] AS Manager, CAST(uh.[manager_id] AS integer) AS Manager_ID
+FROM
+[UserHeirarchy] uh

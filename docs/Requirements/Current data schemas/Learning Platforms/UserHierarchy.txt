@@ -1,0 +1,15 @@
+SELECT [employee_id], [manager_id], employeeName, ManagerName, relationship_type
+
+FROM [UsersAllReports] AR
+
+left join 
+    (
+    SELECT [User ID] managerId, [User's Fullname] managerName
+    FROM [analytics_users.csv]
+    ) managers on cast(managers.managerId as int) = cast(AR.[employee_id] as int)
+    
+left join 
+    (
+    SELECT [User ID] userId, [User's Fullname] employeeName
+    FROM [analytics_users.csv]
+    ) users on cast(users.userId as int) = cast(AR.[manager_id] as int)

@@ -1,0 +1,37 @@
+SELECT
+[User ID] AS [User_ID]
+, [User's Fullname]
+, [User First Name]
+, [User Last Name]
+, [Assignment ID]
+, [Assignment Name]
+, [Organisation ID]
+, [Organisation Name]
+, [Position ID]
+, [Position Name]
+, [Manager ID]
+, case when length([Manager Name]) = 0 then 'No Manager Assigned' else [Manager Name] end as [Manager Name]
+, [Appraiser ID]
+, [Appraiser Name]
+, [User Status]
+
+FROM [analytics_users.csv] as au
+
+UNION
+
+SELECT
+-1 AS [User_ID]
+, 'N/A' AS [User's Fullname]
+, 'N/A' AS [User First Name]
+, 'N/A' AS [User Last Name]
+, -1 AS [Assignment ID]
+, 'N/A' AS [Assignment Name]
+, -1 AS [Organisation ID]
+, 'N/A' AS [Organisation Name]
+, -1 AS [Position ID]
+, 'N/A' AS [Position Name]
+, -1 AS [Manager ID]
+, 'N/A' AS [Manager Name]
+, -1 AS [Appraiser ID]
+, 'N/A' AS [Appraiser Name]
+, 'N/A' AS [User Status]

@@ -1,0 +1,64 @@
+SELECT
+sco.[User ID] AS User_ID
+, CASE WHEN ISNULL(apo.[Program ID]) THEN -1 ELSE apo.[Program ID] END AS Program_ID
+, CASE WHEN ISNULL(sco.[Course ID]) THEN -1 ELSE sco.[Course ID] END AS Course_ID
+, CASE WHEN ISNULL(ds.[SCORM_ID]) THEN -1 ELSE ds.[SCORM_ID] END AS SCORM_ID
+, -1 AS Cert_ID
+, TOBIGINT(-1) AS [Certification_User_ID]
+, CASE WHEN ISNULL(dpp.[Program_User_ID]) THEN -1 ELSE dpp.[Program_User_ID] END AS [Program_User_ID]
+, CASE WHEN ISNULL(dc.[Course_User_ID]) THEN -1 ELSE dc.[Course_User_ID] END AS [Course_User_ID]
+, createdate(GetYear(sco.[SCO Start Date]),GetMonth(sco.[SCO Start Date]), GetDay(sco.[SCO Start Date])) AS Date_Began
+, createdate(1900,01,01) AS Date_Completed
+, -1 AS [Event_ID]
+, -1 AS [Session_ID]
+, b.[FY_Began] AS FY_Completed 
+, b.[FY_Began]
+
+, CONCAT('eLearning_',sco.[SCO Status]) AS TimedLearningStatus
+, sco.[SCO Total Time (milliseconds)]
+, 0 AS [Duration]
+, 0 AS [Time Spent]
+, 'eLearning' AS TimedLearningLearningType
+
+, 1 AS limit_to_fact_learning_time
+
+FROM [analytics_scorm.csv] sco
+
+LEFT JOIN [Dim_Scorm] ds ON ds.[SCORM Title]=sco.[SCORM Title]
+LEFT JOIN [analytics_prog_overview.csv] apo ON sco.[Course ID]=apo.[Course ID] AND sco.[User ID] = apo.[User ID]
+LEFT JOIN [Dim_Program_Progress] dpp ON apo.[Program ID]=dpp.[Program ID] AND apo.[User ID]=dpp.[User ID]
+LEFT JOIN [Dim_Course_Progress] dc ON sco.[Course ID]=dc.[Course_ID] AND sco.[User ID]=dc.[User_ID]
+INNER JOIN Dim_FY_Began b ON sco.[SCO Start Date]<=b.[FYEndDate] AND (sco.[SCO Start Date]=CreateDate(1900,1,1) OR sco.[SCO Start Date]>=b.[FYStartDate]) AND NOT b.[FYStartDate]>=now()
+
+
+UNION
+
+SELECT
+CASE WHEN ISNULL(s.[User ID]) THEN -1 ELSE s.[User ID] END AS [User ID]
+, -1 AS Program_ID
+, s.[Course ID]
+, TOBIGINT(-1) AS SCORM_ID
+, -1 AS [Cert_ID]
+, TOBIGINT(-1) AS [Certification_User_ID]
+, TOBIGINT(-1) AS Program_User_ID
+, TOBIGINT(CONCAT(CONCAT(CAST(s.[Course ID] AS VARCHAR), '_'), CAST(s.[User ID] AS VARCHAR))) AS Course_User_ID
+, CASE WHEN ISNULL(s.[Session Start Date/Time]) THEN CreateDate(1900,1,1) ELSE CreateDate(GetYear(s.[Session Start Date/Time]),GetMonth(s.[Session Start Date/Time]), GetDay(s.[Session Start Date/Time])) END AS [Date Began]
+, CASE WHEN ISNULL(s.[Session Finish Date/Time]) THEN CreateDate(1900,1,1) ELSE CreateDate(GetYear(s.[Session Finish Date/Time]),GetMonth(s.[Session Finish Date/Time]), GetDay(s.[Session Finish Date/Time])) END AS [Completed Date]
+, CASE WHEN ISNULL(s.[Event ID]) THEN -1 ELSE s.[Event ID] END AS [Event ID]
+, s.[Session ID] AS [Session ID]
+, dfyc.[FY_Completed]
+, dfyb.[FY_Began]
+
+, CONCAT('IRL_',s.[Session attendance]) AS TimedLearningStatus
+, 0 AS [SCO Total Time (milliseconds)]
+, s.[Session Duration] AS [Duration]
+, TOINT(s.[Session Finish Date/Time]-s.[Session Start Date/Time]) AS [Time Spent]
+, 'IRL' AS TimedLearningLearningType
+
+, 1 AS limit_to_fact_learning_time
+
+FROM
+[analytics_seminar_attendance.csv] s
+
+LEFT JOIN Dim_FY_Completed dfyc ON CreateDate(GetYear(s.[Session Finish Date/Time]), GetMonth(s.[Session Finish Date/Time]), GetDay(s.[Session Finish Date/Time]))>=dfyc.[FYStartDate] AND CreateDate(GetYear(s.[Session Finish Date/Time]), GetMonth(s.[Session Finish Date/Time]), GetDay(s.[Session Finish Date/Time]))<=dfyc.[FYEndDate]
+LEFT JOIN Dim_FY_Began dfyb ON CreateDate(GetYear([Session Start Date/Time]), GetMonth([Session Start Date/Time]), GetDay([Session Start Date/Time]))>=dfyb.[FYStartDate] AND CreateDate(GetYear([Session Start Date/Time]), GetMonth([Session Start Date/Time]), GetDay([Session Start Date/Time]))<=dfyb.[FYEndDate]

@@ -1,0 +1,51 @@
+SELECT '2036' AS FY_Began, CreateDate(2036,1,1) AS FYStartDate, CreateDate(2036,12,31) AS FYEndDate
+UNION
+SELECT '2035' AS FY_Began, CreateDate(2035,1,1) AS FYStartDate, CreateDate(2035,12,31) AS FYEndDate
+UNION
+SELECT '2034' AS FY_Began, CreateDate(2034,1,1) AS FYStartDate, CreateDate(2034,12,31) AS FYEndDate
+UNION
+SELECT '2033' AS FY_Began, CreateDate(2033,1,1) AS FYStartDate, CreateDate(2033,12,31) AS FYEndDate
+UNION
+SELECT '2032' AS FY_Began, CreateDate(2032,1,1) AS FYStartDate, CreateDate(2032,12,31) AS FYEndDate
+UNION
+SELECT '2031' AS FY_Began, CreateDate(2031,1,1) AS FYStartDate, CreateDate(2031,12,31) AS FYEndDate
+UNION
+SELECT '2030' AS FY_Began, CreateDate(2030,1,1) AS FYStartDate, CreateDate(2030,12,31) AS FYEndDate
+UNION
+SELECT '2029' AS FY_Began, CreateDate(2029,1,1) AS FYStartDate, CreateDate(2029,12,31) AS FYEndDate
+UNION
+SELECT '2028' AS FY_Began, CreateDate(2028,1,1) AS FYStartDate, CreateDate(2028,12,31) AS FYEndDate
+UNION
+SELECT '2027' AS FY_Began, CreateDate(2027,1,1) AS FYStartDate, CreateDate(2027,12,31) AS FYEndDate
+UNION
+SELECT '2026' AS FY_Began, CreateDate(2026,1,1) AS FYStartDate, CreateDate(2026,12,31) AS FYEndDate
+UNION
+SELECT '2025' AS FY_Began, CreateDate(2025,1,1) AS FYStartDate, CreateDate(2025,12,31) AS FYEndDate
+UNION
+SELECT '2024' AS FY_Began, CreateDate(2024,1,1) AS FYStartDate, CreateDate(2024,12,31) AS FYEndDate
+UNION
+SELECT '2023' AS FY_Began, CreateDate(2023,1,1) AS FYStartDate, CreateDate(2023,12,31) AS FYEndDate
+UNION
+SELECT '2022' AS FY_Began, CreateDate(2022,1,1) AS FYStartDate, CreateDate(2022,12,31) AS FYEndDate
+UNION
+SELECT '2021' AS FY_Began, CreateDate(2021,1,1) AS FYStartDate, CreateDate(2021,12,31) AS FYEndDate
+UNION
+SELECT '2020' AS FY_Began, CreateDate(2020,1,1) AS FYStartDate, CreateDate(2020,12,31) AS FYEndDate
+UNION
+SELECT '2019' AS FY_Began, CreateDate(2019,1,1) AS FYStartDate, CreateDate(2019,12,31) AS FYEndDate
+UNION
+SELECT '2018' AS FY_Began, CreateDate(2018,1,1) AS FYStartDate, CreateDate(2018,12,31) AS FYEndDate
+UNION
+SELECT '2017' AS FY_Began, CreateDate(2017,1,1) AS FYStartDate, CreateDate(2017,12,31) AS FYEndDate
+UNION
+SELECT '2016' AS FY_Began, CreateDate(2016,1,1) AS FYStartDate, CreateDate(2016,12,31) AS FYEndDate
+UNION
+SELECT '2015' AS FY_Began, CreateDate(2015,1,1) AS FYStartDate, CreateDate(2015,12,31) AS FYEndDate
+UNION
+SELECT '2014' AS FY_Began, CreateDate(2014,1,1) AS FYStartDate, CreateDate(2014,12,31) AS FYEndDate
+UNION
+SELECT '2013' AS FY_Began, CreateDate(2013,1,1) AS FYStartDate, CreateDate(2013,12,31) AS FYEndDate
+UNION
+SELECT '2012' AS FY_Began, CreateDate(2012,1,1) AS FYStartDate, CreateDate(2012,12,31) AS FYEndDate
+UNION
+SELECT 'N/A' AS FY_Began, CreateDate(1900,1,1) AS FYStartDate, CreateDate(1900,1,1) AS FYEndDate

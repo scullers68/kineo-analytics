@@ -1,0 +1,3 @@
+SELECT d.[userId], DISTINCT_COUNT(d.sessionId) as TrackingSessions,  DISTINCT_COUNT(d.attemptId) as TrackingAttempts
+From [social_tracking-input] as d
+group by d.userId

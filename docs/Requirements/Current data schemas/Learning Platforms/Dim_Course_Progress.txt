@@ -1,0 +1,38 @@
+SELECT 
+rankasc(Course_User_ID_Str) AS Course_User_ID
+, [Course ID] AS Course_ID
+, [User ID] AS User_ID
+  , ([Course Name]) AS [Course Name]
+  , ([Course Category]) AS [Course Category]
+  , [Completion Status]
+  , [Time enrolled]
+  , [Time started]
+  , [Time completed]
+FROM
+  
+(
+SELECT
+CONCAT(CONCAT(CAST([Course ID] AS VARCHAR), '_'), CAST(acc.[User ID] AS VARCHAR)) AS Course_User_ID_Str
+, acc.[Course ID]
+, acc.[User ID]
+  , (acc.[Course Name]) AS [Course Name]
+  , (acc.[Course Category]) AS [Course Category]
+  , acc.[Completion Status]
+  , acc.[Time enrolled]
+  , acc.[Time started]
+  , acc.[Time completed]
+FROM [analytics_course_completions.csv] AS acc
+) AS Course_Progress
+
+UNION
+
+SELECT
+-1 AS [Course_User_ID]
+ , -1 AS [User ID]
+  , -1 AS [Course ID]
+  , 'N/A' AS [Course Name]
+  , 'N/A' AS [Course Category]
+  , 'N/A' AS [Completion Status]
+  , CreateDate(1900,1,1) AS [Time enrolled]
+  , CreateDate(1900,1,1) AS [Time started]
+  , CreateDate(1900,1,1) AS [Time completed]

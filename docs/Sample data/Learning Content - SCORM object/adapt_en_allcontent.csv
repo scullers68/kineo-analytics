@@ -1,0 +1,125 @@
+_component,_id,_isAvailable,_parentId,_type,body,displayTitle,instruction,scope,title
+graphic,6311e94dd77eec3905ae76d0,true,6311e946d77eec3905ae76ce,component,"","","",sj_family_products_dangerous_goods,New Component Title
+mcq,6311e958d77eec3905ae76d1,true,6311e946d77eec3905ae76ce,component,Is Glade Aerosol hazardous or non-hazardous?,Glade Aerosol,Choose the correct answer and select Submit.,sj_family_products_dangerous_goods,Glade Aerosol
+graphic,6311eac7d77eec3905ae76d6,true,6311eac7d77eec3905ae76d5,component,"","","",sj_family_products_dangerous_goods,New Component Title
+mcq,6311eac7d77eec3905ae76d9,true,6311eac7d77eec3905ae76d5,component,Is Off Deep Woods hazardous or non-hazardous?,Off Deep Woods,Choose the correct answer and select Submit.,sj_family_products_dangerous_goods,Off Deep Woods
+graphic,6311eb2dd77eec3905ae76dc,true,6311eb2dd77eec3905ae76db,component,"","","",sj_family_products_dangerous_goods,New Component Title
+mcq,6311eb2dd77eec3905ae76df,true,6311eb2dd77eec3905ae76db,component,Is Windex hazardous or non-hazardous?,Windex,Choose the correct answer and select Submit.,sj_family_products_dangerous_goods,Windex
+graphic,6311eb68d77eec3905ae76e2,true,6311eb68d77eec3905ae76e1,component,"","","",sj_family_products_dangerous_goods,New Component Title
+mcq,6311eb68d77eec3905ae76e5,true,6311eb68d77eec3905ae76e1,component,Is Drano Max Gel hazardous or non-hazardous?,Drano Max Gel,Choose the correct answer and select Submit.,sj_family_products_dangerous_goods,Drano Max Gel
+graphic,6311ebb6d77eec3905ae76e8,true,6311ebb6d77eec3905ae76e7,component,"","","",sj_family_products_dangerous_goods,New Component Title
+mcq,6311ebb6d77eec3905ae76eb,true,6311ebb6d77eec3905ae76e7,component,Is Fantastik Bleach hazardous or non-hazardous?,Fantastik Bleach,Choose the correct answer and select Submit.,sj_family_products_dangerous_goods,Fantastik Bleach
+assessmentResults,6311ec06d77eec3905ae76f2,true,6311ebedd77eec3905ae76ed,component,"",The Challenge Results,"",sj_family_products_dangerous_goods,The Challenge Results
+pageNav,6311ec27d77eec3905ae76f6,true,6311ec1ed77eec3905ae76f4,component,Return to the Main Menu or select next to discover the tools that help you accurately spot dangerous goods.,"","",sj_family_products_dangerous_goods,New Component Title
+confidenceSlider,confidence1,true,6311ef38d77eec3905ae76fe,component,How confident do you feel about your ability to correctly identify items as regulated or non-regulated when transported in commerce?,How Confident Are You?,Drag the slider to mark your level of confidence and select Submit.,sj_family_products_dangerous_goods,How Confident Are You?
+text,6311ef43d77eec3905ae7702,true,6311ef42d77eec3905ae7701,component,"Off the top of your head, can you identify each item’s classification as hazardous or non-hazardous when transported in commerce? Once you’ve responded to all questions, you’ll receive your cumulative results.",Spot the Dangerous Goods,"",sj_family_products_dangerous_goods,Spot the Dangerous Goods
+graphic,63171379d77eec3905ae77a2,true,6311ebedd77eec3905ae76ed,component,"","","",sj_family_products_dangerous_goods,New Component Title
+graphic,631713ead77eec3905ae77b5,true,631713ead77eec3905ae77ac,component,"","","",sj_family_products_dangerous_goods,New Component Title
+mcq,631713ead77eec3905ae77b8,true,631713ead77eec3905ae77ac,component,"",Is Drano Max Gel classified as hazardous or non-hazardous?,Choose the correct answer and select Submit.,sj_family_products_dangerous_goods,Is Drano Max Gel classified as hazardous or non-hazardous?
+graphic,631713ead77eec3905ae77b9,true,631713ead77eec3905ae77ad,component,"","","",sj_family_products_dangerous_goods,New Component Title
+mcq,631713ead77eec3905ae77bc,true,631713ead77eec3905ae77ad,component,"",Is Kiwi Leather Lotion classified as hazardous or non-hazardous?,Choose the correct answer and select Submit.,sj_family_products_dangerous_goods,Is Kiwi Leather Lotion classified as hazardous or non-hazardous?
+graphic,631713ead77eec3905ae77bd,true,631713ead77eec3905ae77ae,component,"","","",sj_family_products_dangerous_goods,New Component Title
+mcq,631713ead77eec3905ae77c0,true,631713ead77eec3905ae77ae,component,"",Is Raid Ant & Roach classified as hazardous or non-hazardous?,Choose the correct answer and select Submit.,sj_family_products_dangerous_goods,Is Raid Ant & Roach classified as hazardous or non-hazardous?
+graphic,631713ebd77eec3905ae77c1,true,631713ead77eec3905ae77af,component,"","","",sj_family_products_dangerous_goods,New Component Title
+mcq,631713ebd77eec3905ae77c4,true,631713ead77eec3905ae77af,component,"",Is Scrubbing Bubbles Bathroom Grime Fighter classified as hazardous or non-hazardous?,Choose the correct answer and select Submit.,sj_family_products_dangerous_goods,Is Scrubbing Bubbles Bathroom Grime Fighter classified as hazardous or non-hazardous?
+graphic,631713ebd77eec3905ae77c5,true,631713ead77eec3905ae77b0,component,"","","",sj_family_products_dangerous_goods,New Component Title
+mcq,631713ebd77eec3905ae77c8,true,631713ead77eec3905ae77b0,component,"",Is Windex Crystal Rain classified as hazardous or non-hazardous?,Choose the correct answer and select Submit.,sj_family_products_dangerous_goods,Is Windex Crystal Rain classified as hazardous or non-hazardous?
+assessmentResults,631713ebd77eec3905ae77c9,true,631713ead77eec3905ae77b1,component,"",The Challenge Results,"",sj_family_products_dangerous_goods,The Challenge Results
+graphic,631713ebd77eec3905ae77ca,true,631713ead77eec3905ae77b1,component,"","","",sj_family_products_dangerous_goods,New Component Title
+pageNav,631713ebd77eec3905ae77cd,true,631713ead77eec3905ae77b2,component,Remember: checking the Safety Data Sheet will help you identify the correct classification every time.,"",Return to the Main Menu or select next to learn how the Hazardous Materials Shipping Coordinator helps you comply with federal regulations.,sj_family_products_dangerous_goods,New Component Title
+narrative,6317152bd77eec3905ae77d3,true,63171505d77eec3905ae77d1,component,"","","",sj_family_products_dangerous_goods,All about Safety Data Sheets 
+accordion,63171682d77eec3905ae77d7,true,631713ead77eec3905ae77b4,component,"The US Department of Transportation and the International Air Transportation Association define hazardous materials as articles or substances which can pose a risk to health, safety, property, or the environment. Hazardous materials are dangerous goods.",Defining a Hazardous Item,Select each plus sign to find out more.,sj_family_products_dangerous_goods,Defining a Hazardous Item
+text,631716e5d77eec3905ae77db,true,631716d7d77eec3905ae77d9,component,"Now that you know to check the SDS to identify if an item is hazardous, can you correctly identify each item’s classification when transported in commerce?",Check with the SDS,"",sj_family_products_dangerous_goods,Check with the SDS
+graphic,6317176cd77eec3905ae77e0,true,63171758d77eec3905ae77dd,component,"",Drano Max Gel,"",sj_family_products_dangerous_goods,Drano Max Gel
+graphic,63171841d77eec3905ae77ed,true,63171841d77eec3905ae77ec,component,"",Kiwi Leather Lotion,"",sj_family_products_dangerous_goods,Kiwi Leather Lotion
+graphic,631718c4d77eec3905ae77f2,true,631718c4d77eec3905ae77f1,component,"",Raid Ant & Roach,"",sj_family_products_dangerous_goods,Raid Ant & Roach
+graphic,631719c8d77eec3905ae77f7,true,631719c8d77eec3905ae77f6,component,"",Scrubbing Bubbles Bathroom Grime Fighter,"",sj_family_products_dangerous_goods,Scrubbing Bubbles Bathroom Grime Fighter
+graphic,63171a8fd77eec3905ae77fc,true,63171a8fd77eec3905ae77fb,component,"",Windex Crystal Rain,"",sj_family_products_dangerous_goods,Windex Crystal Rain
+graphic,63171bdcd77eec3905ae7815,true,63171bdcd77eec3905ae7806,component,"","","",sj_family_products_dangerous_goods,New Component Title
+mcq,63171bdcd77eec3905ae7818,true,63171bdcd77eec3905ae7806,component,"",Which class does Scrubbing Bubbles Foaming Bleach belong to and does it have to go through the HMSC for review prior to shipping?,Choose the correct answer and select Submit.,sj_family_products_dangerous_goods,Which class does Scrubbing Bubbles Foaming Bleach belong to and does it have to go through the HMSC for review prior to shipping?
+graphic,63171bdcd77eec3905ae7819,true,63171bdcd77eec3905ae7807,component,"","","",sj_family_products_dangerous_goods,New Component Title
+mcq,63171bdcd77eec3905ae781c,true,63171bdcd77eec3905ae7807,component,"",Which class does Off Botanicals belong to and does it have to go through the HMSC for review prior to shipping?,Choose the correct answer and select Submit.,sj_family_products_dangerous_goods,Which class does Off Botanicals belong to and does it have to go through the HMSC for review prior to shipping?
+graphic,63171bdcd77eec3905ae781d,true,63171bdcd77eec3905ae7808,component,"","","",sj_family_products_dangerous_goods,New Component Title
+mcq,63171bdcd77eec3905ae7820,true,63171bdcd77eec3905ae7808,component,"",Which class does Off Family Care Insect Repellent Unscented belong to and does it have to go through the HMSC for review prior to shipping?,Choose the correct answer and select Submit.,sj_family_products_dangerous_goods,Which class does Off Family Care Insect Repellent Unscented belong to and does it have to go through the HMSC for review prior to shipping?
+graphic,63171bdcd77eec3905ae7821,true,63171bdcd77eec3905ae7809,component,"","","",sj_family_products_dangerous_goods,New Component Title
+mcq,63171bdcd77eec3905ae7824,true,63171bdcd77eec3905ae7809,component,"",Which class does Pledge Aerosol belong to and does it have to go through the HMSC for review prior to shipping?,Choose the correct answer and select Submit.,sj_family_products_dangerous_goods,Which class does Pledge Aerosol belong to and does it have to go through the HMSC for review prior to shipping?
+graphic,63171bdcd77eec3905ae7825,true,63171bdcd77eec3905ae780a,component,"","","",sj_family_products_dangerous_goods,New Component Title
+mcq,63171bdcd77eec3905ae7828,true,63171bdcd77eec3905ae780a,component,"",Which class does Drano Liquid belong to and does it have to go through the HMSC for review prior to shipping?,Choose the correct answer and select Submit.,sj_family_products_dangerous_goods,Which class does Drano Liquid belong to and does it have to go through the HMSC for review prior to shipping?
+graphic,63171bdcd77eec3905ae7829,true,63171bdcd77eec3905ae780b,component,"",Scrubbing Bubbles Foaming Bleach,"",sj_family_products_dangerous_goods,Scrubbing Bubbles Foaming Bleach
+graphic,63171bdcd77eec3905ae782c,true,63171bdcd77eec3905ae780c,component,"",Off Botanicals,"",sj_family_products_dangerous_goods,Off Botanicals
+graphic,63171bdcd77eec3905ae782f,true,63171bdcd77eec3905ae780d,component,"",Off Family Care Insect Repellent Unscented,"",sj_family_products_dangerous_goods,Off Family Care Insect Repellent Unscented
+graphic,63171bdcd77eec3905ae7832,true,63171bdcd77eec3905ae780e,component,"",Pledge Aerosol,"",sj_family_products_dangerous_goods,Pledge Aerosol
+graphic,63171bdcd77eec3905ae7835,true,63171bdcd77eec3905ae780f,component,"",Drano Liquid,"",sj_family_products_dangerous_goods,Drano Liquid
+pageNav,63171bdcd77eec3905ae783c,true,63171bdcd77eec3905ae7811,component,You are now ready to protect people and the planet by spotting dangerous goods. You have successfully finished this course.,"",You may close your browser.,sj_family_products_dangerous_goods,New Component Title
+accordion,63171bdcd77eec3905ae783d,true,63171bdcd77eec3905ae7812,component,"When transporting items between SJ Family Products facilities or to third parties, you are responsible for determining if an item is classified as hazardous or non-hazardous.",Shipping Procedures,Select each plus sign to learn the process to prepare items for shipping.,sj_family_products_dangerous_goods,Shipping Procedures
+narrative,63171bdcd77eec3905ae783e,true,63171bdcd77eec3905ae7813,component,"When items are incorrectly classified for transportation, it can have serious repercussion on the health and safety of those handling the item as well as the environment. Undeclared or incorrectly declared hazardous items have caused many accidents.",Real World Repercussions,Select the BLUE ARROW to learn more about a real-world event where hazardous materials were incorrectly declared.,sj_family_products_dangerous_goods,Real World Repercussions
+text,63171bdcd77eec3905ae7842,true,63171bdcd77eec3905ae7814,component,Now it’s time to put all you know together. Can you use the SDS to determine an item’s classification and shipping procedure?,Can you protect people and the planet?,"",sj_family_products_dangerous_goods,Can you protect people and the planet?
+list,63171c74d77eec3905ae7846,true,63171c66d77eec3905ae7844,component,"The hazardous material shipping coordinator (HMSC) is the shipping agent. Their role is to prepare items for shipment. The HMSC will prepare hazardous items for shipping according to federal regulations. The HMSC is trained in hazardous material ground and air shipping regulations. When they receive the request, they:",Meet the HMSC,"",sj_family_products_dangerous_goods,Meet the HMSC
+text,63171da9d77eec3905ae7849,true,63171da9d77eec3905ae7848,component,Submit shipping requests to the HMSC through SharePoint.,"","",sj_family_products_dangerous_goods,Contact the HMSC
+text,63171e46d77eec3905ae784d,true,63171e46d77eec3905ae784c,component,"There can be serious civil and criminal penalties for not complying with shipping regulations where both employees and SJ Family Products can be liable.<br /><br />Penalties are assessed on your actions – if you unknowingly or deliberately violated the regulations or acted recklessly despite the potential consequences. The legal consequences apply to both unknown and deliberate violations.<br /><br />The maximum individual penalty for a criminal violation is a $250,000 fine per incident and five years in jail, or ten years if the violation results in death or bodily injury to any person. The maximum organizational penalty for a criminal violation is $500,000 per day, per incident.",Legal Consequences,"",sj_family_products_dangerous_goods,Legal Consequences
+list,63171e76d77eec3905ae7850,true,63171e76d77eec3905ae784f,component,"Properly classifying hazardous materials and following the procedure helps protect people and the planet.<br /><br />Do you think an employee can transport a small amount of a hazardous material herself from SJ Family Products campus to another?<br /><br />If you answered yes, you probably had one of these common misconceptions.",Do you believe this?,"",sj_family_products_dangerous_goods,Do you believe this?
+text,63171ed0d77eec3905ae7853,true,63171ed0d77eec3905ae7852,component,"There are NO exemptions! Even small quantities of hazardous items must meet general packaging requirements and be transported safely, so you must reach out to the HMSC.",The Truth,"",sj_family_products_dangerous_goods,The Truth
+confidenceSlider,confidence2,true,63171bdcd77eec3905ae7810,component,"Now that you’ve gone through the course, how confident do you feel about your ability to identify items classified as hazardous or non-hazardous when transported in commerce?",How has your confidence grown?,Drag the slider to select your level of confidence and select Submit. Your previous answer is indicated in purple.,sj_family_products_dangerous_goods,How has your confidence grown?
+confidenceSlider,63172428d77eec3905ae7857,true,63172428d77eec3905ae7856,component,"Sharing your perspective helps us create meaningful and impactful learning experiences for you. Do you agree with this statement? After taking this course, I am more confident in my ability to properly ship dangerous goods.",I am more confident in my ability to properly ship dangerous goods,Drag the slider to select your level of agreement and select Submit. Your answer will remain anonymous.,sj_family_products_dangerous_goods,I am more confident in my ability to properly ship dangerous goods
+confidenceSlider,63172576d77eec3905ae785c,true,63172431d77eec3905ae7859,component,Do you agree with this statement?,I know how to properly ship dangerous goods in my role,Drag the slider to select your level of agreement and select Submit. Your answer will remain anonymous.,sj_family_products_dangerous_goods,I know how to properly ship dangerous goods in my role
+confidenceSlider,63172600d77eec3905ae785f,true,63172600d77eec3905ae785e,component,Do you agree with this statement?,This experience was a valuable use of my time.,Drag the slider to select your level of agreement and select Submit. Your answer will remain anonymous.,sj_family_products_dangerous_goods,This experience was a valuable use of my time.
+,6311e946d77eec3905ae76ce,,6311e7b7d77eec3905ae76c7,block,,,,sj_family_products_dangerous_goods,New Block Title
+,6311ebedd77eec3905ae76ed,,6311ebedd77eec3905ae76ec,block,,,,sj_family_products_dangerous_goods,New Block Title
+,6311ef38d77eec3905ae76fe,,6311ef2fd77eec3905ae76f8,block,,,,sj_family_products_dangerous_goods,New Block Title
+,631713ead77eec3905ae77b1,,631713ead77eec3905ae77aa,block,,,,sj_family_products_dangerous_goods,New Block Title
+,63171505d77eec3905ae77d1,,631713ead77eec3905ae77ab,block,,,,sj_family_products_dangerous_goods,New Block Title
+,63171758d77eec3905ae77dd,,631713ead77eec3905ae77a9,block,,,,sj_family_products_dangerous_goods,New Block Title
+,63171bdcd77eec3905ae780b,,63171bdcd77eec3905ae7803,block,,,,sj_family_products_dangerous_goods,New Block Title
+,63171bdcd77eec3905ae7810,,63171bdcd77eec3905ae7804,block,,,,sj_family_products_dangerous_goods,New Block Title
+,63171bdcd77eec3905ae7812,,63171bdcd77eec3905ae7805,block,,,,sj_family_products_dangerous_goods,New Block Title
+,6311eac7d77eec3905ae76d5,,6311e7b7d77eec3905ae76c7,block,,,,sj_family_products_dangerous_goods,New Block Title
+,6311ec1ed77eec3905ae76f4,,6311ebedd77eec3905ae76ec,block,,,,sj_family_products_dangerous_goods,New Block Title
+,6311ef42d77eec3905ae7701,,6311ef2fd77eec3905ae76f8,block,,,,sj_family_products_dangerous_goods,New Block Title
+,631713ead77eec3905ae77ac,,631713ead77eec3905ae77a9,block,,,,sj_family_products_dangerous_goods,New Block Title
+,631713ead77eec3905ae77b2,,631713ead77eec3905ae77aa,block,,,,sj_family_products_dangerous_goods,New Block Title
+,631713ead77eec3905ae77b4,,631713ead77eec3905ae77ab,block,,,,sj_family_products_dangerous_goods,New Block Title
+,63171bdcd77eec3905ae7806,,63171bdcd77eec3905ae7803,block,,,,sj_family_products_dangerous_goods,New Block Title
+,63171c66d77eec3905ae7844,,63171bdcd77eec3905ae7805,block,,,,sj_family_products_dangerous_goods,New Block Title
+,63172428d77eec3905ae7856,,63171bdcd77eec3905ae7804,block,,,,sj_family_products_dangerous_goods,New Block Title
+,6311eb2dd77eec3905ae76db,,6311e7b7d77eec3905ae76c7,block,,,,sj_family_products_dangerous_goods,New Block Title
+,631716d7d77eec3905ae77d9,,631713ead77eec3905ae77ab,block,,,,sj_family_products_dangerous_goods,New Block Title
+,63171841d77eec3905ae77ec,,631713ead77eec3905ae77a9,block,,,,sj_family_products_dangerous_goods,New Block Title
+,63171bdcd77eec3905ae780c,,63171bdcd77eec3905ae7803,block,,,,sj_family_products_dangerous_goods,New Block Title
+,63171da9d77eec3905ae7848,,63171bdcd77eec3905ae7805,block,,,,sj_family_products_dangerous_goods,New Block Title
+,63172431d77eec3905ae7859,,63171bdcd77eec3905ae7804,block,,,,sj_family_products_dangerous_goods,New Block Title
+,6311eb68d77eec3905ae76e1,,6311e7b7d77eec3905ae76c7,block,,,,sj_family_products_dangerous_goods,New Block Title
+,631713ead77eec3905ae77ad,,631713ead77eec3905ae77a9,block,,,,sj_family_products_dangerous_goods,New Block Title
+,63171bdcd77eec3905ae7807,,63171bdcd77eec3905ae7803,block,,,,sj_family_products_dangerous_goods,New Block Title
+,63171bdcd77eec3905ae7813,,63171bdcd77eec3905ae7805,block,,,,sj_family_products_dangerous_goods,New Block Title
+,63172600d77eec3905ae785e,,63171bdcd77eec3905ae7804,block,,,,sj_family_products_dangerous_goods,New Block Title
+,6311ebb6d77eec3905ae76e7,,6311e7b7d77eec3905ae76c7,block,,,,sj_family_products_dangerous_goods,New Block Title
+,631718c4d77eec3905ae77f1,,631713ead77eec3905ae77a9,block,,,,sj_family_products_dangerous_goods,New Block Title
+,63171bdcd77eec3905ae780d,,63171bdcd77eec3905ae7803,block,,,,sj_family_products_dangerous_goods,New Block Title
+,63171bdcd77eec3905ae7811,,63171bdcd77eec3905ae7804,block,,,,sj_family_products_dangerous_goods,New Block Title
+,63171e46d77eec3905ae784c,,63171bdcd77eec3905ae7805,block,,,,sj_family_products_dangerous_goods,New Block Title
+,631713ead77eec3905ae77ae,,631713ead77eec3905ae77a9,block,,,,sj_family_products_dangerous_goods,New Block Title
+,63171bdcd77eec3905ae7808,,63171bdcd77eec3905ae7803,block,,,,sj_family_products_dangerous_goods,New Block Title
+,63171e76d77eec3905ae784f,,63171bdcd77eec3905ae7805,block,,,,sj_family_products_dangerous_goods,New Block Title
+,631719c8d77eec3905ae77f6,,631713ead77eec3905ae77a9,block,,,,sj_family_products_dangerous_goods,New Block Title
+,63171bdcd77eec3905ae780e,,63171bdcd77eec3905ae7803,block,,,,sj_family_products_dangerous_goods,New Block Title
+,63171ed0d77eec3905ae7852,,63171bdcd77eec3905ae7805,block,,,,sj_family_products_dangerous_goods,New Block Title
+,631713ead77eec3905ae77af,,631713ead77eec3905ae77a9,block,,,,sj_family_products_dangerous_goods,New Block Title
+,63171bdcd77eec3905ae7809,,63171bdcd77eec3905ae7803,block,,,,sj_family_products_dangerous_goods,New Block Title
+,63171bdcd77eec3905ae7814,,63171bdcd77eec3905ae7805,block,,,,sj_family_products_dangerous_goods,New Block Title
+,63171a8fd77eec3905ae77fb,,631713ead77eec3905ae77a9,block,,,,sj_family_products_dangerous_goods,New Block Title
+,63171bdcd77eec3905ae780f,,63171bdcd77eec3905ae7803,block,,,,sj_family_products_dangerous_goods,New Block Title
+,631713ead77eec3905ae77b0,,631713ead77eec3905ae77a9,block,,,,sj_family_products_dangerous_goods,New Block Title
+,63171bdcd77eec3905ae780a,,63171bdcd77eec3905ae7803,block,,,,sj_family_products_dangerous_goods,New Block Title
+,6311ef2fd77eec3905ae76f8,true,6311e5e4d77eec3905ae7655,article,,,,sj_family_products_dangerous_goods,New Article Title
+,631713ead77eec3905ae77ab,true,631713ead77eec3905ae77a6,article,,,,sj_family_products_dangerous_goods,New Article Title
+,63171bdcd77eec3905ae7805,true,63171bdbd77eec3905ae7800,article,,,,sj_family_products_dangerous_goods,New Article Title
+,6311e7b7d77eec3905ae76c7,true,6311e5e4d77eec3905ae7655,article,,,,sj_family_products_dangerous_goods,New Article Title
+,631713ead77eec3905ae77a9,true,631713ead77eec3905ae77a6,article,,,,sj_family_products_dangerous_goods,New Article Title
+,63171bdcd77eec3905ae7803,true,63171bdbd77eec3905ae7800,article,,,,sj_family_products_dangerous_goods,New Article Title
+,6311ebedd77eec3905ae76ec,true,6311e5e4d77eec3905ae7655,article,,,,sj_family_products_dangerous_goods,New Article Title
+,631713ead77eec3905ae77aa,true,631713ead77eec3905ae77a6,article,,,,sj_family_products_dangerous_goods,New Article Title
+,63171bdcd77eec3905ae7804,true,63171bdbd77eec3905ae7800,article,,,,sj_family_products_dangerous_goods,New Article Title
+,6311e5e4d77eec3905ae7655,,course,page,How well can you spot dangerous goods?,The Challenge,Scroll down to test your ability to spot dangerous goods.,sj_family_products_dangerous_goods,The Challenge
+,631713ead77eec3905ae77a6,,course,page,How to use Safety Data Sheets to spot dangerous goods.,Safety Data Sheets,Scroll down to learn how the Safety Data Sheet helps you spot dangerous goods.,sj_family_products_dangerous_goods,Safety Data Sheets
+,63171bdbd77eec3905ae7800,,course,page,How the Hazardous Materials Shipping Coordinator (HMSC) helps you follow federal regulations.,Transporting Hazardous Items,Scroll down to learn the proper shipping procedures at SJ Family Products.,sj_family_products_dangerous_goods,Transporting Hazardous Items
+,course,,,course,The US Department of Transportation (DOT) regulates dangerous goods to protect people and the planet. It is your responsibility to determine if any item that leaves our buildings is regulated or non-regulated. This 25-minute course equips you to spot dangerous goods so you can comply with federal regulations.,SJ Family Products: How to Spot Dangerous Goods,Complete each topic in sequence.,sj_family_products_dangerous_goods,SJ Family Products: How to Spot Dangerous Goods

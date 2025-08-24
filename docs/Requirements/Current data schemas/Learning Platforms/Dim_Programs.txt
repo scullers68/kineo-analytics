@@ -1,0 +1,14 @@
+SELECT
+p.[Program ID] AS [Program_ID]
+, MAX(p.[Program Name]) AS [Program Name]
+, MAX(p.[Category]) AS [Category]
+, MAX([Include in Dashboard]) AS [Include in Dashboard]
+FROM [analytics_prog_completions.csv] p
+GROUP BY p.[Program ID]
+UNION
+
+SELECT
+-1 AS [Program_ID]
+, 'N/A' AS [Program Name]
+, 'N/A' AS [Category]
+, -1 AS [Include in Dashboard]

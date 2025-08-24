@@ -1,0 +1,49 @@
+SELECT
+rankasc(Certification_User_ID_Str) AS Certification_User_ID
+, CertUsers.[Certification ID] 
+, CertUsers.[User ID]
+, [Status]
+, [Time assigned]
+, -- If the certification is unassigned, not expired, and has no completion date then use the assigned date as the completion date. Otherwise the completion date is used.
+    CASE WHEN ISNULL(CurrentlyAssigned.[Certification ID]) AND [Status]!='Expired' THEN 
+    CASE WHEN ISNULL([Time completed]) THEN [Time assigned] ELSE [Time completed] END
+    ELSE [Time completed] END AS [Time completed]
+, [Time started]
+, [Certification Name]
+, [Include in dashboard]
+, CASE WHEN ISNULL(CurrentlyAssigned.[Certification ID]) THEN 'Unassigned' ELSE 'Assigned' END AS AssignmentStatus
+FROM
+(SELECT
+CONCAT(CONCAT(CAST(c.[User ID] AS VARCHAR),'_'),CAST(c.[Certification ID] AS VARCHAR)) AS Certification_User_ID_Str
+, c.[Certification ID]
+, c.[User ID]
+, c.[Status]
+, c.[Time assigned]
+, c.[Time completed]
+, c.[Time started]
+, c.[Certification Name]
+, c.[Include in dashboard]
+FROM [Analytics_cert_completions.Csv] c
+) CertUsers
+-- Flag Historical Completions that are not currently assigned
+LEFT JOIN
+    (
+        SELECT apo.[Certification ID], apo.[User ID]
+        FROM [Analytics_cert_overview.csv] apo
+        GROUP BY [Certification ID], [User ID]
+    ) CurrentlyAssigned
+    ON CertUsers.[Certification ID] = CurrentlyAssigned.[Certification ID] AND CertUsers.[User ID] = CurrentlyAssigned.[User ID]
+
+UNION
+
+SELECT
+-1 AS Certification_User_ID
+, -1 AS [Certification ID] 
+, -1 AS [User ID]
+, 'N/A' AS [Status]
+, createdate(1900,1,1) AS [Time assigned]
+, createdate(1900,1,1) AS [Time completed]
+, createdate(1900,1,1) AS [Time started]
+, 'N/A' AS [Certification Name]
+, -1 AS [Include in dashboard]
+, 'N/A' AS AssignmentStatus

@@ -1,0 +1,13 @@
+SELECT
+s.[Event ID] AS [Event ID]
+, MAX(s.[Course ID]) AS [Course ID]
+, MAX(s.[Seminar Name]) AS [Seminar Name]
+FROM [analytics_seminar_attendance.csv] s
+GROUP BY s.[Event ID]
+
+UNION
+
+SELECT
+-1 AS [Event ID]
+, -1 AS [Course ID]
+, 'N/A' AS [Seminar Name]

@@ -1,0 +1,77 @@
+SELECT 
+[User_ID]
+,Program_ID
+,Course_ID
+,SCORM_ID
+,Cert_ID
+,[Certification_User_ID]
+,Program_User_ID
+,Course_User_ID
+,[Event_ID]
+,[Session_ID]
+,Date_Began
+,Date_Completed
+,Days_Difference
+,dfyc.[FY_Completed]
+,dfyb.[FY_Began]
+,IsOverdue
+,Limit_To_Course_to_Cert_Progress
+
+FROM
+(
+SELECT
+acc.[User ID] AS [User_ID]
+, -1 AS [Program_ID]
+, acc.[Course ID] AS Course_ID
+, CAST(-1 AS bigint) AS SCORM_ID
+, CASE WHEN ISNULL(apo.[Certification ID]) THEN -1 ELSE apo.[Certification ID] END AS Cert_ID
+, CASE WHEN ISNULL(dpp.[Certification_User_ID]) THEN -1 ELSE dpp.[Certification_User_ID] END AS [Certification_User_ID]
+, TOBIGINT(-1) AS Program_User_ID
+, CASE WHEN ISNULL(dc.Course_User_ID) THEN -1 ELSE dc.[Course_User_ID] END AS Course_User_ID
+, CASE 
+    WHEN ISNULL(acc.[Time enrolled]) 
+        THEN CASE WHEN ISNULL(dpp.[Time assigned]) 
+            THEN CASE WHEN ISNULL(acc.[Time completed]) 
+                THEN CreateDate(1900,1,1) 
+            ELSE CreateDate(GetYear(acc.[Time completed]),GetMonth(acc.[Time completed]),GetDay(acc.[Time completed])) 
+            END 
+        ELSE 
+            CASE WHEN acc.[Time completed]<dpp.[Time assigned] THEN CreateDate(GetYear(acc.[Time completed]),GetMonth(acc.[Time completed]),GetDay(acc.[Time completed])) ELSE CreateDate(GetYear(dpp.[Time assigned]),GetMonth(dpp.[Time assigned]),GetDay(dpp.[Time assigned])) END
+        END 
+    ELSE CASE WHEN acc.[Time completed]<acc.[Time enrolled] THEN CreateDate(GetYear(acc.[Time completed]),GetMonth(acc.[Time completed]),GetDay(acc.[Time completed])) ELSE CreateDate(GetYear(acc.[Time enrolled]),GetMonth(acc.[Time enrolled]), GetDay(acc.[Time enrolled])) END
+    END AS Date_Began
+, CASE WHEN ISNULL(acc.[Time completed]) THEN CreateDate(1900,1,1) ELSE CreateDate(GetYear(acc.[Time completed]),GetMonth(acc.[Time completed]), GetDay(acc.[Time completed])) END AS Date_Completed
+,CASE WHEN ISNULL(acc.[Time completed]) OR ISNULL(acc.[Time enrolled]) THEN NULL ELSE
+DayDiff( 
+            CASE
+                WHEN ISNULL(acc.[Time completed]) THEN CreateDate(1900, 1, 1)
+                ELSE CreateDate(GetYear(acc.[Time completed]), GetMonth(acc.[Time completed]), GetDay(acc.[Time completed]))
+            END,
+            CASE
+                WHEN ISNULL(acc.[Time enrolled]) THEN CreateDate(1900, 1, 1)
+                ELSE CreateDate(GetYear(acc.[Time enrolled]), GetMonth(acc.[Time enrolled]), GetDay(acc.[Time enrolled]))
+            END
+    ) 
+    END AS Days_Difference
+, CASE WHEN ISNULL(acc.[Completion Due Date]) THEN 0
+       WHEN ISNULL(acc.[Time completed]) AND (CreateDate(GetYear(acc.[Completion Due Date]), GetMonth(acc.[Completion Due Date]), GetDay(acc.[Completion Due Date])) < CurrentDate()) THEN 1
+    ELSE 0
+END AS IsOverdue
+, 1 AS Limit_To_Course_to_Cert_Progress
+, -1 AS [Event_ID]
+, -1 AS [Session_ID]
+
+FROM
+[analytics_course_completions.csv] AS acc
+
+LEFT JOIN [analytics_cert_overview.csv] apo ON acc.[Course ID]=apo.[Course ID] AND acc.[User ID] = apo.[User ID]
+
+LEFT JOIN [Dim_Course_Progress] dc ON acc.[Course ID]=dc.[Course_ID] AND acc.[User ID]=dc.[User_ID]
+
+LEFT JOIN [Dim_Certification_Progress] dpp ON apo.[Certification ID]=dpp. [Certification ID] AND apo.[User ID]=dpp.[User ID]
+
+-- Ignore courses with no assigned date, no program assigned date, and no completed date
+WHERE NOT (acc.[Time enrolled] IS NULL AND dpp.[Time assigned] IS NULL AND acc.[Time completed] IS NULL)
+) Progress_Records
+LEFT JOIN Dim_FY_Completed dfyc ON Progress_Records.Date_Completed>=dfyc.[FYStartDate] AND Progress_Records.Date_Completed<=dfyc.[FYEndDate]
+LEFT JOIN Dim_FY_Began dfyb ON Progress_Records.Date_Began>=dfyb.[FYStartDate] AND Progress_Records.Date_Began<=dfyb.[FYEndDate]

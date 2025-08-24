@@ -1,0 +1,25 @@
+Select Distinct 
+    d.[attemptId]
+From 
+    [social_tracking-input] d
+    
+UNION
+    
+Select Distinct 
+    t.[attemptId]
+From 
+    [social_device-input] t
+        
+UNION
+        
+Select Distinct 
+    t.[attemptId]
+From 
+    [social_question-input] t
+      
+UNION  
+        
+Select Distinct 
+    t.[attemptId]
+From 
+    [social_assessment-input] t
