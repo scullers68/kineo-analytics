@@ -4,7 +4,9 @@
 
 Kineo Analytics is a comprehensive learning management analytics solution developed internally by Kineo for tracking and analyzing training data from Totara LMS. The solution currently depends entirely on Sisense ElastiCube technology for its data processing and analytics capabilities. 
 
-The University of Melbourne has undertaken a research project to explore migrating Kineo's Analytics solution from Sisense to Databricks. **The primary goal of this research project is to demonstrate how Kineo can completely eliminate their dependency on Sisense, terminate the Sisense agreement, and establish Databricks as the replacement platform for all Kineo Analytics capabilities.** This proof of concept will validate that Kineo can achieve enhanced capabilities while reducing vendor lock-in and licensing costs.
+The primary goal of this project is to eliminate the dependency on Sisense, terminate the Sisense agreement, and establish Databricks as the replacement platform for all Kineo Analytics capabilities.
+
+This proof of concept will validate that Kineo can achieve enhanced capabilities while reducing vendor lock-in and licensing costs.
 
 ## Table of Contents
 
@@ -25,7 +27,6 @@ The University of Melbourne has undertaken a research project to explore migrati
 
 - **Solution Owner**: Kineo (original developer and owner of Kineo Analytics)
 - **Current Technology**: Sisense ElastiCube
-- **Research Partner**: University of Melbourne
 - **Project Type**: Research and proof of concept for technology migration
 - **Project Outcome**: Validated migration path for Kineo to eliminate Sisense
 
@@ -945,7 +946,7 @@ HAVING error_count > 0;
 
 ## Conclusion
 
-This comprehensive migration guide provides Kineo with a validated path to completely eliminate Sisense from their Analytics platform. The University of Melbourne's research demonstrates that:
+This comprehensive migration guide provides Kineo with a validated path to completely eliminate Sisense from their Analytics platform:
 
 - ✅ **100% of Sisense functionality can be replicated in Databricks**
 - ✅ **44-49% cost reduction is achievable per deployment**
@@ -960,4 +961,3 @@ By following this blueprint, Kineo will transform their Analytics product from a
 *Document Version: 1.0*  
 *Last Updated: 2024*  
 *Status: Research Complete - Ready for Implementation*  
-*Contact: University of Melbourne Research Team*

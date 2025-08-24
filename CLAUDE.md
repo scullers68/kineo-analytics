@@ -1,7 +1,7 @@
 # CLAUDE.md - Kineo Analytics Data Model Documentation
 
 ## Project Overview
-Kineo Analytics is a comprehensive learning management analytics solution that processes training data from Totara LMS. The system is currently built on Sisense ElastiCube technology and is being migrated to Databricks as part of a University of Melbourne research project.
+Kineo Analytics is a comprehensive learning management analytics solution that processes training data from Totara LMS. The system is currently built on Sisense ElastiCube technology and is being migrated to Databricks.
 
 ## Architecture Overview
 
@@ -281,7 +281,6 @@ The Sisense model shows complex relationships between entities:
 
 ## Contact Information
 - **Solution Owner**: Kineo
-- **Research Partner**: University of Melbourne
 - **Migration Status**: Research/PoC Phase
 - **Target Completion**: 12-month roadmap
 - **Technology Stack**: Sisense → Databricks migration
