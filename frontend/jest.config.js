@@ -1,10 +1,9 @@
-const nextJest = require('next/jest')
 const path = require('path')
 
-const createJestConfig = nextJest({
-  // Provide the path to your Next.js app to load next.config.js and .env files
-  dir: './',
-})
+// Don't use Next.js Jest for JSX transformation as it causes issues
+// const createJestConfig = nextJest({
+//   dir: './',
+// })
 
 // Add any custom config to be passed to Jest
 const customJestConfig = {
@@ -56,7 +55,7 @@ const customJestConfig = {
     '<rootDir>/src/**/*.{test,spec}.{js,ts,tsx}'
   ],
 
-  // Module name mapping for path aliases
+  // Module name mapping for path aliases and extensions
   moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/src/$1',
     '^@/components/(.*)$': '<rootDir>/src/components/$1',
@@ -65,6 +64,7 @@ const customJestConfig = {
     '^@/types/(.*)$': '<rootDir>/src/types/$1',
     '^@/utils/(.*)$': '<rootDir>/src/utils/$1',
     '^@/assets/(.*)$': '<rootDir>/src/assets/$1',
+    '^@/stores/(.*)$': '<rootDir>/src/stores/$1',
   },
 
   // Coverage configuration
@@ -86,8 +86,13 @@ const customJestConfig = {
 
   // Transform configuration for TypeScript and JSX
   transform: {
-    '^.+\\.(js|jsx|ts|tsx)$': ['babel-jest', { presets: ['next/babel'] }]
+    '^.+\\.(js|jsx|ts|tsx)$': ['babel-jest', { configFile: './babel.config.jest.js' }]
   },
+  
+  // Configure babel to handle JSX properly
+  transformIgnorePatterns: [
+    '/node_modules/(?!(.*\\.mjs$))'
+  ],
 
   // Test environment setup
   testEnvironmentOptions: {
@@ -106,5 +111,5 @@ const customJestConfig = {
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json']
 }
 
-// createJestConfig is exported this way to ensure that next/jest can load the Next.js config which is async
-module.exports = createJestConfig(customJestConfig)
+// Export the custom Jest config directly
+module.exports = customJestConfig

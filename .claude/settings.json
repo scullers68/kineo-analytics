@@ -9,11 +9,22 @@
           }
         ]
       }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Write|Edit|MultiEdit|TodoWrite",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "tdd-guard"
+          }
+        ]
+      }
     ]
-  }
-},
-{
+  },
   "permissions": {
-    "deny": ["Read(.claude/tdd-guard/**)"]
+    "deny": [
+      "Read(.claude/tdd-guard/**)"
+    ]
   }
 }

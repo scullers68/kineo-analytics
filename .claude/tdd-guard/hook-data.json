@@ -1,0 +1,7 @@
+{
+  "project": "kineo-analytics-frontend",
+  "mode": "on",
+  "testRunner": "vitest",
+  "testDirectory": "frontend/tests",
+  "sourceDirectory": "frontend/src"
+}
