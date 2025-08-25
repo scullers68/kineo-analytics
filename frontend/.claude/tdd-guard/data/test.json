@@ -1,86 +1,387 @@
 {
   "testModules": [
     {
-      "moduleId": "/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/dashboard/dashboard-framework.test.ts",
+      "moduleId": "/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/services/mock-api.test.ts",
       "tests": [
         {
-          "name": "should have dashboard layout component",
-          "fullName": "Task 1.3: Dashboard Framework Foundation > 1. Responsive Dashboard Layout System > should have dashboard layout component",
+          "name": "should have proper configuration structure",
+          "fullName": "Mock API Configuration > MockAPIConfig > should have proper configuration structure",
           "state": "passed"
         },
         {
-          "name": "should have grid system for dashboard widgets",
-          "fullName": "Task 1.3: Dashboard Framework Foundation > 1. Responsive Dashboard Layout System > should have grid system for dashboard widgets",
+          "name": "should allow enabling/disabling mock services",
+          "fullName": "Mock API Configuration > MockAPIConfig > should allow enabling/disabling mock services",
           "state": "passed"
         },
         {
-          "name": "should have widget container component",
-          "fullName": "Task 1.3: Dashboard Framework Foundation > 1. Responsive Dashboard Layout System > should have widget container component",
+          "name": "should support configurable delay for simulating network latency",
+          "fullName": "Mock API Configuration > MockAPIConfig > should support configurable delay for simulating network latency",
           "state": "passed"
         },
         {
-          "name": "should have components organized by categories",
-          "fullName": "Task 1.3: Dashboard Framework Foundation > 2. Reusable Component Library Structure > should have components organized by categories",
+          "name": "should support error rate configuration for testing error scenarios",
+          "fullName": "Mock API Configuration > MockAPIConfig > should support error rate configuration for testing error scenarios",
           "state": "passed"
         },
         {
-          "name": "should have common UI components",
-          "fullName": "Task 1.3: Dashboard Framework Foundation > 2. Reusable Component Library Structure > should have common UI components",
+          "name": "should successfully authenticate valid credentials",
+          "fullName": "Mock Authentication Service > login > should successfully authenticate valid credentials",
           "state": "passed"
         },
         {
-          "name": "should have component library index file",
-          "fullName": "Task 1.3: Dashboard Framework Foundation > 2. Reusable Component Library Structure > should have component library index file",
+          "name": "should reject invalid credentials",
+          "fullName": "Mock Authentication Service > login > should reject invalid credentials",
           "state": "passed"
         },
         {
-          "name": "should have theme provider component",
-          "fullName": "Task 1.3: Dashboard Framework Foundation > 3. Theme Switching (Light/Dark Mode) > should have theme provider component",
+          "name": "should include customer context in auth response",
+          "fullName": "Mock Authentication Service > login > should include customer context in auth response",
           "state": "passed"
         },
         {
-          "name": "should have theme toggle component",
-          "fullName": "Task 1.3: Dashboard Framework Foundation > 3. Theme Switching (Light/Dark Mode) > should have theme toggle component",
+          "name": "should simulate network delay",
+          "fullName": "Mock Authentication Service > login > should simulate network delay",
           "state": "passed"
         },
         {
-          "name": "should have theme store for state management",
-          "fullName": "Task 1.3: Dashboard Framework Foundation > 3. Theme Switching (Light/Dark Mode) > should have theme store for state management",
+          "name": "should successfully logout current user",
+          "fullName": "Mock Authentication Service > logout > should successfully logout current user",
           "state": "passed"
         },
         {
-          "name": "should have main navigation component",
-          "fullName": "Task 1.3: Dashboard Framework Foundation > 4. Navigation and Sidebar Components > should have main navigation component",
+          "name": "should refresh valid token",
+          "fullName": "Mock Authentication Service > refresh > should refresh valid token",
+          "state": "failed",
+          "errors": [
+            {
+              "stack": "Error: Token refresh failed\n    at MockAuthService.refresh (/Users/russellgrocott/Projects/kineo-analytics/frontend/src/services/mock-api/auth-service.ts:181:13)\n    at /Users/russellgrocott/Projects/kineo-analytics/frontend/tests/services/mock-api.test.ts:288:24\n    at file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/runner/dist/chunk-hooks.js:752:20",
+              "message": "Token refresh failed",
+              "constructor": "Function<Error>",
+              "name": "Error",
+              "toString": "Function<toString>"
+            }
+          ]
+        },
+        {
+          "name": "should reject invalid refresh token",
+          "fullName": "Mock Authentication Service > refresh > should reject invalid refresh token",
           "state": "passed"
         },
         {
-          "name": "should have breadcrumb navigation",
-          "fullName": "Task 1.3: Dashboard Framework Foundation > 4. Navigation and Sidebar Components > should have breadcrumb navigation",
+          "name": "should validate active tokens",
+          "fullName": "Mock Authentication Service > validateToken > should validate active tokens",
           "state": "passed"
         },
         {
-          "name": "should have collapsible sidebar",
-          "fullName": "Task 1.3: Dashboard Framework Foundation > 4. Navigation and Sidebar Components > should have collapsible sidebar",
+          "name": "should reject expired tokens",
+          "fullName": "Mock Authentication Service > validateToken > should reject expired tokens",
           "state": "passed"
         },
         {
-          "name": "should have breakpoint utilities",
-          "fullName": "Task 1.3: Dashboard Framework Foundation > 5. Responsive Breakpoint Management > should have breakpoint utilities",
+          "name": "should return current authenticated user",
+          "fullName": "Mock Authentication Service > getCurrentUser > should return current authenticated user",
           "state": "passed"
         },
         {
-          "name": "should have responsive hook for breakpoints",
-          "fullName": "Task 1.3: Dashboard Framework Foundation > 5. Responsive Breakpoint Management > should have responsive hook for breakpoints",
+          "name": "should include proper user permissions",
+          "fullName": "Mock Authentication Service > getCurrentUser > should include proper user permissions",
           "state": "passed"
         },
         {
-          "name": "should have mobile-first responsive configuration",
-          "fullName": "Task 1.3: Dashboard Framework Foundation > 5. Responsive Breakpoint Management > should have mobile-first responsive configuration",
+          "name": "should return list of available customers",
+          "fullName": "Mock Customer Service > getCustomers > should return list of available customers",
+          "state": "passed"
+        },
+        {
+          "name": "should include realistic customer data",
+          "fullName": "Mock Customer Service > getCustomers > should include realistic customer data",
+          "state": "passed"
+        },
+        {
+          "name": "should return specific customer by ID",
+          "fullName": "Mock Customer Service > getCustomerById > should return specific customer by ID",
+          "state": "passed"
+        },
+        {
+          "name": "should reject invalid customer ID",
+          "fullName": "Mock Customer Service > getCustomerById > should reject invalid customer ID",
+          "state": "passed"
+        },
+        {
+          "name": "should switch to valid customer context",
+          "fullName": "Mock Customer Service > switchCustomer > should switch to valid customer context",
+          "state": "passed"
+        },
+        {
+          "name": "should update current customer after switching",
+          "fullName": "Mock Customer Service > switchCustomer > should update current customer after switching",
+          "state": "passed"
+        },
+        {
+          "name": "should return currently active customer",
+          "fullName": "Mock Customer Service > getCurrentCustomer > should return currently active customer",
+          "state": "passed"
+        },
+        {
+          "name": "should include customer settings",
+          "fullName": "Mock Customer Service > getCurrentCustomer > should include customer settings",
+          "state": "passed"
+        },
+        {
+          "name": "should return comprehensive dashboard metrics",
+          "fullName": "Mock Analytics Service > getDashboardMetrics > should return comprehensive dashboard metrics",
+          "state": "passed"
+        },
+        {
+          "name": "should return realistic metric values",
+          "fullName": "Mock Analytics Service > getDashboardMetrics > should return realistic metric values",
+          "state": "passed"
+        },
+        {
+          "name": "should include trend data for time series charts",
+          "fullName": "Mock Analytics Service > getDashboardMetrics > should include trend data for time series charts",
+          "state": "passed"
+        },
+        {
+          "name": "should return chart data for different chart types",
+          "fullName": "Mock Analytics Service > getChartData > should return chart data for different chart types",
+          "state": "passed"
+        },
+        {
+          "name": "should support department filtering",
+          "fullName": "Mock Analytics Service > getChartData > should support department filtering",
+          "state": "passed"
+        },
+        {
+          "name": "should include proper dataset structure",
+          "fullName": "Mock Analytics Service > getChartData > should include proper dataset structure",
+          "state": "passed"
+        },
+        {
+          "name": "should generate report data with proper structure",
+          "fullName": "Mock Analytics Service > getReportData > should generate report data with proper structure",
+          "state": "passed"
+        },
+        {
+          "name": "should include report metadata",
+          "fullName": "Mock Analytics Service > getReportData > should include report metadata",
+          "state": "passed"
+        },
+        {
+          "name": "should generate specified number of users",
+          "fullName": "Mock Data Generator > generateUsers > should generate specified number of users",
+          "state": "passed"
+        },
+        {
+          "name": "should generate realistic user data",
+          "fullName": "Mock Data Generator > generateUsers > should generate realistic user data",
+          "state": "passed"
+        },
+        {
+          "name": "should generate specified number of courses",
+          "fullName": "Mock Data Generator > generateCourses > should generate specified number of courses",
+          "state": "passed"
+        },
+        {
+          "name": "should generate realistic course categories",
+          "fullName": "Mock Data Generator > generateCourses > should generate realistic course categories",
+          "state": "passed"
+        },
+        {
+          "name": "should generate completion records for users and courses",
+          "fullName": "Mock Data Generator > generateCompletions > should generate completion records for users and courses",
+          "state": "passed"
+        },
+        {
+          "name": "should generate realistic completion statuses",
+          "fullName": "Mock Data Generator > generateCompletions > should generate realistic completion statuses",
+          "state": "passed"
+        },
+        {
+          "name": "should generate comprehensive analytics dataset",
+          "fullName": "Mock Data Generator > generateAnalyticsData > should generate comprehensive analytics dataset",
+          "state": "passed"
+        },
+        {
+          "name": "should intercept API requests in development mode",
+          "fullName": "Mock API Interceptors > Development-only interceptors > should intercept API requests in development mode",
+          "state": "failed",
+          "errors": [
+            {
+              "message": "expected false to be true // Object.is equality",
+              "actual": "false",
+              "expected": "true",
+              "showDiff": true,
+              "operator": "strictEqual",
+              "diff": "\u001b[32m- Expected\u001b[39m\n\u001b[31m+ Received\u001b[39m\n\n\u001b[32m- true\u001b[39m\n\u001b[31m+ false\u001b[39m",
+              "name": "AssertionError",
+              "ok": false,
+              "stack": "AssertionError: expected false to be true // Object.is equality\n    at /Users/russellgrocott/Projects/kineo-analytics/frontend/tests/services/mock-api.test.ts:654:43\n    at file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/runner/dist/chunk-hooks.js:155:11\n    at file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/runner/dist/chunk-hooks.js:752:26\n    at file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/runner/dist/chunk-hooks.js:1897:20\n    at new Promise (<anonymous>)\n    at runWithTimeout (file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/runner/dist/chunk-hooks.js:1863:10)\n    at runTest (file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/runner/dist/chunk-hooks.js:1574:12)\n    at runSuite (file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/runner/dist/chunk-hooks.js:1729:8)\n    at runSuite (file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/runner/dist/chunk-hooks.js:1729:8)\n    at runSuite (file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/runner/dist/chunk-hooks.js:1729:8)"
+            }
+          ]
+        },
+        {
+          "name": "should not intercept requests in production",
+          "fullName": "Mock API Interceptors > Development-only interceptors > should not intercept requests in production",
+          "state": "passed"
+        },
+        {
+          "name": "should handle authentication endpoints",
+          "fullName": "Mock API Interceptors > Development-only interceptors > should handle authentication endpoints",
+          "state": "passed"
+        },
+        {
+          "name": "should handle customer endpoints",
+          "fullName": "Mock API Interceptors > Development-only interceptors > should handle customer endpoints",
+          "state": "passed"
+        },
+        {
+          "name": "should handle analytics endpoints",
+          "fullName": "Mock API Interceptors > Development-only interceptors > should handle analytics endpoints",
+          "state": "passed"
+        },
+        {
+          "name": "should simulate 401 unauthorized errors",
+          "fullName": "Mock Error Scenarios > Authentication errors > should simulate 401 unauthorized errors",
+          "state": "failed",
+          "errors": [
+            {
+              "message": "expected [Function] to throw error including 'Unauthorized' but got 'Invalid credentials'",
+              "actual": "Invalid credentials",
+              "expected": "Unauthorized",
+              "showDiff": true,
+              "operator": "strictEqual",
+              "diff": "Expected: \u001b[32m\"Unauthorized\"\u001b[39m\nReceived: \u001b[31m\"Invalid credentials\"\u001b[39m",
+              "name": "AssertionError",
+              "ok": false,
+              "stack": "AssertionError: expected [Function] to throw error including 'Unauthorized' but got 'Invalid credentials'\n    at _Assertion.<anonymous> (file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/expect/dist/index.js:1420:16)\n    at _Assertion.<anonymous> (file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/expect/dist/index.js:1029:14)\n    at _Assertion.methodWrapper (file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/chai/index.js:1686:25)\n    at file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/expect/dist/index.js:1639:20\n    at /Users/russellgrocott/Projects/kineo-analytics/frontend/tests/services/mock-api.test.ts:702:7\n    at file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/runner/dist/chunk-hooks.js:752:20"
+            }
+          ]
+        },
+        {
+          "name": "should simulate token expiration errors",
+          "fullName": "Mock Error Scenarios > Authentication errors > should simulate token expiration errors",
+          "state": "passed"
+        },
+        {
+          "name": "should simulate network timeout errors",
+          "fullName": "Mock Error Scenarios > Network errors > should simulate network timeout errors",
+          "state": "passed"
+        },
+        {
+          "name": "should simulate server errors (500)",
+          "fullName": "Mock Error Scenarios > Network errors > should simulate server errors (500)",
+          "state": "passed"
+        },
+        {
+          "name": "should simulate missing data scenarios",
+          "fullName": "Mock Error Scenarios > Data errors > should simulate missing data scenarios",
+          "state": "failed",
+          "errors": [
+            {
+              "stack": "Error: Request timeout\n    at MockAnalyticsService.getDashboardMetrics (/Users/russellgrocott/Projects/kineo-analytics/frontend/src/services/mock-api/analytics-service.ts:143:13)\n    at /Users/russellgrocott/Projects/kineo-analytics/frontend/tests/services/mock-api.test.ts:753:23\n    at file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/runner/dist/chunk-hooks.js:752:20",
+              "message": "Request timeout",
+              "constructor": "Function<Error>",
+              "name": "Error",
+              "toString": "Function<toString>"
+            }
+          ]
+        },
+        {
+          "name": "should simulate corrupted data scenarios",
+          "fullName": "Mock Error Scenarios > Data errors > should simulate corrupted data scenarios",
+          "state": "failed",
+          "errors": [
+            {
+              "message": "expected false to be true // Object.is equality",
+              "actual": "false",
+              "expected": "true",
+              "showDiff": true,
+              "operator": "strictEqual",
+              "diff": "\u001b[32m- Expected\u001b[39m\n\u001b[31m+ Received\u001b[39m\n\n\u001b[32m- true\u001b[39m\n\u001b[31m+ false\u001b[39m",
+              "name": "AssertionError",
+              "ok": false,
+              "stack": "AssertionError: expected false to be true // Object.is equality\n    at /Users/russellgrocott/Projects/kineo-analytics/frontend/tests/services/mock-api.test.ts:769:32\n    at file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/runner/dist/chunk-hooks.js:155:11\n    at file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/runner/dist/chunk-hooks.js:752:26\n    at file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/runner/dist/chunk-hooks.js:1897:20\n    at new Promise (<anonymous>)\n    at runWithTimeout (file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/runner/dist/chunk-hooks.js:1863:10)\n    at runTest (file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/runner/dist/chunk-hooks.js:1574:12)\n    at runSuite (file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/runner/dist/chunk-hooks.js:1729:8)\n    at runSuite (file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/runner/dist/chunk-hooks.js:1729:8)\n    at runSuite (file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/runner/dist/chunk-hooks.js:1729:8)"
+            }
+          ]
+        },
+        {
+          "name": "should simulate realistic loading delays",
+          "fullName": "Mock API Loading States > Loading delay simulation > should simulate realistic loading delays",
+          "state": "failed",
+          "errors": [
+            {
+              "stack": "Error: Request timeout\n    at MockAnalyticsService.getDashboardMetrics (/Users/russellgrocott/Projects/kineo-analytics/frontend/src/services/mock-api/analytics-service.ts:143:13)\n    at /Users/russellgrocott/Projects/kineo-analytics/frontend/tests/services/mock-api.test.ts:785:7\n    at file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/runner/dist/chunk-hooks.js:752:20",
+              "message": "Request timeout",
+              "constructor": "Function<Error>",
+              "name": "Error",
+              "toString": "Function<toString>"
+            }
+          ]
+        },
+        {
+          "name": "should provide loading progress callbacks",
+          "fullName": "Mock API Loading States > Loading delay simulation > should provide loading progress callbacks",
+          "state": "failed",
+          "errors": [
+            {
+              "stack": "Error: Request timeout\n    at MockAnalyticsService.getDashboardMetrics (/Users/russellgrocott/Projects/kineo-analytics/frontend/src/services/mock-api/analytics-service.ts:143:13)\n    at /Users/russellgrocott/Projects/kineo-analytics/frontend/tests/services/mock-api.test.ts:801:7\n    at file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/runner/dist/chunk-hooks.js:752:20",
+              "message": "Request timeout",
+              "constructor": "Function<Error>",
+              "name": "Error",
+              "toString": "Function<toString>"
+            }
+          ]
+        },
+        {
+          "name": "should integrate all mock services in a unified way",
+          "fullName": "Mock API Integration > Service integration > should integrate all mock services in a unified way",
+          "state": "passed"
+        },
+        {
+          "name": "should provide centralized configuration",
+          "fullName": "Mock API Integration > Service integration > should provide centralized configuration",
+          "state": "failed",
+          "errors": [
+            {
+              "message": "expected false to be true // Object.is equality",
+              "actual": "false",
+              "expected": "true",
+              "showDiff": true,
+              "operator": "strictEqual",
+              "diff": "\u001b[32m- Expected\u001b[39m\n\u001b[31m+ Received\u001b[39m\n\n\u001b[32m- true\u001b[39m\n\u001b[31m+ false\u001b[39m",
+              "name": "AssertionError",
+              "ok": false,
+              "stack": "AssertionError: expected false to be true // Object.is equality\n    at /Users/russellgrocott/Projects/kineo-analytics/frontend/tests/services/mock-api.test.ts:830:45\n    at file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/runner/dist/chunk-hooks.js:155:11\n    at file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/runner/dist/chunk-hooks.js:752:26\n    at file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/runner/dist/chunk-hooks.js:1897:20\n    at new Promise (<anonymous>)\n    at runWithTimeout (file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/runner/dist/chunk-hooks.js:1863:10)\n    at runTest (file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/runner/dist/chunk-hooks.js:1574:12)\n    at runSuite (file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/runner/dist/chunk-hooks.js:1729:8)\n    at runSuite (file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/runner/dist/chunk-hooks.js:1729:8)\n    at runSuite (file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/runner/dist/chunk-hooks.js:1729:8)"
+            }
+          ]
+        },
+        {
+          "name": "should allow easy service initialization",
+          "fullName": "Mock API Integration > Service integration > should allow easy service initialization",
+          "state": "failed",
+          "errors": [
+            {
+              "message": "expected false to be true // Object.is equality",
+              "actual": "false",
+              "expected": "true",
+              "showDiff": true,
+              "operator": "strictEqual",
+              "diff": "\u001b[32m- Expected\u001b[39m\n\u001b[31m+ Received\u001b[39m\n\n\u001b[32m- true\u001b[39m\n\u001b[31m+ false\u001b[39m",
+              "name": "AssertionError",
+              "ok": false,
+              "stack": "AssertionError: expected false to be true // Object.is equality\n    at /Users/russellgrocott/Projects/kineo-analytics/frontend/tests/services/mock-api.test.ts:840:44\n    at file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/runner/dist/chunk-hooks.js:155:11\n    at file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/runner/dist/chunk-hooks.js:752:26\n    at file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/runner/dist/chunk-hooks.js:1897:20\n    at new Promise (<anonymous>)\n    at runWithTimeout (file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/runner/dist/chunk-hooks.js:1863:10)\n    at runTest (file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/runner/dist/chunk-hooks.js:1574:12)\n    at runSuite (file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/runner/dist/chunk-hooks.js:1729:8)\n    at runSuite (file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/runner/dist/chunk-hooks.js:1729:8)\n    at runSuite (file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/runner/dist/chunk-hooks.js:1729:8)"
+            }
+          ]
+        },
+        {
+          "name": "should support service cleanup for testing",
+          "fullName": "Mock API Integration > Service integration > should support service cleanup for testing",
           "state": "passed"
         }
       ]
     }
   ],
   "unhandledErrors": [],
-  "reason": "passed"
+  "reason": "failed"
 }

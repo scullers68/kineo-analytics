@@ -12,6 +12,10 @@ export default defineConfig({
     setupFiles: ['./tests/setup/vitest.setup.ts'],
     css: true,
     reporters: ['default', new VitestReporter()],
+    // Enable CommonJS module resolution for tests
+    deps: {
+      external: [],
+    },
     coverage: {
       provider: 'v8',
       reporter: ['text', 'json', 'html'],
