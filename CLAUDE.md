@@ -60,6 +60,15 @@ The project uses a **14-agent specialized architecture** optimized for **paralle
 - **Integration Points**: Weekly syncs at weeks 4, 8, 12, 16, 20 with API-first development
 - **40-50% Time Reduction**: Achieved through specialized agent domains and minimal overlap
 
+### **Six-Step Agent Strategy for Quality Development**
+Our development process follows a rigorous six-step quality assurance methodology:
+- **Step 1 (TDD Expert)**: Validates structural patterns and creates failing tests
+- **Step 2 (Senior Fullstack Engineer)**: Identifies implementation gaps and architecture issues  
+- **Step 3 (Test Engineer)**: Quantifies completion percentage and creates comprehensive test coverage
+- **Step 4 (Quality Control Enforcer)**: Reviews code quality and assigns numerical scores (0-100)
+- **Step 5 (Karen)**: Provides reality checks and written assessments to prevent false completion claims
+- **Step 6 (Backlog Expert)**: Updates task documentation with honest progress tracking
+
 ## Data Model Overview
 
 ### Source Data Scale
