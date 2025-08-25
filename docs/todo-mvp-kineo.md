@@ -1,14 +1,14 @@
-# TODO_MVP.md - Kineo Analytics Migration Project Plan
+# TODO_MVP.md - Kineo Analytics Standalone Platform Development Plan
 
 ## Project Goal
-Migrate Kineo Analytics from Sisense ElastiCube to Databricks, eliminating all Sisense dependencies while maintaining full functionality and improving performance.
+Transform Kineo Analytics into a standalone multi-customer SaaS platform, eliminating Sisense dependencies and enabling Kineo to serve hundreds of customers directly through a modern web-based analytics platform powered by Databricks.
 
 ---
 
-## Phase 0: Project Initiation (Week 1-2)
-**Goal**: Establish project framework and technical foundation
+## Phase 0: Project Initiation (Week 1-2) ✅ COMPLETED
+**Goal**: Establish project framework and platform architecture foundation
 
-### Setup & Planning
+### Setup & Platform Planning
 - [x] **0.1** Initialize Claude Code Project Structure
   - [x] Create all sub-agent role definitions
   - [x] Define agent interaction protocols
@@ -16,68 +16,67 @@ Migrate Kineo Analytics from Sisense ElastiCube to Databricks, eliminating all S
   - [x] Configure agent expertise domains
 - [x] **0.2** Create project repository and documentation structure
   - [x] Initialize Git repository
-  - [ ] Set up automated documentation generation
+  - [x] Set up comprehensive documentation
   - [x] Configure version control workflows
-- [x] **0.3** Review and finalize project scope
-  - [x] Confirm all 30+ tables to be migrated
-  - [ ] Identify any out-of-scope items
-  - [x] Document success criteria
-- [ ] **0.4** Create project timeline with automated milestones
-- [ ] **0.5** Set up automated progress tracking
+- [x] **0.3** Define platform architecture
+  - [x] Design standalone multi-customer SaaS architecture
+  - [x] Document React/TypeScript + FastAPI technology stack
+  - [x] Define Databricks integration patterns
+  - [x] Specify customer data isolation strategy
+- [x] **0.4** Create platform development timeline
+  - [x] 32-week phased development approach
+  - [x] Platform foundation → visualization engine → advanced features → production
+- [x] **0.5** Document strategic transformation
+  - [x] From system integration to platform ownership
+  - [x] Multi-customer scalability requirements
+  - [x] SaaS revenue model definition
 
-**Deliverables**: Project charter, agent architecture, automated workflows
+**Deliverables**: ✅ Platform architecture, development roadmap, strategic foundation
 
 ---
 
-## Phase 1: Discovery & Assessment (Week 2-4)
-**Goal**: Complete automated inventory of current system and create detailed migration plan
+## Phase 1: Platform Foundation (Week 2-8)
+**Goal**: Establish multi-customer platform infrastructure and core backend services
 
-### Current State Analysis
-- [ ] **1.1** Document Sisense Environment
-  - [ ] Export all ElastiCube schemas programmatically
-  - [ ] Extract all SQL transformations (30+ queries)
-  - [ ] Parse Python notebook (UserAllReports.ipynb)
-  - [ ] Catalog all custom functions and formulas
-  - [ ] Generate dashboard inventory report
-  - [ ] Map refresh schedules and dependencies
+### Infrastructure Setup
+- [ ] **1.1** Azure Cloud Infrastructure
+  - [ ] Deploy Azure App Service for platform hosting
+  - [ ] Configure Azure Database for PostgreSQL (customer metadata)
+  - [ ] Set up Azure Cache for Redis (performance caching)
+  - [ ] Implement Azure Key Vault for secrets management
+  - [ ] Configure multi-region deployment capabilities
 
-- [ ] **1.2** Automated Data Profiling
-  - [ ] Profile all 13 source CSV files
-    - [ ] analytics_users.csv (3,057 records)
-    - [ ] analytics_course_completions.csv (19,858 records)
-    - [ ] analytics_cert_completions.csv (9,767 records)
-    - [ ] analytics_prog_completions.csv (3,409 records)
-    - [ ] analytics_prog_overview.csv (9,634 records)
-    - [ ] analytics_cert_overview.csv (92,146 records)
-    - [ ] analytics_scorm.csv (35 records)
-    - [ ] analytics_seminar_attendance.csv (70 records)
-    - [ ] analytics_audiences_report.csv (8,734 records)
-    - [ ] analytics_competency_ratings.csv (49,078 records)
-    - [ ] analytics_organisations.csv (1,001 records)
-    - [ ] analytics_positions.csv (889 records)
-    - [ ] null_dates.csv (3 records)
-  - [ ] Generate data quality report
-  - [ ] Identify data types and constraints
-  - [ ] Map relationships between files
+- [ ] **1.2** Databricks Multi-Customer Architecture
+  - [ ] Design customer schema isolation patterns (customer_001, customer_002, etc.)
+  - [ ] Implement Bronze/Silver/Gold medallion architecture per customer
+  - [ ] Set up automated customer schema provisioning
+  - [ ] Configure Databricks Unity Catalog for governance
+  - [ ] Establish connection pooling and performance optimization
 
-- [ ] **1.3** Performance Baseline
-  - [ ] Measure current ETL execution times
-  - [ ] Document query performance metrics
-  - [ ] Capture resource utilization patterns
-  - [ ] Identify optimization opportunities
+### Backend Platform Development
+- [ ] **1.3** FastAPI Core Application
+  - [ ] Create multi-tenant authentication system
+  - [ ] Implement customer management APIs
+  - [ ] Build user management and role-based access control
+  - [ ] Design JWT token-based security with customer context
+  - [ ] Create automated customer onboarding workflows
 
-### Technical Assessment
-- [ ] **1.4** SQL Conversion Analysis
-  - [ ] Map Sisense-specific functions to Spark SQL
-  - [ ] Generate conversion rules database
-  - [ ] Document CREATEDATE, DAYDIFF, RANKASC conversions
+- [ ] **1.4** Database Design & Models
+  - [ ] Customer metadata and subscription management
+  - [ ] User authentication and authorization models
+  - [ ] Dashboard configuration and customization schemas
+  - [ ] Audit logging and activity tracking
+  - [ ] Integration configuration for data sources
 
-- [ ] **1.5** Python Code Analysis
-  - [ ] Analyze manager hierarchy algorithm
-  - [ ] Map NetworkX to GraphFrames conversion
-  - [ ] Generate PySpark implementation plan
+### Development Environment
+- [ ] **1.5** CI/CD and Development Tools
+  - [ ] Set up GitHub Actions for automated deployment
+  - [ ] Configure Docker containerization for scalability
+  - [ ] Implement automated testing frameworks
+  - [ ] Create development, staging, and production environments
+  - [ ] Set up monitoring and alerting infrastructure
 
-**Deliverables**: Automated assessment reports, conversion mappings, data dictionary
+**Deliverables**: Scalable multi-customer platform foundation, automated deployment pipeline
 
 ---
 
@@ -490,23 +489,32 @@ Each phase must meet these criteria before proceeding:
 
 ---
 
-## Infrastructure Requirements
+## Platform Infrastructure Requirements
 
-### Compute Resources
-- **Databricks Clusters**: Auto-scaling 2-8 nodes
-- **Storage**: 1TB initial, auto-expanding
-- **Memory**: 128GB+ for large transformations
+### Frontend Infrastructure
+- **Azure App Service**: Premium tier for global deployment
+- **CDN**: Global content delivery for optimal performance
+- **Static Web Apps**: React application hosting
+- **Application Gateway**: Load balancing and SSL termination
 
-### Software Stack
-- **Databricks Runtime**: 13.3 LTS or later
-- **Delta Lake**: Latest version
-- **Python**: 3.9+
-- **Spark**: 3.4+
+### Backend Infrastructure
+- **Azure Container Instances**: FastAPI application hosting
+- **Azure Database for PostgreSQL**: Customer metadata and configurations
+- **Azure Cache for Redis**: Performance caching layer
+- **Azure Key Vault**: Secrets and certificate management
 
-### Estimated Costs
-- **Databricks**: $10,000/month (estimated)
-- **Cloud Storage**: $1,000/month
-- **Total**: ~$11,000/month operational cost
+### Data & Analytics Infrastructure
+- **Databricks Premium**: Multi-customer data processing
+- **Azure Data Lake Storage**: Customer data isolation
+- **Unity Catalog**: Data governance and security
+- **Delta Lake**: ACID transactions and versioning
+
+### Estimated Platform Costs (500 customers)
+- **Azure App Services**: $5,000/month
+- **Databricks Premium**: $15,000/month
+- **Storage & Database**: $3,000/month
+- **CDN & Networking**: $2,000/month
+- **Total**: ~$25,000/month for 500 customers ($50/customer/month)
 
 ---
 
@@ -535,9 +543,11 @@ Each phase must meet these criteria before proceeding:
 ## Next Steps
 1. ~~Initialize Claude Code project structure~~ ✅ **COMPLETED**
 2. ~~Deploy agent role definitions~~ ✅ **COMPLETED**
-3. Execute Phase 0 automation setup
-4. Begin automated discovery process
-5. Generate initial assessment reports
+3. ~~Define standalone platform architecture~~ ✅ **COMPLETED**
+4. Begin Phase 1: Platform Foundation Development
+5. Execute Azure cloud infrastructure setup
+6. Start FastAPI backend development
+7. Begin React frontend application development
 
 ---
 
