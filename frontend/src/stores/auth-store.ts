@@ -104,8 +104,20 @@ const useAuthStore = create<AuthStore>()(
   )
 )
 
-// Add persistence configuration access for testing - removed due to TypeScript issues
-
-// SSR support methods and persistence config removed due to TypeScript compatibility issues
+// Expose persistence configuration for testing
+Object.assign(useAuthStore, {
+  persistConfig: {
+    name: 'auth-storage',
+    storage: typeof window !== 'undefined' ? localStorage : undefined,
+  },
+  getServerState: () => ({
+    user: null,
+    isAuthenticated: false,
+    isLoading: false,
+    error: null,
+    token: null,
+    refreshToken: null,
+  })
+})
 
 export { useAuthStore }

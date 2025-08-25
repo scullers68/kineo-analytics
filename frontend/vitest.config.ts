@@ -1,5 +1,6 @@
 /// <reference types="vitest" />
-import { defineConfig } from 'vite'
+import { defineConfig } from 'vitest/config'
+import { VitestReporter } from 'tdd-guard-vitest'
 import react from '@vitejs/plugin-react'
 import path from 'path'
 
@@ -10,41 +11,7 @@ export default defineConfig({
     environment: 'jsdom',
     setupFiles: ['./tests/setup/vitest.setup.ts'],
     css: true,
-    reporters: [
-      'default',
-      ['tdd-guard-vitest', {
-        // TDD Guard configuration for enforcing test-first development
-        hookUrl: 'http://localhost:3001/hook', // Default Claude Code hook URL
-        enforcementLevel: 'strict', // 'strict' | 'moderate' | 'lenient'
-        ignorePatterns: [
-          '**/node_modules/**',
-          '**/dist/**',
-          '**/build/**',
-          '**/*.config.*',
-          '**/types/**',
-          '**/*.d.ts'
-        ],
-        // Project-specific configuration
-        projectRoot: path.resolve(__dirname),
-        testDirectory: path.resolve(__dirname, 'tests'),
-        sourceDirectory: path.resolve(__dirname, 'src'),
-        // React/TypeScript specific settings
-        extensions: ['.ts', '.tsx', '.js', '.jsx'],
-        testExtensions: ['.test.ts', '.test.tsx', '.spec.ts', '.spec.tsx'],
-        // TDD enforcement rules
-        requireTestsForNewCode: true,
-        requireFailingTestFirst: true,
-        preventOverImplementation: true,
-        // Learning analytics platform specific ignores
-        skipTddFor: [
-          'src/types/api.ts', // Type definitions
-          'src/constants/**', // Constants
-          'src/assets/**', // Static assets
-          'next.config.js',
-          'tailwind.config.js'
-        ]
-      }]
-    ],
+    reporters: ['default', new VitestReporter()],
     coverage: {
       provider: 'v8',
       reporter: ['text', 'json', 'html'],

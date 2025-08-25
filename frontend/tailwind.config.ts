@@ -7,6 +7,17 @@ const config: Config = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
     './src/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  safelist: [
+    { pattern: /^bg-chart-/ },
+    { pattern: /^text-chart-/ },
+    { pattern: /^border-chart-/ },
+    { pattern: /^bg-(red|green|blue|yellow|purple|pink|indigo|cyan)-(100|200|300|400|500|600|700|800|900)/ },
+    'h-sidebar',
+    'w-sidebar',
+    'h-header',
+    'p-card',
+    'm-section'
+  ],
   theme: {
     extend: {
       colors: {

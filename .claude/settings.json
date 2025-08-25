@@ -1,15 +1,5 @@
 {
   "hooks": {
-    "userpromptsubmit": [
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "tdd-guard"
-          }
-        ]
-      }
-    ],
     "PreToolUse": [
       {
         "matcher": "Write|Edit|MultiEdit|TodoWrite",

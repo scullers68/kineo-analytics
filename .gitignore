@@ -1,5 +1,44 @@
-.DS_Store
-*.pyc
-__pycache__/
-.env
+# Dependencies
 node_modules/
+*/node_modules/
+
+# Production builds
+frontend/.next/
+frontend/out/
+frontend/dist/
+backend/__pycache__/
+backend/*.pyc
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDE files
+.DS_Store
+.vscode/
+.idea/
+
+# Testing
+coverage/
+.nyc_output
+
+# TDD Guard data directory
+.claude/tdd-guard/data/
+
+# Next.js specific
+.next/
+out/
+build/
+
+# Misc
+*.log
+*.tsbuildinfo
+.eslintcache

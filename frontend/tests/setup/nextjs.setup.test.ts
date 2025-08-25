@@ -5,7 +5,7 @@
  * RED Phase: This test will fail as no next.config.js exists yet
  */
 
-import { describe, test, expect } from '@jest/globals';
+import { describe, test, expect } from 'vitest';
 import fs from 'fs';
 import path from 'path';
 

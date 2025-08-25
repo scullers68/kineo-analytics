@@ -1,869 +1,301 @@
 {
   "testModules": [
     {
+      "moduleId": "/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/test-tdd-guard-blocking.test.ts",
+      "tests": [
+        {
+          "name": "should have a greeting function",
+          "fullName": "TDD Guard Blocking Test > should have a greeting function",
+          "state": "failed",
+          "errors": [
+            {
+              "stack": "Error: Cannot find module '../src/greeting'\nRequire stack:\n- /Users/russellgrocott/Projects/kineo-analytics/frontend/tests/test-tdd-guard-blocking.test.ts\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)\n    at Function._load (node:internal/modules/cjs/loader:1211:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Module.require (node:internal/modules/cjs/loader:1487:12)\n    at require (node:internal/modules/helpers:135:16)\n    at /Users/russellgrocott/Projects/kineo-analytics/frontend/tests/test-tdd-guard-blocking.test.ts:11:26\n    at file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/runner/dist/chunk-hooks.js:155:11",
+              "message": "Cannot find module '../src/greeting'\nRequire stack:\n- /Users/russellgrocott/Projects/kineo-analytics/frontend/tests/test-tdd-guard-blocking.test.ts",
+              "code": "MODULE_NOT_FOUND",
+              "requireStack": [
+                "/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/test-tdd-guard-blocking.test.ts"
+              ],
+              "constructor": "Function<Error>",
+              "name": "Error",
+              "toString": "Function<toString>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "moduleId": "/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/utils/string-helper.test.ts",
+      "tests": [
+        {
+          "name": "should capitalize first letter of a string",
+          "fullName": "String Helper Utils > capitalizeFirst > should capitalize first letter of a string",
+          "state": "failed",
+          "errors": [
+            {
+              "stack": "Error: Cannot find module '../../src/utils/string-helper'\nRequire stack:\n- /Users/russellgrocott/Projects/kineo-analytics/frontend/tests/utils/string-helper.test.ts\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)\n    at Function._load (node:internal/modules/cjs/loader:1211:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Module.require (node:internal/modules/cjs/loader:1487:12)\n    at require (node:internal/modules/helpers:135:16)\n    at /Users/russellgrocott/Projects/kineo-analytics/frontend/tests/utils/string-helper.test.ts:13:35\n    at file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/runner/dist/chunk-hooks.js:155:11",
+              "message": "Cannot find module '../../src/utils/string-helper'\nRequire stack:\n- /Users/russellgrocott/Projects/kineo-analytics/frontend/tests/utils/string-helper.test.ts",
+              "code": "MODULE_NOT_FOUND",
+              "requireStack": [
+                "/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/utils/string-helper.test.ts"
+              ],
+              "constructor": "Function<Error>",
+              "name": "Error",
+              "toString": "Function<toString>"
+            }
+          ]
+        },
+        {
+          "name": "should handle empty strings",
+          "fullName": "String Helper Utils > capitalizeFirst > should handle empty strings",
+          "state": "failed",
+          "errors": [
+            {
+              "stack": "Error: Cannot find module '../../src/utils/string-helper'\nRequire stack:\n- /Users/russellgrocott/Projects/kineo-analytics/frontend/tests/utils/string-helper.test.ts\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)\n    at Function._load (node:internal/modules/cjs/loader:1211:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Module.require (node:internal/modules/cjs/loader:1487:12)\n    at require (node:internal/modules/helpers:135:16)\n    at /Users/russellgrocott/Projects/kineo-analytics/frontend/tests/utils/string-helper.test.ts:18:35\n    at file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/runner/dist/chunk-hooks.js:155:11",
+              "message": "Cannot find module '../../src/utils/string-helper'\nRequire stack:\n- /Users/russellgrocott/Projects/kineo-analytics/frontend/tests/utils/string-helper.test.ts",
+              "code": "MODULE_NOT_FOUND",
+              "requireStack": [
+                "/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/utils/string-helper.test.ts"
+              ],
+              "constructor": "Function<Error>",
+              "name": "Error",
+              "toString": "Function<toString>"
+            }
+          ]
+        },
+        {
+          "name": "should handle single character strings",
+          "fullName": "String Helper Utils > capitalizeFirst > should handle single character strings",
+          "state": "failed",
+          "errors": [
+            {
+              "stack": "Error: Cannot find module '../../src/utils/string-helper'\nRequire stack:\n- /Users/russellgrocott/Projects/kineo-analytics/frontend/tests/utils/string-helper.test.ts\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)\n    at Function._load (node:internal/modules/cjs/loader:1211:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Module.require (node:internal/modules/cjs/loader:1487:12)\n    at require (node:internal/modules/helpers:135:16)\n    at /Users/russellgrocott/Projects/kineo-analytics/frontend/tests/utils/string-helper.test.ts:23:35\n    at file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/runner/dist/chunk-hooks.js:155:11",
+              "message": "Cannot find module '../../src/utils/string-helper'\nRequire stack:\n- /Users/russellgrocott/Projects/kineo-analytics/frontend/tests/utils/string-helper.test.ts",
+              "code": "MODULE_NOT_FOUND",
+              "requireStack": [
+                "/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/utils/string-helper.test.ts"
+              ],
+              "constructor": "Function<Error>",
+              "name": "Error",
+              "toString": "Function<toString>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "moduleId": "/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/utils/math-utils.test.ts",
+      "tests": [
+        {
+          "name": "should add two positive numbers",
+          "fullName": "Math Utils > add > should add two positive numbers",
+          "state": "failed",
+          "errors": [
+            {
+              "stack": "Error: Cannot find module '../../src/utils/math-utils'\nRequire stack:\n- /Users/russellgrocott/Projects/kineo-analytics/frontend/tests/utils/math-utils.test.ts\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)\n    at Function._load (node:internal/modules/cjs/loader:1211:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Module.require (node:internal/modules/cjs/loader:1487:12)\n    at require (node:internal/modules/helpers:135:16)\n    at /Users/russellgrocott/Projects/kineo-analytics/frontend/tests/utils/math-utils.test.ts:11:23\n    at file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/runner/dist/chunk-hooks.js:155:11",
+              "message": "Cannot find module '../../src/utils/math-utils'\nRequire stack:\n- /Users/russellgrocott/Projects/kineo-analytics/frontend/tests/utils/math-utils.test.ts",
+              "code": "MODULE_NOT_FOUND",
+              "requireStack": [
+                "/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/utils/math-utils.test.ts"
+              ],
+              "constructor": "Function<Error>",
+              "name": "Error",
+              "toString": "Function<toString>"
+            }
+          ]
+        },
+        {
+          "name": "should handle negative numbers",
+          "fullName": "Math Utils > add > should handle negative numbers",
+          "state": "failed",
+          "errors": [
+            {
+              "stack": "Error: Cannot find module '../../src/utils/math-utils'\nRequire stack:\n- /Users/russellgrocott/Projects/kineo-analytics/frontend/tests/utils/math-utils.test.ts\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)\n    at Function._load (node:internal/modules/cjs/loader:1211:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Module.require (node:internal/modules/cjs/loader:1487:12)\n    at require (node:internal/modules/helpers:135:16)\n    at /Users/russellgrocott/Projects/kineo-analytics/frontend/tests/utils/math-utils.test.ts:16:23\n    at file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/runner/dist/chunk-hooks.js:155:11",
+              "message": "Cannot find module '../../src/utils/math-utils'\nRequire stack:\n- /Users/russellgrocott/Projects/kineo-analytics/frontend/tests/utils/math-utils.test.ts",
+              "code": "MODULE_NOT_FOUND",
+              "requireStack": [
+                "/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/utils/math-utils.test.ts"
+              ],
+              "constructor": "Function<Error>",
+              "name": "Error",
+              "toString": "Function<toString>"
+            }
+          ]
+        },
+        {
+          "name": "should handle zero",
+          "fullName": "Math Utils > add > should handle zero",
+          "state": "failed",
+          "errors": [
+            {
+              "stack": "Error: Cannot find module '../../src/utils/math-utils'\nRequire stack:\n- /Users/russellgrocott/Projects/kineo-analytics/frontend/tests/utils/math-utils.test.ts\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)\n    at Function._load (node:internal/modules/cjs/loader:1211:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Module.require (node:internal/modules/cjs/loader:1487:12)\n    at require (node:internal/modules/helpers:135:16)\n    at /Users/russellgrocott/Projects/kineo-analytics/frontend/tests/utils/math-utils.test.ts:22:23\n    at file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/runner/dist/chunk-hooks.js:155:11",
+              "message": "Cannot find module '../../src/utils/math-utils'\nRequire stack:\n- /Users/russellgrocott/Projects/kineo-analytics/frontend/tests/utils/math-utils.test.ts",
+              "code": "MODULE_NOT_FOUND",
+              "requireStack": [
+                "/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/utils/math-utils.test.ts"
+              ],
+              "constructor": "Function<Error>",
+              "name": "Error",
+              "toString": "Function<toString>"
+            }
+          ]
+        },
+        {
+          "name": "should divide two numbers correctly",
+          "fullName": "Math Utils > divide > should divide two numbers correctly",
+          "state": "failed",
+          "errors": [
+            {
+              "stack": "Error: Cannot find module '../../src/utils/math-utils'\nRequire stack:\n- /Users/russellgrocott/Projects/kineo-analytics/frontend/tests/utils/math-utils.test.ts\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)\n    at Function._load (node:internal/modules/cjs/loader:1211:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Module.require (node:internal/modules/cjs/loader:1487:12)\n    at require (node:internal/modules/helpers:135:16)\n    at /Users/russellgrocott/Projects/kineo-analytics/frontend/tests/utils/math-utils.test.ts:30:26\n    at file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/runner/dist/chunk-hooks.js:155:11",
+              "message": "Cannot find module '../../src/utils/math-utils'\nRequire stack:\n- /Users/russellgrocott/Projects/kineo-analytics/frontend/tests/utils/math-utils.test.ts",
+              "code": "MODULE_NOT_FOUND",
+              "requireStack": [
+                "/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/utils/math-utils.test.ts"
+              ],
+              "constructor": "Function<Error>",
+              "name": "Error",
+              "toString": "Function<toString>"
+            }
+          ]
+        },
+        {
+          "name": "should throw error for division by zero",
+          "fullName": "Math Utils > divide > should throw error for division by zero",
+          "state": "failed",
+          "errors": [
+            {
+              "stack": "Error: Cannot find module '../../src/utils/math-utils'\nRequire stack:\n- /Users/russellgrocott/Projects/kineo-analytics/frontend/tests/utils/math-utils.test.ts\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)\n    at Function._load (node:internal/modules/cjs/loader:1211:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Module.require (node:internal/modules/cjs/loader:1487:12)\n    at require (node:internal/modules/helpers:135:16)\n    at /Users/russellgrocott/Projects/kineo-analytics/frontend/tests/utils/math-utils.test.ts:35:26\n    at file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/runner/dist/chunk-hooks.js:155:11",
+              "message": "Cannot find module '../../src/utils/math-utils'\nRequire stack:\n- /Users/russellgrocott/Projects/kineo-analytics/frontend/tests/utils/math-utils.test.ts",
+              "code": "MODULE_NOT_FOUND",
+              "requireStack": [
+                "/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/utils/math-utils.test.ts"
+              ],
+              "constructor": "Function<Error>",
+              "name": "Error",
+              "toString": "Function<toString>"
+            }
+          ]
+        },
+        {
+          "name": "should handle negative numbers",
+          "fullName": "Math Utils > divide > should handle negative numbers",
+          "state": "failed",
+          "errors": [
+            {
+              "stack": "Error: Cannot find module '../../src/utils/math-utils'\nRequire stack:\n- /Users/russellgrocott/Projects/kineo-analytics/frontend/tests/utils/math-utils.test.ts\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)\n    at Function._load (node:internal/modules/cjs/loader:1211:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Module.require (node:internal/modules/cjs/loader:1487:12)\n    at require (node:internal/modules/helpers:135:16)\n    at /Users/russellgrocott/Projects/kineo-analytics/frontend/tests/utils/math-utils.test.ts:40:26\n    at file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/runner/dist/chunk-hooks.js:155:11",
+              "message": "Cannot find module '../../src/utils/math-utils'\nRequire stack:\n- /Users/russellgrocott/Projects/kineo-analytics/frontend/tests/utils/math-utils.test.ts",
+              "code": "MODULE_NOT_FOUND",
+              "requireStack": [
+                "/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/utils/math-utils.test.ts"
+              ],
+              "constructor": "Function<Error>",
+              "name": "Error",
+              "toString": "Function<toString>"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "moduleId": "/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/setup/nextjs.setup.test.ts",
       "tests": [
         {
           "name": "should have valid next.config.js with TypeScript support",
-          "fullName": "Next.js 13+ Application Setup Configuration Files should have valid next.config.js with TypeScript support",
-          "state": "failed",
-          "errors": [
-            {
-              "message": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: false\nReceived: undefined\n    at Object.toBe (/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/setup/nextjs.setup.test.ts:24:51)\n    at Promise.then.completed (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/utils.js:298:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/utils.js:231:10)\n    at _callCircusTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:316:40)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at _runTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:252:3)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:126:9)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:121:9)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:121:9)\n    at run (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:71:3)\n    at runAndTransformResultsToJestFormat (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)\n    at jestAdapter (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)\n    at runTestInternal (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runner/build/runTest.js:367:16)\n    at runTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runner/build/runTest.js:444:34)",
-              "stack": "undefined"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "moduleId": "/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/architecture/zustand-state-management.test.ts",
-      "tests": [
-        {
-          "name": "should have stores directory with proper organization",
-          "fullName": "Zustand State Management Architecture Store Structure and Files should have stores directory with proper organization",
-          "state": "passed"
-        },
-        {
-          "name": "should have TypeScript types for all stores",
-          "fullName": "Zustand State Management Architecture Store Structure and Files should have TypeScript types for all stores",
-          "state": "passed"
-        },
-        {
-          "name": "should create auth store with proper structure",
-          "fullName": "Zustand State Management Architecture Authentication Store should create auth store with proper structure",
-          "state": "passed"
-        },
-        {
-          "name": "should handle authentication state transitions",
-          "fullName": "Zustand State Management Architecture Authentication Store should handle authentication state transitions",
-          "state": "passed"
-        },
-        {
-          "name": "should persist authentication state",
-          "fullName": "Zustand State Management Architecture Authentication Store should persist authentication state",
-          "state": "failed",
-          "errors": [
-            {
-              "message": "Error: expect(received).toBeDefined()\n\nReceived: undefined\n    at Object.toBeDefined (/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/architecture/zustand-state-management.test.ts:131:29)",
-              "stack": "undefined"
-            }
-          ]
-        },
-        {
-          "name": "should create customer store for multi-tenant architecture",
-          "fullName": "Zustand State Management Architecture Customer Store should create customer store for multi-tenant architecture",
-          "state": "passed"
-        },
-        {
-          "name": "should handle customer switching",
-          "fullName": "Zustand State Management Architecture Customer Store should handle customer switching",
-          "state": "passed"
-        },
-        {
-          "name": "should validate customer data structure",
-          "fullName": "Zustand State Management Architecture Customer Store should validate customer data structure",
-          "state": "passed"
-        },
-        {
-          "name": "should create dashboard store for analytics data",
-          "fullName": "Zustand State Management Architecture Dashboard Store should create dashboard store for analytics data",
-          "state": "passed"
-        },
-        {
-          "name": "should handle dashboard filters and date ranges",
-          "fullName": "Zustand State Management Architecture Dashboard Store should handle dashboard filters and date ranges",
-          "state": "passed"
-        },
-        {
-          "name": "should cache dashboard data for performance",
-          "fullName": "Zustand State Management Architecture Dashboard Store should cache dashboard data for performance",
-          "state": "passed"
-        },
-        {
-          "name": "should create UI store for interface state",
-          "fullName": "Zustand State Management Architecture UI Store should create UI store for interface state",
-          "state": "passed"
-        },
-        {
-          "name": "should handle theme switching",
-          "fullName": "Zustand State Management Architecture UI Store should handle theme switching",
-          "state": "passed"
-        },
-        {
-          "name": "should manage notifications queue",
-          "fullName": "Zustand State Management Architecture UI Store should manage notifications queue",
-          "state": "passed"
-        },
-        {
-          "name": "should have proper middleware configuration",
-          "fullName": "Zustand State Management Architecture Store Integration and Performance should have proper middleware configuration",
-          "state": "passed"
-        },
-        {
-          "name": "should have proper TypeScript integration",
-          "fullName": "Zustand State Management Architecture Store Integration and Performance should have proper TypeScript integration",
-          "state": "passed"
-        },
-        {
-          "name": "should support selective subscriptions for performance",
-          "fullName": "Zustand State Management Architecture Store Integration and Performance should support selective subscriptions for performance",
-          "state": "passed"
-        },
-        {
-          "name": "should have proper error boundaries for store errors",
-          "fullName": "Zustand State Management Architecture Store Integration and Performance should have proper error boundaries for store errors",
-          "state": "passed"
-        },
-        {
-          "name": "should support Next.js SSR hydration",
-          "fullName": "Zustand State Management Architecture Store Hydration and SSR should support Next.js SSR hydration",
-          "state": "failed",
-          "errors": [
-            {
-              "message": "Error: expect(received).toBeDefined()\n\nReceived: undefined\n    at Object.toBeDefined (/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/architecture/zustand-state-management.test.ts:411:52)",
-              "stack": "undefined"
-            }
-          ]
-        },
-        {
-          "name": "should prevent hydration mismatches",
-          "fullName": "Zustand State Management Architecture Store Hydration and SSR should prevent hydration mismatches",
+          "fullName": "Next.js 13+ Application Setup > Configuration Files > should have valid next.config.js with TypeScript support",
           "state": "passed"
         }
       ]
     },
     {
-      "moduleId": "/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/architecture/responsive-layout-components.test.ts",
+      "moduleId": "/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/architecture/task-1-1-basic-architecture.test.ts",
       "tests": [
         {
-          "name": "should have layout components directory with proper organization",
-          "fullName": "Responsive Layout Component Architecture Layout Components Structure should have layout components directory with proper organization",
-          "state": "failed",
-          "errors": [
-            {
-              "message": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: true\nReceived: false\n    at Object.toBe (/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/architecture/responsive-layout-components.test.ts:55:37)\n    at Promise.then.completed (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/utils.js:298:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/utils.js:231:10)\n    at _callCircusTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:316:40)\n    at _runTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:252:3)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:126:9)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:121:9)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:121:9)\n    at run (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:71:3)\n    at runAndTransformResultsToJestFormat (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)\n    at jestAdapter (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)\n    at runTestInternal (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runner/build/runTest.js:367:16)\n    at runTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runner/build/runTest.js:444:34)",
-              "stack": "undefined"
-            }
-          ]
+          "name": "should have Next.js configuration",
+          "fullName": "Task 1.1: React Application Architecture - Basic Requirements > 1. Next.js 13+ with TypeScript > should have Next.js configuration",
+          "state": "passed"
         },
         {
-          "name": "should have container and grid components",
-          "fullName": "Responsive Layout Component Architecture Layout Components Structure should have container and grid components",
-          "state": "failed",
-          "errors": [
-            {
-              "message": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: true\nReceived: false\n    at Object.toBe (/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/architecture/responsive-layout-components.test.ts:72:41)\n    at Promise.then.completed (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/utils.js:298:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/utils.js:231:10)\n    at _callCircusTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:316:40)\n    at _runTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:252:3)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:126:9)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:121:9)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:121:9)\n    at run (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:71:3)\n    at runAndTransformResultsToJestFormat (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)\n    at jestAdapter (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)\n    at runTestInternal (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runner/build/runTest.js:367:16)\n    at runTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runner/build/runTest.js:444:34)",
-              "stack": "undefined"
-            }
-          ]
+          "name": "should have TypeScript configuration",
+          "fullName": "Task 1.1: React Application Architecture - Basic Requirements > 1. Next.js 13+ with TypeScript > should have TypeScript configuration",
+          "state": "passed"
         },
-        {
-          "name": "should have responsive utility components",
-          "fullName": "Responsive Layout Component Architecture Layout Components Structure should have responsive utility components",
-          "state": "failed",
-          "errors": [
-            {
-              "message": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: true\nReceived: false\n    at Object.toBe (/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/architecture/responsive-layout-components.test.ts:86:42)\n    at Promise.then.completed (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/utils.js:298:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/utils.js:231:10)\n    at _callCircusTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:316:40)\n    at _runTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:252:3)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:126:9)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:121:9)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:121:9)\n    at run (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:71:3)\n    at runAndTransformResultsToJestFormat (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)\n    at jestAdapter (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)\n    at runTestInternal (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runner/build/runTest.js:367:16)\n    at runTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runner/build/runTest.js:444:34)",
-              "stack": "undefined"
-            }
-          ]
-        },
-        {
-          "name": "should create AppLayout with responsive structure",
-          "fullName": "Responsive Layout Component Architecture AppLayout Component should create AppLayout with responsive structure",
-          "state": "failed",
-          "errors": [
-            {
-              "message": "Error: Cannot find module '../../../src/components/layout/AppLayout' from 'tests/architecture/responsive-layout-components.test.ts'\n    at Resolver._throwModNotFoundError (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:427:11)\n    at Resolver.resolveModule (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:358:10)\n    at Resolver._getVirtualMockPath (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:619:14)\n    at Resolver._getAbsolutePath (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:587:14)\n    at Resolver.getModuleID (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:530:31)\n    at Runtime._shouldMockCjs (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runtime/build/index.js:1713:37)\n    at Runtime.requireModuleOrMock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runtime/build/index.js:1045:16)\n    at require (/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/architecture/responsive-layout-components.test.ts:95:29)\n    at Object.<anonymous> (/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/architecture/responsive-layout-components.test.ts:95:29)",
-              "stack": "undefined"
-            }
-          ]
-        },
-        {
-          "name": "should handle mobile layout transformation",
-          "fullName": "Responsive Layout Component Architecture AppLayout Component should handle mobile layout transformation",
-          "state": "failed",
-          "errors": [
-            {
-              "message": "Error: Cannot find module '../../../src/components/layout/AppLayout' from 'tests/architecture/responsive-layout-components.test.ts'\n    at Resolver._throwModNotFoundError (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:427:11)\n    at Resolver.resolveModule (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:358:10)\n    at Resolver._getVirtualMockPath (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:619:14)\n    at Resolver._getAbsolutePath (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:587:14)\n    at Resolver.getModuleID (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:530:31)\n    at Runtime._shouldMockCjs (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runtime/build/index.js:1713:37)\n    at Runtime.requireModuleOrMock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runtime/build/index.js:1045:16)\n    at require (/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/architecture/responsive-layout-components.test.ts:117:29)\n    at Object.<anonymous> (/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/architecture/responsive-layout-components.test.ts:117:29)",
-              "stack": "undefined"
-            }
-          ]
-        },
-        {
-          "name": "should support layout variants",
-          "fullName": "Responsive Layout Component Architecture AppLayout Component should support layout variants",
-          "state": "failed",
-          "errors": [
-            {
-              "message": "Error: Cannot find module '../../../src/components/layout/AppLayout' from 'tests/architecture/responsive-layout-components.test.ts'\n    at Resolver._throwModNotFoundError (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:427:11)\n    at Resolver.resolveModule (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:358:10)\n    at Resolver._getVirtualMockPath (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:619:14)\n    at Resolver._getAbsolutePath (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:587:14)\n    at Resolver.getModuleID (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:530:31)\n    at Runtime._shouldMockCjs (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runtime/build/index.js:1713:37)\n    at Runtime.requireModuleOrMock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runtime/build/index.js:1045:16)\n    at require (/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/architecture/responsive-layout-components.test.ts:143:29)\n    at Object.<anonymous> (/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/architecture/responsive-layout-components.test.ts:143:29)",
-              "stack": "undefined"
-            }
-          ]
-        },
-        {
-          "name": "should create responsive header with navigation",
-          "fullName": "Responsive Layout Component Architecture Header Component should create responsive header with navigation",
-          "state": "failed",
-          "errors": [
-            {
-              "message": "Error: Cannot find module '../../../src/components/layout/Header' from 'tests/architecture/responsive-layout-components.test.ts'\n    at Resolver._throwModNotFoundError (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:427:11)\n    at Resolver.resolveModule (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:358:10)\n    at Resolver._getVirtualMockPath (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:619:14)\n    at Resolver._getAbsolutePath (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:587:14)\n    at Resolver.getModuleID (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:530:31)\n    at Runtime._shouldMockCjs (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runtime/build/index.js:1713:37)\n    at Runtime.requireModuleOrMock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runtime/build/index.js:1045:16)\n    at require (/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/architecture/responsive-layout-components.test.ts:168:26)\n    at Object.<anonymous> (/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/architecture/responsive-layout-components.test.ts:168:26)",
-              "stack": "undefined"
-            }
-          ]
-        },
-        {
-          "name": "should collapse navigation on mobile",
-          "fullName": "Responsive Layout Component Architecture Header Component should collapse navigation on mobile",
-          "state": "failed",
-          "errors": [
-            {
-              "message": "Error: Cannot find module '../../../src/components/layout/Header' from 'tests/architecture/responsive-layout-components.test.ts'\n    at Resolver._throwModNotFoundError (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:427:11)\n    at Resolver.resolveModule (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:358:10)\n    at Resolver._getVirtualMockPath (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:619:14)\n    at Resolver._getAbsolutePath (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:587:14)\n    at Resolver.getModuleID (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:530:31)\n    at Runtime._shouldMockCjs (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runtime/build/index.js:1713:37)\n    at Runtime.requireModuleOrMock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runtime/build/index.js:1045:16)\n    at require (/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/architecture/responsive-layout-components.test.ts:181:26)\n    at Object.<anonymous> (/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/architecture/responsive-layout-components.test.ts:181:26)",
-              "stack": "undefined"
-            }
-          ]
-        },
-        {
-          "name": "should handle sticky header behavior",
-          "fullName": "Responsive Layout Component Architecture Header Component should handle sticky header behavior",
-          "state": "failed",
-          "errors": [
-            {
-              "message": "Error: Cannot find module '../../../src/components/layout/Header' from 'tests/architecture/responsive-layout-components.test.ts'\n    at Resolver._throwModNotFoundError (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:427:11)\n    at Resolver.resolveModule (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:358:10)\n    at Resolver._getVirtualMockPath (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:619:14)\n    at Resolver._getAbsolutePath (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:587:14)\n    at Resolver.getModuleID (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:530:31)\n    at Runtime._shouldMockCjs (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runtime/build/index.js:1713:37)\n    at Runtime.requireModuleOrMock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runtime/build/index.js:1045:16)\n    at require (/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/architecture/responsive-layout-components.test.ts:203:26)\n    at Object.<anonymous> (/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/architecture/responsive-layout-components.test.ts:203:26)",
-              "stack": "undefined"
-            }
-          ]
-        },
-        {
-          "name": "should create responsive sidebar navigation",
-          "fullName": "Responsive Layout Component Architecture Sidebar Component should create responsive sidebar navigation",
-          "state": "failed",
-          "errors": [
-            {
-              "message": "Error: Cannot find module '../../../src/components/layout/Sidebar' from 'tests/architecture/responsive-layout-components.test.ts'\n    at Resolver._throwModNotFoundError (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:427:11)\n    at Resolver.resolveModule (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:358:10)\n    at Resolver._getVirtualMockPath (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:619:14)\n    at Resolver._getAbsolutePath (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:587:14)\n    at Resolver.getModuleID (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:530:31)\n    at Runtime._shouldMockCjs (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runtime/build/index.js:1713:37)\n    at Runtime.requireModuleOrMock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runtime/build/index.js:1045:16)\n    at require (/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/architecture/responsive-layout-components.test.ts:223:27)\n    at Object.<anonymous> (/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/architecture/responsive-layout-components.test.ts:223:27)",
-              "stack": "undefined"
-            }
-          ]
-        },
-        {
-          "name": "should support collapsible sidebar",
-          "fullName": "Responsive Layout Component Architecture Sidebar Component should support collapsible sidebar",
-          "state": "failed",
-          "errors": [
-            {
-              "message": "Error: Cannot find module '../../../src/components/layout/Sidebar' from 'tests/architecture/responsive-layout-components.test.ts'\n    at Resolver._throwModNotFoundError (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:427:11)\n    at Resolver.resolveModule (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:358:10)\n    at Resolver._getVirtualMockPath (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:619:14)\n    at Resolver._getAbsolutePath (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:587:14)\n    at Resolver.getModuleID (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:530:31)\n    at Runtime._shouldMockCjs (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runtime/build/index.js:1713:37)\n    at Runtime.requireModuleOrMock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runtime/build/index.js:1045:16)\n    at require (/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/architecture/responsive-layout-components.test.ts:242:27)\n    at Object.<anonymous> (/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/architecture/responsive-layout-components.test.ts:242:27)",
-              "stack": "undefined"
-            }
-          ]
-        },
-        {
-          "name": "should handle overlay mode on mobile",
-          "fullName": "Responsive Layout Component Architecture Sidebar Component should handle overlay mode on mobile",
-          "state": "failed",
-          "errors": [
-            {
-              "message": "Error: Cannot find module '../../../src/components/layout/Sidebar' from 'tests/architecture/responsive-layout-components.test.ts'\n    at Resolver._throwModNotFoundError (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:427:11)\n    at Resolver.resolveModule (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:358:10)\n    at Resolver._getVirtualMockPath (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:619:14)\n    at Resolver._getAbsolutePath (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:587:14)\n    at Resolver.getModuleID (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:530:31)\n    at Runtime._shouldMockCjs (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runtime/build/index.js:1713:37)\n    at Runtime.requireModuleOrMock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runtime/build/index.js:1045:16)\n    at require (/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/architecture/responsive-layout-components.test.ts:264:27)\n    at Object.<anonymous> (/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/architecture/responsive-layout-components.test.ts:264:27)",
-              "stack": "undefined"
-            }
-          ]
-        },
-        {
-          "name": "should create responsive container with max-widths",
-          "fullName": "Responsive Layout Component Architecture Container Component should create responsive container with max-widths",
-          "state": "failed",
-          "errors": [
-            {
-              "message": "Error: Cannot find module '../../../src/components/layout/Container' from 'tests/architecture/responsive-layout-components.test.ts'\n    at Resolver._throwModNotFoundError (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:427:11)\n    at Resolver.resolveModule (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:358:10)\n    at Resolver._getVirtualMockPath (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:619:14)\n    at Resolver._getAbsolutePath (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:587:14)\n    at Resolver.getModuleID (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:530:31)\n    at Runtime._shouldMockCjs (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runtime/build/index.js:1713:37)\n    at Runtime.requireModuleOrMock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runtime/build/index.js:1045:16)\n    at require (/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/architecture/responsive-layout-components.test.ts:293:29)\n    at Object.<anonymous> (/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/architecture/responsive-layout-components.test.ts:293:29)",
-              "stack": "undefined"
-            }
-          ]
-        },
-        {
-          "name": "should support different container sizes",
-          "fullName": "Responsive Layout Component Architecture Container Component should support different container sizes",
-          "state": "failed",
-          "errors": [
-            {
-              "message": "Error: Cannot find module '../../../src/components/layout/Container' from 'tests/architecture/responsive-layout-components.test.ts'\n    at Resolver._throwModNotFoundError (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:427:11)\n    at Resolver.resolveModule (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:358:10)\n    at Resolver._getVirtualMockPath (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:619:14)\n    at Resolver._getAbsolutePath (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:587:14)\n    at Resolver.getModuleID (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:530:31)\n    at Runtime._shouldMockCjs (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runtime/build/index.js:1713:37)\n    at Runtime.requireModuleOrMock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runtime/build/index.js:1045:16)\n    at require (/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/architecture/responsive-layout-components.test.ts:310:29)\n    at Object.<anonymous> (/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/architecture/responsive-layout-components.test.ts:310:29)",
-              "stack": "undefined"
-            }
-          ]
-        },
-        {
-          "name": "should create responsive grid system",
-          "fullName": "Responsive Layout Component Architecture Grid Component should create responsive grid system",
-          "state": "failed",
-          "errors": [
-            {
-              "message": "Error: Cannot find module '../../../src/components/layout/Grid' from 'tests/architecture/responsive-layout-components.test.ts'\n    at Resolver._throwModNotFoundError (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:427:11)\n    at Resolver.resolveModule (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:358:10)\n    at Resolver._getVirtualMockPath (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:619:14)\n    at Resolver._getAbsolutePath (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:587:14)\n    at Resolver.getModuleID (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:530:31)\n    at Runtime._shouldMockCjs (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runtime/build/index.js:1713:37)\n    at Runtime.requireModuleOrMock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runtime/build/index.js:1045:16)\n    at require (/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/architecture/responsive-layout-components.test.ts:343:34)\n    at Object.<anonymous> (/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/architecture/responsive-layout-components.test.ts:343:34)",
-              "stack": "undefined"
-            }
-          ]
-        },
-        {
-          "name": "should support responsive grid columns",
-          "fullName": "Responsive Layout Component Architecture Grid Component should support responsive grid columns",
-          "state": "failed",
-          "errors": [
-            {
-              "message": "Error: Cannot find module '../../../src/components/layout/Grid' from 'tests/architecture/responsive-layout-components.test.ts'\n    at Resolver._throwModNotFoundError (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:427:11)\n    at Resolver.resolveModule (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:358:10)\n    at Resolver._getVirtualMockPath (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:619:14)\n    at Resolver._getAbsolutePath (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:587:14)\n    at Resolver.getModuleID (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:530:31)\n    at Runtime._shouldMockCjs (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runtime/build/index.js:1713:37)\n    at Runtime.requireModuleOrMock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runtime/build/index.js:1045:16)\n    at require (/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/architecture/responsive-layout-components.test.ts:370:34)\n    at Object.<anonymous> (/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/architecture/responsive-layout-components.test.ts:370:34)",
-              "stack": "undefined"
-            }
-          ]
-        },
-        {
-          "name": "should support grid item span and positioning",
-          "fullName": "Responsive Layout Component Architecture Grid Component should support grid item span and positioning",
-          "state": "failed",
-          "errors": [
-            {
-              "message": "Error: Cannot find module '../../../src/components/layout/Grid' from 'tests/architecture/responsive-layout-components.test.ts'\n    at Resolver._throwModNotFoundError (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:427:11)\n    at Resolver.resolveModule (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:358:10)\n    at Resolver._getVirtualMockPath (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:619:14)\n    at Resolver._getAbsolutePath (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:587:14)\n    at Resolver.getModuleID (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:530:31)\n    at Runtime._shouldMockCjs (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runtime/build/index.js:1713:37)\n    at Runtime.requireModuleOrMock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runtime/build/index.js:1045:16)\n    at require (/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/architecture/responsive-layout-components.test.ts:395:34)\n    at Object.<anonymous> (/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/architecture/responsive-layout-components.test.ts:395:34)",
-              "stack": "undefined"
-            }
-          ]
-        },
-        {
-          "name": "should create breakpoint-aware visibility components",
-          "fullName": "Responsive Layout Component Architecture Breakpoint Components should create breakpoint-aware visibility components",
-          "state": "failed",
-          "errors": [
-            {
-              "message": "Error: Cannot find module '../../../src/components/layout/Breakpoint' from 'tests/architecture/responsive-layout-components.test.ts'\n    at Resolver._throwModNotFoundError (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:427:11)\n    at Resolver.resolveModule (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:358:10)\n    at Resolver._getVirtualMockPath (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:619:14)\n    at Resolver._getAbsolutePath (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:587:14)\n    at Resolver.getModuleID (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:530:31)\n    at Runtime._shouldMockCjs (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runtime/build/index.js:1713:37)\n    at Runtime.requireModuleOrMock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runtime/build/index.js:1045:16)\n    at require (/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/architecture/responsive-layout-components.test.ts:420:30)\n    at Object.<anonymous> (/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/architecture/responsive-layout-components.test.ts:420:30)",
-              "stack": "undefined"
-            }
-          ]
-        },
-        {
-          "name": "should create responsive AspectRatio component",
-          "fullName": "Responsive Layout Component Architecture Breakpoint Components should create responsive AspectRatio component",
-          "state": "failed",
-          "errors": [
-            {
-              "message": "Error: Cannot find module '../../../src/components/layout/AspectRatio' from 'tests/architecture/responsive-layout-components.test.ts'\n    at Resolver._throwModNotFoundError (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:427:11)\n    at Resolver.resolveModule (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:358:10)\n    at Resolver._getVirtualMockPath (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:619:14)\n    at Resolver._getAbsolutePath (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:587:14)\n    at Resolver.getModuleID (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:530:31)\n    at Runtime._shouldMockCjs (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runtime/build/index.js:1713:37)\n    at Runtime.requireModuleOrMock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runtime/build/index.js:1045:16)\n    at require (/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/architecture/responsive-layout-components.test.ts:445:31)\n    at Object.<anonymous> (/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/architecture/responsive-layout-components.test.ts:445:31)",
-              "stack": "undefined"
-            }
-          ]
-        },
-        {
-          "name": "should handle window resize events",
-          "fullName": "Responsive Layout Component Architecture Responsive Behavior should handle window resize events",
-          "state": "failed",
-          "errors": [
-            {
-              "message": "Error: Cannot find module '../../../src/components/layout/AppLayout' from 'tests/architecture/responsive-layout-components.test.ts'\n    at Resolver._throwModNotFoundError (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:427:11)\n    at Resolver.resolveModule (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:358:10)\n    at Resolver._getVirtualMockPath (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:619:14)\n    at Resolver._getAbsolutePath (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:587:14)\n    at Resolver.getModuleID (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:530:31)\n    at Runtime._shouldMockCjs (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runtime/build/index.js:1713:37)\n    at Runtime.requireModuleOrMock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runtime/build/index.js:1045:16)\n    at require (/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/architecture/responsive-layout-components.test.ts:465:29)\n    at Object.<anonymous> (/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/architecture/responsive-layout-components.test.ts:465:29)",
-              "stack": "undefined"
-            }
-          ]
-        },
-        {
-          "name": "should provide responsive context to child components",
-          "fullName": "Responsive Layout Component Architecture Responsive Behavior should provide responsive context to child components",
-          "state": "failed",
-          "errors": [
-            {
-              "message": "Error: Cannot find module '../../../src/hooks/useResponsive' from 'tests/architecture/responsive-layout-components.test.ts'\n    at Resolver._throwModNotFoundError (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:427:11)\n    at Resolver.resolveModule (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:358:10)\n    at Resolver._getVirtualMockPath (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:619:14)\n    at Resolver._getAbsolutePath (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:587:14)\n    at Resolver.getModuleID (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:530:31)\n    at Runtime._shouldMockCjs (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runtime/build/index.js:1713:37)\n    at Runtime.requireModuleOrMock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runtime/build/index.js:1045:16)\n    at require (/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/architecture/responsive-layout-components.test.ts:495:53)\n    at Object.<anonymous> (/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/architecture/responsive-layout-components.test.ts:495:53)",
-              "stack": "undefined"
-            }
-          ]
-        },
-        {
-          "name": "should implement virtualization for large lists",
-          "fullName": "Responsive Layout Component Architecture Performance and Optimization should implement virtualization for large lists",
-          "state": "failed",
-          "errors": [
-            {
-              "message": "Error: Cannot find module '../../../src/components/layout/VirtualizedList' from 'tests/architecture/responsive-layout-components.test.ts'\n    at Resolver._throwModNotFoundError (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:427:11)\n    at Resolver.resolveModule (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:358:10)\n    at Resolver._getVirtualMockPath (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:619:14)\n    at Resolver._getAbsolutePath (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:587:14)\n    at Resolver.getModuleID (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:530:31)\n    at Runtime._shouldMockCjs (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runtime/build/index.js:1713:37)\n    at Runtime.requireModuleOrMock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runtime/build/index.js:1045:16)\n    at require (/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/architecture/responsive-layout-components.test.ts:528:35)\n    at Object.<anonymous> (/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/architecture/responsive-layout-components.test.ts:528:35)",
-              "stack": "undefined"
-            }
-          ]
-        },
-        {
-          "name": "should lazy load off-screen components",
-          "fullName": "Responsive Layout Component Architecture Performance and Optimization should lazy load off-screen components",
-          "state": "failed",
-          "errors": [
-            {
-              "message": "Error: Cannot find module '../../../src/components/layout/LazySection' from 'tests/architecture/responsive-layout-components.test.ts'\n    at Resolver._throwModNotFoundError (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:427:11)\n    at Resolver.resolveModule (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:358:10)\n    at Resolver._getVirtualMockPath (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:619:14)\n    at Resolver._getAbsolutePath (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:587:14)\n    at Resolver.getModuleID (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-resolve/build/resolver.js:530:31)\n    at Runtime._shouldMockCjs (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runtime/build/index.js:1713:37)\n    at Runtime.requireModuleOrMock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runtime/build/index.js:1045:16)\n    at require (/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/architecture/responsive-layout-components.test.ts:554:31)\n    at Object.<anonymous> (/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/architecture/responsive-layout-components.test.ts:554:31)",
-              "stack": "undefined"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "moduleId": "/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/architecture/nextjs-app-router.test.ts",
-      "tests": [
         {
           "name": "should have app directory for App Router",
-          "fullName": "Next.js 13+ App Router Architecture App Directory Structure should have app directory for App Router",
+          "fullName": "Task 1.1: React Application Architecture - Basic Requirements > 1. Next.js 13+ with TypeScript > should have app directory for App Router",
           "state": "passed"
         },
         {
-          "name": "should have root layout.tsx",
-          "fullName": "Next.js 13+ App Router Architecture App Directory Structure should have root layout.tsx",
+          "name": "should have Tailwind configuration",
+          "fullName": "Task 1.1: React Application Architecture - Basic Requirements > 2. TailwindCSS Configuration > should have Tailwind configuration",
           "state": "passed"
         },
         {
-          "name": "should have root page.tsx",
-          "fullName": "Next.js 13+ App Router Architecture App Directory Structure should have root page.tsx",
+          "name": "should have PostCSS configuration",
+          "fullName": "Task 1.1: React Application Architecture - Basic Requirements > 2. TailwindCSS Configuration > should have PostCSS configuration",
           "state": "passed"
         },
         {
-          "name": "should have global styles",
-          "fullName": "Next.js 13+ App Router Architecture App Directory Structure should have global styles",
+          "name": "should have global CSS with Tailwind imports",
+          "fullName": "Task 1.1: React Application Architecture - Basic Requirements > 2. TailwindCSS Configuration > should have global CSS with Tailwind imports",
           "state": "passed"
         },
         {
-          "name": "should have loading.tsx for loading UI",
-          "fullName": "Next.js 13+ App Router Architecture App Directory Structure should have loading.tsx for loading UI",
+          "name": "should have Zustand stores directory",
+          "fullName": "Task 1.1: React Application Architecture - Basic Requirements > 3. Zustand State Management > should have Zustand stores directory",
           "state": "passed"
         },
         {
-          "name": "should have error.tsx for error boundaries",
-          "fullName": "Next.js 13+ App Router Architecture App Directory Structure should have error.tsx for error boundaries",
+          "name": "should have auth store",
+          "fullName": "Task 1.1: React Application Architecture - Basic Requirements > 3. Zustand State Management > should have auth store",
           "state": "passed"
         },
         {
-          "name": "should have not-found.tsx for 404 pages",
-          "fullName": "Next.js 13+ App Router Architecture App Directory Structure should have not-found.tsx for 404 pages",
+          "name": "should have customer store",
+          "fullName": "Task 1.1: React Application Architecture - Basic Requirements > 3. Zustand State Management > should have customer store",
           "state": "passed"
         },
         {
-          "name": "should have customer route group directory",
-          "fullName": "Next.js 13+ App Router Architecture Customer-Specific Routing should have customer route group directory",
+          "name": "should have UI store",
+          "fullName": "Task 1.1: React Application Architecture - Basic Requirements > 3. Zustand State Management > should have UI store",
+          "state": "passed"
+        },
+        {
+          "name": "should have middleware for route protection",
+          "fullName": "Task 1.1: React Application Architecture - Basic Requirements > 4. Next.js App Router > should have middleware for route protection",
           "state": "passed"
         },
         {
           "name": "should have dashboard route group",
-          "fullName": "Next.js 13+ App Router Architecture Customer-Specific Routing should have dashboard route group",
+          "fullName": "Task 1.1: React Application Architecture - Basic Requirements > 4. Next.js App Router > should have dashboard route group",
           "state": "passed"
         },
         {
-          "name": "should have customer dashboard layout",
-          "fullName": "Next.js 13+ App Router Architecture Customer-Specific Routing should have customer dashboard layout",
+          "name": "should have API routes",
+          "fullName": "Task 1.1: React Application Architecture - Basic Requirements > 4. Next.js App Router > should have API routes",
           "state": "passed"
         },
         {
-          "name": "should have customer dashboard pages",
-          "fullName": "Next.js 13+ App Router Architecture Customer-Specific Routing should have customer dashboard pages",
+          "name": "should have layout components directory",
+          "fullName": "Task 1.1: React Application Architecture - Basic Requirements > 5. Responsive Layout Components > should have layout components directory",
           "state": "passed"
         },
         {
-          "name": "should have API route directory",
-          "fullName": "Next.js 13+ App Router Architecture API Routes should have API route directory",
+          "name": "should have AppLayout component",
+          "fullName": "Task 1.1: React Application Architecture - Basic Requirements > 5. Responsive Layout Components > should have AppLayout component",
           "state": "passed"
         },
         {
-          "name": "should have authentication API routes",
-          "fullName": "Next.js 13+ App Router Architecture API Routes should have authentication API routes",
+          "name": "should have Sidebar component",
+          "fullName": "Task 1.1: React Application Architecture - Basic Requirements > 5. Responsive Layout Components > should have Sidebar component",
           "state": "passed"
         },
         {
-          "name": "should have dashboard API routes",
-          "fullName": "Next.js 13+ App Router Architecture API Routes should have dashboard API routes",
+          "name": "should have Header component",
+          "fullName": "Task 1.1: React Application Architecture - Basic Requirements > 5. Responsive Layout Components > should have Header component",
           "state": "passed"
         },
         {
-          "name": "should have middleware.ts for route protection",
-          "fullName": "Next.js 13+ App Router Architecture Middleware Configuration should have middleware.ts for route protection",
-          "state": "passed"
-        },
-        {
-          "name": "should have reusable layout components",
-          "fullName": "Next.js 13+ App Router Architecture Layout Components should have reusable layout components",
-          "state": "passed"
-        },
-        {
-          "name": "should have customer context provider",
-          "fullName": "Next.js 13+ App Router Architecture Customer Context Integration should have customer context provider",
-          "state": "passed"
-        },
-        {
-          "name": "should have customer-specific hooks",
-          "fullName": "Next.js 13+ App Router Architecture Customer Context Integration should have customer-specific hooks",
-          "state": "passed"
-        },
-        {
-          "name": "should have proper Next.js configuration",
-          "fullName": "Next.js App Router Configuration should have proper Next.js configuration",
-          "state": "failed",
-          "errors": [
-            {
-              "message": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: true\nReceived: undefined\n    at Object.toBe (/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/architecture/nextjs-app-router.test.ts:154:41)\n    at Promise.then.completed (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/utils.js:298:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/utils.js:231:10)\n    at _callCircusTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:316:40)\n    at _runTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:252:3)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:126:9)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:121:9)\n    at run (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:71:3)\n    at runAndTransformResultsToJestFormat (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)\n    at jestAdapter (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)\n    at runTestInternal (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runner/build/runTest.js:367:16)\n    at runTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runner/build/runTest.js:444:34)",
-              "stack": "undefined"
-            }
-          ]
-        },
-        {
-          "name": "should have TypeScript configuration for App Router",
-          "fullName": "Next.js App Router Configuration should have TypeScript configuration for App Router",
-          "state": "passed"
-        },
-        {
-          "name": "should have path aliases configured",
-          "fullName": "Next.js App Router Configuration should have path aliases configured",
-          "state": "passed"
-        },
-        {
-          "name": "should follow proper page.tsx naming convention",
-          "fullName": "File-Based Routing Patterns should follow proper page.tsx naming convention",
-          "state": "passed"
-        },
-        {
-          "name": "should follow proper layout.tsx naming convention",
-          "fullName": "File-Based Routing Patterns should follow proper layout.tsx naming convention",
-          "state": "passed"
-        },
-        {
-          "name": "should have route groups for organization",
-          "fullName": "File-Based Routing Patterns should have route groups for organization",
-          "state": "passed"
-        },
-        {
-          "name": "should have customer-specific route handlers",
-          "fullName": "Customer Isolation in Routing should have customer-specific route handlers",
-          "state": "failed",
-          "errors": [
-            {
-              "message": "ReferenceError: Request is not defined\n    at Object.Request (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/next/src/server/web/spec-extension/request.ts:15:34)\n    at Runtime._execModule (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runtime/build/index.js:1439:24)\n    at Runtime._loadModule (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runtime/build/index.js:1022:12)\n    at Runtime.requireModule (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runtime/build/index.js:882:12)\n    at Runtime.requireModuleOrMock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runtime/build/index.js:1048:21)\n    at Object.<anonymous> (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/next/server.js:2:16)\n    at Runtime._execModule (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runtime/build/index.js:1439:24)\n    at Runtime._loadModule (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runtime/build/index.js:1022:12)\n    at Runtime.requireModule (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runtime/build/index.js:882:12)\n    at Runtime.requireModuleOrMock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runtime/build/index.js:1048:21)\n    at Object.require (/Users/russellgrocott/Projects/kineo-analytics/frontend/middleware.ts:1:1)\n    at Runtime._execModule (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runtime/build/index.js:1439:24)\n    at Runtime._loadModule (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runtime/build/index.js:1022:12)\n    at Runtime.requireModule (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runtime/build/index.js:882:12)\n    at Runtime.requireModuleOrMock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runtime/build/index.js:1048:21)\n    at Object.require (/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/architecture/nextjs-app-router.test.ts:225:24)\n    at Promise.then.completed (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/utils.js:298:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/utils.js:231:10)\n    at _callCircusTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:316:40)\n    at _runTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:252:3)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:126:9)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:121:9)\n    at run (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:71:3)\n    at runAndTransformResultsToJestFormat (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)\n    at jestAdapter (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)\n    at runTestInternal (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runner/build/runTest.js:367:16)\n    at runTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runner/build/runTest.js:444:34)",
-              "stack": "undefined"
-            }
-          ]
-        },
-        {
-          "name": "should have customer context extraction utilities",
-          "fullName": "Customer Isolation in Routing should have customer context extraction utilities",
-          "state": "passed"
-        },
-        {
-          "name": "should have route protection for customer data",
-          "fullName": "Customer Isolation in Routing should have route protection for customer data",
-          "state": "passed"
-        }
-      ]
-    },
-    {
-      "moduleId": "/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/architecture/tailwindcss-setup.test.ts",
-      "tests": [
-        {
-          "name": "should have tailwind.config.ts with comprehensive configuration",
-          "fullName": "TailwindCSS Configuration Architecture Configuration Files should have tailwind.config.ts with comprehensive configuration",
-          "state": "failed",
-          "errors": [
-            {
-              "message": "Error: expect(received).toContain(expected) // indexOf\n\nMatcher error: received value must not be null nor undefined\n\nReceived has value: undefined\n    at Object.toContain (/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/architecture/tailwindcss-setup.test.ts:28:38)\n    at Promise.then.completed (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/utils.js:298:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/utils.js:231:10)\n    at _callCircusTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:316:40)\n    at _runTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:252:3)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:126:9)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:121:9)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:121:9)\n    at run (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:71:3)\n    at runAndTransformResultsToJestFormat (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)\n    at jestAdapter (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)\n    at runTestInternal (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runner/build/runTest.js:367:16)\n    at runTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runner/build/runTest.js:444:34)",
-              "stack": "undefined"
-            }
-          ]
-        },
-        {
-          "name": "should have postcss.config.js with Tailwind and Autoprefixer",
-          "fullName": "TailwindCSS Configuration Architecture Configuration Files should have postcss.config.js with Tailwind and Autoprefixer",
-          "state": "passed"
-        },
-        {
-          "name": "should have globals.css with Tailwind directives and custom styles",
-          "fullName": "TailwindCSS Configuration Architecture Configuration Files should have globals.css with Tailwind directives and custom styles",
-          "state": "passed"
-        },
-        {
-          "name": "should have custom color palette for Kineo Analytics branding",
-          "fullName": "TailwindCSS Configuration Architecture Custom Theme Configuration should have custom color palette for Kineo Analytics branding",
-          "state": "failed",
-          "errors": [
-            {
-              "message": "TypeError: Cannot read properties of undefined (reading 'extend')\n    at Object.extend (/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/architecture/tailwindcss-setup.test.ts:76:35)\n    at Promise.then.completed (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/utils.js:298:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/utils.js:231:10)\n    at _callCircusTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:316:40)\n    at _runTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:252:3)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:126:9)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:121:9)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:121:9)\n    at run (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:71:3)\n    at runAndTransformResultsToJestFormat (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)\n    at jestAdapter (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)\n    at runTestInternal (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runner/build/runTest.js:367:16)\n    at runTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runner/build/runTest.js:444:34)",
-              "stack": "undefined"
-            }
-          ]
-        },
-        {
-          "name": "should have custom typography scale for data-heavy interfaces",
-          "fullName": "TailwindCSS Configuration Architecture Custom Theme Configuration should have custom typography scale for data-heavy interfaces",
-          "state": "failed",
-          "errors": [
-            {
-              "message": "TypeError: Cannot read properties of undefined (reading 'extend')\n    at Object.extend (/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/architecture/tailwindcss-setup.test.ts:94:35)\n    at Promise.then.completed (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/utils.js:298:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/utils.js:231:10)\n    at _callCircusTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:316:40)\n    at _runTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:252:3)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:126:9)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:121:9)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:121:9)\n    at run (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:71:3)\n    at runAndTransformResultsToJestFormat (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)\n    at jestAdapter (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)\n    at runTestInternal (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runner/build/runTest.js:367:16)\n    at runTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runner/build/runTest.js:444:34)",
-              "stack": "undefined"
-            }
-          ]
-        },
-        {
-          "name": "should have custom spacing scale for consistent layouts",
-          "fullName": "TailwindCSS Configuration Architecture Custom Theme Configuration should have custom spacing scale for consistent layouts",
-          "state": "failed",
-          "errors": [
-            {
-              "message": "TypeError: Cannot read properties of undefined (reading 'extend')\n    at Object.extend (/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/architecture/tailwindcss-setup.test.ts:111:35)\n    at Promise.then.completed (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/utils.js:298:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/utils.js:231:10)\n    at _callCircusTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:316:40)\n    at _runTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:252:3)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:126:9)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:121:9)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:121:9)\n    at run (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:71:3)\n    at runAndTransformResultsToJestFormat (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)\n    at jestAdapter (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)\n    at runTestInternal (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runner/build/runTest.js:367:16)\n    at runTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runner/build/runTest.js:444:34)",
-              "stack": "undefined"
-            }
-          ]
-        },
-        {
-          "name": "should have custom border radius for modern UI elements",
-          "fullName": "TailwindCSS Configuration Architecture Custom Theme Configuration should have custom border radius for modern UI elements",
-          "state": "failed",
-          "errors": [
-            {
-              "message": "TypeError: Cannot read properties of undefined (reading 'extend')\n    at Object.extend (/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/architecture/tailwindcss-setup.test.ts:126:35)\n    at Promise.then.completed (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/utils.js:298:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/utils.js:231:10)\n    at _callCircusTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:316:40)\n    at _runTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:252:3)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:126:9)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:121:9)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:121:9)\n    at run (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:71:3)\n    at runAndTransformResultsToJestFormat (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)\n    at jestAdapter (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)\n    at runTestInternal (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runner/build/runTest.js:367:16)\n    at runTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runner/build/runTest.js:444:34)",
-              "stack": "undefined"
-            }
-          ]
-        },
-        {
-          "name": "should have custom breakpoints for dashboard layouts",
-          "fullName": "TailwindCSS Configuration Architecture Responsive Design System should have custom breakpoints for dashboard layouts",
-          "state": "failed",
-          "errors": [
-            {
-              "message": "TypeError: Cannot read properties of undefined (reading 'extend')\n    at Object.extend (/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/architecture/tailwindcss-setup.test.ts:139:35)\n    at Promise.then.completed (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/utils.js:298:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/utils.js:231:10)\n    at _callCircusTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:316:40)\n    at _runTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:252:3)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:126:9)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:121:9)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:121:9)\n    at run (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:71:3)\n    at runAndTransformResultsToJestFormat (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)\n    at jestAdapter (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)\n    at runTestInternal (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runner/build/runTest.js:367:16)\n    at runTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runner/build/runTest.js:444:34)",
-              "stack": "undefined"
-            }
-          ]
-        },
-        {
-          "name": "should have container configuration for consistent max-widths",
-          "fullName": "TailwindCSS Configuration Architecture Responsive Design System should have container configuration for consistent max-widths",
-          "state": "failed",
-          "errors": [
-            {
-              "message": "TypeError: Cannot read properties of undefined (reading 'extend')\n    at Object.extend (/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/architecture/tailwindcss-setup.test.ts:155:35)\n    at Promise.then.completed (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/utils.js:298:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/utils.js:231:10)\n    at _callCircusTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:316:40)\n    at _runTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:252:3)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:126:9)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:121:9)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:121:9)\n    at run (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:71:3)\n    at runAndTransformResultsToJestFormat (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)\n    at jestAdapter (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)\n    at runTestInternal (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runner/build/runTest.js:367:16)\n    at runTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runner/build/runTest.js:444:34)",
-              "stack": "undefined"
-            }
-          ]
-        },
-        {
-          "name": "should have necessary Tailwind plugins for analytics UI",
-          "fullName": "TailwindCSS Configuration Architecture Plugin Configuration should have necessary Tailwind plugins for analytics UI",
-          "state": "failed",
-          "errors": [
-            {
-              "message": "Error: expect(received).toBeInstanceOf(expected)\n\nExpected constructor: Array\n\nReceived value has no prototype\nReceived value: undefined\n    at Object.toBeInstanceOf (/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/architecture/tailwindcss-setup.test.ts:169:38)\n    at Promise.then.completed (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/utils.js:298:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/utils.js:231:10)\n    at _callCircusTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:316:40)\n    at _runTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:252:3)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:126:9)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:121:9)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:121:9)\n    at run (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:71:3)\n    at runAndTransformResultsToJestFormat (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)\n    at jestAdapter (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)\n    at runTestInternal (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runner/build/runTest.js:367:16)\n    at runTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runner/build/runTest.js:444:34)",
-              "stack": "undefined"
-            }
-          ]
-        },
-        {
-          "name": "should have typography plugin for content areas",
-          "fullName": "TailwindCSS Configuration Architecture Plugin Configuration should have typography plugin for content areas",
-          "state": "failed",
-          "errors": [
-            {
-              "message": "Error: expect(received).toHaveProperty(path)\n\nExpected path: \"@tailwindcss/typography\"\nReceived path: []\n\nReceived value: {\"@babel/plugin-transform-modules-commonjs\": \"^7.27.1\", \"@babel/preset-env\": \"^7.28.3\", \"@babel/preset-react\": \"^7.27.1\", \"@babel/preset-typescript\": \"^7.27.1\", \"@jest/globals\": \"^29.7.0\", \"@storybook/addon-essentials\": \"^7.5.0\", \"@storybook/addon-interactions\": \"^7.5.0\", \"@storybook/addon-links\": \"^7.5.0\", \"@storybook/blocks\": \"^7.5.0\", \"@storybook/nextjs\": \"^7.5.0\", \"@storybook/react\": \"^7.5.0\", \"@storybook/testing-library\": \"^0.2.2\", \"@testing-library/jest-dom\": \"^6.1.0\", \"@testing-library/react\": \"^13.4.0\", \"@testing-library/user-event\": \"^14.5.0\", \"@typescript-eslint/eslint-plugin\": \"^6.9.0\", \"@typescript-eslint/parser\": \"^6.9.0\", \"@vitejs/plugin-react\": \"^4.1.0\", \"@vitest/coverage-v8\": \"^3.2.4\", \"babel-jest\": \"^29.7.0\", \"eslint\": \"^8.52.0\", \"eslint-config-next\": \"^14.0.0\", \"jest\": \"^29.7.0\", \"jest-environment-jsdom\": \"^29.7.0\", \"jsdom\": \"^22.1.0\", \"prettier\": \"^3.0.0\", \"prettier-plugin-tailwindcss\": \"^0.5.6\", \"tdd-guard-jest\": \"latest\", \"tdd-guard-vitest\": \"latest\", \"vite\": \"^5.0.0\", \"vitest\": \"^3.2.4\"}\n    at Object.toHaveProperty (/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/architecture/tailwindcss-setup.test.ts:188:10)\n    at Promise.then.completed (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/utils.js:298:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/utils.js:231:10)\n    at _callCircusTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:316:40)\n    at _runTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:252:3)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:126:9)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:121:9)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:121:9)\n    at run (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:71:3)\n    at runAndTransformResultsToJestFormat (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)\n    at jestAdapter (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)\n    at runTestInternal (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runner/build/runTest.js:367:16)\n    at runTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runner/build/runTest.js:444:34)",
-              "stack": "undefined"
-            }
-          ]
-        },
-        {
-          "name": "should have dark mode CSS variables in globals.css",
-          "fullName": "TailwindCSS Configuration Architecture Dark Mode Support should have dark mode CSS variables in globals.css",
-          "state": "failed",
-          "errors": [
-            {
-              "message": "Error: expect(received).toMatch(expected)\n\nExpected pattern: /--primary.*dark/\nReceived string:  \"@tailwind base;\n@tailwind components;\n@tailwind utilities;·\n@layer base {\n  :root {\n    --background: 0 0% 100%;\n    --foreground: 222.2 84% 4.9%;·····\n    --card: 0 0% 100%;\n    --card-foreground: 222.2 84% 4.9%;·····\n    --popover: 0 0% 100%;\n    --popover-foreground: 222.2 84% 4.9%;·····\n    --primary: 222.2 47.4% 11.2%;\n    --primary-foreground: 210 40% 98%;·····\n    --secondary: 210 40% 96%;\n    --secondary-foreground: 222.2 84% 4.9%;·····\n    --muted: 210 40% 96%;\n    --muted-foreground: 215.4 16.3% 46.9%;·····\n    --accent: 210 40% 96%;\n    --accent-foreground: 222.2 84% 4.9%;·····\n    --destructive: 0 84.2% 60.2%;\n    --destructive-foreground: 210 40% 98%;·····\n    --border: 214.3 31.8% 91.4%;\n    --input: 214.3 31.8% 91.4%;\n    --ring: 222.2 84% 4.9%;·····\n    --radius: 0.5rem;\n  }···\n  .dark {\n    --background: 222.2 84% 4.9%;\n    --foreground: 210 40% 98%;·····\n    --card: 222.2 84% 4.9%;\n    --card-foreground: 210 40% 98%;·····\n    --popover: 222.2 84% 4.9%;\n    --popover-foreground: 210 40% 98%;·····\n    --primary: 210 40% 98%;\n    --primary-foreground: 222.2 47.4% 11.2%;·····\n    --secondary: 217.2 32.6% 17.5%;\n    --secondary-foreground: 210 40% 98%;·····\n    --muted: 217.2 32.6% 17.5%;\n    --muted-foreground: 215 20.2% 65.1%;·····\n    --accent: 217.2 32.6% 17.5%;\n    --accent-foreground: 210 40% 98%;·····\n    --destructive: 0 62.8% 30.6%;\n    --destructive-foreground: 210 40% 98%;·····\n    --border: 217.2 32.6% 17.5%;\n    --input: 217.2 32.6% 17.5%;\n    --ring: 212.7 26.8% 83.9%;\n  }\n}·\n@layer base {\n  * {\n    @apply border-border;\n  }\n  body {\n    @apply bg-background text-foreground;\n  }\n}\"\n    at Object.toMatch (/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/architecture/tailwindcss-setup.test.ts:209:30)\n    at Promise.then.completed (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/utils.js:298:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/utils.js:231:10)\n    at _callCircusTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:316:40)\n    at _runTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:252:3)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:126:9)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:121:9)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:121:9)\n    at run (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:71:3)\n    at runAndTransformResultsToJestFormat (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)\n    at jestAdapter (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)\n    at runTestInternal (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runner/build/runTest.js:367:16)\n    at runTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runner/build/runTest.js:444:34)",
-              "stack": "undefined"
-            }
-          ]
-        },
-        {
-          "name": "should have dark mode utility classes",
-          "fullName": "TailwindCSS Configuration Architecture Dark Mode Support should have dark mode utility classes",
-          "state": "failed",
-          "errors": [
-            {
-              "message": "Error: expect(received).toMatch(expected)\n\nExpected pattern: /@layer components/\nReceived string:  \"@tailwind base;\n@tailwind components;\n@tailwind utilities;·\n@layer base {\n  :root {\n    --background: 0 0% 100%;\n    --foreground: 222.2 84% 4.9%;·····\n    --card: 0 0% 100%;\n    --card-foreground: 222.2 84% 4.9%;·····\n    --popover: 0 0% 100%;\n    --popover-foreground: 222.2 84% 4.9%;·····\n    --primary: 222.2 47.4% 11.2%;\n    --primary-foreground: 210 40% 98%;·····\n    --secondary: 210 40% 96%;\n    --secondary-foreground: 222.2 84% 4.9%;·····\n    --muted: 210 40% 96%;\n    --muted-foreground: 215.4 16.3% 46.9%;·····\n    --accent: 210 40% 96%;\n    --accent-foreground: 222.2 84% 4.9%;·····\n    --destructive: 0 84.2% 60.2%;\n    --destructive-foreground: 210 40% 98%;·····\n    --border: 214.3 31.8% 91.4%;\n    --input: 214.3 31.8% 91.4%;\n    --ring: 222.2 84% 4.9%;·····\n    --radius: 0.5rem;\n  }···\n  .dark {\n    --background: 222.2 84% 4.9%;\n    --foreground: 210 40% 98%;·····\n    --card: 222.2 84% 4.9%;\n    --card-foreground: 210 40% 98%;·····\n    --popover: 222.2 84% 4.9%;\n    --popover-foreground: 210 40% 98%;·····\n    --primary: 210 40% 98%;\n    --primary-foreground: 222.2 47.4% 11.2%;·····\n    --secondary: 217.2 32.6% 17.5%;\n    --secondary-foreground: 210 40% 98%;·····\n    --muted: 217.2 32.6% 17.5%;\n    --muted-foreground: 215 20.2% 65.1%;·····\n    --accent: 217.2 32.6% 17.5%;\n    --accent-foreground: 210 40% 98%;·····\n    --destructive: 0 62.8% 30.6%;\n    --destructive-foreground: 210 40% 98%;·····\n    --border: 217.2 32.6% 17.5%;\n    --input: 217.2 32.6% 17.5%;\n    --ring: 212.7 26.8% 83.9%;\n  }\n}·\n@layer base {\n  * {\n    @apply border-border;\n  }\n  body {\n    @apply bg-background text-foreground;\n  }\n}\"\n    at Object.toMatch (/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/architecture/tailwindcss-setup.test.ts:220:30)\n    at Promise.then.completed (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/utils.js:298:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/utils.js:231:10)\n    at _callCircusTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:316:40)\n    at _runTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:252:3)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:126:9)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:121:9)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:121:9)\n    at run (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:71:3)\n    at runAndTransformResultsToJestFormat (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)\n    at jestAdapter (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)\n    at runTestInternal (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runner/build/runTest.js:367:16)\n    at runTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runner/build/runTest.js:444:34)",
-              "stack": "undefined"
-            }
-          ]
-        },
-        {
-          "name": "should have dashboard-specific utility classes",
-          "fullName": "TailwindCSS Configuration Architecture Custom Utility Classes should have dashboard-specific utility classes",
-          "state": "failed",
-          "errors": [
-            {
-              "message": "Error: expect(received).toMatch(expected)\n\nExpected pattern: /\\.dashboard-grid/\nReceived string:  \"@tailwind base;\n@tailwind components;\n@tailwind utilities;·\n@layer base {\n  :root {\n    --background: 0 0% 100%;\n    --foreground: 222.2 84% 4.9%;·····\n    --card: 0 0% 100%;\n    --card-foreground: 222.2 84% 4.9%;·····\n    --popover: 0 0% 100%;\n    --popover-foreground: 222.2 84% 4.9%;·····\n    --primary: 222.2 47.4% 11.2%;\n    --primary-foreground: 210 40% 98%;·····\n    --secondary: 210 40% 96%;\n    --secondary-foreground: 222.2 84% 4.9%;·····\n    --muted: 210 40% 96%;\n    --muted-foreground: 215.4 16.3% 46.9%;·····\n    --accent: 210 40% 96%;\n    --accent-foreground: 222.2 84% 4.9%;·····\n    --destructive: 0 84.2% 60.2%;\n    --destructive-foreground: 210 40% 98%;·····\n    --border: 214.3 31.8% 91.4%;\n    --input: 214.3 31.8% 91.4%;\n    --ring: 222.2 84% 4.9%;·····\n    --radius: 0.5rem;\n  }···\n  .dark {\n    --background: 222.2 84% 4.9%;\n    --foreground: 210 40% 98%;·····\n    --card: 222.2 84% 4.9%;\n    --card-foreground: 210 40% 98%;·····\n    --popover: 222.2 84% 4.9%;\n    --popover-foreground: 210 40% 98%;·····\n    --primary: 210 40% 98%;\n    --primary-foreground: 222.2 47.4% 11.2%;·····\n    --secondary: 217.2 32.6% 17.5%;\n    --secondary-foreground: 210 40% 98%;·····\n    --muted: 217.2 32.6% 17.5%;\n    --muted-foreground: 215 20.2% 65.1%;·····\n    --accent: 217.2 32.6% 17.5%;\n    --accent-foreground: 210 40% 98%;·····\n    --destructive: 0 62.8% 30.6%;\n    --destructive-foreground: 210 40% 98%;·····\n    --border: 217.2 32.6% 17.5%;\n    --input: 217.2 32.6% 17.5%;\n    --ring: 212.7 26.8% 83.9%;\n  }\n}·\n@layer base {\n  * {\n    @apply border-border;\n  }\n  body {\n    @apply bg-background text-foreground;\n  }\n}\"\n    at Object.toMatch (/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/architecture/tailwindcss-setup.test.ts:234:30)\n    at Promise.then.completed (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/utils.js:298:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/utils.js:231:10)\n    at _callCircusTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:316:40)\n    at _runTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:252:3)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:126:9)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:121:9)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:121:9)\n    at run (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:71:3)\n    at runAndTransformResultsToJestFormat (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)\n    at jestAdapter (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)\n    at runTestInternal (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runner/build/runTest.js:367:16)\n    at runTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runner/build/runTest.js:444:34)",
-              "stack": "undefined"
-            }
-          ]
-        },
-        {
-          "name": "should have animation classes for interactive elements",
-          "fullName": "TailwindCSS Configuration Architecture Custom Utility Classes should have animation classes for interactive elements",
-          "state": "failed",
-          "errors": [
-            {
-              "message": "TypeError: Cannot read properties of undefined (reading 'extend')\n    at Object.extend (/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/architecture/tailwindcss-setup.test.ts:245:35)\n    at Promise.then.completed (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/utils.js:298:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/utils.js:231:10)\n    at _callCircusTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:316:40)\n    at _runTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:252:3)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:126:9)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:121:9)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:121:9)\n    at run (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:71:3)\n    at runAndTransformResultsToJestFormat (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)\n    at jestAdapter (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)\n    at runTestInternal (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runner/build/runTest.js:367:16)\n    at runTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runner/build/runTest.js:444:34)",
-              "stack": "undefined"
-            }
-          ]
-        },
-        {
-          "name": "should have gradient utilities for modern UI elements",
-          "fullName": "TailwindCSS Configuration Architecture Custom Utility Classes should have gradient utilities for modern UI elements",
-          "state": "failed",
-          "errors": [
-            {
-              "message": "TypeError: Cannot read properties of undefined (reading 'extend')\n    at Object.extend (/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/architecture/tailwindcss-setup.test.ts:259:35)\n    at Promise.then.completed (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/utils.js:298:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/utils.js:231:10)\n    at _callCircusTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:316:40)\n    at _runTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:252:3)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:126:9)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:121:9)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:121:9)\n    at run (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:71:3)\n    at runAndTransformResultsToJestFormat (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)\n    at jestAdapter (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)\n    at runTestInternal (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runner/build/runTest.js:367:16)\n    at runTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runner/build/runTest.js:444:34)",
-              "stack": "undefined"
-            }
-          ]
-        },
-        {
-          "name": "should work with Next.js CSS imports in layout",
-          "fullName": "TailwindCSS Configuration Architecture Integration with Next.js should work with Next.js CSS imports in layout",
-          "state": "failed",
-          "errors": [
-            {
-              "message": "Error: expect(received).toMatch(expected)\n\nExpected pattern: /from.*\\.\\/globals\\.css/\nReceived string:  \"import type { Metadata } from 'next'\nimport { Inter } from 'next/font/google'\nimport './globals.css'·\nconst inter = Inter({·\n  subsets: ['latin'],\n  display: 'swap',\n  variable: '--font-inter'\n})·\nexport const metadata: Metadata = {\n  title: 'Kineo Analytics',\n  description: 'Multi-Customer Learning Analytics Platform',\n  keywords: ['analytics', 'learning', 'LMS', 'Totara'],\n  authors: [{ name: 'Kineo' }],\n  robots: 'index, follow'\n}·\nexport const viewport = {\n  width: 'device-width',\n  initialScale: 1\n}·\nexport default function RootLayout({\n  children,\n}: {\n  children: React.ReactNode\n}) {\n  return (\n    <html lang=\\\"en\\\" className={inter.variable}>\n      <body className={inter.className}>\n        {children}\n      </body>\n    </html>\n  )\n}\"\n    at Object.toMatch (/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/architecture/tailwindcss-setup.test.ts:275:29)\n    at Promise.then.completed (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/utils.js:298:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/utils.js:231:10)\n    at _callCircusTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:316:40)\n    at _runTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:252:3)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:126:9)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:121:9)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:121:9)\n    at run (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:71:3)\n    at runAndTransformResultsToJestFormat (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)\n    at jestAdapter (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)\n    at runTestInternal (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runner/build/runTest.js:367:16)\n    at runTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runner/build/runTest.js:444:34)",
-              "stack": "undefined"
-            }
-          ]
-        },
-        {
-          "name": "should have proper TypeScript types for Tailwind config",
-          "fullName": "TailwindCSS Configuration Architecture Integration with Next.js should have proper TypeScript types for Tailwind config",
-          "state": "failed",
-          "errors": [
-            {
-              "message": "Error: expect(received).toMatch(expected)\n\nExpected pattern: /from.*tailwindcss\\/types\\/config/\nReceived string:  \"import type { Config } from 'tailwindcss'·\nconst config: Config = {\n  content: [\n    './pages/**/*.{js,ts,jsx,tsx,mdx}',\n    './components/**/*.{js,ts,jsx,tsx,mdx}',\n    './app/**/*.{js,ts,jsx,tsx,mdx}',\n    './src/**/*.{js,ts,jsx,tsx,mdx}',\n  ],\n  theme: {\n    extend: {\n      colors: {\n        // Kineo brand colors\n        kineo: {\n          primary: '#2563eb',\n          secondary: '#64748b',\n          accent: '#0f172a',\n          success: '#059669',\n          warning: '#d97706',\n          danger: '#dc2626',\n        },\n        // Test-expected color palette\n        primary: {\n          DEFAULT: 'hsl(var(--primary))',\n          foreground: 'hsl(var(--primary-foreground))',\n        },\n        secondary: {\n          DEFAULT: 'hsl(var(--secondary))',\n          foreground: 'hsl(var(--secondary-foreground))',\n        },\n        accent: {\n          DEFAULT: 'hsl(var(--accent))',\n          foreground: 'hsl(var(--accent-foreground))',\n        },\n        neutral: {\n          DEFAULT: 'hsl(var(--neutral))',\n          foreground: 'hsl(var(--neutral-foreground))',\n        },\n        // Additional semantic colors\n        destructive: {\n          DEFAULT: 'hsl(var(--destructive))',\n          foreground: 'hsl(var(--destructive-foreground))',\n        },\n        muted: {\n          DEFAULT: 'hsl(var(--muted))',\n          foreground: 'hsl(var(--muted-foreground))',\n        },\n        popover: {\n          DEFAULT: 'hsl(var(--popover))',\n          foreground: 'hsl(var(--popover-foreground))',\n        },\n        card: {\n          DEFAULT: 'hsl(var(--card))',\n          foreground: 'hsl(var(--card-foreground))',\n        },\n        border: 'hsl(var(--border))',\n        input: 'hsl(var(--input))',\n        ring: 'hsl(var(--ring))',\n        background: 'hsl(var(--background))',\n        foreground: 'hsl(var(--foreground))',\n      },\n      fontSize: {\n        xs: ['0.75rem', { lineHeight: '1rem' }],\n        sm: ['0.875rem', { lineHeight: '1.25rem' }],\n        base: ['1rem', { lineHeight: '1.5rem' }],\n        lg: ['1.125rem', { lineHeight: '1.75rem' }],\n        xl: ['1.25rem', { lineHeight: '1.75rem' }],\n        '2xl': ['1.5rem', { lineHeight: '2rem' }],\n        '3xl': ['1.875rem', { lineHeight: '2.25rem' }],\n        '4xl': ['2.25rem', { lineHeight: '2.5rem' }],\n        '5xl': ['3rem', { lineHeight: '1' }],\n        '6xl': ['3.75rem', { lineHeight: '1' }]\n      },\n      spacing: {\n        sidebar: '16rem',\n        header: '4rem',\n        card: '1.5rem',\n        section: '2rem',\n      },\n      borderRadius: {\n        lg: 'var(--radius)',\n        md: 'calc(var(--radius) - 2px)',\n        sm: 'calc(var(--radius) - 4px)',\n        card: '0.75rem',\n        button: '0.375rem',\n        input: '0.375rem',\n        chart: '0.5rem',\n      },\n      screens: {\n        mobile: '480px',\n        tablet: '768px',\n        desktop: '1024px',\n        wide: '1280px',\n      },\n      fontFamily: {\n        sans: ['var(--font-inter)', 'Inter', 'sans-serif'],\n      },\n      keyframes: {\n        'accordion-down': {\n          from: { height: '0' },\n          to: { height: 'var(--radix-accordion-content-height)' },\n        },\n        'accordion-up': {\n          from: { height: 'var(--radix-accordion-content-height)' },\n          to: { height: '0' },\n        },\n      },\n      animation: {\n        'accordion-down': 'accordion-down 0.2s ease-out',\n        'accordion-up': 'accordion-up 0.2s ease-out',\n      },\n    },\n    container: {\n      center: true,\n      padding: '1rem',\n      screens: {\n        mobile: '480px',\n        tablet: '768px',·\n        desktop: '1024px',\n        wide: '1280px',\n        xl: '1280px'\n      }\n    }\n  },\n  plugins: [],\n  darkMode: ['class'],\n}·\nexport default config\"\n    at Object.toMatch (/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/architecture/tailwindcss-setup.test.ts:285:29)\n    at Promise.then.completed (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/utils.js:298:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/utils.js:231:10)\n    at _callCircusTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:316:40)\n    at _runTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:252:3)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:126:9)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:121:9)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:121:9)\n    at run (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:71:3)\n    at runAndTransformResultsToJestFormat (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)\n    at jestAdapter (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)\n    at runTestInternal (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runner/build/runTest.js:367:16)\n    at runTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runner/build/runTest.js:444:34)",
-              "stack": "undefined"
-            }
-          ]
-        },
-        {
-          "name": "should have content paths optimized for tree-shaking",
-          "fullName": "TailwindCSS Configuration Architecture Performance and Optimization should have content paths optimized for tree-shaking",
-          "state": "failed",
-          "errors": [
-            {
-              "message": "Error: expect(received).toContain(expected) // indexOf\n\nMatcher error: received value must not be null nor undefined\n\nReceived has value: undefined\n    at Object.toContain (/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/architecture/tailwindcss-setup.test.ts:296:38)\n    at Promise.then.completed (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/utils.js:298:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/utils.js:231:10)\n    at _callCircusTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:316:40)\n    at _runTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:252:3)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:126:9)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:121:9)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:121:9)\n    at run (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:71:3)\n    at runAndTransformResultsToJestFormat (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)\n    at jestAdapter (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)\n    at runTestInternal (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runner/build/runTest.js:367:16)\n    at runTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runner/build/runTest.js:444:34)",
-              "stack": "undefined"
-            }
-          ]
-        },
-        {
-          "name": "should have safelist for dynamically generated classes",
-          "fullName": "TailwindCSS Configuration Architecture Performance and Optimization should have safelist for dynamically generated classes",
-          "state": "failed",
-          "errors": [
-            {
-              "message": "Error: expect(received).toHaveProperty(path)\n\nExpected path: \"safelist\"\nReceived path: []\n\nReceived value: {\"default\": {\"content\": [\"./pages/**/*.{js,ts,jsx,tsx,mdx}\", \"./components/**/*.{js,ts,jsx,tsx,mdx}\", \"./app/**/*.{js,ts,jsx,tsx,mdx}\", \"./src/**/*.{js,ts,jsx,tsx,mdx}\"], \"darkMode\": [\"class\"], \"plugins\": [], \"theme\": {\"container\": {\"center\": true, \"padding\": \"1rem\", \"screens\": {\"desktop\": \"1024px\", \"mobile\": \"480px\", \"tablet\": \"768px\", \"wide\": \"1280px\", \"xl\": \"1280px\"}}, \"extend\": {\"animation\": {\"accordion-down\": \"accordion-down 0.2s ease-out\", \"accordion-up\": \"accordion-up 0.2s ease-out\"}, \"borderRadius\": {\"button\": \"0.375rem\", \"card\": \"0.75rem\", \"chart\": \"0.5rem\", \"input\": \"0.375rem\", \"lg\": \"var(--radius)\", \"md\": \"calc(var(--radius) - 2px)\", \"sm\": \"calc(var(--radius) - 4px)\"}, \"colors\": {\"accent\": {\"DEFAULT\": \"hsl(var(--accent))\", \"foreground\": \"hsl(var(--accent-foreground))\"}, \"background\": \"hsl(var(--background))\", \"border\": \"hsl(var(--border))\", \"card\": {\"DEFAULT\": \"hsl(var(--card))\", \"foreground\": \"hsl(var(--card-foreground))\"}, \"destructive\": {\"DEFAULT\": \"hsl(var(--destructive))\", \"foreground\": \"hsl(var(--destructive-foreground))\"}, \"foreground\": \"hsl(var(--foreground))\", \"input\": \"hsl(var(--input))\", \"kineo\": {\"accent\": \"#0f172a\", \"danger\": \"#dc2626\", \"primary\": \"#2563eb\", \"secondary\": \"#64748b\", \"success\": \"#059669\", \"warning\": \"#d97706\"}, \"muted\": {\"DEFAULT\": \"hsl(var(--muted))\", \"foreground\": \"hsl(var(--muted-foreground))\"}, \"neutral\": {\"DEFAULT\": \"hsl(var(--neutral))\", \"foreground\": \"hsl(var(--neutral-foreground))\"}, \"popover\": {\"DEFAULT\": \"hsl(var(--popover))\", \"foreground\": \"hsl(var(--popover-foreground))\"}, \"primary\": {\"DEFAULT\": \"hsl(var(--primary))\", \"foreground\": \"hsl(var(--primary-foreground))\"}, \"ring\": \"hsl(var(--ring))\", \"secondary\": {\"DEFAULT\": \"hsl(var(--secondary))\", \"foreground\": \"hsl(var(--secondary-foreground))\"}}, \"fontFamily\": {\"sans\": [\"var(--font-inter)\", \"Inter\", \"sans-serif\"]}, \"fontSize\": {\"2xl\": [\"1.5rem\", {\"lineHeight\": \"2rem\"}], \"3xl\": [\"1.875rem\", {\"lineHeight\": \"2.25rem\"}], \"4xl\": [\"2.25rem\", {\"lineHeight\": \"2.5rem\"}], \"5xl\": [\"3rem\", {\"lineHeight\": \"1\"}], \"6xl\": [\"3.75rem\", {\"lineHeight\": \"1\"}], \"base\": [\"1rem\", {\"lineHeight\": \"1.5rem\"}], \"lg\": [\"1.125rem\", {\"lineHeight\": \"1.75rem\"}], \"sm\": [\"0.875rem\", {\"lineHeight\": \"1.25rem\"}], \"xl\": [\"1.25rem\", {\"lineHeight\": \"1.75rem\"}], \"xs\": [\"0.75rem\", {\"lineHeight\": \"1rem\"}]}, \"keyframes\": {\"accordion-down\": {\"from\": {\"height\": \"0\"}, \"to\": {\"height\": \"var(--radix-accordion-content-height)\"}}, \"accordion-up\": {\"from\": {\"height\": \"var(--radix-accordion-content-height)\"}, \"to\": {\"height\": \"0\"}}}, \"screens\": {\"desktop\": \"1024px\", \"mobile\": \"480px\", \"tablet\": \"768px\", \"wide\": \"1280px\"}, \"spacing\": {\"card\": \"1.5rem\", \"header\": \"4rem\", \"section\": \"2rem\", \"sidebar\": \"16rem\"}}}}}\n    at Object.toHaveProperty (/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/architecture/tailwindcss-setup.test.ts:306:30)\n    at Promise.then.completed (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/utils.js:298:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/utils.js:231:10)\n    at _callCircusTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:316:40)\n    at _runTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:252:3)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:126:9)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:121:9)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:121:9)\n    at run (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:71:3)\n    at runAndTransformResultsToJestFormat (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)\n    at jestAdapter (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)\n    at runTestInternal (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runner/build/runTest.js:367:16)\n    at runTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runner/build/runTest.js:444:34)",
-              "stack": "undefined"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "moduleId": "/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/architecture/nextjs-configuration.test.ts",
-      "tests": [
-        {
-          "name": "should have next.config.js with TypeScript and performance optimizations",
-          "fullName": "Next.js 13+ Configuration Architecture Core Configuration Files should have next.config.js with TypeScript and performance optimizations",
-          "state": "failed",
-          "errors": [
-            {
-              "message": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: false\nReceived: undefined\n    at Object.toBe (/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/architecture/nextjs-configuration.test.ts:28:55)\n    at Promise.then.completed (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/utils.js:298:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/utils.js:231:10)\n    at _callCircusTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:316:40)\n    at _runTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:252:3)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:126:9)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:121:9)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:121:9)\n    at run (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:71:3)\n    at runAndTransformResultsToJestFormat (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)\n    at jestAdapter (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)\n    at runTestInternal (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runner/build/runTest.js:367:16)\n    at runTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runner/build/runTest.js:444:34)",
-              "stack": "undefined"
-            }
-          ]
-        },
-        {
-          "name": "should have tsconfig.json configured for Next.js 13+ App Router",
-          "fullName": "Next.js 13+ Configuration Architecture Core Configuration Files should have tsconfig.json configured for Next.js 13+ App Router",
-          "state": "failed",
-          "errors": [
-            {
-              "message": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: \"ES2017\"\nReceived: undefined\n    at Object.toBe (/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/architecture/nextjs-configuration.test.ts:42:47)\n    at Promise.then.completed (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/utils.js:298:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/utils.js:231:10)\n    at _callCircusTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:316:40)\n    at _runTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:252:3)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:126:9)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:121:9)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:121:9)\n    at run (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:71:3)\n    at runAndTransformResultsToJestFormat (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)\n    at jestAdapter (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)\n    at runTestInternal (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runner/build/runTest.js:367:16)\n    at runTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runner/build/runTest.js:444:34)",
-              "stack": "undefined"
-            }
-          ]
-        },
-        {
-          "name": "should have proper package.json scripts for Next.js 13+",
-          "fullName": "Next.js 13+ Configuration Architecture Core Configuration Files should have proper package.json scripts for Next.js 13+",
-          "state": "passed"
-        },
-        {
-          "name": "should have app directory structure for Next.js 13+ App Router",
-          "fullName": "Next.js 13+ Configuration Architecture App Router Architecture should have app directory structure for Next.js 13+ App Router",
-          "state": "passed"
-        },
-        {
-          "name": "should have globals.css configured with TailwindCSS directives",
-          "fullName": "Next.js 13+ Configuration Architecture App Router Architecture should have globals.css configured with TailwindCSS directives",
-          "state": "passed"
-        },
-        {
-          "name": "should have metadata configuration in root layout",
-          "fullName": "Next.js 13+ Configuration Architecture App Router Architecture should have metadata configuration in root layout",
-          "state": "passed"
-        },
-        {
-          "name": "should have environment variables configuration",
-          "fullName": "Next.js 13+ Configuration Architecture Environment Configuration should have environment variables configuration",
-          "state": "failed",
-          "errors": [
-            {
-              "message": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: true\nReceived: false\n    at Object.toBe (/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/architecture/nextjs-configuration.test.ts:134:28)\n    at Promise.then.completed (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/utils.js:298:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/utils.js:231:10)\n    at _callCircusTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:316:40)\n    at _runTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:252:3)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:126:9)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:121:9)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:121:9)\n    at run (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:71:3)\n    at runAndTransformResultsToJestFormat (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)\n    at jestAdapter (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)\n    at runTestInternal (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runner/build/runTest.js:367:16)\n    at runTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runner/build/runTest.js:444:34)",
-              "stack": "undefined"
-            }
-          ]
-        },
-        {
-          "name": "should have next-env.d.ts for Next.js type definitions",
-          "fullName": "Next.js 13+ Configuration Architecture Environment Configuration should have next-env.d.ts for Next.js type definitions",
-          "state": "passed"
-        },
-        {
-          "name": "should have proper ESLint configuration for Next.js",
-          "fullName": "Next.js 13+ Configuration Architecture Performance and Build Configuration should have proper ESLint configuration for Next.js",
-          "state": "failed",
-          "errors": [
-            {
-              "message": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: true\nReceived: false\n    at Object.toBe (/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/architecture/nextjs-configuration.test.ts:161:44)\n    at Promise.then.completed (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/utils.js:298:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/utils.js:231:10)\n    at _callCircusTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:316:40)\n    at _runTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:252:3)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:126:9)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:121:9)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:121:9)\n    at run (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:71:3)\n    at runAndTransformResultsToJestFormat (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)\n    at jestAdapter (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)\n    at runTestInternal (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runner/build/runTest.js:367:16)\n    at runTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runner/build/runTest.js:444:34)",
-              "stack": "undefined"
-            }
-          ]
-        },
-        {
-          "name": "should configure bundle analyzer for performance monitoring",
-          "fullName": "Next.js 13+ Configuration Architecture Performance and Build Configuration should configure bundle analyzer for performance monitoring",
-          "state": "failed",
-          "errors": [
-            {
-              "message": "Error: expect(received).toHaveProperty(path)\n\nExpected path: \"@next/bundle-analyzer\"\nReceived path: []\n\nReceived value: {\"@babel/plugin-transform-modules-commonjs\": \"^7.27.1\", \"@babel/preset-env\": \"^7.28.3\", \"@babel/preset-react\": \"^7.27.1\", \"@babel/preset-typescript\": \"^7.27.1\", \"@jest/globals\": \"^29.7.0\", \"@storybook/addon-essentials\": \"^7.5.0\", \"@storybook/addon-interactions\": \"^7.5.0\", \"@storybook/addon-links\": \"^7.5.0\", \"@storybook/blocks\": \"^7.5.0\", \"@storybook/nextjs\": \"^7.5.0\", \"@storybook/react\": \"^7.5.0\", \"@storybook/testing-library\": \"^0.2.2\", \"@testing-library/jest-dom\": \"^6.1.0\", \"@testing-library/react\": \"^13.4.0\", \"@testing-library/user-event\": \"^14.5.0\", \"@typescript-eslint/eslint-plugin\": \"^6.9.0\", \"@typescript-eslint/parser\": \"^6.9.0\", \"@vitejs/plugin-react\": \"^4.1.0\", \"@vitest/coverage-v8\": \"^3.2.4\", \"babel-jest\": \"^29.7.0\", \"eslint\": \"^8.52.0\", \"eslint-config-next\": \"^14.0.0\", \"jest\": \"^29.7.0\", \"jest-environment-jsdom\": \"^29.7.0\", \"jsdom\": \"^22.1.0\", \"prettier\": \"^3.0.0\", \"prettier-plugin-tailwindcss\": \"^0.5.6\", \"tdd-guard-jest\": \"latest\", \"tdd-guard-vitest\": \"latest\", \"vite\": \"^5.0.0\", \"vitest\": \"^3.2.4\"}\n    at Object.toHaveProperty (/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/architecture/nextjs-configuration.test.ts:175:43)\n    at Promise.then.completed (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/utils.js:298:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/utils.js:231:10)\n    at _callCircusTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:316:40)\n    at _runTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:252:3)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:126:9)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:121:9)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:121:9)\n    at run (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:71:3)\n    at runAndTransformResultsToJestFormat (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)\n    at jestAdapter (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)\n    at runTestInternal (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runner/build/runTest.js:367:16)\n    at runTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runner/build/runTest.js:444:34)",
-              "stack": "undefined"
-            }
-          ]
-        },
-        {
-          "name": "should have Tailwind and PostCSS configuration",
-          "fullName": "Next.js 13+ Configuration Architecture Performance and Build Configuration should have Tailwind and PostCSS configuration",
-          "state": "failed",
-          "errors": [
-            {
-              "message": "Error: expect(received).toContain(expected) // indexOf\n\nMatcher error: received value must not be null nor undefined\n\nReceived has value: undefined\n    at Object.toContain (/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/architecture/nextjs-configuration.test.ts:191:38)\n    at Promise.then.completed (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/utils.js:298:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/utils.js:231:10)\n    at _callCircusTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:316:40)\n    at _runTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:252:3)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:126:9)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:121:9)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:121:9)\n    at run (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:71:3)\n    at runAndTransformResultsToJestFormat (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)\n    at jestAdapter (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)\n    at runTestInternal (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runner/build/runTest.js:367:16)\n    at runTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runner/build/runTest.js:444:34)",
-              "stack": "undefined"
-            }
-          ]
-        },
-        {
-          "name": "should have proper TypeScript strict mode configuration",
-          "fullName": "Next.js 13+ Configuration Architecture TypeScript Integration should have proper TypeScript strict mode configuration",
-          "state": "failed",
-          "errors": [
-            {
-              "message": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: true\nReceived: undefined\n    at Object.toBe (/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/architecture/nextjs-configuration.test.ts:207:67)\n    at Promise.then.completed (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/utils.js:298:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/utils.js:231:10)\n    at _callCircusTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:316:40)\n    at _runTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:252:3)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:126:9)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:121:9)\n    at _runTestsForDescribeBlock (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:121:9)\n    at run (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/run.js:71:3)\n    at runAndTransformResultsToJestFormat (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)\n    at jestAdapter (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)\n    at runTestInternal (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runner/build/runTest.js:367:16)\n    at runTest (/Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/jest-runner/build/runTest.js:444:34)",
-              "stack": "undefined"
-            }
-          ]
-        },
-        {
-          "name": "should have type definitions for global modules",
-          "fullName": "Next.js 13+ Configuration Architecture TypeScript Integration should have type definitions for global modules",
+          "name": "TDD Guard should prevent implementation without failing test",
+          "fullName": "TDD Guard Verification > TDD Guard should prevent implementation without failing test",
           "state": "passed"
         }
       ]

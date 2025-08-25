@@ -1,7 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  experimental: {
+    appDir: true
+  },
   typescript: {
-    tsconfigPath: './tsconfig.json'
+    tsconfigPath: './tsconfig.json',
+    ignoreBuildErrors: false
   },
   eslint: {
     dirs: ['app', 'src']

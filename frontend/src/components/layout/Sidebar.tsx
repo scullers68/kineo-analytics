@@ -5,9 +5,10 @@ import { useUIStore } from '@/stores/ui-store'
 
 interface SidebarProps {
   className?: string
+  'data-testid'?: string
 }
 
-export default function Sidebar({ className = '' }: SidebarProps) {
+export default function Sidebar({ className = '', 'data-testid': testId }: SidebarProps) {
   const { sidebarCollapsed, toggleSidebar } = useUIStore()
   const isCollapsed = sidebarCollapsed
   const navigation = [
@@ -18,7 +19,7 @@ export default function Sidebar({ className = '' }: SidebarProps) {
   ]
 
   return (
-    <div className={`bg-gray-800 ${isCollapsed ? 'w-16' : 'w-64'} transition-all duration-300 ${className}`}>
+    <div data-testid={testId} className={`bg-gray-800 ${isCollapsed ? 'w-16' : 'w-64'} transition-all duration-300 ${className}`}>
       <div className="flex h-16 items-center justify-between px-4">
         <h2 className={`text-white font-bold ${isCollapsed ? 'hidden' : 'block'}`}>
           Kineo Analytics

@@ -13,40 +13,12 @@ const customJestConfig = {
   // TDD Guard Jest Reporter Configuration
   reporters: [
     'default',
-    ['tdd-guard-jest', {
-      // TDD Guard configuration for enforcing test-first development
-      hookUrl: 'http://localhost:3001/hook', // Default Claude Code hook URL
-      enforcementLevel: 'strict', // 'strict' | 'moderate' | 'lenient'
-      ignorePatterns: [
-        '**/node_modules/**',
-        '**/dist/**',
-        '**/build/**',
-        '**/.next/**',
-        '**/*.config.*',
-        '**/types/**',
-        '**/*.d.ts'
-      ],
-      // Project-specific configuration
-      projectRoot: path.resolve(__dirname),
-      testDirectory: path.resolve(__dirname, 'tests'),
-      sourceDirectory: path.resolve(__dirname, 'src'),
-      // React/TypeScript specific settings
-      extensions: ['.ts', '.tsx', '.js', '.jsx'],
-      testExtensions: ['.test.ts', '.test.tsx', '.spec.ts', '.spec.tsx'],
-      // TDD enforcement rules
-      requireTestsForNewCode: true,
-      requireFailingTestFirst: true,
-      preventOverImplementation: true,
-      // Learning analytics platform specific ignores
-      skipTddFor: [
-        'src/types/api.ts', // Type definitions
-        'src/constants/**', // Constants
-        'src/assets/**', // Static assets
-        'next.config.js',
-        'tailwind.config.js',
-        'jest.config.js'
-      ]
-    }]
+    [
+      'tdd-guard-jest',
+      {
+        projectRoot: __dirname,
+      },
+    ],
   ],
 
   // Test file patterns
