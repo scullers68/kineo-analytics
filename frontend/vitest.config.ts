@@ -11,7 +11,7 @@ export default defineConfig({
     environment: 'jsdom',
     setupFiles: ['./tests/setup/vitest.setup.ts'],
     css: true,
-    reporters: ['default', new VitestReporter()],
+    reporters: ['default', new VitestReporter(path.resolve(__dirname))],
     // Enable CommonJS module resolution for tests
     deps: {
       external: [],
