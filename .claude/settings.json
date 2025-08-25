@@ -1,0 +1,19 @@
+{
+  "hooks": {
+    "userpromptsubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "tdd-guard"
+          }
+        ]
+      }
+    ]
+  }
+},
+{
+  "permissions": {
+    "deny": ["Read(.claude/tdd-guard/**)"]
+  }
+}
