@@ -60,13 +60,6 @@ export function getQuarter(date: Date): { quarter: number; year: number } {
 }
 
 export function parseUserDate(dateString: string): Date | null {
-  // Handle common date formats
-  const formats = [
-    /^\d{4}-\d{2}-\d{2}$/, // YYYY-MM-DD
-    /^\d{2}\/\d{2}\/\d{4}$/, // MM/DD/YYYY
-    /^\d{1,2}\/\d{1,2}\/\d{4}$/, // M/D/YYYY
-  ]
-  
   if (!dateString || typeof dateString !== 'string') {
     return null
   }
