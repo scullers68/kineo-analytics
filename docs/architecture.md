@@ -39,27 +39,45 @@ This document outlines the architecture for Kineo's standalone analytics platfor
 ### High-Level Platform Architecture
 
 ```
-Customer Access          Kineo Analytics Platform                    Data Sources
-┌─────────────────┐     ┌─────────────────────────────────┐        ┌─────────────────┐
-│ Customer 1      │────►│                                 │       ┌┤ Customer 1 Data │
-│ • Direct Login  │     │   Multi-Tenant Web Platform     │       ││                 │
-│ • analytics.    │     │                                 │       ││ Totara Instance │
-│   kineo.com/c1  │     │ • Interactive Dashboards       │───────┤│ HRIS Systems    │
-└─────────────────┘     │ • Drill-down Capabilities      │       ││ Custom Sources  │
-                        │ • Custom Visualizations        │       │└─────────────────┘
-┌─────────────────┐     │ • Multi-customer Isolation     │       │
-│ Customer 2      │────►│                                 │       │┌─────────────────┐
-│ • Direct Login  │     │   Built on Databricks          │       ├┤ Customer 2 Data │
-│ • analytics.    │     │                                 │       ││                 │
-│   kineo.com/c2  │     │ • Real-time Data Queries       │───────┤│ Totara Instance │
-└─────────────────┘     │ • Advanced Filtering            │       ││ CSV Uploads     │
-                        │ • Export Capabilities           │       ││ API Feeds       │
-┌─────────────────┐     │ • Role-based Access             │       │└─────────────────┘
-│ Customer N...   │────►│                                 │       │
-└─────────────────┘     └─────────────────────────────────┘       │┌─────────────────┐
-                                                                  └┤ Customer N Data │
-                                                                   └─────────────────┘
+Customer Access      Kineo Analytics Platform      Databricks Lakehouse           Data Sources
+┌─────────────────┐  ┌──────────────────────────┐  ┌─────────────────────────┐   ┌─────────────────┐
+│ Customer 1      │  │                          │  │                         │  ┌┤ Customer 1 Data │
+│ • Direct Login  │──│   Visualization Layer    │──│   Data & Compute Layer  │──│ Totara Instance │
+│ • analytics.    │  │                          │  │                         │  ││ HRIS Systems    │
+│   kineo.com/c1  │  │ • Interactive Charts     │  │ customer_001_acme/      │  ││ Custom Sources  │
+└─────────────────┘  │ • Drill-down Navigation  │  │ ├── gold.dim_users      │  │└─────────────────┘
+                     │ • Advanced Filtering     │  │ ├── gold.fact_progress  │  │
+┌─────────────────┐  │ • Export Capabilities    │  │ └── gold.fact_certs     │  │┌─────────────────┐
+│ Customer 2      │──│                          │  │                         │──├┤ Customer 2 Data │
+│ • Direct Login  │  │   Query Engine           │  │ customer_002_techcorp/  │  ││ Totara Instance │
+│ • analytics.    │  │                          │  │ ├── gold.dim_users      │  ││ CSV Uploads     │
+│   kineo.com/c2  │  │ • Dynamic SQL Generation │  │ ├── gold.fact_progress  │  ││ API Feeds       │
+└─────────────────┘  │ • Customer Isolation     │  │ └── gold.fact_certs     │  │└─────────────────┘
+                     │ • Caching & Performance  │  │                         │  │
+┌─────────────────┐  │ • Role-based Security    │  │ Schema Per Customer:    │  │┌─────────────────┐
+│ Customer N...   │──│                          │  │ • Complete Isolation    │──└┤ Customer N Data │
+└─────────────────┘  └──────────────────────────┘  │ • Auto-scaling Compute  │   └─────────────────┘
+                                                   │ • Medallion Architecture│
+                                                   └─────────────────────────┘
 ```
+
+### **Two-Layer Architecture Explanation**
+
+#### **Layer 1: Databricks (Data & Compute Layer)**
+- **Purpose**: Data warehouse and computation engine
+- **Responsibilities**: 
+  - Store all customer data in isolated schemas
+  - Process complex analytical queries
+  - Handle data transformations and business logic
+  - Provide auto-scaling compute resources
+
+#### **Layer 2: Kineo Platform (Visualization Layer)**  
+- **Purpose**: Interactive dashboard and user experience
+- **Responsibilities**:
+  - Generate dynamic SQL queries based on user interactions
+  - Render interactive charts and visualizations
+  - Handle user authentication and multi-tenancy
+  - Cache frequently accessed data for performance
 
 ### Technology Stack
 
@@ -86,30 +104,89 @@ Customer Access          Kineo Analytics Platform                    Data Source
 - **Azure Key Vault**: Secure credential and connection string management
 - **Azure Application Insights**: Comprehensive monitoring and analytics
 
-## Multi-Customer Data Architecture
+## Databricks Integration Architecture
+
+### **Data Flow: Source to Visualization**
+
+```
+Data Sources → Databricks Lakehouse → Kineo Platform → Customer Dashboards
+```
+
+#### **Step 1: Data Ingestion to Databricks**
+```python
+# ETL Pipeline Example
+def ingest_customer_data(customer_id: str, source_data: Any):
+    # 1. Land data in Bronze layer (raw)
+    bronze_table = f"customer_{customer_id:03d}.bronze.raw_totara_data"
+    
+    # 2. Clean and standardize in Silver layer  
+    silver_query = f"""
+    CREATE OR REPLACE TABLE customer_{customer_id:03d}.silver.course_progress AS
+    SELECT user_id, course_id, completion_date, progress_percent
+    FROM customer_{customer_id:03d}.bronze.raw_totara_data
+    WHERE completion_date IS NOT NULL
+    """
+    
+    # 3. Create analytics-ready Gold layer
+    gold_query = f"""
+    CREATE OR REPLACE TABLE customer_{customer_id:03d}.gold.fact_course_progress AS
+    SELECT cp.*, u.organization_id, c.category_id
+    FROM customer_{customer_id:03d}.silver.course_progress cp
+    JOIN customer_{customer_id:03d}.gold.dim_users u ON cp.user_id = u.user_id
+    JOIN customer_{customer_id:03d}.gold.dim_courses c ON cp.course_id = c.course_id
+    """
+```
+
+#### **Step 2: Query Generation by Kineo Platform**
+```python
+# Dashboard Controller Example
+class CourseCompletionDashboard:
+    async def get_completion_data(self, customer_id: str, filters: dict):
+        # Generate customer-specific SQL
+        schema = f"customer_{customer_id:03d}"
+        query = f"""
+        SELECT 
+            c.category_name,
+            COUNT(*) as total_enrollments,
+            SUM(CASE WHEN cp.completion_date IS NOT NULL THEN 1 ELSE 0 END) as completions,
+            ROUND(SUM(CASE WHEN cp.completion_date IS NOT NULL THEN 1 ELSE 0 END) * 100.0 / COUNT(*), 2) as completion_rate
+        FROM {schema}.gold.fact_course_progress cp
+        JOIN {schema}.gold.dim_courses c ON cp.course_id = c.course_id
+        JOIN {schema}.gold.dim_users u ON cp.user_id = u.user_id
+        WHERE cp.enrollment_date BETWEEN '{filters.start_date}' AND '{filters.end_date}'
+        """
+        
+        # Execute against Databricks
+        results = await databricks_client.execute_query(query)
+        
+        # Transform for frontend visualization
+        return self.format_for_charts(results)
+```
 
 ### Customer Isolation Strategy
 
-#### **Schema-Per-Customer Model**
+#### **Schema-Per-Customer Model in Databricks**
 ```sql
 -- Databricks workspace structure
-databricks_analytics/
-├── customer_001_acme/
-│   ├── gold.dim_users
-│   ├── gold.dim_courses
-│   ├── gold.fact_course_progress
-│   └── gold.fact_certifications
-├── customer_002_globaltech/
-│   ├── gold.dim_users
-│   ├── gold.dim_courses
-│   ├── gold.fact_course_progress
-│   └── gold.fact_certifications
-├── customer_N_company/
-│   └── [same structure...]
-└── platform/
-    ├── customer_metadata
-    ├── user_management
-    └── subscription_info
+databricks_lakehouse/
+├── customer_001_acme/              # Complete data isolation
+│   ├── bronze/                     # Raw data layer
+│   │   ├── raw_totara_exports
+│   │   └── raw_csv_uploads
+│   ├── silver/                     # Cleansed data layer
+│   │   ├── standardized_users
+│   │   ├── cleaned_courses
+│   │   └── validated_progress
+│   └── gold/                       # Analytics-ready layer
+│       ├── dim_users               # User dimension
+│       ├── dim_courses             # Course dimension
+│       ├── fact_course_progress    # Learning progress facts
+│       └── fact_certifications     # Certification facts
+├── customer_002_techcorp/          # Separate customer schema
+│   └── [same medallion structure...]
+└── platform_shared/               # Platform metadata only
+    ├── customer_configs
+    └── data_lineage_tracking
 ```
 
 ### Authentication & Security Architecture
