@@ -39,7 +39,7 @@ Customer Data Sources → Kineo Analytics Platform → Interactive Dashboards
 The project uses a **14-agent specialized architecture** optimized for **parallel development by two Claude Code developers**:
 
 ### **Developer A - Frontend Specialist Agents**
-- 👨‍💻 **senior-fullstack-python-engineer** - React/TypeScript development and architecture
+- 👨‍💻 **senior-fullstack-engineer** - React/TypeScript development, data visualization, and enterprise dashboard architecture
 - 🧪 **tdd-expert** - Test-driven development and quality assurance
 - 🎨 **complexity-eradicator** - Code simplification and maintainability
 - 🚀 **devops-platform-engineer** - CI/CD coordination (shared)
