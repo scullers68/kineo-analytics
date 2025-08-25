@@ -66,7 +66,7 @@ Our development process follows a rigorous six-step quality assurance methodolog
 - **Step 2 (Senior Fullstack Engineer)**: Identifies implementation gaps and architecture issues  
 - **Step 3 (Test Engineer)**: Quantifies completion percentage and creates comprehensive test coverage
 - **Step 4 (Quality Control Enforcer)**: Reviews code quality and assigns numerical scores (0-100)
-- **Step 5 (Karen)**: Provides reality checks and written assessments to prevent false completion claims
+- **Step 5 (Task Phase Enforcer)**: Validates task completion against acceptance criteria and prevents scope creep into future phases
 - **Step 6 (Backlog Expert)**: Updates task documentation with honest progress tracking
 
 ## Data Model Overview
