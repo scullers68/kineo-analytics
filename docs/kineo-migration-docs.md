@@ -91,25 +91,34 @@ flowchart TB
 
 ## Data Model Documentation
 
-### Source Data Files
+### Source Data Files (COMPREHENSIVE SCOPE DISCOVERED)
 
-#### Core Data Files (13 CSV files from Totara)
+#### Primary Data Files (13+ CSV files from Totara LMS)
 
-| File | Key Columns | Record Count | Purpose |
-|------|-------------|--------------|---------|
-| `analytics_users.csv` | User ID, Manager ID, Organization, Position | 3,057 | User dimension with org hierarchy |
-| `analytics_course_completions.csv` | User ID, Course ID, Status, Dates | 19,858 | Course enrollment tracking |
-| `analytics_cert_completions.csv` | User ID, Cert ID, Status, Expiry | 9,767 | Certification tracking |
-| `analytics_prog_completions.csv` | User ID, Program ID, Status | 3,409 | Program progress |
-| `analytics_prog_overview.csv` | Program ID, Course ID | 9,634 | Program structure |
-| `analytics_cert_overview.csv` | Cert ID, Course ID | 92,146 | Certification requirements |
-| `analytics_scorm.csv` | User ID, SCORM data | 35 | eLearning tracking |
-| `analytics_seminar_attendance.csv` | User ID, Session ID | 70 | IRL attendance |
-| `analytics_audiences_report.csv` | Audience ID, User ID | 8,734 | User groupings |
-| `analytics_competency_ratings.csv` | User ID, Competency ID | 49,078 | Skill assessments |
-| `analytics_organisations.csv` | Org ID, Parent ID | 1,001 | Org structure |
-| `analytics_positions.csv` | Position ID, Parent ID | 889 | Position hierarchy |
-| `null_dates.csv` | Date handling | 3 | Utility file |
+| File | Key Columns | Record Count | Business Complexity | Priority |
+| `analytics_users.csv` | User ID, Manager ID, Organization, Position, Assignment ID | 3,057+ | **Complex org hierarchy** with Manager/Appraiser chains | **CRITICAL** |
+| `analytics_course_completions.csv` | User ID, Course ID, Time enrolled, Time completed, Due Date | 19,858+ | **Multi-source enrollment logic** (direct/program/cert) | **HIGH** |
+| `analytics_cert_completions.csv` | User ID, Cert ID, Status, Time Expires | 9,767+ | **Certification expiry tracking** with renewal cycles | **HIGH** |
+| `analytics_prog_completions.csv` | User ID, Program ID, Progress %, Time assigned | 3,409+ | **Multi-course program tracking** | **MEDIUM** |
+| `analytics_prog_overview.csv` | Program ID, Course ID, User ID | 9,634+ | **Program-Course relationships** | **MEDIUM** |
+| **`analytics_cert_overview.csv`** | **Cert ID, Course ID, User ID, Certification path** | **92,146+** | **LARGEST TABLE: Cert-Course matrix** | **CRITICAL** |
+| `analytics_scorm.csv` | User ID, SCORM data, Time spent | 35+ | **eLearning interaction tracking** | **LOW** |
+| `analytics_seminar_attendance.csv` | User ID, Session ID, Attendance status | 70+ | **IRL training attendance** | **MEDIUM** |
+| `analytics_audiences_report.csv` | Audience ID, User ID | 8,734+ | **User audience assignments** for filtering | **MEDIUM** |
+| `analytics_competency_ratings.csv` | User ID, Competency ID, Rating | 49,078+ | **Skills assessment data** | **LOW** |
+| `analytics_organisations.csv` | Org ID, Parent ID, Name | 1,001+ | **Hierarchical org structure** | **HIGH** |
+| `analytics_positions.csv` | Position ID, Parent ID, Name | 889+ | **Position hierarchy** | **HIGH** |
+| `null_dates.csv` | Date handling patterns | 3 | **Null date standardization (1900-01-01)** | **UTILITY** |
+| **`dimdates.xlsx`** | **Fiscal Year ranges** | **2012-2036** | **Excel-based date dimension** | **CRITICAL** |
+
+#### **Additional Data Sources Discovered (Learning Content - SCORM Analytics)**
+
+| File | Records | Purpose | Integration Required |
+|------|---------|---------|---------------------|
+| `adapt_en_allcontent.csv` | Variable | SCORM content definitions | Optional - Extended analytics |
+| `adapt_en_itemsquestions.csv` | Variable | Question bank structure | Optional - Assessment detail |
+| `social_assessment-input.csv` | Variable | Social learning assessments | Optional - Extended features |
+| `social_tracking-input.csv` | Variable | Social interaction tracking | Optional - Extended features |
 
 ### Transformation Logic
 
@@ -147,62 +156,104 @@ SELECT
     -- ... (unknown record for referential integrity)
 ```
 
-#### Special Processing: Manager Hierarchy
+#### **CRITICAL COMPONENT: Manager Hierarchy Algorithm (UserAllReports.ipynb)**
+
+**Scope**: Creates 7,794 total relationships from 3,057 users - **Most complex transformation**
 
 ```python
-# UserAllReports.ipynb - Manager hierarchy algorithm
+# UserAllReports.ipynb - Kineo's proprietary algorithm
+# COMPLEXITY: O(n²) transitive closure with cycle detection
 def build_manager_hierarchy():
     """
-    Kineo's proprietary algorithm for building reporting relationships
-    Creates three types: self, direct, indirect
+    Creates comprehensive reporting relationships for dashboard filtering
+    CRITICAL PATH: All dashboards depend on this for organization filtering
+    
+    Output Structure:
+    - Self relationships: 3,057 records (every user manages themselves)
+    - Direct relationships: ~800 records (manager → employee from source)
+    - Indirect relationships: ~3,937 records (transitive closure of management chain)
+    - Total: 7,794 relationships
     """
-    # 1. Extract all users
-    all_users = get_unique_users()
     
-    # 2. Create self-relationships
-    self_relationships = create_self_relationships(all_users)
+    # 1. Extract all unique users (3,057 users)
+    all_users = extract_users_from_analytics_users_csv()
     
-    # 3. Create direct relationships
-    direct_relationships = create_direct_relationships()
+    # 2. Create self-relationships (Required for dashboard filtering)
+    self_relationships = []
+    for user in all_users:
+        self_relationships.append({
+            'employee_id': user.id,
+            'manager_id': user.id, 
+            'relationship_type': 'self'
+        })
     
-    # 4. Build indirect relationships (transitive closure)
+    # 3. Create direct relationships from source data
+    direct_relationships = []
+    for user in all_users:
+        if user.manager_id and user.manager_id != -1:
+            direct_relationships.append({
+                'employee_id': user.id,
+                'manager_id': user.manager_id,
+                'relationship_type': 'direct'
+            })
+    
+    # 4. MOST COMPLEX: Build indirect relationships (transitive closure)
+    # This traverses the entire management hierarchy for each user
     indirect_relationships = []
     for employee in all_users:
         visited_managers = set()
-        current_manager = employee.manager_id
+        current_manager = get_manager_id(employee)
         
+        # Traverse up the hierarchy until root or cycle detected
         while current_manager and current_manager not in visited_managers:
             visited_managers.add(current_manager)
-            # Traverse up the hierarchy
-            next_manager = get_manager_of(current_manager)
-            if next_manager:
+            
+            # Find the manager's manager
+            next_manager = get_manager_id(current_manager)
+            if next_manager and next_manager != current_manager:
+                # Create indirect relationship
                 indirect_relationships.append({
                     'employee_id': employee.id,
                     'manager_id': next_manager,
                     'relationship_type': 'indirect'
                 })
-            current_manager = next_manager
+                current_manager = next_manager
+            else:
+                break  # Reached root or circular reference
     
-    return combine_relationships(self, direct, indirect)
+    # 5. Combine all relationships into final UserHierarchy table
+    return combine_relationships(self_relationships, direct_relationships, indirect_relationships)
 ```
 
-### Fact Tables Structure
+**Migration Challenge**: Convert NetworkX graph traversal to PySpark GraphFrames for distributed processing
 
-#### Core Progress Facts
+### **Fact Tables Structure (11 Total Fact Tables - High Complexity)**
 
-| Fact Table | Grain | Measures | Dimensions |
-|------------|-------|----------|------------|
-| `Fact_Course_Progress` | User + Course | Completion Status, Days to Complete | User, Course, Date, FY |
-| `Fact_Program_Progress` | User + Program | Progress %, Overdue Flag | User, Program, Date, FY |
-| `Fact_Certification_Progress` | User + Cert | Status, Days to Expiry | User, Cert, Date, FY |
+#### **Core Progress Facts (Most Complex Business Logic)**
 
-#### Historical Analysis Facts
+| Fact Table | Grain | Measures | Key Dimensions | Business Complexity |
+|------------|-------|----------|----------------|--------------------|
+| **`Fact_Course_Progress`** | User + Course | Completion Status, Days_Difference, IsOverdue | User, Course, Program, Cert, FY_Began, FY_Completed | **MOST COMPLEX**: 3 enrollment sources, complex date logic |
+| **`Fact_Program_Progress`** | User + Program | Progress %, Overdue Flag, Assignment Status | User, Program, FY_Began, FY_Completed | **HIGH**: Multi-course tracking |
+| **`Fact_Certification_Progress`** | User + Certification | Status, Time_Expires, Days_Difference | User, Cert, FY_Began, FY_Completed | **HIGH**: Expiry cycles, renewal logic |
+| **`Fact_Course_to_Cert_Progress`** | User + Course + Cert | Course completion within certification context | User, Course, Cert, Program | **MEDIUM**: Course-Cert relationships |
 
-| Fact Table | Purpose | Special Logic |
-|------------|---------|---------------|
-| `Fact_Course_History` | Track course status by FY | Creates record for each FY course was active |
-| `Fact_Program_History` | Track program status by FY | Handles multi-year program completions |
-| `Fact_Certification_History` | Track cert status by FY | Manages expiry and renewal cycles |
+#### **Historical Analysis Facts (Complex Temporal Logic)**
+
+| Fact Table | Grain | Special Logic | Business Purpose |
+|------------|-------|---------------|------------------|
+| **`Fact_Course_History`** | User + Course + Fiscal Year | **Creates record for each FY course was active** | Year-over-year analysis, status change tracking |
+| **`Fact_Program_History`** | User + Program + Fiscal Year | **Handles multi-year program completions** | Long-term program tracking across fiscal years |
+| **`Fact_Certification_History`** | User + Cert + Fiscal Year | **Complex expiry and renewal cycle management** | Certification lifecycle, recertification tracking |
+| **`Fact_Course_to_Cert_History`** | User + Course + Cert + FY | Historical course-certification relationships | Course completion progress within certifications |
+
+#### **Activity and Engagement Facts**
+
+| Fact Table | Grain | Measures | Dashboard Usage |
+|------------|-------|----------|----------------|
+| **`Fact_Scorm`** | User + SCORM Activity | Time spent, interactions, completion status | Time in Learning dashboard |
+| **`Fact_Seminar_Signup`** | User + Seminar Session | Attendance status (Attended/Cancelled/No Show) | Seminar Attendance dashboard |
+| **`Fact_LearningTime`** | User + Learning Activity | **Combined eLearning + IRL time** | **Critical for Time in Learning dashboard** |
 
 ## Proposed Databricks Architecture
 
