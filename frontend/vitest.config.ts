@@ -12,6 +12,24 @@ export default defineConfig({
     setupFiles: ['./tests/setup/vitest.setup.ts'],
     css: true,
     reporters: ['default', new VitestReporter(path.resolve(__dirname))],
+    // Resource management and timeouts
+    testTimeout: 15000, // 15 seconds per test
+    hookTimeout: 10000, // 10 seconds for setup/teardown
+    teardownTimeout: 5000, // 5 seconds for cleanup
+    // Limit parallelism to prevent memory issues
+    maxConcurrency: 3, // Run max 3 tests simultaneously
+    minWorkers: 1,
+    maxWorkers: 3,
+    // Process pool configuration
+    pool: 'forks', // Use forks instead of threads for better isolation
+    poolOptions: {
+      forks: {
+        isolate: true, // Isolate each test file
+        singleFork: false,
+        minForks: 1,
+        maxForks: 3
+      }
+    },
     // Enable CommonJS module resolution for tests
     deps: {
       external: [],
