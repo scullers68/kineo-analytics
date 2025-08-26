@@ -1,131 +1,71 @@
 {
   "testModules": [
     {
-      "moduleId": "/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/charts/bar-chart-core.test.ts",
+      "moduleId": "/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/charts/pie-donut-chart-core.test.ts",
       "tests": [
         {
-          "name": "should have BarChart component available",
-          "fullName": "Bar/Column Chart Components - Core Implementation > should have BarChart component available",
+          "name": "should have PieChart component available",
+          "fullName": "Pie/Donut Chart Components - Core Implementation > should have PieChart component available",
           "state": "passed"
         },
         {
-          "name": "should have ColumnChart component available",
-          "fullName": "Bar/Column Chart Components - Core Implementation > should have ColumnChart component available",
+          "name": "should have DonutChart component available",
+          "fullName": "Pie/Donut Chart Components - Core Implementation > should have DonutChart component available",
           "state": "passed"
         },
         {
-          "name": "should have BarChartConfig interface available",
-          "fullName": "Bar/Column Chart Components - Core Implementation > should have BarChartConfig interface available",
+          "name": "should have SemiCircleChart component available",
+          "fullName": "Pie/Donut Chart Components - Core Implementation > should have SemiCircleChart component available",
           "state": "passed"
         },
         {
-          "name": "should have ColumnChartConfig interface available",
-          "fullName": "Bar/Column Chart Components - Core Implementation > should have ColumnChartConfig interface available",
+          "name": "should have NestedDonutChart component available",
+          "fullName": "Pie/Donut Chart Components - Core Implementation > should have NestedDonutChart component available",
           "state": "passed"
         },
         {
-          "name": "should have useBarChart hook available",
-          "fullName": "Bar/Column Chart Components - Core Implementation > should have useBarChart hook available",
+          "name": "should have PieChartConfig interface available",
+          "fullName": "Pie/Donut Chart Components - Core Implementation > should have PieChartConfig interface available",
           "state": "passed"
         },
         {
-          "name": "should have useColumnChart hook available",
-          "fullName": "Bar/Column Chart Components - Core Implementation > should have useColumnChart hook available",
+          "name": "should have PieDataPoint interface available",
+          "fullName": "Pie/Donut Chart Components - Core Implementation > should have PieDataPoint interface available",
           "state": "passed"
         },
         {
-          "name": "should have bar chart utilities available",
-          "fullName": "Bar/Column Chart Components - Core Implementation > should have bar chart utilities available",
+          "name": "should have DonutChartConfig interface available",
+          "fullName": "Pie/Donut Chart Components - Core Implementation > should have DonutChartConfig interface available",
           "state": "passed"
         },
         {
-          "name": "should have column chart utilities available",
-          "fullName": "Bar/Column Chart Components - Core Implementation > should have column chart utilities available",
+          "name": "should have PieInteractionConfig interface available",
+          "fullName": "Pie/Donut Chart Components - Core Implementation > should have PieInteractionConfig interface available",
           "state": "passed"
         },
         {
-          "name": "should have bar chart data transformers available",
-          "fullName": "Bar/Column Chart Components - Core Implementation > should have bar chart data transformers available",
+          "name": "should have usePieChart hook available",
+          "fullName": "Pie/Donut Chart Components - Core Implementation > should have usePieChart hook available",
           "state": "passed"
         },
         {
-          "name": "should have chart orientation helpers available",
-          "fullName": "Bar/Column Chart Components - Core Implementation > should have chart orientation helpers available",
-          "state": "passed"
-        }
-      ]
-    },
-    {
-      "moduleId": "/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/charts/line-area-chart-core.test.ts",
-      "tests": [
-        {
-          "name": "should have LineChart component available",
-          "fullName": "Line/Area Chart Components - Core Implementation > should have LineChart component available",
+          "name": "should have useDonutChart hook available",
+          "fullName": "Pie/Donut Chart Components - Core Implementation > should have useDonutChart hook available",
           "state": "passed"
         },
         {
-          "name": "should have AreaChart component available",
-          "fullName": "Line/Area Chart Components - Core Implementation > should have AreaChart component available",
+          "name": "should have pie chart arc generation utilities available",
+          "fullName": "Pie/Donut Chart Components - Core Implementation > should have pie chart arc generation utilities available",
           "state": "passed"
         },
         {
-          "name": "should have StreamGraphChart component available",
-          "fullName": "Line/Area Chart Components - Core Implementation > should have StreamGraphChart component available",
+          "name": "should have pie chart data transformers available",
+          "fullName": "Pie/Donut Chart Components - Core Implementation > should have pie chart data transformers available",
           "state": "passed"
         },
         {
-          "name": "should have LineChartConfig interface available",
-          "fullName": "Line/Area Chart Components - Core Implementation > should have LineChartConfig interface available",
-          "state": "passed"
-        },
-        {
-          "name": "should have AreaChartConfig interface available",
-          "fullName": "Line/Area Chart Components - Core Implementation > should have AreaChartConfig interface available",
-          "state": "passed"
-        },
-        {
-          "name": "should have TimeSeriesData interface available",
-          "fullName": "Line/Area Chart Components - Core Implementation > should have TimeSeriesData interface available",
-          "state": "passed"
-        },
-        {
-          "name": "should have useLineChart hook available",
-          "fullName": "Line/Area Chart Components - Core Implementation > should have useLineChart hook available",
-          "state": "passed"
-        },
-        {
-          "name": "should have useAreaChart hook available",
-          "fullName": "Line/Area Chart Components - Core Implementation > should have useAreaChart hook available",
-          "state": "passed"
-        },
-        {
-          "name": "should have useTimeSeriesChart hook available",
-          "fullName": "Line/Area Chart Components - Core Implementation > should have useTimeSeriesChart hook available",
-          "state": "passed"
-        },
-        {
-          "name": "should have line chart path generators available",
-          "fullName": "Line/Area Chart Components - Core Implementation > should have line chart path generators available",
-          "state": "passed"
-        },
-        {
-          "name": "should have time series utilities available",
-          "fullName": "Line/Area Chart Components - Core Implementation > should have time series utilities available",
-          "state": "passed"
-        },
-        {
-          "name": "should have line chart data transformers available",
-          "fullName": "Line/Area Chart Components - Core Implementation > should have line chart data transformers available",
-          "state": "passed"
-        },
-        {
-          "name": "should have area chart calculation utilities available",
-          "fullName": "Line/Area Chart Components - Core Implementation > should have area chart calculation utilities available",
-          "state": "passed"
-        },
-        {
-          "name": "should have time scale management available",
-          "fullName": "Line/Area Chart Components - Core Implementation > should have time scale management available",
+          "name": "should have pie chart math utilities available",
+          "fullName": "Pie/Donut Chart Components - Core Implementation > should have pie chart math utilities available",
           "state": "passed"
         }
       ]
