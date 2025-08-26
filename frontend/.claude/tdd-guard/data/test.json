@@ -1,387 +1,341 @@
 {
   "testModules": [
     {
-      "moduleId": "/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/services/mock-api.test.ts",
+      "moduleId": "/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/charts/animation-simple.test.ts",
       "tests": [
         {
-          "name": "should have proper configuration structure",
-          "fullName": "Mock API Configuration > MockAPIConfig > should have proper configuration structure",
+          "name": "should have AnimatedChart component available",
+          "fullName": "Chart Animation Framework - Basic Architecture > should have AnimatedChart component available",
+          "state": "passed"
+        }
+      ]
+    },
+    {
+      "moduleId": "/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/charts/base-chart-implementation.test.ts",
+      "tests": [
+        {
+          "name": "should import BaseChart component successfully",
+          "fullName": "BaseChart Implementation > should import BaseChart component successfully",
+          "state": "passed"
+        }
+      ]
+    },
+    {
+      "moduleId": "/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/charts/performance-optimization.test.ts",
+      "tests": [
+        {
+          "name": "should have PerformantChart component available",
+          "fullName": "Chart Performance Optimization for Large Datasets > Large Dataset Handling > should have PerformantChart component available",
           "state": "passed"
         },
         {
-          "name": "should allow enabling/disabling mock services",
-          "fullName": "Mock API Configuration > MockAPIConfig > should allow enabling/disabling mock services",
+          "name": "should have virtualization utilities available",
+          "fullName": "Chart Performance Optimization for Large Datasets > Large Dataset Handling > should have virtualization utilities available",
           "state": "passed"
         },
         {
-          "name": "should support configurable delay for simulating network latency",
-          "fullName": "Mock API Configuration > MockAPIConfig > should support configurable delay for simulating network latency",
+          "name": "should have performance configuration types available",
+          "fullName": "Chart Performance Optimization for Large Datasets > Large Dataset Handling > should have performance configuration types available",
           "state": "passed"
         },
         {
-          "name": "should support error rate configuration for testing error scenarios",
-          "fullName": "Mock API Configuration > MockAPIConfig > should support error rate configuration for testing error scenarios",
+          "name": "should have useChartPerformance hook available",
+          "fullName": "Chart Performance Optimization for Large Datasets > Memory Management > should have useChartPerformance hook available",
           "state": "passed"
         },
         {
-          "name": "should successfully authenticate valid credentials",
-          "fullName": "Mock Authentication Service > login > should successfully authenticate valid credentials",
+          "name": "should have memory cleanup utilities available",
+          "fullName": "Chart Performance Optimization for Large Datasets > Memory Management > should have memory cleanup utilities available",
           "state": "passed"
         },
         {
-          "name": "should reject invalid credentials",
-          "fullName": "Mock Authentication Service > login > should reject invalid credentials",
+          "name": "should have data caching utilities available",
+          "fullName": "Chart Performance Optimization for Large Datasets > Memory Management > should have data caching utilities available",
           "state": "passed"
         },
         {
-          "name": "should include customer context in auth response",
-          "fullName": "Mock Authentication Service > login > should include customer context in auth response",
+          "name": "should have web worker utilities available",
+          "fullName": "Chart Performance Optimization for Large Datasets > Web Worker Integration > should have web worker utilities available",
           "state": "passed"
         },
         {
-          "name": "should simulate network delay",
-          "fullName": "Mock Authentication Service > login > should simulate network delay",
+          "name": "should have worker communication types available",
+          "fullName": "Chart Performance Optimization for Large Datasets > Web Worker Integration > should have worker communication types available",
           "state": "passed"
         },
         {
-          "name": "should successfully logout current user",
-          "fullName": "Mock Authentication Service > logout > should successfully logout current user",
+          "name": "should have performance metrics utilities available",
+          "fullName": "Chart Performance Optimization for Large Datasets > Performance Monitoring > should have performance metrics utilities available",
           "state": "passed"
         },
         {
-          "name": "should refresh valid token",
-          "fullName": "Mock Authentication Service > refresh > should refresh valid token",
-          "state": "failed",
-          "errors": [
-            {
-              "stack": "Error: Token refresh failed\n    at MockAuthService.refresh (/Users/russellgrocott/Projects/kineo-analytics/frontend/src/services/mock-api/auth-service.ts:181:13)\n    at /Users/russellgrocott/Projects/kineo-analytics/frontend/tests/services/mock-api.test.ts:288:24\n    at file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/runner/dist/chunk-hooks.js:752:20",
-              "message": "Token refresh failed",
-              "constructor": "Function<Error>",
-              "name": "Error",
-              "toString": "Function<toString>"
-            }
-          ]
-        },
-        {
-          "name": "should reject invalid refresh token",
-          "fullName": "Mock Authentication Service > refresh > should reject invalid refresh token",
+          "name": "should have performance budget validation available",
+          "fullName": "Chart Performance Optimization for Large Datasets > Performance Monitoring > should have performance budget validation available",
           "state": "passed"
         },
         {
-          "name": "should validate active tokens",
-          "fullName": "Mock Authentication Service > validateToken > should validate active tokens",
+          "name": "should have lazy loading utilities available",
+          "fullName": "Chart Performance Optimization for Large Datasets > Bundle Size Optimization > should have lazy loading utilities available",
           "state": "passed"
         },
         {
-          "name": "should reject expired tokens",
-          "fullName": "Mock Authentication Service > validateToken > should reject expired tokens",
+          "name": "should have optimized D3 imports available",
+          "fullName": "Chart Performance Optimization for Large Datasets > Bundle Size Optimization > should have optimized D3 imports available",
+          "state": "passed"
+        }
+      ]
+    },
+    {
+      "moduleId": "/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/charts/accessibility-compliance.test.ts",
+      "tests": [
+        {
+          "name": "should have AccessibleChart component available",
+          "fullName": "Chart Accessibility Compliance (WCAG 2.1 AA) > ARIA Labels and Roles > should have AccessibleChart component available",
           "state": "passed"
         },
         {
-          "name": "should return current authenticated user",
-          "fullName": "Mock Authentication Service > getCurrentUser > should return current authenticated user",
+          "name": "should have accessibility configuration types available",
+          "fullName": "Chart Accessibility Compliance (WCAG 2.1 AA) > ARIA Labels and Roles > should have accessibility configuration types available",
           "state": "passed"
         },
         {
-          "name": "should include proper user permissions",
-          "fullName": "Mock Authentication Service > getCurrentUser > should include proper user permissions",
+          "name": "should have keyboard navigation hooks available",
+          "fullName": "Chart Accessibility Compliance (WCAG 2.1 AA) > Keyboard Navigation > should have keyboard navigation hooks available",
           "state": "passed"
         },
         {
-          "name": "should return list of available customers",
-          "fullName": "Mock Customer Service > getCustomers > should return list of available customers",
+          "name": "should have screen reader utilities available",
+          "fullName": "Chart Accessibility Compliance (WCAG 2.1 AA) > Keyboard Navigation > should have screen reader utilities available",
           "state": "passed"
         },
         {
-          "name": "should include realistic customer data",
-          "fullName": "Mock Customer Service > getCustomers > should include realistic customer data",
+          "name": "should have high contrast theme utilities available",
+          "fullName": "Chart Accessibility Compliance (WCAG 2.1 AA) > Color Accessibility > should have high contrast theme utilities available",
           "state": "passed"
         },
         {
-          "name": "should return specific customer by ID",
-          "fullName": "Mock Customer Service > getCustomerById > should return specific customer by ID",
+          "name": "should have colorblind-friendly palette utilities available",
+          "fullName": "Chart Accessibility Compliance (WCAG 2.1 AA) > Color Accessibility > should have colorblind-friendly palette utilities available",
           "state": "passed"
         },
         {
-          "name": "should reject invalid customer ID",
-          "fullName": "Mock Customer Service > getCustomerById > should reject invalid customer ID",
+          "name": "should have structured markup utilities available",
+          "fullName": "Chart Accessibility Compliance (WCAG 2.1 AA) > Screen Reader Support > should have structured markup utilities available",
           "state": "passed"
         },
         {
-          "name": "should switch to valid customer context",
-          "fullName": "Mock Customer Service > switchCustomer > should switch to valid customer context",
+          "name": "should have live region utilities available",
+          "fullName": "Chart Accessibility Compliance (WCAG 2.1 AA) > Screen Reader Support > should have live region utilities available",
           "state": "passed"
         },
         {
-          "name": "should update current customer after switching",
-          "fullName": "Mock Customer Service > switchCustomer > should update current customer after switching",
+          "name": "should have reduced motion detection available",
+          "fullName": "Chart Accessibility Compliance (WCAG 2.1 AA) > Reduced Motion Support > should have reduced motion detection available",
           "state": "passed"
         },
         {
-          "name": "should return currently active customer",
-          "fullName": "Mock Customer Service > getCurrentCustomer > should return currently active customer",
+          "name": "should have touch target utilities available",
+          "fullName": "Chart Accessibility Compliance (WCAG 2.1 AA) > Touch Accessibility > should have touch target utilities available",
           "state": "passed"
         },
         {
-          "name": "should include customer settings",
-          "fullName": "Mock Customer Service > getCurrentCustomer > should include customer settings",
+          "name": "should have voice control utilities available",
+          "fullName": "Chart Accessibility Compliance (WCAG 2.1 AA) > Touch Accessibility > should have voice control utilities available",
+          "state": "passed"
+        }
+      ]
+    },
+    {
+      "moduleId": "/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/charts/animation-framework.test.ts",
+      "tests": [
+        {
+          "name": "should have AnimatedChart component available",
+          "fullName": "Chart Animation Framework > should have AnimatedChart component available",
           "state": "passed"
         },
         {
-          "name": "should return comprehensive dashboard metrics",
-          "fullName": "Mock Analytics Service > getDashboardMetrics > should return comprehensive dashboard metrics",
+          "name": "should have animation configuration types available",
+          "fullName": "Chart Animation Framework > should have animation configuration types available",
           "state": "passed"
         },
         {
-          "name": "should return realistic metric values",
-          "fullName": "Mock Analytics Service > getDashboardMetrics > should return realistic metric values",
+          "name": "should have useChartAnimation hook available",
+          "fullName": "Chart Animation Framework > should have useChartAnimation hook available",
           "state": "passed"
         },
         {
-          "name": "should include trend data for time series charts",
-          "fullName": "Mock Analytics Service > getDashboardMetrics > should include trend data for time series charts",
+          "name": "should have animation easing utilities available",
+          "fullName": "Chart Animation Framework > should have animation easing utilities available",
           "state": "passed"
         },
         {
-          "name": "should return chart data for different chart types",
-          "fullName": "Mock Analytics Service > getChartData > should return chart data for different chart types",
+          "name": "should have staggered animation utilities available",
+          "fullName": "Chart Animation Framework > should have staggered animation utilities available",
           "state": "passed"
         },
         {
-          "name": "should support department filtering",
-          "fullName": "Mock Analytics Service > getChartData > should support department filtering",
+          "name": "should have animation lifecycle hooks available",
+          "fullName": "Chart Animation Framework > should have animation lifecycle hooks available",
           "state": "passed"
         },
         {
-          "name": "should include proper dataset structure",
-          "fullName": "Mock Analytics Service > getChartData > should include proper dataset structure",
+          "name": "should have transition utilities available",
+          "fullName": "Chart Animation Framework > should have transition utilities available",
           "state": "passed"
         },
         {
-          "name": "should generate report data with proper structure",
-          "fullName": "Mock Analytics Service > getReportData > should generate report data with proper structure",
+          "name": "should have animation performance monitoring available",
+          "fullName": "Chart Animation Framework > should have animation performance monitoring available",
           "state": "passed"
         },
         {
-          "name": "should include report metadata",
-          "fullName": "Mock Analytics Service > getReportData > should include report metadata",
+          "name": "should have reduced motion detection available",
+          "fullName": "Chart Animation Framework > should have reduced motion detection available",
+          "state": "passed"
+        }
+      ]
+    },
+    {
+      "moduleId": "/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/charts/base-chart-simple.test.ts",
+      "tests": [
+        {
+          "name": "should have BaseChart component available",
+          "fullName": "D3 Chart Components - Base Architecture > should have BaseChart component available",
           "state": "passed"
         },
         {
-          "name": "should generate specified number of users",
-          "fullName": "Mock Data Generator > generateUsers > should generate specified number of users",
+          "name": "should have useD3Chart hook available",
+          "fullName": "D3 Chart Components - Base Architecture > should have useD3Chart hook available",
           "state": "passed"
         },
         {
-          "name": "should generate realistic user data",
-          "fullName": "Mock Data Generator > generateUsers > should generate realistic user data",
+          "name": "should have ChartProvider context available",
+          "fullName": "D3 Chart Components - Base Architecture > should have ChartProvider context available",
           "state": "passed"
         },
         {
-          "name": "should generate specified number of courses",
-          "fullName": "Mock Data Generator > generateCourses > should generate specified number of courses",
+          "name": "should have ResponsiveChart component available",
+          "fullName": "D3 Chart Components - Base Architecture > should have ResponsiveChart component available",
           "state": "passed"
         },
         {
-          "name": "should generate realistic course categories",
-          "fullName": "Mock Data Generator > generateCourses > should generate realistic course categories",
+          "name": "should have AnimatedChart component available",
+          "fullName": "D3 Chart Components - Base Architecture > should have AnimatedChart component available",
           "state": "passed"
         },
         {
-          "name": "should generate completion records for users and courses",
-          "fullName": "Mock Data Generator > generateCompletions > should generate completion records for users and courses",
+          "name": "should have AccessibleChart component available",
+          "fullName": "D3 Chart Components - Base Architecture > should have AccessibleChart component available",
           "state": "passed"
         },
         {
-          "name": "should generate realistic completion statuses",
-          "fullName": "Mock Data Generator > generateCompletions > should generate realistic completion statuses",
+          "name": "should have PerformantChart component available",
+          "fullName": "D3 Chart Components - Base Architecture > should have PerformantChart component available",
           "state": "passed"
         },
         {
-          "name": "should generate comprehensive analytics dataset",
-          "fullName": "Mock Data Generator > generateAnalyticsData > should generate comprehensive analytics dataset",
+          "name": "should have chart performance hooks available",
+          "fullName": "D3 Chart Components - Base Architecture > should have chart performance hooks available",
           "state": "passed"
         },
         {
-          "name": "should intercept API requests in development mode",
-          "fullName": "Mock API Interceptors > Development-only interceptors > should intercept API requests in development mode",
-          "state": "failed",
-          "errors": [
-            {
-              "message": "expected false to be true // Object.is equality",
-              "actual": "false",
-              "expected": "true",
-              "showDiff": true,
-              "operator": "strictEqual",
-              "diff": "\u001b[32m- Expected\u001b[39m\n\u001b[31m+ Received\u001b[39m\n\n\u001b[32m- true\u001b[39m\n\u001b[31m+ false\u001b[39m",
-              "name": "AssertionError",
-              "ok": false,
-              "stack": "AssertionError: expected false to be true // Object.is equality\n    at /Users/russellgrocott/Projects/kineo-analytics/frontend/tests/services/mock-api.test.ts:654:43\n    at file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/runner/dist/chunk-hooks.js:155:11\n    at file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/runner/dist/chunk-hooks.js:752:26\n    at file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/runner/dist/chunk-hooks.js:1897:20\n    at new Promise (<anonymous>)\n    at runWithTimeout (file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/runner/dist/chunk-hooks.js:1863:10)\n    at runTest (file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/runner/dist/chunk-hooks.js:1574:12)\n    at runSuite (file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/runner/dist/chunk-hooks.js:1729:8)\n    at runSuite (file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/runner/dist/chunk-hooks.js:1729:8)\n    at runSuite (file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/runner/dist/chunk-hooks.js:1729:8)"
-            }
-          ]
-        },
-        {
-          "name": "should not intercept requests in production",
-          "fullName": "Mock API Interceptors > Development-only interceptors > should not intercept requests in production",
+          "name": "should have chart animation hooks available",
+          "fullName": "D3 Chart Components - Base Architecture > should have chart animation hooks available",
           "state": "passed"
         },
         {
-          "name": "should handle authentication endpoints",
-          "fullName": "Mock API Interceptors > Development-only interceptors > should handle authentication endpoints",
+          "name": "should have chart types available",
+          "fullName": "D3 Chart Components - Base Architecture > should have chart types available",
+          "state": "passed"
+        }
+      ]
+    },
+    {
+      "moduleId": "/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/charts/base-chart-functional.test.ts",
+      "tests": [
+        {
+          "name": "should render BaseChart component",
+          "fullName": "BaseChart Functionality > should render BaseChart component",
+          "state": "passed"
+        }
+      ]
+    },
+    {
+      "moduleId": "/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/charts/performance-simple.test.ts",
+      "tests": [
+        {
+          "name": "should have PerformantChart component available",
+          "fullName": "Chart Performance Optimization - Basic Architecture > should have PerformantChart component available",
+          "state": "passed"
+        }
+      ]
+    },
+    {
+      "moduleId": "/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/charts/accessibility-simple.test.ts",
+      "tests": [
+        {
+          "name": "should have AccessibleChart component available",
+          "fullName": "Chart Accessibility Components - Basic Architecture > should have AccessibleChart component available",
+          "state": "passed"
+        }
+      ]
+    },
+    {
+      "moduleId": "/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/charts/responsive-simple.test.ts",
+      "tests": [
+        {
+          "name": "should have ResponsiveChart component available",
+          "fullName": "Chart Responsive Scaling - Basic Architecture > should have ResponsiveChart component available",
+          "state": "passed"
+        }
+      ]
+    },
+    {
+      "moduleId": "/Users/russellgrocott/Projects/kineo-analytics/frontend/tests/charts/responsive-scaling.test.ts",
+      "tests": [
+        {
+          "name": "should have ResponsiveChart component available",
+          "fullName": "Responsive Chart Scaling System > should have ResponsiveChart component available",
           "state": "passed"
         },
         {
-          "name": "should handle customer endpoints",
-          "fullName": "Mock API Interceptors > Development-only interceptors > should handle customer endpoints",
+          "name": "should have useBreakpoint hook available",
+          "fullName": "Responsive Chart Scaling System > should have useBreakpoint hook available",
           "state": "passed"
         },
         {
-          "name": "should handle analytics endpoints",
-          "fullName": "Mock API Interceptors > Development-only interceptors > should handle analytics endpoints",
+          "name": "should have responsive configuration types available",
+          "fullName": "Responsive Chart Scaling System > should have responsive configuration types available",
           "state": "passed"
         },
         {
-          "name": "should simulate 401 unauthorized errors",
-          "fullName": "Mock Error Scenarios > Authentication errors > should simulate 401 unauthorized errors",
-          "state": "failed",
-          "errors": [
-            {
-              "message": "expected [Function] to throw error including 'Unauthorized' but got 'Invalid credentials'",
-              "actual": "Invalid credentials",
-              "expected": "Unauthorized",
-              "showDiff": true,
-              "operator": "strictEqual",
-              "diff": "Expected: \u001b[32m\"Unauthorized\"\u001b[39m\nReceived: \u001b[31m\"Invalid credentials\"\u001b[39m",
-              "name": "AssertionError",
-              "ok": false,
-              "stack": "AssertionError: expected [Function] to throw error including 'Unauthorized' but got 'Invalid credentials'\n    at _Assertion.<anonymous> (file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/expect/dist/index.js:1420:16)\n    at _Assertion.<anonymous> (file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/expect/dist/index.js:1029:14)\n    at _Assertion.methodWrapper (file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/chai/index.js:1686:25)\n    at file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/expect/dist/index.js:1639:20\n    at /Users/russellgrocott/Projects/kineo-analytics/frontend/tests/services/mock-api.test.ts:702:7\n    at file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/runner/dist/chunk-hooks.js:752:20"
-            }
-          ]
-        },
-        {
-          "name": "should simulate token expiration errors",
-          "fullName": "Mock Error Scenarios > Authentication errors > should simulate token expiration errors",
+          "name": "should have viewport utilities available",
+          "fullName": "Responsive Chart Scaling System > should have viewport utilities available",
           "state": "passed"
         },
         {
-          "name": "should simulate network timeout errors",
-          "fullName": "Mock Error Scenarios > Network errors > should simulate network timeout errors",
+          "name": "should have breakpoint constants available",
+          "fullName": "Responsive Chart Scaling System > should have breakpoint constants available",
           "state": "passed"
         },
         {
-          "name": "should simulate server errors (500)",
-          "fullName": "Mock Error Scenarios > Network errors > should simulate server errors (500)",
+          "name": "should have responsive chart layout utilities available",
+          "fullName": "Responsive Chart Scaling System > should have responsive chart layout utilities available",
           "state": "passed"
         },
         {
-          "name": "should simulate missing data scenarios",
-          "fullName": "Mock Error Scenarios > Data errors > should simulate missing data scenarios",
-          "state": "failed",
-          "errors": [
-            {
-              "stack": "Error: Request timeout\n    at MockAnalyticsService.getDashboardMetrics (/Users/russellgrocott/Projects/kineo-analytics/frontend/src/services/mock-api/analytics-service.ts:143:13)\n    at /Users/russellgrocott/Projects/kineo-analytics/frontend/tests/services/mock-api.test.ts:753:23\n    at file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/runner/dist/chunk-hooks.js:752:20",
-              "message": "Request timeout",
-              "constructor": "Function<Error>",
-              "name": "Error",
-              "toString": "Function<toString>"
-            }
-          ]
-        },
-        {
-          "name": "should simulate corrupted data scenarios",
-          "fullName": "Mock Error Scenarios > Data errors > should simulate corrupted data scenarios",
-          "state": "failed",
-          "errors": [
-            {
-              "message": "expected false to be true // Object.is equality",
-              "actual": "false",
-              "expected": "true",
-              "showDiff": true,
-              "operator": "strictEqual",
-              "diff": "\u001b[32m- Expected\u001b[39m\n\u001b[31m+ Received\u001b[39m\n\n\u001b[32m- true\u001b[39m\n\u001b[31m+ false\u001b[39m",
-              "name": "AssertionError",
-              "ok": false,
-              "stack": "AssertionError: expected false to be true // Object.is equality\n    at /Users/russellgrocott/Projects/kineo-analytics/frontend/tests/services/mock-api.test.ts:769:32\n    at file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/runner/dist/chunk-hooks.js:155:11\n    at file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/runner/dist/chunk-hooks.js:752:26\n    at file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/runner/dist/chunk-hooks.js:1897:20\n    at new Promise (<anonymous>)\n    at runWithTimeout (file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/runner/dist/chunk-hooks.js:1863:10)\n    at runTest (file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/runner/dist/chunk-hooks.js:1574:12)\n    at runSuite (file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/runner/dist/chunk-hooks.js:1729:8)\n    at runSuite (file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/runner/dist/chunk-hooks.js:1729:8)\n    at runSuite (file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/runner/dist/chunk-hooks.js:1729:8)"
-            }
-          ]
-        },
-        {
-          "name": "should simulate realistic loading delays",
-          "fullName": "Mock API Loading States > Loading delay simulation > should simulate realistic loading delays",
-          "state": "failed",
-          "errors": [
-            {
-              "stack": "Error: Request timeout\n    at MockAnalyticsService.getDashboardMetrics (/Users/russellgrocott/Projects/kineo-analytics/frontend/src/services/mock-api/analytics-service.ts:143:13)\n    at /Users/russellgrocott/Projects/kineo-analytics/frontend/tests/services/mock-api.test.ts:785:7\n    at file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/runner/dist/chunk-hooks.js:752:20",
-              "message": "Request timeout",
-              "constructor": "Function<Error>",
-              "name": "Error",
-              "toString": "Function<toString>"
-            }
-          ]
-        },
-        {
-          "name": "should provide loading progress callbacks",
-          "fullName": "Mock API Loading States > Loading delay simulation > should provide loading progress callbacks",
-          "state": "failed",
-          "errors": [
-            {
-              "stack": "Error: Request timeout\n    at MockAnalyticsService.getDashboardMetrics (/Users/russellgrocott/Projects/kineo-analytics/frontend/src/services/mock-api/analytics-service.ts:143:13)\n    at /Users/russellgrocott/Projects/kineo-analytics/frontend/tests/services/mock-api.test.ts:801:7\n    at file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/runner/dist/chunk-hooks.js:752:20",
-              "message": "Request timeout",
-              "constructor": "Function<Error>",
-              "name": "Error",
-              "toString": "Function<toString>"
-            }
-          ]
-        },
-        {
-          "name": "should integrate all mock services in a unified way",
-          "fullName": "Mock API Integration > Service integration > should integrate all mock services in a unified way",
+          "name": "should have resize observer utilities available",
+          "fullName": "Responsive Chart Scaling System > should have resize observer utilities available",
           "state": "passed"
         },
         {
-          "name": "should provide centralized configuration",
-          "fullName": "Mock API Integration > Service integration > should provide centralized configuration",
-          "state": "failed",
-          "errors": [
-            {
-              "message": "expected false to be true // Object.is equality",
-              "actual": "false",
-              "expected": "true",
-              "showDiff": true,
-              "operator": "strictEqual",
-              "diff": "\u001b[32m- Expected\u001b[39m\n\u001b[31m+ Received\u001b[39m\n\n\u001b[32m- true\u001b[39m\n\u001b[31m+ false\u001b[39m",
-              "name": "AssertionError",
-              "ok": false,
-              "stack": "AssertionError: expected false to be true // Object.is equality\n    at /Users/russellgrocott/Projects/kineo-analytics/frontend/tests/services/mock-api.test.ts:830:45\n    at file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/runner/dist/chunk-hooks.js:155:11\n    at file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/runner/dist/chunk-hooks.js:752:26\n    at file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/runner/dist/chunk-hooks.js:1897:20\n    at new Promise (<anonymous>)\n    at runWithTimeout (file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/runner/dist/chunk-hooks.js:1863:10)\n    at runTest (file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/runner/dist/chunk-hooks.js:1574:12)\n    at runSuite (file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/runner/dist/chunk-hooks.js:1729:8)\n    at runSuite (file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/runner/dist/chunk-hooks.js:1729:8)\n    at runSuite (file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/runner/dist/chunk-hooks.js:1729:8)"
-            }
-          ]
-        },
-        {
-          "name": "should allow easy service initialization",
-          "fullName": "Mock API Integration > Service integration > should allow easy service initialization",
-          "state": "failed",
-          "errors": [
-            {
-              "message": "expected false to be true // Object.is equality",
-              "actual": "false",
-              "expected": "true",
-              "showDiff": true,
-              "operator": "strictEqual",
-              "diff": "\u001b[32m- Expected\u001b[39m\n\u001b[31m+ Received\u001b[39m\n\n\u001b[32m- true\u001b[39m\n\u001b[31m+ false\u001b[39m",
-              "name": "AssertionError",
-              "ok": false,
-              "stack": "AssertionError: expected false to be true // Object.is equality\n    at /Users/russellgrocott/Projects/kineo-analytics/frontend/tests/services/mock-api.test.ts:840:44\n    at file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/runner/dist/chunk-hooks.js:155:11\n    at file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/runner/dist/chunk-hooks.js:752:26\n    at file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/runner/dist/chunk-hooks.js:1897:20\n    at new Promise (<anonymous>)\n    at runWithTimeout (file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/runner/dist/chunk-hooks.js:1863:10)\n    at runTest (file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/runner/dist/chunk-hooks.js:1574:12)\n    at runSuite (file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/runner/dist/chunk-hooks.js:1729:8)\n    at runSuite (file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/runner/dist/chunk-hooks.js:1729:8)\n    at runSuite (file:///Users/russellgrocott/Projects/kineo-analytics/frontend/node_modules/@vitest/runner/dist/chunk-hooks.js:1729:8)"
-            }
-          ]
-        },
-        {
-          "name": "should support service cleanup for testing",
-          "fullName": "Mock API Integration > Service integration > should support service cleanup for testing",
+          "name": "should have responsive font scaling utilities available",
+          "fullName": "Responsive Chart Scaling System > should have responsive font scaling utilities available",
           "state": "passed"
         }
       ]
     }
   ],
   "unhandledErrors": [],
-  "reason": "failed"
+  "reason": "passed"
 }

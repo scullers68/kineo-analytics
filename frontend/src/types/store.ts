@@ -116,3 +116,94 @@ export interface UIActions {
 }
 
 export type UIStore = UIState & UIActions
+
+// Chart Component Types
+export interface ChartDataPoint {
+  x: number | string | Date
+  y: number
+  label?: string
+  id?: string
+  metadata?: Record<string, any>
+}
+
+export interface ChartDataset {
+  id: string
+  label: string
+  data: ChartDataPoint[]
+  color?: string
+  backgroundColor?: string
+  borderColor?: string
+  borderWidth?: number
+}
+
+export interface ChartDimensions {
+  width: number
+  height: number
+  margin: {
+    top: number
+    right: number
+    bottom: number
+    left: number
+  }
+}
+
+export interface ChartTheme {
+  colors: {
+    primary: string
+    secondary: string
+    background: string
+    text: string
+    grid: string
+  }
+  fonts: {
+    family: string
+    size: {
+      small: number
+      medium: number
+      large: number
+    }
+  }
+  spacing: {
+    small: number
+    medium: number
+    large: number
+  }
+}
+
+export interface AnimationConfig {
+  duration: number
+  easing: string
+  stagger?: number
+  delay?: number
+  enabled: boolean
+}
+
+export interface AccessibilityConfig {
+  enabled: boolean
+  ariaLabel?: string
+  description?: string
+  keyboardNavigation: boolean
+  screenReaderSupport: boolean
+  highContrast: boolean
+}
+
+export interface PerformanceConfig {
+  enableVirtualization: boolean
+  maxDataPoints: number
+  enableWebWorkers: boolean
+  cacheSize: number
+  renderThrottle: number
+}
+
+export interface ChartInstance {
+  id: string
+  type: 'bar' | 'line' | 'pie' | 'area' | 'scatter' | 'donut'
+  data: ChartDataset[]
+  dimensions: ChartDimensions
+  theme: ChartTheme
+  animation: AnimationConfig
+  accessibility: AccessibilityConfig
+  performance: PerformanceConfig
+  isLoading: boolean
+  error: string | null
+}
