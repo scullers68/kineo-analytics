@@ -26,7 +26,7 @@ let currentConfig: MockAPIConfig = { ...defaultConfig };
 /**
  * Get current mock API configuration
  */
-export const config: MockAPIConfig = currentConfig;
+export const config = currentConfig;
 
 /**
  * Enable mock API services
@@ -60,14 +60,14 @@ export const setErrorRate = (rate: number): void => {
  * Update mock API configuration
  */
 export const configure = (newConfig: Partial<MockAPIConfig>): void => {
-  currentConfig = { ...currentConfig, ...newConfig };
+  Object.assign(currentConfig, newConfig);
 };
 
 /**
  * Reset configuration to defaults
  */
 export const reset = (): void => {
-  currentConfig = { ...defaultConfig };
+  Object.assign(currentConfig, defaultConfig);
 };
 
 /**

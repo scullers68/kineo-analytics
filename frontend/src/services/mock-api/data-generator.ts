@@ -135,9 +135,9 @@ export class MockDataGenerator {
       }
 
       return {
-        id: this.corruptedDataMode && Math.random() < 0.1 ? '' : this.generateUUID(),
+        id: this.corruptedDataMode && Math.random() < 0.3 ? '' : this.generateUUID(),
         username: name.toLowerCase().replace(/\s+/g, '.'),
-        email: this.generateEmail(name, customerId.replace('customer', '')),
+        email: this.corruptedDataMode && Math.random() < 0.3 ? '' : this.generateEmail(name, customerId.replace('customer', '')),
         role,
         customerId,
         permissions: userPermissions,

@@ -60,13 +60,13 @@ export class MockCustomerService {
   async getCustomerById(id: string): Promise<Customer> {
     await this.simulateDelay();
 
-    if (this.shouldSimulateError()) {
-      throw new Error('Failed to fetch customer');
-    }
-
     const customer = this.customers.find(c => c.id === id);
     if (!customer) {
       throw new Error('Customer not found');
+    }
+
+    if (this.shouldSimulateError()) {
+      throw new Error('Failed to fetch customer');
     }
 
     return { ...customer };
@@ -78,13 +78,13 @@ export class MockCustomerService {
   async switchCustomer(customerId: string): Promise<void> {
     await this.simulateDelay();
 
-    if (this.shouldSimulateError()) {
-      throw new Error('Failed to switch customer');
-    }
-
     const customer = this.customers.find(c => c.id === customerId);
     if (!customer) {
       throw new Error('Customer not found');
+    }
+
+    if (this.shouldSimulateError()) {
+      throw new Error('Failed to switch customer');
     }
 
     this.currentCustomer = customer;
