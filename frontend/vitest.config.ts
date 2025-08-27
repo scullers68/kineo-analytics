@@ -1,5 +1,5 @@
 /// <reference types="vitest" />
-import { defineConfig } from 'vitest/config'
+import { defineConfig } from 'vite'
 import { VitestReporter } from 'tdd-guard-vitest'
 import react from '@vitejs/plugin-react'
 import path from 'path'
@@ -30,9 +30,11 @@ export default defineConfig({
         maxForks: 3
       }
     },
-    // Enable CommonJS module resolution for tests
-    deps: {
-      external: [],
+    // Modern dependency configuration
+    server: {
+      deps: {
+        external: []
+      }
     },
     coverage: {
       provider: 'v8',

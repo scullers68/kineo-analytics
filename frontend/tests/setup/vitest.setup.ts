@@ -101,6 +101,7 @@ beforeAll(() => {
   // Mock Performance API for chart components
   ;(global as any).performance = {
     ...performance,
+    now: () => Date.now(),
     getMetrics: () => ({
       navigation: { loadEventEnd: 100, domContentLoadedEventEnd: 50 },
       paint: { 'first-paint': 30, 'first-contentful-paint': 40 },
