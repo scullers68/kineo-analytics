@@ -1,5 +1,6 @@
 {
   "devDependencies": {
-    "tdd-guard-vitest": "^0.1.3"
+    "tdd-guard-vitest": "^0.1.3",
+    "vitest": "^3.2.4"
   }
 }

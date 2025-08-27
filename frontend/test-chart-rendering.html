@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>D3.js Chart Rendering Test</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .chart-container { margin: 20px 0; border: 1px solid #ccc; padding: 10px; }
+        h2 { color: #333; }
+    </style>
+</head>
+<body>
+    <h1>D3.js Chart Component Library - Rendering Test</h1>
+    
+    <div class="chart-container">
+        <h2>Bar Chart Test</h2>
+        <div id="bar-chart-test"></div>
+    </div>
+
+    <div class="chart-container">
+        <h2>Line Chart Test</h2>
+        <div id="line-chart-test"></div>
+    </div>
+
+    <div class="chart-container">
+        <h2>Pie Chart Test</h2>
+        <div id="pie-chart-test"></div>
+    </div>
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script>
+        // Simple D3.js bar chart to test if basic functionality works
+        const barData = [
+            {x: 'Course A', y: 85},
+            {x: 'Course B', y: 92},
+            {x: 'Course C', y: 78},
+            {x: 'Course D', y: 96},
+            {x: 'Course E', y: 88}
+        ];
+
+        const width = 400;
+        const height = 300;
+        const margin = { top: 20, right: 20, bottom: 40, left: 50 };
+        const innerWidth = width - margin.left - margin.right;
+        const innerHeight = height - margin.top - margin.bottom;
+
+        // Create SVG for bar chart
+        const barSvg = d3.select("#bar-chart-test")
+            .append("svg")
+            .attr("width", width)
+            .attr("height", height);
+
+        const barG = barSvg.append("g")
+            .attr("transform", `translate(${margin.left},${margin.top})`);
+
+        // Scales
+        const xScale = d3.scaleBand()
+            .domain(barData.map(d => d.x))
+            .range([0, innerWidth])
+            .padding(0.1);
+
+        const yScale = d3.scaleLinear()
+            .domain([0, d3.max(barData, d => d.y)])
+            .range([innerHeight, 0])
+            .nice();
+
+        // Axes
+        barG.append("g")
+            .attr("transform", `translate(0,${innerHeight})`)
+            .call(d3.axisBottom(xScale));
+
+        barG.append("g")
+            .call(d3.axisLeft(yScale));
+
+        // Bars
+        barG.selectAll(".bar")
+            .data(barData)
+            .enter()
+            .append("rect")
+            .attr("class", "bar")
+            .attr("x", d => xScale(d.x))
+            .attr("y", d => yScale(d.y))
+            .attr("width", xScale.bandwidth())
+            .attr("height", d => innerHeight - yScale(d.y))
+            .attr("fill", "#3b82f6")
+            .on("mouseover", function(event, d) {
+                d3.select(this).attr("fill", "#1d4ed8");
+            })
+            .on("mouseout", function(event, d) {
+                d3.select(this).attr("fill", "#3b82f6");
+            });
+
+        // Simple line chart
+        const lineData = [
+            {date: new Date('2024-01-01'), value: 30},
+            {date: new Date('2024-02-01'), value: 45},
+            {date: new Date('2024-03-01'), value: 38},
+            {date: new Date('2024-04-01'), value: 52},
+            {date: new Date('2024-05-01'), value: 49}
+        ];
+
+        const lineSvg = d3.select("#line-chart-test")
+            .append("svg")
+            .attr("width", width)
+            .attr("height", height);
+
+        const lineG = lineSvg.append("g")
+            .attr("transform", `translate(${margin.left},${margin.top})`);
+
+        const xScaleLine = d3.scaleTime()
+            .domain(d3.extent(lineData, d => d.date))
+            .range([0, innerWidth]);
+
+        const yScaleLine = d3.scaleLinear()
+            .domain(d3.extent(lineData, d => d.value))
+            .range([innerHeight, 0])
+            .nice();
+
+        // Line generator
+        const line = d3.line()
+            .x(d => xScaleLine(d.date))
+            .y(d => yScaleLine(d.value))
+            .curve(d3.curveNatural);
+
+        // Axes
+        lineG.append("g")
+            .attr("transform", `translate(0,${innerHeight})`)
+            .call(d3.axisBottom(xScaleLine));
+
+        lineG.append("g")
+            .call(d3.axisLeft(yScaleLine));
+
+        // Line path
+        lineG.append("path")
+            .datum(lineData)
+            .attr("d", line)
+            .attr("fill", "none")
+            .attr("stroke", "#10b981")
+            .attr("stroke-width", 2);
+
+        // Points
+        lineG.selectAll(".point")
+            .data(lineData)
+            .enter()
+            .append("circle")
+            .attr("class", "point")
+            .attr("cx", d => xScaleLine(d.date))
+            .attr("cy", d => yScaleLine(d.value))
+            .attr("r", 4)
+            .attr("fill", "#10b981");
+
+        // Simple pie chart
+        const pieData = [
+            {label: 'Completed', value: 65},
+            {label: 'In Progress', value: 25},
+            {label: 'Not Started', value: 10}
+        ];
+
+        const pieRadius = Math.min(width, height) / 2 - 10;
+
+        const pieSvg = d3.select("#pie-chart-test")
+            .append("svg")
+            .attr("width", width)
+            .attr("height", height);
+
+        const pieG = pieSvg.append("g")
+            .attr("transform", `translate(${width/2},${height/2})`);
+
+        const pie = d3.pie()
+            .value(d => d.value);
+
+        const arc = d3.arc()
+            .innerRadius(0)
+            .outerRadius(pieRadius);
+
+        const color = d3.scaleOrdinal(d3.schemeCategory10);
+
+        const arcs = pieG.selectAll(".arc")
+            .data(pie(pieData))
+            .enter()
+            .append("g")
+            .attr("class", "arc");
+
+        arcs.append("path")
+            .attr("d", arc)
+            .attr("fill", (d, i) => color(i));
+
+        arcs.append("text")
+            .attr("transform", d => `translate(${arc.centroid(d)})`)
+            .attr("text-anchor", "middle")
+            .text(d => `${d.data.label}: ${d.data.value}%`);
+
+        console.log("✅ All D3.js charts rendered successfully!");
+        console.log("Bar chart data:", barData);
+        console.log("Line chart data:", lineData);  
+        console.log("Pie chart data:", pieData);
+    </script>
+</body>
+</html>

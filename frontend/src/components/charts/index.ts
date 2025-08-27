@@ -15,6 +15,7 @@ export { LineChart, default as LineChartDefault } from './LineChart'
 export { AreaChart, default as AreaChartDefault } from './AreaChart'
 export { StreamGraphChart, default as StreamGraphChartDefault } from './StreamGraphChart'
 export { LineChartLegend, default as LineChartLegendDefault } from './LineChartLegend'
+export { BrushChart, default as BrushChartDefault } from './BrushChart'
 
 // Chart Variants
 export { SimpleBarChart, default as SimpleBarChartDefault } from './variants/SimpleBarChart'
@@ -36,6 +37,7 @@ import LineChart from './LineChart'
 import AreaChart from './AreaChart'
 import StreamGraphChart from './StreamGraphChart'
 import LineChartLegend from './LineChartLegend'
+import BrushChart from './BrushChart'
 import SimpleBarChart from './variants/SimpleBarChart'
 import GroupedBarChart from './variants/GroupedBarChart'
 import StackedBarChart from './variants/StackedBarChart'
@@ -56,6 +58,7 @@ module.exports = {
   AreaChart,
   StreamGraphChart,
   LineChartLegend,
+  BrushChart,
   SimpleBarChart,
   GroupedBarChart,
   StackedBarChart,
@@ -77,6 +80,7 @@ export {
   AreaChart as AreaChartComponent,
   StreamGraphChart as StreamGraphChartComponent,
   LineChartLegend as LineChartLegendComponent,
+  BrushChart as BrushChartComponent,
   SimpleBarChart as SimpleBarChartComponent,
   GroupedBarChart as GroupedBarChartComponent,
   StackedBarChart as StackedBarChartComponent,

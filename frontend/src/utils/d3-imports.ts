@@ -24,7 +24,18 @@ export {
   symbol,
   symbolCircle,
   symbolSquare,
-  symbolTriangle
+  symbolTriangle,
+  stack,
+  stackOrderNone,
+  stackOrderAscending,
+  stackOrderDescending,
+  stackOrderInsideOut,
+  stackOrderReverse,
+  stackOffsetNone,
+  stackOffsetExpand,
+  stackOffsetDiverging,
+  stackOffsetSilhouette,
+  stackOffsetWiggle
 } from 'd3-shape'
 
 // Axis generators
@@ -95,6 +106,17 @@ export {
   treemap
 } from 'd3-hierarchy'
 
+// Force simulation (for network charts)
+export {
+  forceSimulation,
+  forceLink,
+  forceManyBody,
+  forceCenter,
+  forceCollide,
+  forceX,
+  forceY
+} from 'd3-force'
+
 // Geographic projections (if needed for maps)
 export {
   geoPath,
@@ -103,12 +125,24 @@ export {
   geoNaturalEarth1
 } from 'd3-geo'
 
-// Drag and zoom behaviors
+// Drag, zoom, and brush behaviors
 export {
   drag,
   zoom,
-  zoomIdentity
-} from 'd3'
+  zoomIdentity,
+  brush,
+  brushX,
+  brushY
+} from 'd3-brush'
+
+export {
+  zoom as d3Zoom,
+  zoomIdentity as d3ZoomIdentity
+} from 'd3-zoom'
+
+export {
+  drag as d3Drag
+} from 'd3-drag'
 
 // Bundle size analysis utility
 export const optimizedD3Imports = {
@@ -137,7 +171,9 @@ export const optimizedD3Imports = {
     'd3-hierarchy',
     'd3-geo',
     'd3-drag',
-    'd3-zoom'
+    'd3-zoom',
+    'd3-brush',
+    'd3-force'
   ],
   
   // Visual enhancements (optional)
@@ -191,7 +227,11 @@ export const estimateD3BundleSize = (modules: string[]): number => {
     'd3-time-format': 15,
     'd3-hierarchy': 18,
     'd3-geo': 30,
-    'd3-scale-chromatic': 5
+    'd3-scale-chromatic': 5,
+    'd3-brush': 8,
+    'd3-zoom': 12,
+    'd3-drag': 10,
+    'd3-force': 22
   }
   
   return modules.reduce((total, module) => total + (moduleSizes[module] || 10), 0)

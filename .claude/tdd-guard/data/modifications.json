@@ -1,6 +1,6 @@
 {
-  "session_id": "c0ca1527-ab1f-46ba-92ca-ed2e8516afda",
-  "transcript_path": "/Users/russellgrocott/.claude/projects/-Users-russellgrocott-Projects-kineo-analytics/c0ca1527-ab1f-46ba-92ca-ed2e8516afda.jsonl",
+  "session_id": "8c5b5f29-dc74-4454-a5fb-cb239fbf7e56",
+  "transcript_path": "/Users/russellgrocott/.claude/projects/-Users-russellgrocott-Projects-kineo-analytics/8c5b5f29-dc74-4454-a5fb-cb239fbf7e56.jsonl",
   "hook_event_name": "PreToolUse",
   "tool_name": "Write",
   "tool_input": {
