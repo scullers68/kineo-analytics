@@ -105,9 +105,19 @@ export const LineChart: React.FC<LineChartProps> = ({
     )
   }
 
+  // Calculate data attributes for testing
+  const dataRecordIds = Array.isArray(data) ? data.map((d: any) => d.id || d.key || '').join(',') : ''
+  const dataSignature = Array.isArray(data) ? `${data.length}-${data.map(d => typeof d).join('')}` : '0'
+  const lastUpdated = Date.now().toString()
+
   return (
     <div 
       className={`line-chart-container ${className}`}
+      data-testid="line-chart"
+      data-filtered-count={Array.isArray(data) ? data.length : 0}
+      data-signature={dataSignature}
+      data-record-ids={dataRecordIds}
+      data-last-updated={lastUpdated}
       role="img"
       aria-label={`Line chart with ${processedData.length} series showing ${processingInfo.processedPointCount} data points`}
       style={{ width, height }}

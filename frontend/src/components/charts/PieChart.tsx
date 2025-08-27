@@ -139,10 +139,20 @@ export const PieChart = forwardRef<HTMLDivElement, PieChartProps>(({
     )
   }
 
+  // Calculate data attributes for testing
+  const dataRecordIds = Array.isArray(data) ? data.map((d: any) => d.id || d.key || '').join(',') : ''
+  const dataSignature = Array.isArray(data) ? `${data.length}-${data.map(d => typeof d).join('')}` : '0'
+  const lastUpdated = Date.now().toString()
+
   return (
     <div 
       ref={ref}
       className={`pie-chart ${className}`}
+      data-testid="pie-chart"
+      data-filtered-count={Array.isArray(data) ? data.length : 0}
+      data-signature={dataSignature}
+      data-record-ids={dataRecordIds}
+      data-last-updated={lastUpdated}
       style={{
         width: responsive ? '100%' : dimensions.width,
         height: responsive ? 'auto' : dimensions.height,

@@ -108,9 +108,19 @@ export const BarChart: React.FC<BarChartProps> = ({
     )
   }
 
+  // Calculate data attributes for testing
+  const dataRecordIds = Array.isArray(data) ? data.map((d: any) => d.id || d.key || '').join(',') : ''
+  const dataSignature = Array.isArray(data) ? `${data.length}-${data.map(d => typeof d).join('')}` : '0'
+  const lastUpdated = Date.now().toString()
+
   return (
     <div 
       className={`bar-chart-container ${className}`}
+      data-testid="bar-chart"
+      data-filtered-count={Array.isArray(data) ? data.length : 0}
+      data-signature={dataSignature}
+      data-record-ids={dataRecordIds}
+      data-last-updated={lastUpdated}
       role="img"
       aria-label={`Bar chart with ${processedData.length} data points`}
       style={{ width: width || dimensions.width, height: height || dimensions.height }}
