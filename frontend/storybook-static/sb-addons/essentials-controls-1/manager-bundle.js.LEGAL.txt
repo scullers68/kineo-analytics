@@ -4,6 +4,14 @@ store2/dist/store2.js:
   /*! store2 - v2.14.4 - 2024-12-26
   * Copyright (c) 2024 Nathan Bubna; Licensed MIT */
 
+assert/build/internal/util/comparisons.js:
+  /*!
+   * The buffer module from node.js, for the browser.
+   *
+   * @author   Feross Aboukhadijeh <feross@feross.org> <http://feross.org>
+   * @license  MIT
+   */
+
 telejson/dist/index.mjs:
   /*!
    * isobject <https://github.com/jonschlinkert/isobject>
