@@ -98,6 +98,16 @@ beforeAll(() => {
     writable: true
   })
 
+  // Mock Performance API for chart components
+  ;(global as any).performance = {
+    ...performance,
+    getMetrics: () => ({
+      navigation: { loadEventEnd: 100, domContentLoadedEventEnd: 50 },
+      paint: { 'first-paint': 30, 'first-contentful-paint': 40 },
+      memory: { usedJSHeapSize: 1000000, totalJSHeapSize: 2000000 }
+    })
+  }
+
   // Mock environment variables for testing
   process.env.NODE_ENV = 'test'
   process.env.NEXT_PUBLIC_API_URL = 'http://localhost:8000/api/v1'

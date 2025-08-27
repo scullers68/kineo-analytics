@@ -211,7 +211,7 @@ export const useBarChart = (options: UseBarChartOptions) => {
     updateData,
     clearSelection,
     getBarAtPoint,
-    performance: performance.getMetrics()
+    performance: performance.metrics
   }
 }
 

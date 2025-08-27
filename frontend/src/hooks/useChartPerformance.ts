@@ -90,16 +90,40 @@ export const useChartPerformance = (
     return data.filter((_, index) => index % step === 0)
   }, [config.maxDataPoints])
 
+  // Performance measurement methods for detailed timing
+  const measurementStartTimes = useRef<Map<string, number>>(new Map())
+
+  const startMeasurement = useCallback((label: string) => {
+    measurementStartTimes.current.set(label, performance.now())
+  }, [])
+
+  const endMeasurement = useCallback((label: string) => {
+    const startTime = measurementStartTimes.current.get(label)
+    if (startTime) {
+      const duration = performance.now() - startTime
+      trackRender(duration, metrics.dataPointsRendered)
+      measurementStartTimes.current.delete(label)
+      return duration
+    }
+    return 0
+  }, [trackRender, metrics.dataPointsRendered])
+
   useEffect(() => {
     return () => {
       stopPerformanceMonitoring()
     }
   }, [stopPerformanceMonitoring])
 
+  // Create getMetrics method for API compatibility  
+  const getMetrics = useCallback(() => metrics, [metrics])
+
   return {
     metrics,
+    getMetrics,
     startPerformanceMonitoring,
     stopPerformanceMonitoring,
+    startMeasurement,
+    endMeasurement,
     trackRender,
     optimizeDataForRendering,
     isOptimized: metrics.isOptimized
