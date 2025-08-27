@@ -24,6 +24,12 @@ export interface BarChartProps {
   onBarClick?: (data: ChartDataPoint) => void
   onBarHover?: (data: ChartDataPoint | null) => void
   className?: string
+  exportable?: boolean
+  exportOptions?: {
+    formats?: ('png' | 'svg' | 'pdf')[]
+    branding?: boolean
+    quality?: 'standard' | 'high' | 'print'
+  }
 }
 
 // Bar Chart State

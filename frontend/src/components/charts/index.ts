@@ -17,6 +17,9 @@ export { StreamGraphChart, default as StreamGraphChartDefault } from './StreamGr
 export { LineChartLegend, default as LineChartLegendDefault } from './LineChartLegend'
 export { BrushChart, default as BrushChartDefault } from './BrushChart'
 
+// Pie Chart Component
+export { PieChart, default as PieChartDefault } from './PieChart'
+
 // Chart Variants
 export { SimpleBarChart, default as SimpleBarChartDefault } from './variants/SimpleBarChart'
 export { GroupedBarChart, default as GroupedBarChartDefault } from './variants/GroupedBarChart'
@@ -38,6 +41,7 @@ import AreaChart from './AreaChart'
 import StreamGraphChart from './StreamGraphChart'
 import LineChartLegend from './LineChartLegend'
 import BrushChart from './BrushChart'
+import PieChart from './PieChart'
 import SimpleBarChart from './variants/SimpleBarChart'
 import GroupedBarChart from './variants/GroupedBarChart'
 import StackedBarChart from './variants/StackedBarChart'
@@ -59,6 +63,7 @@ module.exports = {
   StreamGraphChart,
   LineChartLegend,
   BrushChart,
+  PieChart,
   SimpleBarChart,
   GroupedBarChart,
   StackedBarChart,
@@ -81,6 +86,7 @@ export {
   StreamGraphChart as StreamGraphChartComponent,
   LineChartLegend as LineChartLegendComponent,
   BrushChart as BrushChartComponent,
+  PieChart as PieChartComponent,
   SimpleBarChart as SimpleBarChartComponent,
   GroupedBarChart as GroupedBarChartComponent,
   StackedBarChart as StackedBarChartComponent,

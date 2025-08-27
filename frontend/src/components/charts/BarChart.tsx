@@ -13,7 +13,9 @@ export const BarChart: React.FC<BarChartProps> = ({
   height = 300,
   onBarClick,
   onBarHover,
-  className = ''
+  className = '',
+  exportable = false,
+  exportOptions = {}
 }) => {
   // Use data management hook
   const {
@@ -116,14 +118,19 @@ export const BarChart: React.FC<BarChartProps> = ({
   return (
     <div 
       className={`bar-chart-container ${className}`}
-      data-testid="bar-chart"
+      data-testid={exportable ? "exportable-chart" : "bar-chart"}
+      data-exportable={exportable ? "true" : "false"}
       data-filtered-count={Array.isArray(data) ? data.length : 0}
       data-signature={dataSignature}
       data-record-ids={dataRecordIds}
       data-last-updated={lastUpdated}
       role="img"
       aria-label={`Bar chart with ${processedData.length} data points`}
-      style={{ width: width || dimensions.width, height: height || dimensions.height }}
+      style={{ 
+        width: width || dimensions.width, 
+        height: height || dimensions.height,
+        position: exportable ? 'relative' : 'static'
+      }}
     >
       <svg
         ref={svgRef}
@@ -139,6 +146,21 @@ export const BarChart: React.FC<BarChartProps> = ({
         {state.selectedBar && `Currently selected: ${state.selectedBar.label || state.selectedBar.x} with value ${state.selectedBar.y}`}
         {state.hoveredBar && `Currently hovered: ${state.hoveredBar.label || state.hoveredBar.x} with value ${state.hoveredBar.y}`}
       </div>
+
+      {/* Export button */}
+      {exportable && (
+        <button
+          role="button"
+          aria-label="export chart"
+          className="absolute top-2 right-2 p-2 bg-white border border-gray-300 rounded hover:bg-gray-50 transition-colors"
+          onClick={() => {
+            // Export functionality would be handled by parent component
+            console.log('Export chart clicked')
+          }}
+        >
+          Export Chart
+        </button>
+      )}
 
       {/* Performance debug info (only in development) */}
       {process.env.NODE_ENV === 'development' && performance && (
